@@ -1,0 +1,6 @@
+{
+  "name": "Tutor Socrático Bolivariano - Lectura",
+  "description": "Tutor Socrático Institucional para preparación Saber 11 en Lectura Crítica y Comprensión Lectora de la I.E. Técnica Simón Bolívar de Ibagué con interfaz conversacional estilo WhatsApp y banco oficial ICFES de 3° a 11°.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
