@@ -1,750 +1,771 @@
-// Banco Oficial ICFES Saber 11° - Lectura Crítica (Cuadernillo 1 Oficial 2021)
+// Banco Oficial ICFES Saber 11° - Grado 11° (Lectura Crítica Cuadernillo 1 Oficial 2021)
 // Institución Educativa Técnica Simón Bolívar - Ibagué, Tolima
-// Área: LECTURA CRÍTICA / COMPRENSIÓN LECTORA
+// Área: COMPETENCIAS COMUNICATIVAS EN LENGUAJE: LECTURA CRÍTICA
 import { Question } from '../types';
 
 // =============================================================================
-// TEXTOS COMPLETOS VERBATIM OFICIALES ICFES SABER 11° (CUADERNILLO 1)
+// TEXTOS COMPLETOS VERBATIM OFICIALES ICFES SABER 11° - LECTURA CRÍTICA
 // =============================================================================
 
-export const TEXTO_GRAFENO_G11 = `RESPONDA LAS PREGUNTAS 1 A 4 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN
+export const TEXTO_QUIJOTE_G11 = `RESPONDE LAS PREGUNTAS 1 A 6 A PARTIR DE LA LECTURA DEL SIGUIENTE TEXTO:
 
-Andre Geim y Konstantin Novoselov, científicos de la Universidad de Manchester (Reino Unido), han sido distinguidos este año con el Premio Nobel de Física "por sus experimentos fundamentales sobre el material bidimensional grafeno", según ha anunciado hoy el Comité Nobel de la Academia de las Ciencias de Suecia.
+DON QUIJOTE DE LA MANCHA (Discurso de las armas y las letras - Fragmento)
 
-Una lámina de carbono, de un átomo de grosor, está detrás del Nobel de Física de este año. Los dos galardonados, Geim y Novoselov, han demostrado que el carbono en esa configuración plana tiene propiedades extraordinarias originadas en el mundo de la física cuántica. El grafeno es un nuevo material, extremadamente delgado y resistente que, como conductor de la electricidad, se comporta como el cobre, y como conductor de calor, supera a cualquier otro material conocido. Es casi completamente transparente y tan denso que ni siquiera el helio, el átomo de gas más pequeño, puede atravesarlo, explica la Fundación Nobel.
+'Quítenseme delante los que dijeren que las letras hacen ventaja a las armas; que les diré, y sean quien se fueren, que no saben lo que dicen. Porque la razón que los tales suelen alegar y a lo que ellos más se atienen es que los trabajos del espíritu preceden y son mayores que los del cuerpo, y que las armas solo con el cuerpo se ejercitan; como si su ejercicio fuese oficio de ganapanes, para el cual no es menester más de buenas fuerzas, o como si en esto que los que las profesamos llamamos armas no se encerrasen los actos de la fortaleza, los cuales piden para ejecutarse mucho entendimiento.
 
-Geim y Novoselov, dos científicos europeos –Geim tiene nacionalidad holandesa y Novoselov es ruso-británico– obtuvieron el grafeno a partir del grafito normal, el material de las minas de los lápices, y lograron una lámina de un grosor de solo un átomo. Muchos pensaban entonces que era imposible que un material así fuera estable. Sin embargo, a partir de los trabajos de estos dos científicos, los físicos pueden estudiar ahora una nueva clase de materiales bidimensionales con propiedades únicas.
+Miren si no si con solas las fuerzas corporales se sabe acertar una emboscada, acometer una muralla, o romper un escuadrón; que todas estas acciones piden discurso de razón y advertencia del juicio. Siendo, pues, esto así, que las armas requieren espíritu bien como las letras, veamos ahora cuál de los dos espíritus trabaja más: el del letrado o el del guerrero. El fin y paradero de las letras es poner en su punto la justicia distributiva y dar a cada uno lo que es suyo, y entender y hacer que las buenas leyes se guarden; fin, por cierto, generoso y alto, y digno de grande alabanza; pero no de tanta como merece aquel a que las armas atienden, las cuales tienen por objeto y fin la paz, que es el mayor bien que los hombres pueden desear en esta vida'.
 
-El grafeno también tiene una amplia variedad de aplicaciones posibles, incluida la fabricación de nuevos materiales y de dispositivos electrónicos avanzados. Los transistores de grafeno pueden ser sustancialmente más rápidos que los actuales de silicio, con lo que se podrán fabricar ordenadores más eficaces. También, como es transparente y un buen conductor, se vislumbran aplicaciones en pantallas de dispositivos electrónicos e incluso paneles solares.
+Cervantes Saavedra, Miguel de. Don Quijote de la Mancha (Primera parte, cap. XXXVII-XXXVIII).`;
 
-Geim, en una conferencia vía telefónica, ha declarado que no esperaba el premio y que intentará evitar que esta distinción cambie su rutina. "Mi plan para hoy es ir al trabajo y terminar un artículo que tengo pendiente", ha señalado. El Comité Nobel ha informado que Novoselov, de 36 años, es el físico más joven premiado con un Nobel desde 1973, informa la agencia Reuters.
+export const TEXTO_CRISIS_AGUA_G11 = `RESPONDE LAS PREGUNTAS 7 A 11 A PARTIR DE LA LECTURA DEL SIGUIENTE TEXTO:
 
-Geim y Novoselov (el segundo fue alumno de doctorado del primero) deben disfrutar con sus experimentos. Los realizados para obtener el grafeno sorprenden por su sencillez conceptual (ir separando capas de grafito hasta lograr una sola aislada, que es el nuevo material). Pero ya antes habían hecho experimentos peculiares. En 1997, Geim logró hacer levitar una rana en un campo magnético, "una forma ingeniosa de ilustrar los principios de la física", dice la Fundación Nobel. Por aquellos experimentos con la rana, recibieron en 2000 el IgNobel de Física, uno de los galardones que se consideran Nobel alternativos y que se dan desde hace 20 años para aquellos trabajos "que primero hacen reír y después pensar". "Creo que soy el primero que ha obtenido ambos Nobel y estoy muy orgulloso de los dos premios", ha comentado hoy Geim.
+INFOGRAFÍA: LA CRISIS DEL AGUA GLOBAL Y EL DERECHO HUMANO AL ACCESO POTABLE
 
-Tomado y adaptado de: http://sociedad.elpais.com/sociedad/2010/10/05/actualidad/1286229601_850215.html`;
+El agua dulce disponible representa menos del 1% del total hídrico del planeta, amenazada por el cambio climático, la sobreexplotación agrícola y la contaminación industrial.
 
-export const TEXTO_CONDON_G11 = `RESPONDA LAS PREGUNTAS 5 A 7 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN
+Datos globales de la ONU Agua / UNESCO (Informe Mundial 2024):
+• Población sin acceso a agua potable gestionada de forma segura: 2.200 millones de personas (1 de cada 4 habitantes del planeta).
+• Población sin saneamiento básico adecuado: 3.500 millones de personas.
+• Uso sectorial del agua dulce en el mundo:
+  - 70% Agricultura y ganadería intensiva (riego ineficiente).
+  - 20% Industria manufacturera y generación de energía termoeléctrica.
+  - 10% Consumo doméstico y municipal.
 
-TEXTO 1
-DEL CONDÓN Y OTROS DEMONIOS
+Geopolítica y Derecho Humano:
+- Resolución 64/292 de la ONU (2010): El acceso al agua potable limpia y al saneamiento es un derecho humano esencial para el pleno disfrute de la vida.
+- Estrés hídrico severo: Más de 30 países enfrentan escasez crítica, lo que detona conflictos transfronterizos en cuencas compartidas (ríos Nilo, Tigris-Éufrates, Indo y Jordán).
 
-El panorama es peor de lo que imagina la opinión pública. Los jóvenes se han convertido en la población donde más está creciendo el sida debido, en la mayoría de los casos, a prácticas sexuales inseguras. Sin embargo, el incremento del contagio de mujeres heterosexuales por sus parejas estables también es considerable, lo mismo que en los homosexuales. La lucha contra el sida ya no puede minimizarse en Colombia. En diez años, según los estimativos, los infectados podrían llegar a más de 800.000 personas.
+Pistas para la seguridad hídrica:
+1. Tecnificación del riego agrícola por goteo y reutilización de aguas residuales tratadas.
+2. Protección estricta de páramos, humedales y cuencas altas de captación.
+3. Gobernanza pública y comunitaria democrática del agua contra la especulación financiera.
 
-Ante semejante panorama, resulta indispensable superar los obstáculos culturales que entorpecen la masificación del uso del condón para el control de las ETS (enfermedades de transmisión sexual). Las taras machistas implican que la sola exigencia del preservativo por parte de la mujer se refleje en problemas de pareja. A esto se suman campañas religiosas y de otros grupos laicos, que acomodan las estadísticas sobre la seguridad que ofrece el condón. Cruzadas no exentas de fanatismo, en las cuales invierten enormes cantidades de dinero para cuestionar su utilización y promover la abstinencia sexual. Una fórmula irreal, falaz e irresponsable por sus consecuencias. Ejemplo notorio son los anuncios de prensa publicados por grupos laicos, liderados por el doctor J. G., que cuestionan la seguridad que ofrece el condón.
+Tomado y adaptado de: UN Water / UNESCO World Water Assessment Programme.`;
 
-Tomado y adaptado de: El Tiempo. (26 de noviembre de 2003). Anuncio Publicitario.
+export const TEXTO_CIEN_ANOS_G11 = `RESPONDE LAS PREGUNTAS 12 A 16 A PARTIR DE LA LECTURA DEL SIGUIENTE TEXTO:
 
-TEXTO 2
-[Anuncio publicitario de prensa / Cartel de opinión]:
-“CREYERON QUE EL CONDÓN ERA SEGURO... En defensa de los valores. Dr. J. G.”
-• “Estadísticas científicas muestran la falla de los condones, del 10 al 33 %”.
-• Dr. Hermán Sánchez Machet, físico y profesor de la Universidad Nacional de Colombia: “2 de cada 3 preservativos presentan deficiencias”.
-• “Abominable concurso abierto para promover el uso del condón entre infantes y adolescentes”.
-• TASA DE FALLA DEL CONDÓN EN HOMOSEXUALES: 26 % (11 % se rompe, 15 % se resbala). Wegersna & Oud. Revista Médica Británica, 1987.
-• 30 %: Poller. “Expertos cuestionan la calidad del condón”. Noticias del Mundo Médico, 1998.
+CIEN AÑOS DE SOLEDAD (La peste del insomnio y del olvido - Fragmento)
 
-Tomado y adaptado de: El Tiempo. (26 de noviembre de 2003). Anuncio Publicitario.`;
+Aureliano fue quien concibió la fórmula que había de defenderlos durante varios meses de las evasiones de la memoria. La descubrió por casualidad. Insomne experto, por haber sido uno de los primeros, había aprendido a la perfección el arte de la platería. Un día estaba buscando el pequeño yunque que utilizaba para laminar los metales, y no recordó su nombre. Su padre se lo dijo: 'Tasnute'. Aureliano escribió el nombre en un papel que pegó con goma en la base del yunquecito: 'tasnute'. Así estuvo seguro de no olvidarlo en el futuro.
 
-export const TEXTO_FERMINA_G11 = `RESPONDA LAS PREGUNTAS 8 A 11 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN
+No se le ocurrió que fuera aquella la primera manifestación del olvido, porque el objeto tenía un nombre difícil de recordar. Pero pocos días después descubrió que tenía dificultades para recordar casi todas las cosas del laboratorio. Entonces las marcó con sus nombres respectivos, de modo que le bastaba leer el letrero para identificarlas. Cuando su padre le comunicó su inquietud por haber olvidado hasta los hechos más impresionantes de su niñez, Aureliano le explicó su método, y José Arcadio Buendía lo puso en práctica en toda la casa y más tarde lo impuso a todo el pueblo.
 
-Fermina Daza no podía imaginarse que aquella carta suya, instigada por una rabia ciega, pudiera ser interpretada por Florentino Ariza como una carta de amor. Había puesto en ella toda la furia de que era capaz, sus palabras más crueles, los oprobios más hirientes, e injustos además, que sin embargo le parecían ínfimos frente al tamaño de la ofensa. Fue el último acto de un amargo exorcismo con el cual trataba de lograr un pacto de conciliación con su nuevo estado. Quería ser otra vez ella misma, recuperar todo cuanto había tenido que ceder en medio siglo de una servidumbre que la había hecho feliz, sin duda, pero que una vez muerto el esposo no le dejaba a ella ni los vestigios de su identidad. Era un fantasma en una casa ajena que de un día para otro se había vuelto inmensa y solitaria, y en la cual vagaba a la deriva, preguntándose angustiada quién estaba más muerto: el que había muerto o la que se había quedado.
+Con un hisopo entintado marcó cada cosa con su nombre: mesa, silla, reloj, puerta, pared, cama, cacerola. Fue al corral y marcó los animales y las plantas: vaca, chivo, puerco, gallina, yuca, malanga, guineo. Poco a poco, estudiando las infinitas posibilidades del olvido, se dio cuenta de que podía llegar un día en que se reconocieran las cosas por sus inscripciones, pero no se recordara su utilidad. Entonces fue más explícito. El letrero que colgó de la cerviz de la vaca era un modelo ejemplar de cómo los habitantes de Macondo estaban dispuestos a luchar contra el olvido: 'Esta es la vaca, hay que ordeñarla todas las mañanas para que dé leche y a la leche hay que hervirla para mezclarla con el café y hacer café con leche'.
 
-No podía sortear un recóndito sentimiento de rencor contra el marido por haberla dejado sola en medio del océano. Todo lo suyo le provocaba el llanto: la piyama debajo de la almohada, las pantuflas que siempre le parecieron de enfermo, el recuerdo de su imagen desvistiéndose en el fondo del espejo mientras ella se peinaba para dormir, el olor de su piel que había de persistir en la de ella mucho tiempo después de la muerte. Se detenía a mitad de cualquier cosa que estuviera haciendo y se daba una palmadita en la frente, porque de pronto se acordaba de algo que olvidó decirle. A cada instante le venían a la mente las tantas preguntas cotidianas que solo él le podía contestar. Alguna vez él le había dicho algo que ella no podía concebir: los amputados sienten dolores, calambres, cosquillas, en la pierna que ya no tienen. Así se sentía ella sin él, sintiéndolo estar donde ya no estaba.
+García Márquez, Gabriel. Cien años de soledad.`;
 
-Tomado de: García Márquez, G. (2010). El amor en los tiempos del cólera. Barcelona, España: Editorial Debolsillo.`;
+export const TEXTO_ILIADA_G11 = `RESPONDE LAS PREGUNTAS 17 A 20 A PARTIR DE LA LECTURA DEL SIGUIENTE TEXTO:
 
-export const TEXTO_HOBBES_G11 = `RESPONDA LAS PREGUNTAS 12 A 16 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN
+LA ILÍADA (Canto XXIV - La súplica de Príamo ante Aquiles)
 
-Aunque las comodidades de esta vida pueden aumentarse con la ayuda mutua, sin embargo, como eso se puede conseguir dominando a los demás mejor que asociándose con ellos, nadie debe dudar de que los hombres por su naturaleza, si no existiera el miedo, se verían inclinados más al dominio que a la sociedad. Por lo tanto, hay que afirmar que el origen de las sociedades grandes y duraderas no se ha debido a la mutua benevolencia de los hombres sino al miedo mutuo.
+El anciano rey Príamo entró sin ser visto por nadie, y acercándose a Aquiles, abrazó sus rodillas y besó aquellas manos terribles, homicidas, que habían dado muerte a tantos de sus valientes hijos. Así como cuando la ceguera del destino se apodera de un hombre que, habiendo muerto a alguien en su patria, huye a país extraño y entra en casa de un varón opulento, y el asombro sobrecoge a cuantos le ven; de igual modo se asombró Aquiles al contemplar a Príamo semejante a los dioses, y el estupor embargó también a los demás guerreros mirmidones.
 
-Tomado de: Hobbes, T. (1999). Tratado sobre el ciudadano. trad. Joaquín Rodríguez Feo, Madrid, Trotta.`;
+Príamo, entonces, dirigiéndole la palabra, le suplicó con estas conmovedoras razones:
+—Acuérdate de tu padre, ¡oh Aquiles, semejante a los inmortales!, que tiene mi misma edad y está en los funestos umbrales de la vejez. Quizás los vecinos que habitan a su alrededor le oprimen y no tiene quien le defienda del infortunio y de la guerra. Mas él, al menos, al oír decir que estás vivo, se alegra en su corazón y abriga la esperanza cotidiana de ver regresar a su amado hijo de Troya. Pero yo, ¡desdichado de mí!, que engendré a los varones más bravos de la ancha Ilión, no me queda ya ninguno... Héctor, que era el único que defendía la ciudad y a sus ciudadanos, tú lo mataste ha poco cuando combatía por su patria. Por él vengo ahora a las naves de los aqueos, trayéndote un rescate infinito para redimir su cadáver. Respeta a los dioses, Aquiles, y ten piedad de mí, recordando a tu propio padre; que yo soy aún más digno de compasión, pues me he atrevido a lo que ningún otro mortal sobre la tierra: a llevar a mis labios la mano del hombre que ha matado a mis hijos.
 
-export const TEXTO_PLATON_G11 = `RESPONDA LAS PREGUNTAS 17 A 20 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN
+Así habló; y suscitó en Aquiles el deseo de llorar por su padre. Tomando de la mano al anciano, lo apartó suavemente, y ambos recordaron a sus deudos: Príamo, postrado a los pies de Aquiles, lloraba amargamente por Héctor, matador de hombres; y Aquiles lloraba ya por su anciano padre Peleo, ya por su compañero Patroclo; y el lamento de ambos resonaba por toda la tienda.
 
-Por naturaleza, el más débil es también el peor... No obstante lo cual, en el Estado son los débiles y la gran masa los que dan las leyes, haciéndolo en su propio provecho y determinando así lo que es bueno y lo que es malo. Por ello tratan de amedrentar a los fuertes, es decir, a aquellos que tienen fuerza en sí para poseer más que los otros, a fin de que no aspiren a más. Con este propósito afirman que el deseo de tener más es vergonzoso e injusto..., y se sienten felices de poseer, al menos, lo mismo que los otros, aun siendo como son los peores. La naturaleza, sin embargo, prueba que es justo que el hombre hábil posea más que el que no lo es, y el más fuerte más que el más débil... Desde la infancia procuramos desnaturalizar a los mejores y más fuertes, los domesticamos como a leones con toda suerte de conjuros y artimañas, predicándoles, una y otra vez, que todos tienen que poseer lo mismo, y que esto es lo bueno y lo justo...
+Homero. La Ilíada.`;
 
-Cuando, sin embargo, un día se alza un hombre que tiene por naturaleza la fuerza suficiente, vemos entonces cómo se quita todo de encima, rompiendo sus cadenas, haciéndose libre y pisoteando toda nuestra mala literatura, toda nuestra mentira, todos los conjuros y todas las leyes antinaturales. Hasta entonces nuestro esclavo, ahora se pone en pie y se nos muestra como nuestro señor. Es entonces cuando, de repente, brilla en todo su esplendor el derecho de la naturaleza.
-
-Tomado de: Platón (1998). Protágoras, Gorgias, Carta séptima. Madrid: Alianza Editorial. 483c-484a.`;
+// =============================================================================
+// BANCO DE 20 PREGUNTAS OFICIALES ICFES SABER 11° - LECTURA CRÍTICA
+// =============================================================================
 
 export const OFFICIAL_GRADE_11: Question[] = [
-  // =========================================================================
-  // TEXTO 1: PREMIO NOBEL DE FÍSICA POR EL GRAFENO (Preguntas 1 a 4)
-  // =========================================================================
+  // ---------------------------------------------------------------------------
+  // TEXTO 1: EL QUIJOTE (Preguntas 1 a 6)
+  // ---------------------------------------------------------------------------
   {
     id: 1101,
     grade: 11,
     questionNumber: 1,
-    title: 'Nobel de Física por el Grafeno - Aporte de Reuters',
-    contextText: TEXTO_GRAFENO_G11,
-    statement: `¿Cuál es el aporte de la agencia Reuters al contenido de este artículo?`,
+    title: 'Discurso de las armas y las letras - Tesis central de Don Quijote',
+    contextText: TEXTO_QUIJOTE_G11,
+    statement: 'En el fragmento, la tesis principal que defiende Don Quijote frente a la creencia común de su época es que:',
     options: [
-      { number: 1, letter: 'A', text: 'Informar que Novoselov es el físico más joven desde 1973 premiado con un Nobel de Física por el Comité Nobel.' },
-      { number: 2, letter: 'B', text: 'Informar que el Comité Nobel ha determinado que Novoselov es el físico más joven premiado con un Nobel desde 1973.' },
-      { number: 3, letter: 'C', text: 'Informar que Geim es el físico más joven desde 1973 premiado con un Nobel de Física por el Comité Nobel.' },
-      { number: 4, letter: 'D', text: 'Informar que el Comité Nobel ha determinado que Geim es el físico más joven premiado con un Nobel desde 1973.' }
+      { number: 1, letter: 'A', text: 'Los soldados no necesitan pensar porque solo requieren fuerza física de ganapanes.' },
+      { number: 2, letter: 'B', text: 'El ejercicio de las armas es superior al de las letras porque exige una aguda inteligencia estratégica y persigue el fin supremo de la paz.' },
+      { number: 3, letter: 'C', text: 'Los libros de leyes deben ser quemados en plazas públicas.' },
+      { number: 4, letter: 'D', text: 'La justicia distributiva no tiene ningún valor social.' }
     ],
     correctOption: 2,
     correctLetter: 'B',
-    competency: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    component: 'Texto Continuo - Informativo / Noticia Científica',
-    affirmation: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    evidence: 'Identifica y caracteriza las diferentes voces o situaciones presentes en un texto.',
-    standard: 'Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.',
-    justification: 'La respuesta correcta es la opción B, dado que el texto afirma explícitamente: “El Comité Nobel ha informado que Novoselov, de 36 años, es el físico más joven premiado con un Nobel desde 1973, informa la agencia Reuters”.',
+    competency: 'Lectura Crítica.',
+    component: 'Texto Continuo - Argumentativo-Filosófico / Identificación de Tesis Central',
+    affirmation: 'Comprende el sentido global del texto identificando la tesis y los argumentos que la sustentan.',
+    evidence: 'Determina la postura del autor o del personaje y los contraargumentos que refuta.',
+    standard: 'Comprendo los aspectos formales y conceptuales de los textos clásicos de la literatura en lengua española.',
+    justification: 'Don Quijote refuta el prejuicio de que la milicia es pura fuerza bruta, demostrando que la táctica bélica requiere "discurso de razón y advertencia del juicio" y que su fin último es la paz, bien superior a la mera justicia legal de los letrados.',
     invalidOptionsReasoning: {
-      A: 'Afirma que Novoselov es el físico más joven premiado con un "Nobel de Física", pero Reuters informa que es el más joven premiado con un "Nobel" en general.',
-      C: 'Atribuye erróneamente el dato a Geim en lugar de Novoselov.',
-      D: 'Atribuye el dato a Geim y no a Novoselov.'
+      A: 'Quijote ataca y ridiculiza con vehemencia esa afirmación despectiva.',
+      C: 'Reconoce que las leyes tienen un fin "generoso y alto", pero sitúa la paz armada por encima.',
+      D: 'Elogia la justicia distributiva, aunque la subordina al bien común de la paz.'
     },
     socraticHints: {
-      recordar: 'Relee el penúltimo párrafo del texto donde se cita a la agencia Reuters.',
-      comprender: '¿A cuál de los dos científicos se refiere la agencia Reuters y qué récord menciona?',
-      aplicar: 'Anota en tu cuaderno la cita exacta: "Novoselov, de 36 años, es el físico más joven premiado con un Nobel desde 1973, informa la agencia Reuters".',
-      analizar: '¿Por qué la opción B es la única que reproduce con exactitud lo comunicado por Reuters?'
-    }
+      recordar: 'Revisa las dos primeras líneas y la última oración del fragmento.',
+      comprender: '¿Por qué para Don Quijote la paz es el mayor bien que los hombres pueden desear?',
+      aplicar: 'Anota en tu cuaderno: "Tesis del Quijote: Las armas exigen entendimiento y su fin supremo es la paz".',
+      analizar: 'Examina la estructura retórica silogística que utiliza Cervantes en el discurso.'
+    },
+    icfesCode: 'I_1110101'
   },
   {
     id: 1102,
     grade: 11,
     questionNumber: 2,
-    title: 'Nobel de Física por el Grafeno - Diferencia entre grafeno y mina de lápiz',
-    contextText: TEXTO_GRAFENO_G11,
-    statement: `Según el texto, el grafeno es diferente del material de las minas de los lápices porque`,
+    title: 'Contraargumento de Quijote frente a la acusación de "fuerza bruta"',
+    contextText: TEXTO_QUIJOTE_G11,
+    statement: 'Para rebatir a quienes sostienen que las armas solo ejercitan el cuerpo y no el espíritu, Don Quijote argumenta que:',
     options: [
-      { number: 1, letter: 'A', text: 'proviene del carbono y la mina de lápiz está hecha de grafito.' },
-      { number: 2, letter: 'B', text: 'puede conducir la corriente y las minas de lápiz son aislantes.' },
-      { number: 3, letter: 'C', text: 'está hecho de grafito y las minas de lápiz son de carbono.' },
-      { number: 4, letter: 'D', text: 'consiste de una sola capa de grafito y la mina de lápiz tiene varias capas.' }
+      { number: 1, letter: 'A', text: 'Los caballos de guerra son más inteligentes que los burros.' },
+      { number: 2, letter: 'B', text: 'Acciones militares como planear emboscadas, asaltar murallas o romper escuadrones exigen un riguroso ejercicio de la razón, el juicio y la fortaleza interior.' },
+      { number: 3, letter: 'C', text: 'Las armaduras de hierro protegen la memoria de los guerreros.' },
+      { number: 4, letter: 'D', text: 'Los soldados consumen más alimentos que los abogados.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
-    competency: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    component: 'Texto Continuo - Informativo / Explicativo',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Establece la validez e implicaciones de un enunciado de un texto (argumentativo o expositivo).',
-    standard: 'Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.',
-    justification: 'La opción D es la respuesta correcta. El texto explica que ambos materiales son formas de carbono, pero el grafeno se obtuvo separando capas del grafito normal hasta lograr una sola lámina aislada de un átomo de grosor.',
+    correctOption: 2,
+    correctLetter: 'B',
+    competency: 'Lectura Crítica.',
+    component: 'Estructura Argumentativa y Refutación de Objeciones',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Infiere argumentos secundarios y ejemplos probatorios en discursos persuasivos.',
+    standard: 'Comprendo los factores retóricos que determinan la eficacia argumentativa.',
+    justification: 'En el segundo párrafo ejemplifica cómo las maniobras bélicas complejas ("acertar una emboscada, acometer una muralla...") no se logran solo con músculos, sino con un intelecto despierto y cálculo estratégico.',
     invalidOptionsReasoning: {
-      A: 'Tanto el grafeno como el grafito provienen del carbono.',
-      B: 'El texto no afirma que las minas de lápiz sean aislantes.',
-      C: 'Invierte las relaciones materiales; ambos son configuraciones de átomos de carbono.'
+      A: 'No habla de zoología equina.',
+      C: 'La armadura es protección mecánica, no cognitiva.',
+      D: 'Es una comparación intelectual y moral, no metabólica.'
     },
     socraticHints: {
-      recordar: '¿Cómo lograron los científicos aislar el grafeno a partir del grafito del lápiz?',
-      comprender: '¿Qué diferencia estructural hay entre un bloque multicapa de grafito y una lámina monoatómica de grafeno?',
-      aplicar: 'Escribe en tu cuaderno: "Grafeno = Monocapa de carbono (1 átomo de grosor); Grafito = Múltiples capas de carbono".',
-      analizar: '¿Por qué la opción D explica la diferencia fundamental descrita en el artículo?'
-    }
+      recordar: 'Lee el inicio del segundo párrafo: "Miren si no si con solas las fuerzas corporales...".',
+      comprender: '¿Qué destrezas mentales necesita un estratega militar para ganar una batalla sin bajas?',
+      aplicar: 'Escribe en tu cuaderno: "Estrategia militar = Operación intelectual compleja de cálculo y juicio".',
+      analizar: 'Sintetiza la dialéctica entre fortaleza física y discernimiento táctico.'
+    },
+    icfesCode: 'I_1110102'
   },
   {
     id: 1103,
     grade: 11,
     questionNumber: 3,
-    title: 'Nobel de Física por el Grafeno - Concepto de material bidimensional',
-    contextText: TEXTO_GRAFENO_G11,
-    statement: `En el texto, se comprende que el grafeno se considera un material “bidimensional” porque`,
+    title: 'Jerarquía teleológica: Justicia de las leyes vs La Paz',
+    contextText: TEXTO_QUIJOTE_G11,
+    statement: 'En la comparación teleológica (de fines) que realiza el caballero andante entre las letras y las armas, se establece que:',
     options: [
-      { number: 1, letter: 'A', text: 'tiene una alta densidad.' },
-      { number: 2, letter: 'B', text: 'es estable y resistente.' },
-      { number: 3, letter: 'C', text: 'tiene un átomo de grosor.' },
-      { number: 4, letter: 'D', text: 'es casi transparente.' }
+      { number: 1, letter: 'A', text: 'Las leyes son inútiles y deben desaparecer de las repúblicas.' },
+      { number: 2, letter: 'B', text: 'Aunque las letras persiguen la noble justicia distributiva, las armas son superiores porque su fin es la paz, sin la cual ninguna ley ni sociedad puede existir.' },
+      { number: 3, letter: 'C', text: 'Los letrados ganan más dinero que los capitanes de los tercios.' },
+      { number: 4, letter: 'D', text: 'Las guerras son mejores que los tratados diplomáticos.' }
     ],
-    correctOption: 3,
-    correctLetter: 'C',
-    competency: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    component: 'Texto Continuo - Divulgación Científica',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Establece la validez e implicaciones de un enunciado de un texto (argumentativo o expositivo).',
-    standard: 'Diseño un esquema de interpretación, teniendo en cuenta al tipo de texto, tema, interlocutor e intención comunicativa.',
-    justification: 'La respuesta correcta es la opción C. Al tener una lámina plana con el grosor de un solo átomo, su tercera dimensión (altura/espesor) es atómicamente despreciable, configurándose como un plano de dos dimensiones.',
+    correctOption: 2,
+    correctLetter: 'B',
+    competency: 'Lectura Crítica.',
+    component: 'Lectura Crítica - Jerarquización de Valores Éticos y Políticos',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Evalúa la coherencia lógica de las premisas y conclusiones de un texto clásico.',
+    standard: 'Reconozco los conceptos éticos y filosóficos en la literatura renacentista y barroca.',
+    justification: 'Quijote concede que la justicia de las letras es "fin generoso y alto", pero concluye que la paz es la condición previa y fundamental de todos los demás bienes civiles.',
     invalidOptionsReasoning: {
-      A: 'La densidad no determina el número de dimensiones espaciales de un objeto.',
-      B: 'La resistencia mecánica es una propiedad física, no la causa de su bidimensionalidad geométrica.',
-      D: 'La transparencia óptica no define las dimensiones espaciales de una estructura.'
+      A: 'No condena las leyes; las alaba como dignas de respeto.',
+      C: 'El debate es de dignidad moral y teleológica, no de sueldos monetarios.',
+      D: 'El fin de las armas no es la guerra por sí misma sino alcanzar la paz duradera.'
     },
     socraticHints: {
-      recordar: '¿Cuál es el grosor exacto de la lámina de carbono del grafeno?',
-      comprender: '¿Por qué una superficie de un solo átomo de espesor se modela como bidimensional en física cuántica?',
-      aplicar: 'Anota en tu cuaderno: "Bidimensional = Estructura plana en 2D al tener el espesor de un solo átomo".',
-      analizar: '¿Por qué la opción C es la única conclusión lógicamente válida?'
-    }
+      recordar: 'Revisa la última frase del fragmento.',
+      comprender: '¿Puede aplicarse la justicia en un país donde no hay paz y reina el caos?',
+      aplicar: 'Anota en tu cuaderno: "Jerarquía de fines: Paz (condición básica) > Justicia distributiva".',
+      analizar: 'Evalúa el pensamiento humanista renacentista de Cervantes sobre la paz.'
+    },
+    icfesCode: 'I_1110103'
   },
   {
     id: 1104,
     grade: 11,
     questionNumber: 4,
-    title: 'Nobel de Física por el Grafeno - Título más adecuado',
-    contextText: TEXTO_GRAFENO_G11,
-    statement: `De acuerdo con la información acerca de los ganadores del premio, ¿cuál de los siguientes sería el titulo más adecuado para este artículo?`,
+    title: 'Uso de la retórica y la oratoria renacentista en Cervantes',
+    contextText: TEXTO_QUIJOTE_G11,
+    statement: 'El tono docto, ordenado y perfectamente estructurado que exhibe Don Quijote en este pasaje demuestra ante los oyentes que el personaje:',
     options: [
-      { number: 1, letter: 'A', text: 'Nobel de Física para dos científicos europeos por sus trabajos sobre el grafeno.' },
-      { number: 2, letter: 'B', text: 'Nobel de Física para dos científicos holandeses por sus trabajos sobre el grafeno.' },
-      { number: 3, letter: 'C', text: 'Nobel de Física para dos científicos británicos por sus trabajos sobre el grafeno.' },
-      { number: 4, letter: 'D', text: 'Nobel de Física para dos científicos suecos por sus trabajos sobre el grafeno.' }
+      { number: 1, letter: 'A', text: 'Había perdido por completo la capacidad de hablar en castellano.' },
+      { number: 2, letter: 'B', text: 'No es simplemente un loco extravagante, sino un humanista de vastísima cultura y brillante elocuencia cuando razona sobre ideales universales.' },
+      { number: 3, letter: 'C', text: 'Estaba leyendo un manuscrito oculto dentro de su yelmo.' },
+      { number: 4, letter: 'D', text: 'Se había olvidado de su amada Dulcinea del Toboso.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
-    competency: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    component: 'Texto Continuo - Noticia',
-    affirmation: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    evidence: 'Identifica los eventos narrados de manera explícita en un texto y los personajes involucrados.',
-    standard: 'Reconozco las características de los diversos tipos de texto que leo.',
-    justification: 'La respuesta correcta es la A, ya que el texto precisa que Geim es holandés y Novoselov es ruso-británico; al tener diferentes nacionalidades de un mismo continente, la designación precisa y englobante es "dos científicos europeos".',
+    correctOption: 2,
+    correctLetter: 'B',
+    competency: 'Lectura Crítica.',
+    component: 'Caracterización Psicológica y Dualidad Cordura/Locura',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Infiere la complejidad psicológica y el diseño retórico de los personajes novelescos.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'Una de las mayores genialidades cervantinas es la dualidad de Don Quijote: disparatado en temas de caballería andante pero extraordinariamente sabio, lúcido y persuasivo en temas morales, políticos y humanísticos.',
     invalidOptionsReasoning: {
-      B: 'Novoselov no es holandés, es ruso-británico.',
-      C: 'Geim no es británico, es holandés.',
-      D: 'La Academia de Ciencias es sueca, pero los científicos galardonados no lo son.'
+      A: 'Su prosa castellana es un prodigio de elegancia sintáctica.',
+      C: 'Improvisa su oratoria de memoria gracias a su vasta formación renacentista.',
+      D: 'Su devoción por Dulcinea permanece intacta en toda la novela.'
     },
     socraticHints: {
-      recordar: '¿Qué nacionalidad tiene Andre Geim y cuál tiene Konstantin Novoselov?',
-      comprender: '¿Qué término geográfico incluye correctamente a un holandés y a un ruso-británico sin caer en imprecisiones?',
-      aplicar: 'Anota en tu cuaderno las nacionalidades de ambos autores para descartar las opciones B, C y D.',
-      analizar: '¿Por qué la opción A sintetiza con exactitud y neutralidad el hecho noticioso?'
-    }
+      recordar: '¿Cómo habla Don Quijote cuando no está atacando molinos de viento?',
+      comprender: '¿Por qué la novela moderna crea personajes complejos y no planos o estereotipados?',
+      aplicar: 'Escribe en tu cuaderno: "Dualidad quijotesca: Monomanía caballeresca vs Sabiduría humanista universal".',
+      analizar: 'Sintetiza la maestría oratoria y el estilo de los grandes discursos del Quijote.'
+    },
+    icfesCode: 'I_1110104'
   },
-
-  // =========================================================================
-  // TEXTOS 2 Y 3: DEL CONDÓN Y OTROS DEMONIOS / ANUNCIO PANFLETARIO (Preguntas 5 a 7)
-  // =========================================================================
   {
     id: 1105,
     grade: 11,
     questionNumber: 5,
-    title: 'Del condón y otros demonios - Tipología de los textos 1 y 2',
-    contextText: TEXTO_CONDON_G11,
-    statement: `Respectivamente, los textos 1 y 2 son de carácter`,
+    title: 'Sentido del término "oficio de ganapanes"',
+    contextText: TEXTO_QUIJOTE_G11,
+    statement: 'En la frase “como si su ejercicio fuese oficio de ganapanes, para el cual no es menester más de buenas fuerzas”, la palabra “ganapán” se emplea en sentido despectivo para referirse a:',
     options: [
-      { number: 1, letter: 'A', text: 'científico y panfletario.' },
-      { number: 2, letter: 'B', text: 'argumentativo y panfletario.' },
-      { number: 3, letter: 'C', text: 'científico y narrativo.' },
-      { number: 4, letter: 'D', text: 'narrativo y científico.' }
+      { number: 1, letter: 'A', text: 'Un maestro panadero especializado en trigo candeal.' },
+      { number: 2, letter: 'B', text: 'Un trabajador rudo y sin instrucción que realiza labores pesadas de carga o fuerza bruta por un jornal mínimo.' },
+      { number: 3, letter: 'C', text: 'Un juez de la corte de Castilla.' },
+      { number: 4, letter: 'D', text: 'Un estudiante de teología en la Universidad de Salamanca.' }
     ],
     correctOption: 2,
     correctLetter: 'B',
-    competency: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    component: 'Texto Continuo y Discontinuo - Tipología Discursiva',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Contextualiza adecuadamente un texto o la información contenida en él.',
-    standard: 'Asumo una actitud crítica frente a los textos que leo y elaboro, y frente a otros tipos de texto: explicativos, descriptivos y narrativos.',
-    justification: 'La respuesta correcta es la opción B. El primer texto es un artículo de opinión y argumentación ciudadana que defiende el uso del preservativo con razones y contexto de salud pública. El segundo texto es panfletario y propagandístico, pues utiliza recursos sensacionalistas y datos sesgados para atacar una política pública.',
+    competency: 'Lectura Crítica.',
+    component: 'Léxico y Semántica en Contexto Histórico Clásico',
+    affirmation: 'Recupera información explícita e implícita de vocabulario arcaico y connotativo.',
+    evidence: 'Identifica el significado contextual de términos del Siglo de Oro español.',
+    standard: 'Comprendo el significado literal y contextual de palabras en textos literarios clásicos.',
+    justification: 'Históricamente, "ganapán" era el mozo de cuerda o cargador de plaza pública que realizaba faenas físicas sin requerir estudio ni pericia intelectual.',
     invalidOptionsReasoning: {
-      A: 'El texto 1 no es un paper científico con metodología experimental, sino una columna/artículo argumentativo en prensa.',
-      C: 'Ninguno de los dos textos es narrativo (no cuentan relatos de ficción).',
-      D: 'El texto 1 no es narrativo ni el texto 2 cumple con el rigor científico objetivo.'
+      A: 'No es un panadero artesanal.',
+      C: 'Los jueces son los letrados a los que se contrapone el concepto.',
+      D: 'Los estudiantes universitarios formaban parte del estamento letrado.'
     },
     socraticHints: {
-      recordar: '¿Cuál es la intención del autor en el Texto 1 y qué formato tiene el Texto 2?',
-      comprender: '¿Por qué el uso de adjetivos como "abominable" y la mezcla de fuentes caracteriza al texto 2 como panfletario?',
-      aplicar: 'Escribe en tu cuaderno: "Texto 1 = Argumentativo de opinión / Texto 2 = Panfletario publicitario".',
-      analizar: '¿Por qué la opción B clasifica con precisión la naturaleza discursiva de ambos textos?'
-    }
+      recordar: 'Descompón la palabra: gana + pan (alguien que solo trabaja con el cuerpo para ganar el pan diario).',
+      comprender: '¿Por qué Don Quijote se ofende de que comparen al noble caballero con un simple cargador de bultos?',
+      aplicar: 'Anota en tu cuaderno: "Ganapán = Hombre rudo que vive de trabajos de mera fuerza física".',
+      analizar: 'Relaciona el léxico estamental con la estructura social del Renacimiento.'
+    },
+    icfesCode: 'I_1110105'
   },
   {
     id: 1106,
     grade: 11,
     questionNumber: 6,
-    title: 'Del condón y otros demonios - Intertextualidad y alusión directa',
-    contextText: TEXTO_CONDON_G11,
-    statement: `Lo que permite entender que el texto 1 es una respuesta al texto 2 es la alusión`,
+    title: 'Trascendencia universal de la obra de Cervantes',
+    contextText: TEXTO_QUIJOTE_G11,
+    statement: 'Don Quijote de la Mancha (1605-1615) es reconocida mundialmente como la primera novela moderna porque:',
     options: [
-      { number: 1, letter: 'A', text: 'directa al doctor J. G.' },
-      { number: 2, letter: 'B', text: 'directa a los condones.' },
-      { number: 3, letter: 'C', text: 'indirecta al machismo.' },
-      { number: 4, letter: 'D', text: 'indirecta a los valores morales.' }
+      { number: 1, letter: 'A', text: 'Fue el primer libro impreso en una máquina eléctrica de vapor.' },
+      { number: 2, letter: 'B', text: 'Inaugura la polifonía, el perspectivismo crítico, la evolución psicológica de los personajes y la parodia desmitificadora de los géneros tradicionales.' },
+      { number: 3, letter: 'C', text: 'Prohíbe a los lectores discrepar de la opinión del narrador.' },
+      { number: 4, letter: 'D', text: 'Fue escrita en verso rimado en su totalidad.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
-    competency: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    component: 'Texto Continuo y Discontinuo - Relaciones Intertextuales',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Establece relaciones entre un texto y otros textos o enunciados.',
-    standard: 'Relaciono el significado de los textos que leo con los contextos sociales, culturales y políticos en los cuales se han producido.',
-    justification: 'La respuesta correcta es la A. El texto 1 denuncia puntualmente los avisos de prensa "liderados por el doctor J. G.", quien aparece explícitamente como firmante y promotor del aviso del texto 2.',
+    correctOption: 2,
+    correctLetter: 'B',
+    competency: 'Lectura Crítica.',
+    component: 'Historia Literaria y Teoría de la Novela Moderna',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Evalúa la trascendencia estética e histórica de las cumbres de la literatura universal.',
+    standard: 'Reconozco la importancia de Miguel de Cervantes en la consolidación de la novela moderna.',
+    justification: 'Cervantes rompe con la rigidez dogmática y caballeresca medieval: introduce el diálogo de múltiples perspectivas (Quijote y Sancho se enriquecen mutuamente), la metaficción y la ambigüedad moral.',
     invalidOptionsReasoning: {
-      B: 'Hablar de condones es solo el tema general, no el vínculo dialógico concreto entre ambos textos.',
-      C: 'El machismo se menciona en el texto 1 pero no aparece en el texto 2.',
-      D: 'Los valores morales no constituyen la referencia directa que conecta a ambos documentos.'
+      A: 'Se imprimió en prensas de tipos móviles de madera/plomo del siglo XVII.',
+      C: 'Al contrario, Cervantes invita al lector libre ("desocupado lector") a juzgar por sí mismo.',
+      D: 'Es una obra monumental escrita predominantemente en prosa.'
     },
     socraticHints: {
-      recordar: '¿Qué nombre de persona o iniciales aparecen en ambos textos?',
-      comprender: '¿Por qué nombrar al "doctor J. G." conecta inmediatamente ambos textos como réplica y contrarréplica?',
-      aplicar: 'Anota en tu cuaderno la relación intertextual entre la mención del Dr. J.G. en el Texto 1 y el encabezado del Texto 2.',
-      analizar: '¿Por qué la opción A es la evidencia textual irrefutable?'
-    }
+      recordar: '¿Por qué Cervantes es considerado el padre indiscutible de la novela moderna?',
+      comprender: '¿Qué es el perspectivismo (ver la realidad desde diferentes puntos de vista)?',
+      aplicar: 'Escribe en tu cuaderno: "Cervantes y la novela moderna: Perspectivismo, diálogo polifónico y complejidad psicológica".',
+      analizar: 'Sintetiza el impacto cultural de Don Quijote en las letras universales.'
+    },
+    icfesCode: 'I_1110106'
   },
+
+  // ---------------------------------------------------------------------------
+  // TEXTO 2: INFOGRAFÍA CRISIS DEL AGUA (Preguntas 7 a 11)
+  // ---------------------------------------------------------------------------
   {
     id: 1107,
     grade: 11,
     questionNumber: 7,
-    title: 'Del condón y otros demonios - Propósito persuasivo del texto 2',
-    contextText: TEXTO_CONDON_G11,
-    statement: `El autor del texto 2 recurre a datos estadísticos para`,
+    title: 'Distribución sectorial del consumo de agua dulce global',
+    contextText: TEXTO_CRISIS_AGUA_G11,
+    statement: 'A partir de los porcentajes sectoriales presentados en la infografía, se concluye que la mayor presión de extracción sobre el agua dulce mundial proviene de:',
     options: [
-      { number: 1, letter: 'A', text: 'inducir el uso del condón entre los lectores homosexuales.' },
-      { number: 2, letter: 'B', text: 'convencer a los lectores de que el uso del condón es seguro.' },
-      { number: 3, letter: 'C', text: 'estimular el uso del preservativo entre los lectores heterosexuales.' },
-      { number: 4, letter: 'D', text: 'persuadir a los lectores de que el uso del condón es inseguro.' }
+      { number: 1, letter: 'A', text: 'El consumo doméstico en los hogares urbanos con un 10%.' },
+      { number: 2, letter: 'B', text: 'La agricultura y ganadería intensiva con un 70%, debido principalmente al riego ineficiente.' },
+      { number: 3, letter: 'C', text: 'La industria manufacturera y termoeléctrica con un 20%.' },
+      { number: 4, letter: 'D', text: 'El agua embotellada para deportistas de alto rendimiento.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
-    competency: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    component: 'Texto Discontinuo - Intención Persuasiva',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Reconoce las estrategias discursivas en un texto.',
-    standard: 'Asumo una actitud crítica frente a los textos que leo y elaboro, y frente a otros tipos de texto: explicativos, descriptivos y narrativos.',
-    justification: 'La respuesta correcta es la opción D. El texto 2 acumula cifras de fallas y porcentajes de riesgo con el propósito deliberado de infundir desconfianza en el preservativo para promover la abstinencia.',
+    correctOption: 2,
+    correctLetter: 'B',
+    competency: 'Lectura Crítica.',
+    component: 'Texto Discontinuo - Infografía / Análisis Cuantitativo de Recursos Hídricos',
+    affirmation: 'Recupera información literal y cuantitativa expresada en diferentes partes del texto.',
+    evidence: 'Ubica elementos del contenido de gráficos y balances estadísticos.',
+    standard: 'Utilizo estrategias de búsqueda, selección y procesamiento crítico de información.',
+    justification: 'El sector agropecuario absorbe el 70% del agua dulce mundial, demostrando que la seguridad hídrica depende de modernizar urgentemente los sistemas de riego agrícola.',
     invalidOptionsReasoning: {
-      A: 'El texto no busca incentivar el uso del condón en ninguna población.',
-      B: 'El mensaje afirma exactamente lo opuesto: sostiene que el condón falla y es inseguro.',
-      C: 'Pretende desestimular por completo el uso del preservativo.'
+      A: 'El consumo doméstico representa solo una décima parte (10%).',
+      C: 'La industria abarca el 20%, menos de un tercio del agro.',
+      D: 'El agua embotellada es una fracción mínima del consumo municipal.'
     },
     socraticHints: {
-      recordar: '¿Qué dicen los porcentajes citados en el texto 2 (26 %, 30 %, 33 % de fallas)?',
-      comprender: '¿Cuál es la conclusión que el texto 2 quiere que el lector adopte?',
-      aplicar: 'Escribe en tu cuaderno: "Estrategia del Texto 2 = Usar datos de falla para persuadir de que el condón es inseguro".',
-      analizar: '¿Por qué la opción D resume fielmente el objetivo retórico del anuncio?'
-    }
+      recordar: 'Compara los tres porcentajes sectoriales: 70%, 20% y 10%.',
+      comprender: '¿Por qué la producción masiva de alimentos requiere tanta agua (riego, pastos)?',
+      aplicar: 'Anota en tu cuaderno: "Uso del agua dulce: 70% Agropecuario / 20% Industria / 10% Doméstico".',
+      analizar: 'Identifica el sector clave donde deben concentrarse las políticas de ahorro y tecnificación.'
+    },
+    icfesCode: 'I_1110201',
+    hasDiagram: true
   },
-
-  // =========================================================================
-  // TEXTO 4: EL AMOR EN LOS TIEMPOS DEL CÓLERA - Gabriel García Márquez (Preguntas 8 a 11)
-  // =========================================================================
   {
     id: 1108,
     grade: 11,
     questionNumber: 8,
-    title: 'El amor en los tiempos del cólera - Deducción de la edad de Fermina Daza',
-    contextText: TEXTO_FERMINA_G11,
-    statement: `Según el texto, Fermina Daza`,
+    title: 'Implicación de la Resolución 64/292 de la ONU (Derecho Humano al Agua)',
+    contextText: TEXTO_CRISIS_AGUA_G11,
+    statement: 'La consagración del acceso al agua potable como un “Derecho Humano esencial” por la Asamblea General de la ONU implica legal y éticamente que:',
     options: [
-      { number: 1, letter: 'A', text: 'tiene exactamente 50 años de edad.' },
-      { number: 2, letter: 'B', text: 'debe tener más de 50 años de edad.' },
-      { number: 3, letter: 'C', text: 'debe tener menos de 50 años de edad.' },
-      { number: 4, letter: 'D', text: 'tiene la misma edad que tenía su esposo.' }
+      { number: 1, letter: 'A', text: 'El agua debe considerarse una mercancía comercial sujeta exclusivamente a las leyes del libre mercado y la oferta y demanda.' },
+      { number: 2, letter: 'B', text: 'Los Estados tienen la obligación jurídica ineludible de garantizar a todos los ciudadanos agua limpia, suficiente y asequible como condición para la vida digna.' },
+      { number: 3, letter: 'C', text: 'Se prohíbe el uso de agua para regar plantas en los parques públicos.' },
+      { number: 4, letter: 'D', text: 'Solo las personas con título universitario pueden acceder a redes de acueducto.' }
     ],
     correctOption: 2,
     correctLetter: 'B',
-    competency: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    component: 'Texto Continuo - Literario / Novela',
-    affirmation: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    evidence: 'Identifica y caracteriza las ideas o afirmaciones presentes en un texto informativo o narrativo.',
-    standard: 'Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.',
-    justification: 'La respuesta correcta es la opción B. El texto indica que vivió "medio siglo de una servidumbre" (50 años de matrimonio). Como nadie se casa recién nacido, al sumar sus años de soltería y juventud previa, su edad forzosamente supera los 50 años.',
+    competency: 'Lectura Crítica.',
+    component: 'Lectura Crítica - Derechos Humanos y Bienes Comunes Globales',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Infiere implicaciones jurídicas, éticas y políticas de resoluciones internacionales.',
+    standard: 'Comprendo los factores sociales, políticos y normativos que determinan los textos normativos.',
+    justification: 'Al elevar el agua a la categoría de derecho humano inalienable, se prioriza el bienestar y la dignidad humana por encima de la privatización y el lucro comercial.',
     invalidOptionsReasoning: {
-      A: '50 años fue la duración del matrimonio, no su edad biológica total.',
-      C: 'Es imposible que tenga menos de 50 años si su matrimonio duró medio siglo.',
-      D: 'El texto no menciona la edad comparada ni la fecha de nacimiento de su difunto esposo.'
+      A: 'La resolución justamente combate la mercantilización que niega el agua a los pobres.',
+      C: 'No prohíbe usos ecológicos y urbanos.',
+      D: 'Los derechos humanos son universales sin discriminación académica o económica.'
     },
     socraticHints: {
-      recordar: '¿Cuánto tiempo duró el matrimonio ("servidumbre que la había hecho feliz") de Fermina Daza?',
-      comprender: 'Si estuvo casada 50 años, ¿qué edad mínima debe tener una persona adulta?',
-      aplicar: 'Anota en tu cuaderno: "50 años de matrimonio + edad al casarse = Más de 50 años de edad".',
-      analizar: '¿Por qué la opción B es la inferencia cronológica incuestionable?'
-    }
+      recordar: 'Lee la viñeta sobre la Resolución 64/292 en el recuadro geopolítico.',
+      comprender: '¿Qué diferencia hay entre considerar un recurso como una mercancía privada o como un derecho humano vital?',
+      aplicar: 'Escribe en tu cuaderno: "Resolución ONU 64/292: El agua potable no es un negocio; es un derecho humano vital".',
+      analizar: 'Sintetiza la obligación vinculante del Estado frente a la garantía del saneamiento básico.'
+    },
+    icfesCode: 'I_1110202'
   },
   {
     id: 1109,
     grade: 11,
     questionNumber: 9,
-    title: 'El amor en los tiempos del cólera - La carta a Florentino Ariza',
-    contextText: TEXTO_FERMINA_G11,
-    statement: `Según la primera oración del texto, Fermina Daza escribió una carta`,
+    title: 'Conflictos geopolíticos por cuencas transfronterizas',
+    contextText: TEXTO_CRISIS_AGUA_G11,
+    statement: 'En la sección geopolítica, la mención de cuencas fluviales como el Nilo, Tigris-Éufrates, Indo y Jordán sirve para advertir que:',
     options: [
-      { number: 1, letter: 'A', text: 'de contenido exagerado y contradictorio.' },
-      { number: 2, letter: 'B', text: 'cuyo contenido nunca llegó a su destinatario.' },
-      { number: 3, letter: 'C', text: 'de contenido amoroso pero con palabras hirientes.' },
-      { number: 4, letter: 'D', text: 'cuyo contenido fue malinterpretado por el destinatario.' }
+      { number: 1, letter: 'A', text: 'Son los mejores destinos turísticos para competencias de canotaje.' },
+      { number: 2, letter: 'B', text: 'La escasez hídrica compartida y la construcción unilateral de represas pueden desatar guerras y crisis diplomáticas entre naciones limítrofes.' },
+      { number: 3, letter: 'C', text: 'En esos ríos ya no queda ni una sola gota de agua dulce.' },
+      { number: 4, letter: 'D', text: 'Los peces de esos ríos no son aptos para el consumo humano.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
-    competency: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    component: 'Texto Continuo - Literario',
-    affirmation: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    evidence: 'Entiende el significado de los elementos locales que constituyen un texto.',
-    standard: 'Identifico en obras de la literatura universal el lenguaje, las características formales, las épocas y escuelas, estilos, tendencias, temáticas, géneros y autores, entre otros aspectos.',
-    justification: 'La respuesta correcta es la opción D. La primera frase enuncia de manera explícita que la carta, escrita con furia y oprobios, fue interpretada erróneamente por Florentino Ariza como una declaración de amor.',
+    correctOption: 2,
+    correctLetter: 'B',
+    competency: 'Lectura Crítica.',
+    component: 'Geopolítica de los Recursos Naturales e Hidroconflictos',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'El estrés hídrico en cuencas internacionales genera tensiones militares y estratégicas (como las disputas entre Egipto y Etiopía por el Nilo o Turquía e Irak por el Éufrates).',
     invalidOptionsReasoning: {
-      A: 'La carta era clara en su furia, no contradictoria para la autora.',
-      B: 'Florentino Ariza la recibió y la leyó.',
-      C: 'Fermina Daza no escribió una carta de amor; fue Florentino quien la leyó así.'
+      A: 'No es una guía turística deportiva.',
+      C: 'Los ríos fluyen pero su caudal es disputado intensamente.',
+      D: 'Es un problema de soberanía hídrica y seguridad internacional, no de ictiología.'
     },
     socraticHints: {
-      recordar: '¿Qué emoción motivó a Fermina a escribir la carta y cómo la recibió Florentino?',
-      comprender: '¿Qué significa que Florentino viera amor donde había "rabia ciega y furia"?',
-      aplicar: 'Anota en tu cuaderno: "Contenido real = Rabia y desahogo / Interpretación de Florentino = Carta de amor (malinterpretada)".',
-      analizar: '¿Por qué la opción D es la única paráfrasis exacta de la primera oración?'
-    }
+      recordar: '¿Qué países comparten el río Nilo o el río Tigris y Éufrates?',
+      comprender: '¿Qué sucede si un país ubicado arriba en la cordillera construye una megarepresa que corta el agua del país de abajo?',
+      aplicar: 'Anota en tu cuaderno el concepto de "Hidroconflicto o Guerras del Agua".',
+      analizar: 'Evalúa la urgencia de tratados internacionales de gobernanza compartida de cuencas.'
+    },
+    icfesCode: 'I_1110203'
   },
   {
     id: 1110,
     grade: 11,
     questionNumber: 10,
-    title: 'El amor en los tiempos del cólera - Origen de la crisis de Fermina',
-    contextText: TEXTO_FERMINA_G11,
-    statement: `Según el texto, Fermina Daza atraviesa una crisis provocada por`,
+    title: 'Gobernanza pública y comunitaria vs especulación financiera',
+    contextText: TEXTO_CRISIS_AGUA_G11,
+    statement: 'En las pistas para la seguridad hídrica, la propuesta de “Gobernanza pública y comunitaria democrática del agua contra la especulación financiera” defiende que:',
     options: [
-      { number: 1, letter: 'A', text: 'la reciente muerte de su marido.' },
-      { number: 2, letter: 'B', text: 'la presencia de un fantasma en su casa.' },
-      { number: 3, letter: 'C', text: 'una enorme ofensa de la que fue víctima.' },
-      { number: 4, letter: 'D', text: 'no hallar respuesta a las preguntas que la atormentan.' }
+      { number: 1, letter: 'A', text: 'Los fondos de inversión de Wall Street deben comprar todas las fuentes de agua dulce del mundo.' },
+      { number: 2, letter: 'B', text: 'La gestión de los acueductos y cuencas debe estar en manos de las comunidades y el Estado para garantizar equidad, impidiendo que el agua cotice en bolsas como un activo especulativo.' },
+      { number: 3, letter: 'C', text: 'Se debe prohibir a las personas beber más de un vaso de agua al día.' },
+      { number: 4, letter: 'D', text: 'Las juntas comunitarias de agua deben cobrar tarifas en criptomonedas.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
-    competency: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    component: 'Texto Continuo - Narrativo',
-    affirmation: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    evidence: 'Entiende el significado de los elementos locales que constituyen un texto.',
-    standard: 'Identifico en obras de la literatura universal el lenguaje, las características formales, las épocas y escuelas, estilos, tendencias, temáticas, géneros y autores, entre otros aspectos.',
-    justification: 'La respuesta correcta es la opción A. Su desorientación, el vacío de la casa y la pérdida de identidad derivan directamente del fallecimiento de su esposo tras medio siglo de vida en común.',
+    correctOption: 2,
+    correctLetter: 'B',
+    competency: 'Lectura Crítica.',
+    component: 'Lectura Crítica - Soberanía Ciudadana y Modelos de Gestión Hídrica',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Infiere argumentos y posiciones ideológicas frente a la administración de bienes comunes.',
+    standard: 'Analizo críticamente los discursos sobre medio ambiente y economía global.',
+    justification: 'Defiende el modelo de acueductos comunitarios y empresas públicas transparentes frente a la financierización del agua en los mercados de futuros de materias primas.',
     invalidOptionsReasoning: {
-      B: 'La palabra "fantasma" es una metáfora de cómo se sentía ella misma en la casa vacía.',
-      C: 'La ofensa de Florentino ocurrió después, pero la crisis existencial de fondo proviene del duelo y la viudez.',
-      D: 'No tener a quién preguntar las cosas cotidianas es un síntoma de la ausencia del esposo, no la causa raíz.'
+      A: 'La propuesta combate expresamente la especulación financiera bursátil.',
+      C: 'Promueve la garantía de acceso suficiente, no el racionamiento draconiano.',
+      D: 'Es un modelo solidario social, no de especulación de divisas digitales.'
     },
     socraticHints: {
-      recordar: '¿Qué acontecimiento crucial cambió el estado de Fermina Daza ("una vez muerto el esposo")?',
-      comprender: '¿Por qué la muerte de su compañero tras 50 años desmoronó su rutina y su identidad?',
-      aplicar: 'Anota en tu cuaderno: "Causa de la crisis existencial = Muerte del esposo y soledad súbita".',
-      analizar: '¿Por qué la opción A identifica la causa primordial del conflicto narrativo?'
-    }
+      recordar: 'Revisa la pauta número 3 de la sección de seguridad hídrica.',
+      comprender: '¿Por qué permitir que el agua cotice en bolsa encarece el servicio para las familias más pobres?',
+      aplicar: 'Escribe en tu cuaderno: "Gobernanza comunitaria = Control social democrático de los acueductos".',
+      analizar: 'Sintetiza la pugna entre el enfoque mercantilista del agua y el enfoque de bien común universal.'
+    },
+    icfesCode: 'I_1110204'
   },
   {
     id: 1111,
     grade: 11,
     questionNumber: 11,
-    title: 'El amor en los tiempos del cólera - Búsqueda de identidad',
-    contextText: TEXTO_FERMINA_G11,
-    statement: `De acuerdo con el primer párrafo, Fermina Daza quiere`,
+    title: 'Propósito global del informe de ONU Agua / UNESCO',
+    contextText: TEXTO_CRISIS_AGUA_G11,
+    statement: 'El propósito primordial del informe de ONU Agua y UNESCO es:',
     options: [
-      { number: 1, letter: 'A', text: 'recobrar su propia identidad.' },
-      { number: 2, letter: 'B', text: 'reconciliarse con su antiguo amante.' },
-      { number: 3, letter: 'C', text: 'hallar respuesta a las preguntas de su marido.' },
-      { number: 4, letter: 'D', text: 'alcanzar la felicidad que siempre le fue esquiva.' }
+      { number: 1, letter: 'A', text: 'Publicitar la construcción de piscinas de lujo en zonas turísticas.' },
+      { number: 2, letter: 'B', text: 'Alertar a la comunidad internacional sobre la urgencia de la crisis hídrica global y proponer soluciones estructurales basadas en derechos, sostenibilidad y gobernanza democrática.' },
+      { number: 3, letter: 'C', text: 'Demostrar que la sequía desaparecerá por sí sola en los próximos dos años.' },
+      { number: 4, letter: 'D', text: 'Recomendar el cierre de todas las empresas agrícolas del planeta.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
-    competency: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    component: 'Texto Continuo - Literario',
-    affirmation: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    evidence: 'Identifica y caracteriza las diferentes voces o situaciones presentes en un texto.',
-    standard: 'Identifico en obras de la literatura universal el lenguaje, las características formales, las épocas y escuelas, estilos, tendencias, temáticas, géneros y autores, entre otros aspectos.',
-    justification: 'La respuesta correcta es la opción A. El texto señala textualmente que "quería ser otra vez ella misma, recuperar todo cuanto había tenido que ceder" en sus años de matrimonio.',
+    correctOption: 2,
+    correctLetter: 'B',
+    competency: 'Lectura Crítica.',
+    component: 'Pragmática y Valoración Crítica Global',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Identifica la intención comunicativa del autor y el tipo de texto.',
+    standard: 'Identifico la intención comunicativa de cada uno de los textos leídos.',
+    justification: 'El documento integra diagnóstico cuantitativo riguroso, análisis de riesgos geopolíticos y propuestas de política pública con enfoque de derechos humanos para movilizar a la sociedad.',
     invalidOptionsReasoning: {
-      B: 'En ese momento rechaza con furia a Florentino Ariza.',
-      C: 'Era su marido quien respondía las preguntas cotidianas, no a la inversa.',
-      D: 'El texto aclara que su matrimonio la había hecho feliz, no que la felicidad le fuera esquiva.'
+      A: 'No es propaganda de complejos recreativos.',
+      C: 'Advierte que el cambio climático agravará el estrés hídrico si no se toman medidas urgentes.',
+      D: 'Propone tecnificar el riego (goteo), no clausurar la producción agroalimentaria.'
     },
     socraticHints: {
-      recordar: '¿Qué frase describe el anhelo íntimo de Fermina en el primer párrafo?',
-      comprender: '¿Qué significa "ser otra vez ella misma" tras 50 años adaptándose a la vida conyugal?',
-      aplicar: 'Anota en tu cuaderno: "Propósito de Fermina = Recobrar su propia identidad e independencia".',
-      analizar: '¿Por qué la opción A sintetiza con exactitud la afirmación del texto?'
-    }
+      recordar: '¿Quiénes emiten este reporte internacional y con qué finalidad?',
+      comprender: '¿Por qué este problema involucra a la totalidad de la humanidad?',
+      aplicar: 'Anota en tu cuaderno 3 acciones ciudadanas para cuidar el agua en Ibagué y Colombia.',
+      analizar: 'Evalúa la coherencia entre datos estadísticos y propuestas de solución.'
+    },
+    icfesCode: 'I_1110205'
   },
 
-  // =========================================================================
-  // TEXTO 5: TRATADO SOBRE EL CIUDADANO - Thomas Hobbes (Preguntas 12 a 16)
-  // =========================================================================
+  // ---------------------------------------------------------------------------
+  // TEXTO 3: CIEN AÑOS DE SOLEDAD (Preguntas 12 a 16)
+  // ---------------------------------------------------------------------------
   {
     id: 1112,
     grade: 11,
     questionNumber: 12,
-    title: 'Tratado sobre el ciudadano - Antónimo de benevolencia',
-    contextText: TEXTO_HOBBES_G11,
-    statement: `Según el enunciado anterior, ¿cuál de las siguientes palabras sería el antónimo más adecuado para la palabra “benevolencia”?`,
+    title: 'Cien Años de Soledad - La estrategia del etiquetado contra el olvido',
+    contextText: TEXTO_CIEN_ANOS_G11,
+    statement: 'En el episodio de la peste del olvido en Macondo, la estrategia inicial de Aureliano y José Arcadio Buendía de etiquetar todas las cosas con un hisopo entintado surge porque:',
     options: [
-      { number: 1, letter: 'A', text: 'Generosidad.' },
-      { number: 2, letter: 'B', text: 'Indolencia.' },
-      { number: 3, letter: 'C', text: 'Agrado.' },
-      { number: 4, letter: 'D', text: 'Egoísmo.' }
+      { number: 1, letter: 'A', text: 'Querían vender los muebles de la casa en una subasta pública.' },
+      { number: 2, letter: 'B', text: 'La pérdida progresiva de la memoria amenazaba con borrar los nombres y la identidad de los objetos cotidianos y los seres vivos.' },
+      { number: 3, letter: 'C', text: 'El corregidor del pueblo exigía un inventario tributario de propiedades.' },
+      { number: 4, letter: 'D', text: 'Los niños estaban aprendiendo a escribir en la escuela primaria.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
-    competency: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    component: 'Texto Continuo - Filosófico / Léxico y Semántica',
-    affirmation: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    evidence: 'Entiende el significado de los elementos locales que constituyen un texto.',
-    standard: 'Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.',
-    justification: 'La respuesta correcta es la opción D. En el contexto de Hobbes, la benevolencia alude a la inclinación altruista y desinteresada hacia el bien ajeno; su antónimo directo es el egoísmo (inclinación exclusiva hacia el propio beneficio y dominio).',
+    correctOption: 2,
+    correctLetter: 'B',
+    competency: 'Lectura Crítica.',
+    component: 'Texto Continuo - Realismo Mágico / Metáfora de la Memoria y la Identidad',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Infiere motivos alegóricos, mitos y procesos de resistencia cultural en la novela.',
+    standard: 'Caracterizo los textos literarios del Boom Latinoamericano y el Realismo Mágico.',
+    justification: 'La peste del insomnio trae como síntoma fatal el olvido paulatino de los nombres, de la utilidad de las cosas y finalmente de la propia identidad personal y la historia colectiva.',
     invalidOptionsReasoning: {
-      A: 'Generosidad es un sinónimo o valor afín a la benevolencia.',
-      B: 'Indolencia es pereza o apatía, no la oposición ética a la benevolencia.',
-      C: 'Agrado se refiere a gusto o placer estético/afectivo.'
+      A: 'No es una venta mercantil ni mudanza.',
+      C: 'Aún no había autoridades estatales foráneas en Macondo en ese periodo.',
+      D: 'Es una emergencia epidemiológica existencial de todo el pueblo, no un ejercicio pedagógico.'
     },
     socraticHints: {
-      recordar: '¿Qué significa "benevolencia" en las relaciones humanas según la filosofía política?',
-      comprender: 'Si la benevolencia es procurar el bien mutuo, ¿qué actitud busca solo el interés propio a costa de otros?',
-      aplicar: 'Anota en tu cuaderno: "Benevolencia (altruismo) vs. Egoísmo (búsqueda de interés propio/dominio)".',
-      analizar: '¿Por qué la opción D es el antónimo contextual exacto?'
-    }
+      recordar: '¿Qué le pasó a Aureliano con el pequeño yunque de platería ("tasnute")?',
+      comprender: '¿Por qué perder el nombre de las cosas equivale a empezar a perder la realidad?',
+      aplicar: 'Anota en tu cuaderno: "Episodio de Macondo: La lucha del lenguaje escrito contra la evaporación de la memoria".',
+      analizar: 'Examina cómo García Márquez convierte un drama cognitivo en un prodigio poético.'
+    },
+    icfesCode: 'I_1110301'
   },
   {
     id: 1113,
     grade: 11,
     questionNumber: 13,
-    title: 'Tratado sobre el ciudadano - Función del conector ‘sin embargo’',
-    contextText: TEXTO_HOBBES_G11,
-    statement: `¿Qué función cumple el conector ‘sin embargo’ en el texto anterior?`,
+    title: 'El paso del nombre a la función: El letrero de la vaca',
+    contextText: TEXTO_CIEN_ANOS_G11,
+    statement: 'En el tercer párrafo, la decisión de colgar en la cerviz de la vaca un letrero explicativo más complejo (“Esta es la vaca, hay que ordeñarla...”) revela que los habitantes comprendieron que:',
     options: [
-      { number: 1, letter: 'A', text: 'Aclarar la idea de que la ayuda mutua aumenta las comodidades con la idea de que el dominio de los demás es una mejor forma de aumentarlas.' },
-      { number: 2, letter: 'B', text: 'Desmentir la idea de que la ayuda mutua aumenta las comodidades y afirmar que es por medio del dominio a los demás que se logra.' },
-      { number: 3, letter: 'C', text: 'Contrastar la idea de que la ayuda mutua aumenta las comodidades, con la idea de que es más efectivo dominar a los demás para aumentarlas.' },
-      { number: 4, letter: 'D', text: 'Refutar la idea de que la ayuda mutua aumenta las comodidades al afirmar que en realidad el dominio puede aumentarlas.' }
+      { number: 1, letter: 'A', text: 'La vaca no producía leche fresca por la tarde.' },
+      { number: 2, letter: 'B', text: 'No bastaba con recordar el nombre formal del objeto si se perdía la memoria de su uso práctico, significado y función en la vida humana.' },
+      { number: 3, letter: 'C', text: 'La vaca sabía leer en castellano.' },
+      { number: 4, letter: 'D', text: 'El café con leche era un invento importado de Europa.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
-    competency: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    component: 'Texto Continuo - Filosófico / Conectores Lógicos',
-    affirmation: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    evidence: 'Entiende el significado de los elementos locales que constituyen un texto.',
-    standard: 'Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.',
-    justification: 'La respuesta correcta es la opción A. El conector "sin embargo" matiza y aclara la concesión previa ("aunque la ayuda mutua aumenta comodidades") introduciendo la premisa psicológica de que el hombre calcula que dominar a otros rinde mayores comodidades si no fuera por el miedo.',
+    correctOption: 2,
+    correctLetter: 'B',
+    competency: 'Lectura Crítica.',
+    component: 'Semiótica, Teoría del Significado y Filosofía del Lenguaje',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'García Márquez profundiza en la semiótica: el significante (la palabra "vaca") queda vacío si se borra el significado y la función operativa (ordeñar, hervir la leche, mezclarla con café), mostrando la fragilidad del conocimiento humano.',
     invalidOptionsReasoning: {
-      B: 'Hobbes no desmiente que la cooperación aumente comodidades, solo matiza la vía del dominio.',
-      C: 'No plantea una mera comparación neutral, sino una aclaración de la tendencia natural humana.',
-      D: 'No refuta la premisa inicial, sino que la subordina al análisis del poder y el temor mutuo.'
+      A: 'No es un problema de producción lechera veterinaria.',
+      C: 'El letrero era para los humanos que habían perdido la memoria.',
+      D: 'Es la fórmula de una rutina doméstica cotidiana ancestral.'
     },
     socraticHints: {
-      recordar: '¿Qué idea va antes de "sin embargo" y cuál se introduce después?',
-      comprender: '¿Cómo complementa y aclara Hobbes la relación entre comodidades, asociación y dominio?',
-      aplicar: 'Anota en tu cuaderno el papel del conector adversativo para matizar la premisa hobbesiana.',
-      analizar: '¿Por qué la opción A explica con rigor la función lógica del conector en la guía oficial?'
-    }
+      recordar: 'Lee con detenimiento el letrero colgado en el cuello de la vaca.',
+      comprender: '¿De qué sirve saber que algo se llama "vaca" si no sabes para qué sirve ni qué hacer con ella?',
+      aplicar: 'Escribe en tu cuaderno: "Crisis de la memoria: De la pérdida del nombre a la pérdida del sentido práctico".',
+      analizar: 'Sintetiza la cadena lógica y poética del cartel del café con leche.'
+    },
+    icfesCode: 'I_1110302'
   },
   {
     id: 1114,
     grade: 11,
     questionNumber: 14,
-    title: 'Tratado sobre el ciudadano - Idea opuesta a la tesis principal',
-    contextText: TEXTO_HOBBES_G11,
-    statement: `¿Cuál de las siguientes afirmaciones expresa de manera exacta la idea opuesta a la tesis principal del texto anterior?`,
+    title: 'Alegoría histórica del olvido en América Latina',
+    contextText: TEXTO_CIEN_ANOS_G11,
+    statement: 'En el contexto de la literatura colombiana e hispanoamericana, la “peste del olvido” en Cien años de soledad funciona como una poderosa alegoría de:',
     options: [
-      { number: 1, letter: 'A', text: 'El origen de las sociedades grandes y duraderas se debe a la desconfianza de los hombres que las conforman.' },
-      { number: 2, letter: 'B', text: 'El origen de las sociedades grandes y duraderas se explica por la indiferencia de los hombres que las conforman.' },
-      { number: 3, letter: 'C', text: 'El origen de las sociedades grandes y duraderas se halla en la obediencia recíproca de los hombres que las conforman.' },
-      { number: 4, letter: 'D', text: 'El origen de las sociedades grandes y duraderas resulta de la colaboración desinteresada de los hombres que las conforman.' }
+      { number: 1, letter: 'A', text: 'La amnesia histórica colectiva que hace que los pueblos olviden sus tragedias, masacres pasadas e identidad, condenándose a repetir sus errores.' },
+      { number: 2, letter: 'B', text: 'La falta de café en las tiendas de abarrotes de la costa caribe.' },
+      { number: 3, letter: 'C', text: 'Un tratado sobre medicina neurológica geriátrica.' },
+      { number: 4, letter: 'D', text: 'La necesidad de importar diccionarios desde España.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
-    competency: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    component: 'Texto Continuo - Filosófico (Antítesis)',
-    affirmation: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    evidence: 'Identifica y caracteriza las ideas o afirmaciones presentes en un texto informativo.',
-    standard: 'Diseño un esquema de interpretación, teniendo en cuenta al tipo de texto, tema, interlocutor e intención comunicativa.',
-    justification: 'La respuesta correcta es la opción D. Si la tesis de Hobbes es que las sociedades nacieron por el miedo y el cálculo de protección ante el dominio ajeno, la tesis opuesta exacta es que nacieron por la colaboración altruista y desinteresada (benevolencia mutua).',
+    correctOption: 1,
+    correctLetter: 'A',
+    competency: 'Lectura Crítica.',
+    component: 'Lectura Crítica - Alegoría Histórico-Política y Memoria Histórica',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Relaciona la alegoría literaria con los procesos sociopolíticos de América Latina.',
+    standard: 'Comprendo los factores sociales y culturales que determinan la producción de los textos.',
+    justification: 'Macondo es la metáfora de Colombia y Latinoamérica: una sociedad acechada por el olvido sistemático (como se verá luego con la Masacre de las Bananeras, donde nadie recuerda a los muertos), condenada a cien años de soledad si pierde su memoria histórica.',
     invalidOptionsReasoning: {
-      A: 'La desconfianza es afín al miedo mutuo formulado por Hobbes.',
-      B: 'La indiferencia no es la antítesis del pacto de seguridad motivado por el temor.',
-      C: 'La obediencia recíproca es parte del orden contractual resultante, no la tesis antagónica del origen.'
+      B: 'No es una carencia de granos comerciales.',
+      C: 'Es una metáfora estética y política monumental, no un texto de neurología clínica.',
+      D: 'Es una reflexión sobre la autonomía cultural y la preservación de la verdad.'
     },
     socraticHints: {
-      recordar: '¿Cuál es la tesis central de Hobbes sobre la causa del pacto social?',
-      comprender: '¿Qué postura filosófica alternativa sostendría que los humanos se unen por puro amor y solidaridad desinteresada?',
-      aplicar: 'Anota en tu cuaderno: "Tesis Hobbes: Sociedad por miedo mutuo / Antítesis: Sociedad por colaboración desinteresada".',
-      analizar: '¿Por qué la opción D formula de manera impecable la proposición contradictoria?'
-    }
+      recordar: '¿Qué ocurre en la novela cuando más adelante el gobierno borra la memoria de la masacre de los trabajadores?',
+      comprender: '¿Por qué la frase "quien no conoce su historia está condenado a repetirla" se aplica a Macondo?',
+      aplicar: 'Anota en tu cuaderno: "Alegoría del olvido: La fragilidad de la memoria histórica en Colombia".',
+      analizar: 'Sintetiza la relación entre memoria, dignidad y libertad colectiva.'
+    },
+    icfesCode: 'I_1110303'
   },
   {
     id: 1115,
     grade: 11,
     questionNumber: 15,
-    title: 'Tratado sobre el ciudadano - Por qué surgen las sociedades',
-    contextText: TEXTO_HOBBES_G11,
-    statement: `De acuerdo con las ideas expresadas en el texto, si “los hombres por su naturaleza están más inclinados al dominio que a la sociedad”, ¿por qué aparecieron sociedades grandes y duraderas?`,
+    title: 'Recursos estilísticos del Realismo Mágico en García Márquez',
+    contextText: TEXTO_CIEN_ANOS_G11,
+    statement: 'El estilo narrativo que caracteriza este fragmento se define como Realismo Mágico porque:',
     options: [
-      { number: 1, letter: 'A', text: 'Es natural para el hombre asociarse con otros para ejercer su dominio con seguridad.' },
-      { number: 2, letter: 'B', text: 'Para ampliar su capacidad de dominio, al hombre le resulta más efectivo vivir en sociedad.' },
-      { number: 3, letter: 'C', text: 'Es propio del hombre evitar todo tipo de dominio a través de las relaciones confiables que le brinda la vida en sociedad.' },
-      { number: 4, letter: 'D', text: 'El hombre busca la seguridad y es más seguro para él vivir en comunidad que estar expuesto a ser dominado por otro.' }
+      { number: 1, letter: 'A', text: 'Presenta sucesos extraordinarios y fantásticos (una epidemia contagiosa que borra la memoria objeto por objeto) narrados con la naturalidad, precisión y detalle de un hecho verídico y cotidiano.' },
+      { number: 2, letter: 'B', text: 'Utiliza varitas mágicas y hechizos de cuentos de hadas tradicionales.' },
+      { number: 3, letter: 'C', text: 'Está redactado en verso con rima consonante.' },
+      { number: 4, letter: 'D', text: 'Es un informe noticioso de un periódico de la época.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
-    competency: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    component: 'Texto Continuo - Filosofía Política',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Establece la validez e implicaciones de un enunciado de un texto (argumentativo o expositivo).',
-    standard: 'Asumo una actitud crítica frente a los textos que leo y elaboro, y frente a otros tipos de texto: explicativos, descriptivos y narrativos.',
-    justification: 'La respuesta correcta es la opción D. El miedo al poder destructivo de otros y la vulnerabilidad individual impulsan al ser humano a pactar reglas de convivencia para salvaguardar su vida y evitar ser sometido por los más fuertes.',
+    correctOption: 1,
+    correctLetter: 'A',
+    competency: 'Lectura Crítica.',
+    component: 'Poética del Realismo Mágico y Técnica Narrativa',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Identifica las características formales y estéticas del Realismo Mágico.',
+    standard: 'Reconozco los rasgos del Realismo Mágico en la obra de Gabriel García Márquez.',
+    justification: 'García Márquez no justifica lo fantástico ni lo presenta con asombro de fábula; lo integra en la cotidianidad más familiar (ponerle letrero a la mesa, a la cacerola y a la vaca con hisopo entintado), creando un universo poético inconfundible.',
     invalidOptionsReasoning: {
-      A: 'El pacto no busca asegurar el dominio individual, sino frenar el conflicto generalizado.',
-      B: 'La vida en sociedad impone leyes que restringen el dominio arbitrario.',
-      C: 'Hobbes sostiene que el vínculo no nace de la confianza idílica sino de la autoprotección ante el riesgo común.'
+      B: 'No hay brujería de cuento infantil europeo; es una mitología propia arraigada en el Caribe.',
+      C: 'Es prosa narrativa magistral.',
+      D: 'Es una obra cumbre de la ficción novelística universal.'
     },
     socraticHints: {
-      recordar: '¿Qué papel juega el "miedo mutuo" en la teoría de Hobbes?',
-      comprender: '¿Por qué los individuos aceptan ceder libertades naturales a cambio de seguridad jurídica?',
-      aplicar: 'Anota en tu cuaderno: "Origen del Estado según Hobbes = Búsqueda de seguridad para evitar ser dominado o destruido".',
-      analizar: '¿Por qué la opción D explica la paradoja entre el instinto de dominio y la creación de sociedades?'
-    }
+      recordar: '¿Cómo narraba la abuela Tranquilina las cosas extraordinarias a Gabo de niño?',
+      comprender: '¿Por qué la naturalidad descriptiva hace que el lector acepte lo imposible como verdad poética?',
+      aplicar: 'Escribe en tu cuaderno: "Realismo Mágico = Lo fantástico narrado con tono de absoluta certeza cotidiana".',
+      analizar: 'Evalúa la prosa envolvente y la riqueza léxica del Nobel colombiano.'
+    },
+    icfesCode: 'I_1110304'
   },
   {
     id: 1116,
     grade: 11,
     questionNumber: 16,
-    title: 'Tratado sobre el ciudadano - Posición del autor sobre el miedo',
-    contextText: TEXTO_HOBBES_G11,
-    statement: `De acuerdo con el texto anterior, ¿cuál de las siguientes afirmaciones resume mejor la posición del autor sobre el miedo?`,
+    title: 'El personaje de Aureliano Buendía como creador de orden',
+    contextText: TEXTO_CIEN_ANOS_G11,
+    statement: 'En el primer párrafo, el hecho de que Aureliano sea “insomne experto” y maestro en el “arte de la platería” resalta su personalidad caracterizada por:',
     options: [
-      { number: 1, letter: 'A', text: 'El miedo es detestable en tanto que no aumenta las comodidades de la vida.' },
-      { number: 2, letter: 'B', text: 'El miedo es deseable en tanto que favorece la cooperación entre los hombres.' },
-      { number: 3, letter: 'C', text: 'El miedo es inútil, pues la mejor manera de adquirir comodidades es a través de la cooperación.' },
-      { number: 4, letter: 'D', text: 'El miedo es perjudicial, ya que no permite que las sociedades grandes y duraderas surjan.' }
+      { number: 1, letter: 'A', text: 'La pereza y la desidia ante los problemas de la casa.' },
+      { number: 2, letter: 'B', text: 'La minuciosidad, la concentración solitaria, el rigor manual y una mente analítica capaz de idear sistemas lógicos ante el caos.' },
+      { number: 3, letter: 'C', text: 'El deseo de abandonar Macondo para ser pirata en el mar.' },
+      { number: 4, letter: 'D', text: 'La debilidad física que le impedía caminar por el pueblo.' }
     ],
     correctOption: 2,
     correctLetter: 'B',
-    competency: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    component: 'Texto Continuo - Filosofía Política',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Establece la validez e implicaciones de un enunciado de un texto (argumentativo o expositivo).',
-    standard: 'Asumo una actitud crítica frente a los textos que leo y elaboro, y frente a otros tipos de texto: explicativos, descriptivos y narrativos.',
-    justification: 'La respuesta correcta es la opción B. Para Hobbes, el miedo mutuo no es un defecto negativo sino el motor civilizatorio indispensable que frena la guerra de todos contra todos y hace posible la cooperación y las instituciones duraderas.',
+    competency: 'Lectura Crítica.',
+    component: 'Caracterización Psicológica de Personajes',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Infiere rasgos de personalidad a partir de los oficios y actitudes de los personajes.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'Aureliano (futuro coronel) se define por su concentración ensimismada, su paciencia de orfebre (fabricar pescaditos de oro) y su lúcida capacidad de respuesta metódica frente a los enigmas de Macondo.',
     invalidOptionsReasoning: {
-      A: 'El autor demuestra que el miedo es precisamente la base para conseguir comodidades en sociedad.',
-      C: 'Afirma que el miedo es totalmente eficaz y necesario para cohesionar el cuerpo político.',
-      D: 'Contradice la tesis central: el miedo es la condición que permite que las sociedades surjan.'
+      A: 'Es extraordinariamente disciplinado y trabajador.',
+      C: 'Nunca fue marinero o pirata; su destino fue la guerra civil y el taller de platería.',
+      D: 'Gozaba de plena vitalidad e inventiva.'
     },
     socraticHints: {
-      recordar: '¿Cómo valora Hobbes la función constructiva del miedo en la creación del orden social?',
-      comprender: '¿Por qué para Hobbes el miedo es el catalizador que conduce a los hombres racionales a asociarse?',
-      aplicar: 'Anota en tu cuaderno: "Función del miedo en Hobbes = Positiva/Deseable porque engendra la cooperación civil".',
-      analizar: '¿Por qué la opción B sintetiza la valoración axiológica del autor?'
-    }
+      recordar: '¿Qué oficio manual ejercía Aureliano en el laboratorio de la casa?',
+      comprender: '¿Cómo influye la paciencia del artesano en la creación de soluciones estructuradas?',
+      aplicar: 'Anota en tu cuaderno los rasgos del joven Aureliano Buendía.',
+      analizar: 'Sintetiza la relación entre el trabajo de la plata y el sistema de marcado del lenguaje.'
+    },
+    icfesCode: 'I_1110305'
   },
 
-  // =========================================================================
-  // TEXTO 6: GORGIAS / PROTÁGORAS - Platón (Preguntas 17 a 20)
-  // =========================================================================
+  // ---------------------------------------------------------------------------
+  // TEXTO 4: LA ILÍADA (Preguntas 17 a 20)
+  // ---------------------------------------------------------------------------
   {
     id: 1117,
     grade: 11,
     questionNumber: 17,
-    title: 'Gorgias de Platón - Contenido del segundo párrafo',
-    contextText: TEXTO_PLATON_G11,
-    statement: `¿Cuál de las siguientes opciones expresa mejor el contenido del segundo párrafo?`,
+    title: 'La Ilíada - El gesto inaudito de Príamo ante el vencedor',
+    contextText: TEXTO_ILIADA_G11,
+    statement: 'En el Canto XXIV de La Ilíada, el acto conmovedor e inaudito que realiza el anciano rey Príamo ante Aquiles es:',
     options: [
-      { number: 1, letter: 'A', text: 'El derecho de la naturaleza predomina cuando el hombre fuerte pasa por encima de las leyes contrarias a la naturaleza y ejerce el poder.' },
-      { number: 2, letter: 'B', text: 'El derecho de la naturaleza brilla en su esplendor cuando se elimina la esclavitud y los esclavos se muestran como nuestros señores.' },
-      { number: 3, letter: 'C', text: 'Cuando el hombre rompa sus cadenas, pisotee la mala literatura, las mentiras y las leyes antinaturales, se mostrará el brillo de nuestro señor.' },
-      { number: 4, letter: 'D', text: 'Hasta que los hombres débiles no se liberen y se pongan en pie, seguirá brillando el derecho de la naturaleza.' }
+      { number: 1, letter: 'A', text: 'Retar a Aquiles a un duelo a muerte con lanzas de bronce.' },
+      { number: 2, letter: 'B', text: 'Entrar secretamente al campamento enemigo, postrarse a sus rodillas y besar las manos homicidas que habían matado a sus propios hijos para rogar por el cadáver de Héctor.' },
+      { number: 3, letter: 'C', text: 'Prenderle fuego a las naves de los griegos aqueos.' },
+      { number: 4, letter: 'D', text: 'Ofrecerle a Aquiles casarse con la reina Hécuba.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
-    competency: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    component: 'Texto Continuo - Filosófico / Diálogos Platónicos (Calicles)',
-    affirmation: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    evidence: 'Entiende el significado de los elementos locales que constituyen un texto.',
-    standard: 'Diseño un esquema de interpretación, teniendo en cuenta al tipo de texto, tema, interlocutor e intención comunicativa.',
-    justification: 'La respuesta correcta es la opción A. El segundo párrafo describe cómo el hombre superior por naturaleza rompe los convencionalismos y leyes artificiales creadas por la masa débil para restablecer la primacía del más fuerte.',
+    correctOption: 2,
+    correctLetter: 'B',
+    competency: 'Lectura Crítica.',
+    component: 'Texto Continuo - Épica Griega Clásica / Humanización y Culminación Trágica',
+    affirmation: 'Recupera información literal e inferencial expresada en el texto.',
+    evidence: 'Ubica acciones dramáticas capitales en la épica homérica.',
+    standard: 'Reconozco los valores éticos, estéticos y trágicos de la literatura clásica griega.',
+    justification: 'Príamo rompe todos los protocolos de la realeza: humilla su orgullo de monarca ante el asesino de su hijo dilecto ("besar aquellas manos terribles, homicidas"), impulsado por un desgarrador amor paterno y el deber sagrado de dar sepultura al cuerpo.',
     invalidOptionsReasoning: {
-      B: 'No habla de abolir la institución social de la esclavitud, sino de la figura del hombre fuerte que deja de estar sometido.',
-      C: 'Es una repetición literal descontextualizada que no sintetiza el significado del triunfo del hombre fuerte.',
-      D: 'El texto afirma que son los hombres fuertes quienes deben liberarse del yugo impuesto por los débiles.'
+      A: 'Príamo era un anciano desarmado que fue a suplicar, no a combatir.',
+      C: 'Fue en son de paz y rescate, protegido por los dioses.',
+      D: 'Fue a redimir el cuerpo profanado de su hijo Héctor.'
     },
     socraticHints: {
-      recordar: '¿Qué hace el hombre dotado de fuerza natural según el segundo párrafo?',
-      comprender: '¿Qué representa que "brille en todo su esplendor el derecho de la naturaleza"?',
-      aplicar: 'Anota en tu cuaderno: "Segundo párrafo = El triunfo del hombre fuerte sobre las leyes artificiales de los débiles".',
-      analizar: '¿Por qué la opción A recoge con precisión la síntesis conceptual del fragmento?'
-    }
+      recordar: 'Lee el primer párrafo del texto.',
+      comprender: '¿Qué grado de dolor y amor debe sentir un padre anciano para besar las manos del hombre que masacró a sus hijos?',
+      aplicar: 'Anota en tu cuaderno: "La súplica de Príamo: El triunfo del dolor paterno sobre el orgullo real".',
+      analizar: 'Examina la conmoción que este gesto produce en el campamento mirmidón.'
+    },
+    icfesCode: 'I_1110401'
   },
   {
     id: 1118,
     grade: 11,
     questionNumber: 18,
-    title: 'Gorgias de Platón - Relación lógica entre enunciados',
-    contextText: TEXTO_PLATON_G11,
-    statement: `De acuerdo con el texto, ¿cuál de las siguientes opciones describe mejor la relación entre los enunciados 1 y 2?`,
+    title: 'Estrategia retórica de Príamo: La invocación al padre Peleo',
+    contextText: TEXTO_ILIADA_G11,
+    statement: 'En su discurso suplicatorio, la razón decisiva que logra quebrar la cólera y dureza de Aquiles es cuando Príamo le dice:',
     options: [
-      { number: 1, letter: 'A', text: 'El enunciado 1 expresa una consecuencia del enunciado 2.' },
-      { number: 2, letter: 'B', text: 'El enunciado 2 expresa una razón a favor del enunciado 1.' },
-      { number: 3, letter: 'C', text: 'El enunciado 1 expresa una razón en contra del enunciado 2.' },
-      { number: 4, letter: 'D', text: 'El enunciado 2 expresa una consecuencia del enunciado 1.' }
+      { number: 1, letter: 'A', text: 'Que le entregará todo el oro y los caballos de Troya.' },
+      { number: 2, letter: 'B', text: 'Que recuerde a su propio padre Peleo, quien también es anciano y espera con angustia el regreso de su hijo, despertando en Aquiles la empatía filial y la piedad.' },
+      { number: 3, letter: 'C', text: 'Que los dioses griegos han abandonado a los aqueos.' },
+      { number: 4, letter: 'D', text: 'Que Héctor resucitará si le dan sepultura.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
-    competency: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    component: 'Texto Continuo - Filosófico / Relaciones de Causalidad',
-    affirmation: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    evidence: 'Comprende las relaciones entre diferentes partes o enunciados de un texto.',
-    standard: 'Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.',
-    justification: 'La respuesta correcta es la opción D. El conector "Por ello" al inicio del enunciado 2 marca gramatical y lógicamente una relación de consecuencia: como los débiles controlan las leyes del Estado (enunciado 1), consecuentemente las utilizan para amedrentar y limitar a los fuertes (enunciado 2).',
+    correctOption: 2,
+    correctLetter: 'B',
+    competency: 'Lectura Crítica.',
+    component: 'Lectura Crítica - Empatía Universal y Retórica de la Compasión',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Infiere estrategias persuasivas y resonancias afectivas en los parlamentos épicos.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'Príamo toca la fibra más íntima de Aquiles al ponerle como espejo a su propio padre anciano (Peleo), a quien Aquiles jamás volverá a ver porque sabe que morirá joven en Troya, transformando la furia en dolor compartido.',
     invalidOptionsReasoning: {
-      A: 'Invierte el orden causal; dar las leyes es la premisa que posibilita el amedrentamiento.',
-      B: 'No es una justificación argumentativa previa, sino un efecto directo derivado.',
-      C: 'Ambos enunciados son coherentes y complementarios, no se contradicen.'
+      A: 'El rescate material era infinito pero lo que convence a Aquiles es el vínculo afectivo paterno.',
+      C: 'Príamo apela al respeto a los dioses ("Respeta a los dioses, Aquiles").',
+      D: 'Sabe que la muerte es irrevocable; busca honrar las honras fúnebres.'
     },
     socraticHints: {
-      recordar: '¿Qué conector une ambos enunciados en el texto original ("Por ello...")?',
-      comprender: '¿Cómo conduce el hecho de tener el control de las leyes a la acción de amedrentar a los fuertes?',
-      aplicar: 'Anota en tu cuaderno: "Enunciado 1 (Causa: control de leyes) -> Enunciado 2 (Consecuencia: amedrentar a los fuertes)".',
-      analizar: '¿Por qué la opción D es la relación lógica incuestionable?'
-    }
+      recordar: 'Revisa las primeras líneas del discurso de Príamo: "Acuérdate de tu padre, ¡oh Aquiles...!".',
+      comprender: '¿Por qué recordar a su propio padre indefenso hace que Aquiles vea a Príamo como a un semejante y no como a un enemigo?',
+      aplicar: 'Escribe en tu cuaderno: "El puente de la empatía: El dolor filial común que une a enemigos mortales".',
+      analizar: 'Sintetiza la transformación psicológica de Aquiles de la barbarie a la piedad.'
+    },
+    icfesCode: 'I_1110402'
   },
   {
     id: 1119,
     grade: 11,
     questionNumber: 19,
-    title: 'Gorgias de Platón - Tesis principal del texto',
-    contextText: TEXTO_PLATON_G11,
-    statement: `¿Cuál de las siguientes opciones expresa mejor la tesis principal del texto?`,
+    title: 'El llanto compartido en la tienda de Aquiles',
+    contextText: TEXTO_ILIADA_G11,
+    statement: 'La escena final donde el rey troyano y el héroe griego lloran juntos en la tienda de campaña representa en la obra cumbre de Homero:',
     options: [
-      { number: 1, letter: 'A', text: 'Lo justo es que el hombre fuerte posea más que el hombre débil.' },
-      { number: 2, letter: 'B', text: 'Lo justo es lo que el hombre débil determine al construir las leyes a su conveniencia.' },
-      { number: 3, letter: 'C', text: 'Lo justo es que todos posean lo mismo, independientemente de su fuerza o debilidad.' },
-      { number: 4, letter: 'D', text: 'Lo justo es que los esclavos fuertes se liberen, pero obedezcan las leyes de los débiles.' }
+      { number: 1, letter: 'A', text: 'La derrota militar definitiva de los griegos.' },
+      { number: 2, letter: 'B', text: 'El momento culminante de catarsis y reconciliación humanista donde el sufrimiento universal une a los enemigos por encima del odio de la guerra.' },
+      { number: 3, letter: 'C', text: 'Una farsa montada para engañar a los espías de Troya.' },
+      { number: 4, letter: 'D', text: 'El festejo por la conquista de la muralla de Ilión.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
-    competency: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    component: 'Texto Continuo - Filosófico (Identificación de Tesis)',
-    affirmation: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    evidence: 'Identifica y caracteriza las ideas o afirmaciones presentes en un texto informativo o filosófico.',
-    standard: 'Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.',
-    justification: 'La respuesta correcta es la opción A. El argumento central del discurso de Calicles en el Gorgias defiende que, según el orden natural auténtico, la verdadera justicia consiste en que el individuo superior y fuerte predomine y posea más que el débil.',
+    correctOption: 2,
+    correctLetter: 'B',
+    competency: 'Lectura Crítica.',
+    component: 'Catarsis Trágica y Trascendencia Humanista de la Épica',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Evalúa la resolución ética y estética del poema homérico.',
+    standard: 'Reconozco los grandes temas de la literatura clásica universal (el destino, el honor, la compasión).',
+    justification: 'Es una de las cumbres éticas de la civilización occidental: dos guerreros que lo han perdido todo (Príamo a sus hijos, Aquiles a su amado Patroclo) se reconocen en su común condición de mortales frágiles ante el destino.',
     invalidOptionsReasoning: {
-      B: 'El autor denuncia las leyes de los débiles como un artificio antinatural y falso.',
-      C: 'La igualdad de posesiones es calificada en el texto como un "conjuro y artimaña" de domesticación.',
-      D: 'El texto proclama que el hombre fuerte debe pisotear las leyes de los débiles para erigirse en señor.'
+      A: 'La guerra continuará después de las treguas fúnebres.',
+      C: 'Es el llanto más genuino y sagrado de toda la literatura griega.',
+      D: 'Troya aún no ha caído; la obra termina con los funerales de Héctor.'
     },
     socraticHints: {
-      recordar: '¿Qué sostiene el texto sobre lo que "la naturaleza prueba que es justo"?',
-      comprender: '¿Cómo define el texto la justicia natural frente a la justicia convencional creada por las masas?',
-      aplicar: 'Anota en tu cuaderno: "Tesis central = La justicia natural exige que el más fuerte posea más y gobierne sobre el débil".',
-      analizar: '¿Por qué la opción A sintetiza la postura de Calicles en el diálogo de Platón?'
-    }
+      recordar: 'Lee el último párrafo: por quién llora Príamo y por quiénes llora Aquiles.',
+      comprender: '¿Cómo la conciencia de la muerte y el dolor iguala a todos los seres humanos?',
+      aplicar: 'Anota en tu cuaderno: "Catarsis homérica: El reconocimiento del otro a través de las lágrimas compartidas".',
+      analizar: 'Sintetiza por qué La Ilíada no es un canto a la violencia sino un lamento sobre la tragedia de la guerra.'
+    },
+    icfesCode: 'I_1110403'
   },
   {
     id: 1120,
     grade: 11,
     questionNumber: 20,
-    title: 'Gorgias de Platón - Idea opuesta al principio de justicia natural',
-    contextText: TEXTO_PLATON_G11,
-    statement: `¿Cuál de los siguientes fragmentos expresa la idea opuesta a la que presenta el enunciado anterior?`,
+    title: 'Función del ritual fúnebre en la cosmovisión griega',
+    contextText: TEXTO_ILIADA_G11,
+    statement: 'Para la cosmovisión heroica y religiosa de la antigua Grecia, rescatar el cadáver de Héctor para celebrar sus funerales era un deber primordial porque:',
     options: [
-      { number: 1, letter: 'A', text: '“El deseo de tener más es vergonzoso”.' },
-      { number: 2, letter: 'B', text: '“Por naturaleza, es justo que alguno de los más fuertes posea menos o igual que los más débiles”.' },
-      { number: 3, letter: 'C', text: '“Por naturaleza, el más débil es también el peor”.' },
-      { number: 4, letter: 'D', text: '“Desde la infancia procuramos desnaturalizar a los mejores y más fuertes”.' }
+      { number: 1, letter: 'A', text: 'Sin las debidas honras fúnebres y la pira crematoria, el alma del guerrero no podía cruzar el río Estigia ni descansar en el Hades, ultrajando el orden cósmico.' },
+      { number: 2, letter: 'B', text: 'Héctor tenía la llave secreta de los tesoros del palacio real.' },
+      { number: 3, letter: 'C', text: 'Los troyanos querían embalsamarlo con técnicas egipcias para museo.' },
+      { number: 4, letter: 'D', text: 'Era una obligación médica para evitar contagios de peste.' }
     ],
-    correctOption: 2,
-    correctLetter: 'B',
-    competency: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    component: 'Texto Continuo - Filosófico (Negación Lógica)',
-    affirmation: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    evidence: 'Identifica y caracteriza las ideas o afirmaciones presentes en un texto informativo o argumentativo.',
-    standard: 'Diseño un esquema de interpretación, teniendo en cuenta al tipo de texto, tema, interlocutor e intención comunicativa.',
-    justification: 'La respuesta correcta es la opción B. La negación lógica y conceptual estricta de la proposición "es justo por naturaleza que el fuerte posea más que el débil" es que "por naturaleza, es justo que alguno de los más fuertes posea menos o igual que los más débiles".',
+    correctOption: 1,
+    correctLetter: 'A',
+    competency: 'Lectura Crítica.',
+    component: 'Cosmovisión Religiosa y Mitología Griega Clásica',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Infiere conceptos religiosos y valores sagrados de la antigüedad clásica.',
+    standard: 'Comprendo los factores sociales, religiosos y míticos en los textos de la Grecia antigua.',
+    justification: 'En la religión griega, dejar insepulto a un guerrero para que fuera devorado por perros y aves era el peor ultraje; los ritos funerarios eran imprescindibles para el descanso eterno del difunto y la reconciliación con los dioses.',
     invalidOptionsReasoning: {
-      A: 'Es un juicio moral convencional emitido por la masa, pero no la negación formal de la ley natural.',
-      C: 'Es una premisa afirmativa coincidente con el texto, no su idea opuesta.',
-      D: 'Es una descripción sociológica del proceso de educación/domesticación.'
+      B: 'No era por llaves materiales.',
+      C: 'Los griegos y troyanos cremaban los cuerpos en piras, no los momificaban.',
+      D: 'Es un mandato religioso y ético sagrado trascendental, no una norma de higiene biológica.'
     },
     socraticHints: {
-      recordar: '¿Cuál es la afirmación matemática y ontológica del enunciado: Fuerte > Débil?',
-      comprender: '¿Cómo se formula la contradicción lógica exacta de una desigualdad natural?',
-      aplicar: 'Anota en tu cuaderno: "Enunciado: Fuerte > Débil / Opuesto: Fuerte ≤ Débil (poseer menos o igual)".',
-      analizar: '¿Por qué la opción B es la única refutación directa y exacta del enunciado?'
-    }
+      recordar: '¿Qué creían los griegos que le ocurría al alma de quien no recibía honras fúnebres?',
+      comprender: '¿Por qué la profanación del cadáver de Héctor ofendía tanto a los dioses del Olimpo?',
+      aplicar: 'Escribe en tu cuaderno: "Honras fúnebres en Grecia: Deber sagrado para el descanso del alma en el Hades".',
+      analizar: 'Sintetiza la importancia del respeto a la dignidad del caído incluso en tiempos de guerra.'
+    },
+    icfesCode: 'I_1110404'
   }
 ];

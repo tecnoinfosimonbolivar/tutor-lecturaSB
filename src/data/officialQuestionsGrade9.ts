@@ -1,742 +1,771 @@
 // Banco Oficial ICFES Evaluar para Avanzar - Grado 9° (Lectura Cuadernillo 1 Oficial 2021)
 // Institución Educativa Técnica Simón Bolívar - Ibagué, Tolima
-// Área: LENGUAJE: LECTURA / COMPRENSIÓN LECTORA
+// Área: COMPETENCIAS COMUNICATIVAS EN LENGUAJE: LECTURA
 import { Question } from '../types';
 
 // =============================================================================
 // TEXTOS COMPLETOS VERBATIM OFICIALES ICFES EVALUAR PARA AVANZAR - GRADO 9°
 // =============================================================================
 
-export const TEXTO_COMENTARIOS_REALES_G9 = `RESPONDE LAS PREGUNTAS 1 A 6 DE ACUERDO CON EL SIGUIENTE TEXTO
+export const TEXTO_IVAN_ILICH_G9 = `RESPONDE LAS PREGUNTAS 1 A 5 A PARTIR DE LA LECTURA DEL SIGUIENTE TEXTO:
 
-COMENTARIOS REALES
+LA MUERTE DE IVÁN ILICH (Fragmento)
 
-Para que se entienda mejor la idolatría, vida y costumbres de los indios del Perú, será necesario que dividamos aquellos siglos en dos edades: diremos cómo vivían antes de los incas y luego diremos cómo gobernaron aquellos reyes, para que no se confunda lo uno con lo otro ni se atribuyan las costumbres ni los dioses de los unos a los otros. Esto dicho por aquel inca, tío de mi madre, a quien yo se lo pedí:
+Durante los tres últimos días, Iván Ilich no cesó de gritar. El dolor físico era atroz, pero más espantoso aún resultaba su tormento moral: la repentina certidumbre de que toda su respetable vida de juez de provincias, llena de ascensos, protocolo, muebles elegantes y apariencias burguesas, no había sido más que un inmenso engaño.
 
-“Muchos indios hubo de diversas naciones, en aquella primera edad, que escogieron sus dioses con alguna mayor consideración que los pasados, porque adoraban algunas cosas de las cuales recibían algún provecho, como los que adoraban las fuentes caudalosas y ríos grandes, por decir que les daban agua para regar sus sembrados. Otros adoraban la tierra y le llamaban madre, porque les daba sus frutos; otros al aire para respirar, porque decían que mediante él vivían los hombres; otros al fuego, porque los calentaba y porque guisaban de comer con él.
+Se preguntaba a sí mismo: '¿Y si verdaderamente toda mi existencia consciente no hubiera sido lo que debió ser?'. Intentaba defender ante su propia conciencia la rectitud de sus actos pasados, sus sentencias judiciales impecables y su afán por agradar a la alta sociedad; pero en el umbral de la muerte, todos aquellos logros se le antojaban vanos, fríos y monstruosamente artificiales. Comprendió que lo único auténtico en sus últimos días no había sido la compasión fingida de su esposa ni el desfile hipócrita de los médicos, sino la humilde y sincera bondad de Guerásim, el joven siervo campesino que le sostenía las piernas con paciencia inagotable para aliviarle el dolor y que no temía a la muerte porque la aceptaba como parte natural de la vida.
 
-- En la segunda edad, del cerro Huanacauri salieron nuestros primeros reyes, cada uno por su parte, a convocar las gentes. A todos los hombres y mujeres que hallaban por aquellos lugares les hablaban y les decían cómo su padre el Sol los había enviado del cielo para que fuesen maestros y bienhechores de los habitantes de toda aquella tierra, sacándoles de la vida ferina que tenían y enseñándoles a vivir como hombres y que, en cumplimiento de lo que el Sol, su padre, les había mandado, iban a convocarlos y sacar de aquellos montes y malezas y reducirlos a morar en pueblos poblados y a darles para comer manjares de hombres y no de bestias. Maravillados, por una parte, de lo que veían y, por otra, aficionados de las promesas que les hacían, les dieron entero crédito a todo lo que les dijeron y los adoraron y reverenciaron como a hijos del Sol y obedecieron como a reyes”.
+Tomado y adaptado de: Tolstói, León. La muerte de Iván Ilich.`;
 
-Esto dicho por el inca, tío de mi madre, he procurado traducir fielmente de mi lengua materna, que es la del inca, en la ajena, que es la castellana, quitando algunas cosas que pudieran hacerla odiosa. Empero, bastará haber sacado el verdadero sentido de ellas, que es lo que conviene a nuestra historia. Cierto es que conforme a la vileza y bajeza de sus dioses eran también la crueldad y barbaridad de los sacrificios de aquella primera edad, pues sin las demás cosas comunes, como animales y granos, sacrificaban hombres y mujeres de todas edades, de los que cautivaban en las guerras que unos a otros se hacían.
+export const TEXTO_BASURA_ELECTRONICA_G9 = `RESPONDE LAS PREGUNTAS 6 A 10 A PARTIR DE LA LECTURA DEL SIGUIENTE TEXTO:
 
-Tomado y adaptado de: De la Vega, Inca Garcilaso. Recuperado de http://shemer.mslib.huji.ac.il/lib/W/ebooks/001531300.pdf`;
+INFOGRAFÍA: LA BASURA ELECTRÓNICA (E-WASTE)
 
-export const TEXTO_EVOLUCION_CIENCIA_G9 = `RESPONDE LAS PREGUNTAS 7 A 10 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN
+El vertiginoso ritmo de renovación de dispositivos electrónicos ha convertido a los desechos tecnológicos en el flujo de residuos de más rápido crecimiento en el planeta.
 
-INFOGRAFÍA: EVOLUCIÓN DE LA CIENCIA
+Radiografía de la crisis global:
+• Volumen anual: Más de 53.6 millones de toneladas métricas de basura electrónica al año (equivalente a 350 cruceros gigantescos).
+• Tasa de reciclaje formal: Apenas el 17.4% de estos residuos se recolecta y procesa en instalaciones seguras.
+• Destino del 82.6% restante: Se quema en basureros a cielo abierto o se envía ilegalmente a países en desarrollo (como Ghana o Nigeria), donde trabajadores informales y niños desarman placas madre sin protección.
 
-[Línea de tiempo con retratos de científicos]:
-- 580 a.C.: Tales de Mileto describe el comportamiento de la magnetita.
-- 830 d.C.: El matemático árabe Al Juarismi desarrolló el álgebra.
-- 1543: Nicolás Copérnico propone el modelo heliocéntrico.
-- 1687: Formulación de las leyes de la física y la gravitación por Isaac Newton.
-- 1859: Teoría de la evolución biológica por Charles Darwin.
-- 1905: Teoría de la relatividad espacial por Albert Einstein.
+Impactos críticos en la salud y el medio ambiente:
+- Plomo: Daña irreversiblemente el sistema nervioso central y los riñones.
+- Mercurio: Contamina las fuentes de agua y la cadena trófica marina; bioacumulable en peces.
+- Cadmio: Cancerígeno de alta toxicidad que deteriora la densidad ósea y los pulmones.
 
-CLASIFICACIÓN DE LAS CIENCIAS:
-- Ciencias formales: Lógica, Matemática (Geometría, Aritmética).
-- Ciencias fácticas:
-  * Naturales: Física, Geología, Biología.
-  * Sociales: Sociología, Economía, Historia.
+La oportunidad de la 'Minería Urbana':
+En una tonelada de teléfonos móviles reciclados hay hasta 100 veces más oro puro y 10 veces más plata que en una tonelada de roca extraída de una mina tradicional, reduciendo la deforestación y la emisión de gases de efecto invernadero.
 
-Fuente: http://quees.la/ciencia/`;
+Tomado y adaptado de: Global E-waste Monitor / ONU Medio Ambiente.`;
 
-export const TEXTO_SELVA_AMAZONICA_G9 = `RESPONDE LAS PREGUNTAS 11 A 15 DE ACUERDO CON EL SIGUIENTE TEXTO
+export const TEXTO_EL_ECLIPSE_G9 = `RESPONDE LAS PREGUNTAS 11 A 15 A PARTIR DE LA LECTURA DEL SIGUIENTE TEXTO:
 
-ASÍ SE ESTUDIA EN LA SELVA AMAZÓNICA
+EL ECLIPSE
 
-Es difícil llegar al Centro Educativo Rural Bocas del Yi, en la selva del Vaupés. Así lo sentí yo, que iba como periodista y estaba acompañado por el rector de la escuela y los miembros de la Casa Cultural.
+Cuando fray Bartolomé Arrazola se sintió perdido en la selva de Guatemala, aceptó que ya nada podría salvarlo. La selva poderosa de América lo había apresado, implacable y definitiva. Ante su ignorancia topográfica se sentó con tranquilidad a esperar la muerte.
 
-¡Imagínate lo que sienten los niños de 5 años que, para poder estudiar, deben dejar a sus familias e internarse en la institución durante el periodo escolar! Lo que más te sorprendería son las difíciles condiciones que deben experimentar los estudiantes, quienes comparten dormitorios, “duermen en hamacas y utilizan sandalias de plástico que dejan a la entrada de cada clase”, según me contó el rector. Además, no tienen uniforme y se duermen cuando se va la luz del sol, porque en la escuela no hay luz eléctrica. Todos los días entran a clase por la mañana y a mediodía quedan libres para jugar en las canchas abiertas, a orillas del río. Las tardes las pasan leyendo cuentos infantiles en la biblioteca, a la espera de volver a ver a sus padres. También aprenden sobre su cultura, decididos a conservar sus lenguas nativas y sus tradiciones.
+Al despertar se encontró rodeado por un grupo de indígenas de rostro impasible que se disponían a sacrificarlo ante un altar, un altar que a Bartolomé le pareció como el lecho en que descansaría, al fin, de sus temores, de su destino, de sí mismo. Tres años de residencia en el país le habían conferido un mediano dominio de las lenguas nativas. Intentó algo. Dijo algunas palabras que fueron comprendidas.
 
-El día de mi visita los alumnos estaban de fiesta porque la Casa Cultural les había organizado juegos. Después todo regresó a la tranquilidad de la selva. Aquello fue y será la mayor novedad de su rutina durante los próximos meses. Cuando despegó el avión de regreso, vi desde el cielo mucho verde atravesado por ríos de color cobre. Allí, en medio de ese paisaje, hay padres que cruzan el Vaupés para llevar a sus hijos al colegio y separarse de ellos: cualquier premio es poco para el esfuerzo de estos valientes docentes, padres y niños.
+Entonces floreció en él una idea que tuvo por digna de su talento y de su cultura universal y de su arduo conocimiento de Aristóteles. Recordó que para ese día se esperaba un eclipse total de sol. Y dispuso, en lo más íntimo, valerse de aquel conocimiento para engañar a sus opresores y salvar la vida.
+—Si me matáis —les dijo— puedo hacer que el sol se oscurezca en su altura.
 
-Tomado y adaptado de: https://www.elespectador.com/noticias/educacion`;
+Los indígenas lo miraron fijamente y Bartolomé sorprendió en sus ojos una pizca de incredulidad. Vio que se produjo una pequeña reunión entre ellos, y esperó confiado, no sin cierto desdén.
 
-export const TEXTO_CALVIN_HOBBES_G9 = `RESPONDE LAS PREGUNTAS 16 A 20 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN
+Dos horas después el corazón de fray Bartolomé Arrazola chorreaba su sangre vehemente sobre la piedra de los sacrificios (brillante bajo la opaca luz de un sol eclipsado), mientras uno de los indígenas recitaba sin ninguna inflexión de voz, sin prisa, una por una, las infinitas fechas en que se producirían eclipses solares y lunares, que los astrónomos de la comunidad maya habían previsto y anotado en sus códices sin la valiosa ayuda de Aristóteles.
 
-TIRA CÓMICA: CALVIN Y HOBBES (4 Viñetas)
-- Viñeta 1: El padre se acerca al sillón donde Calvin ve la televisión y le pregunta: “¿Miras un especial de Navidad?”. Calvin responde: “Sí.”
-- Viñeta 2: El padre comenta críticamente: “Otro canal que alaba el amor y la paz interrumpido cada siete minutos por comerciales que alaban la codicia y el derroche.”
-- Viñeta 3: El padre agrega marchándose: “Odio pensar lo que aprendes con eso.”
-- Viñeta 4: Calvin, sentado frente a la pantalla, reflexiona sonriendo: “Aprendo que necesito mi propio televisor para poder mirarlo en otra parte.”
+Monterroso, Augusto. Cuentos breves.`;
 
-Tomado y adaptado de: http://www.guiacomic.es/calvibyhobbes`;
+export const TEXTO_CARTA_AL_PADRE_G9 = `RESPONDE LAS PREGUNTAS 16 A 20 A PARTIR DE LA LECTURA DEL SIGUIENTE TEXTO:
+
+CARTA AL PADRE (Fragmento)
+
+Querido padre:
+Me preguntaste hace poco por qué afirmo que te tengo miedo. Como de costumbre, no supe qué contestarte, en parte justamente por el miedo que te tengo, en parte porque en la explicación de este miedo entran demasiados detalles para que pueda exponerlos oralmente con un mínimo de coherencia.
+
+Para ti la cuestión siempre ha sido sumamente sencilla: tú has trabajado duramente toda tu vida, sacrificándote por tus hijos, y en especial por mí; gracias a ello yo he vivido en la abundancia, he podido estudiar lo que he querido y no he tenido que pasar penurias económicas. A cambio de eso, tú no exigías devoción ciega, pero sí al menos una muestra de afecto y gratitud; en vez de eso, siempre me he ocultado de ti en mi cuarto, entre mis libros, rehuyendo tu trato.
+
+Tú me reprochas frialdad y desapego; pero la verdad es que tu sola presencia física, tu figura colosal y tu temperamento autoritario aplastaban cualquier intento de iniciativa mía. Desde niño, tus órdenes indiscutibles, acompañadas de burlas hacia mis opiniones y desprecio hacia mis debilidades, crearon en mí un sentimiento insoportable de culpa e inferioridad que me paralizó para siempre ante la vida.
+
+Kafka, Franz. Carta al padre.`;
+
+// =============================================================================
+// BANCO DE 20 PREGUNTAS OFICIALES ICFES EVALUAR PARA AVANZAR - GRADO 9°
+// =============================================================================
 
 export const OFFICIAL_GRADE_9: Question[] = [
-  // =========================================================================
-  // TEXTO 1: COMENTARIOS REALES - Inca Garcilaso de la Vega (Preguntas 1 a 6)
-  // =========================================================================
+  // ---------------------------------------------------------------------------
+  // TEXTO 1: LA MUERTE DE IVÁN ILICH (Preguntas 1 a 5)
+  // ---------------------------------------------------------------------------
   {
     id: 901,
     grade: 9,
     questionNumber: 1,
-    title: 'Comentarios Reales - Voz del narrador',
-    contextText: TEXTO_COMENTARIOS_REALES_G9,
-    statement: `En el texto anterior, quien habla es`,
+    title: 'Iván Ilich - Tormento moral ante la inminencia de la muerte',
+    contextText: TEXTO_IVAN_ILICH_G9,
+    statement: 'En el fragmento, el mayor sufrimiento que atormenta a Iván Ilich en sus últimos días no es el dolor físico, sino:',
     options: [
-      { number: 1, letter: 'A', text: 'la madre del Inca Garcilaso, puesto que transmite el testimonio de su tío.' },
-      { number: 2, letter: 'B', text: 'uno de los reyes que surge del cerro Huancauri.' },
-      { number: 3, letter: 'C', text: 'el Inca Garcilaso, dado que recopila una historia y ofrece sus apreciaciones al respecto.' },
-      { number: 4, letter: 'D', text: 'un indio inca que vivió en la primera edad.' }
+      { number: 1, letter: 'A', text: 'El miedo a perder sus muebles y propiedades en el juzgado.' },
+      { number: 2, letter: 'B', text: 'La devastadora certeza de que toda su respetable vida burguesa no había sido más que una falsedad artificial y vacía.' },
+      { number: 3, letter: 'C', text: 'El enojo con los campesinos por no cultivar sus tierras.' },
+      { number: 4, letter: 'D', text: 'El temor a que sus hijos no terminen la carrera universitaria.' }
     ],
-    correctOption: 3,
+    correctOption: 2,
     correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Histórico-Literario / Crónica Colonial',
+    component: 'Texto Continuo - Novela Psicológica / Conflicto Existencial',
     affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
-    evidence: 'Distingue las relaciones entre las personas (o personajes) que desempeñan un papel en una argumentación o una narración (voces).',
-    standard: 'Reconozco en las obras literarias procedimientos narrativos, líricos y dramáticos.',
-    justification: 'El narrador indica en el primer párrafo que contará una historia narrada por un inca, tío de su madre. Después de incluir la historia de su tío, la voz del narrador vuelve a aparecer en el último párrafo para dar sus apreciaciones sobre lo contado. La respuesta que recoge estas características es la opción C, “el Inca Garcilaso, dado que recopila una historia y ofrece sus apreciaciones al respecto”.',
+    evidence: 'Infiere el sentido existencial y las crisis morales de los personajes literarios.',
+    standard: 'Caracterizo los textos literarios y reconozco sus dimensiones éticas y filosóficas.',
+    justification: 'El primer párrafo señala que "más espantoso aún resultaba su tormento moral: la repentina certidumbre de que toda su respetable vida de juez [...] no había sido más que un inmenso engaño".',
     invalidOptionsReasoning: {
-      A: 'No hay indicios de que la madre hable directamente; el narrador recopila el relato del tío materno.',
-      B: 'Los reyes del cerro Huanacauri son personajes del relato inserto.',
-      D: 'El narrador es mestizo y escribe en retrospectiva desde la época colonial.'
+      A: 'Los bienes materiales pasan a ser irrelevantes y absurdos en su agonía.',
+      C: 'Siente profunda admiración y consuelo en el campesino Guerásim.',
+      D: 'La angustia es sobre su propio sentido vital, no sobre planes escolares ajenos.'
     },
     socraticHints: {
-      recordar: '¿Quién escribe en primera persona en el primer y último párrafo ("he procurado traducir fielmente...")?',
-      comprender: '¿Cómo enmarca el autor el testimonio de su pariente inca?',
-      aplicar: 'Anota en tu cuaderno: "Narrador = El Inca Garcilaso de la Vega como cronista y comentador".',
-      analizar: '¿Por qué la opción C identifica la voz del cronista mestizo?'
-    }
+      recordar: 'Revisa las dos primeras oraciones del texto.',
+      comprender: '¿Por qué la cercanía de la muerte despoja a las apariencias sociales de todo su valor?',
+      aplicar: 'Anota en tu cuaderno: "Tormento moral de Iván Ilich: La vida inauténtica y el autoengaño burgués".',
+      analizar: 'Examina la crítica de Tolstói hacia la hipocresía de las convenciones sociales.'
+    },
+    icfesCode: 'I_1990101'
   },
   {
     id: 902,
     grade: 9,
     questionNumber: 2,
-    title: 'Comentarios Reales - Esquema de organización de ideas',
-    contextText: TEXTO_COMENTARIOS_REALES_G9,
-    statement: `El esquema que mejor representa la organización de las ideas en el texto es`,
+    title: 'Figura y significado del campesino Guerásim',
+    contextText: TEXTO_IVAN_ILICH_G9,
+    statement: '¿Por qué la presencia y actitud de Guerásim resulta el único consuelo auténtico para el protagonista?',
     options: [
-      { number: 1, letter: 'A', text: 'Los indios de las primeras edades tenían costumbres religiosas salvajes -> Las costumbres de los incas se dividen en dos edades -> Los indios de la primera edad eran bárbaros como sus dioses -> Los primeros reyes incas convencen a los indios de que los sigan.' },
-      { number: 2, letter: 'B', text: 'Las costumbres de los indios del Perú eran primitivas -> Los incas de la primera edad deciden vivir en pueblos -> Las costumbres de los incas se dividen en dos edades -> Los sacrificios de los primeros incas eran crueles y bárbaros.' },
-      { number: 3, letter: 'C', text: 'Las costumbres de los incas se dividen en dos edades -> Los indios de las primeras edades tenían costumbres religiosas salvajes -> Los primeros reyes incas convencen a los indios de que los sigan -> Los indios de la primera edad eran bárbaros como sus dioses.' },
-      { number: 4, letter: 'D', text: 'Los incas de la primera edad decidieron salir de su estado ferino -> Las costumbres de los indios del Perú eran primitivas -> Los sacrificios de los primeros incas eran crueles y bárbaros -> Las costumbres de los incas se dividen en dos edades.' }
+      { number: 1, letter: 'A', text: 'Porque le ofrecía medicinas importadas muy costosas.' },
+      { number: 2, letter: 'B', text: 'Porque su bondad era sincera, no fingía lástima y aceptaba la muerte con naturalidad y dignidad humana.' },
+      { number: 3, letter: 'C', text: 'Porque le prometió comprar su casa después de su fallecimiento.' },
+      { number: 4, letter: 'D', text: 'Porque le leía sentencias judiciales antiguas para entretenerlo.' }
     ],
-    correctOption: 3,
-    correctLetter: 'C',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Estructura y Macroestructura',
-    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Ubica elementos del contenido de diferentes tipos de textos (tiempo, lugares, hechos, personajes y narrador).',
-    standard: 'Comprendo elementos constitutivos de obras literarias, tales como tiempo, espacio, función de los personajes, lenguaje, atmósferas, diálogos, escenas, entre otros.',
-    justification: 'En el primer párrafo se establece la división en dos edades; luego se describen los dioses y costumbres de la primera edad; seguidamente la llegada de los primeros reyes en la segunda edad convocando a los indios; y finalmente en el último párrafo el juicio del narrador sobre la barbarie de los sacrificios de la primera edad. Esta secuencia exacta la contiene la opción C.',
+    component: 'Texto Continuo - Análisis de Personajes y Valores',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'El texto contrapone la falsedad de los médicos y la esposa con "la humilde y sincera bondad de Guerásim [... que] no temía a la muerte porque la aceptaba como parte natural de la vida".',
     invalidOptionsReasoning: {
-      A: 'Inicia con un hecho que no corresponde a la apertura del texto.',
-      B: 'Desordena la cronología del relato.',
-      D: 'Presenta un orden inverso e inconexo.'
+      A: 'Guerásim era un sirviente humilde que solo brindaba cuidados afectivos y apoyo físico.',
+      C: 'No hay intereses mercantiles en su conducta desinteresada.',
+      D: 'No le hablaba de leyes; le brindaba compañía cálida y compasiva.'
     },
     socraticHints: {
-      recordar: '¿Cuál es la primera proposición organizativa del texto en el párrafo 1?',
-      comprender: '¿Cómo avanza el texto desde la primera edad hasta la segunda y el comentario final?',
-      aplicar: 'Anota en tu cuaderno la secuencia de las 4 ideas clave de principio a fin.',
-      analizar: '¿Por qué la opción C es el único esquema fiel a la progresión del texto?'
-    }
+      recordar: 'Lee la última oración del fragmento sobre Guerásim.',
+      comprender: '¿Por qué la sencillez campesina contrasta con la artificiosidad de la alta sociedad?',
+      aplicar: 'Escribe en tu cuaderno: "Guerásim = Pureza moral, empatía sincera y aceptación natural de la finitud".',
+      analizar: 'Sintetiza la visión tolstoyana sobre la redención a través del amor al prójimo.'
+    },
+    icfesCode: 'I_1990102'
   },
   {
     id: 903,
     grade: 9,
     questionNumber: 3,
-    title: 'Comentarios Reales - Supremacía cultural del autor',
-    contextText: TEXTO_COMENTARIOS_REALES_G9,
-    statement: `En las intervenciones del autor del texto anterior predomina un punto de vista de supremacía cultural porque`,
+    title: 'Crítica a la institución médica y familiar burguesa',
+    contextText: TEXTO_IVAN_ILICH_G9,
+    statement: 'En las expresiones “la compasión fingida de su esposa” y “el desfile hipócrita de los médicos”, el autor denuncia:',
     options: [
-      { number: 1, letter: 'A', text: 'valida como acertadas ciertas prácticas sociales y religiosas frente a otras.' },
-      { number: 2, letter: 'B', text: 'compara la historia de una cultura indígena con la de otros pueblos aborígenes.' },
-      { number: 3, letter: 'C', text: 'explica los métodos de gobierno de ciertos grupos indígenas.' },
-      { number: 4, letter: 'D', text: 'analiza la influencia política que tuvo un grupo indígena en la historia.' }
+      { number: 1, letter: 'A', text: 'La falta de hospitales en las ciudades rusas.' },
+      { number: 2, letter: 'B', text: 'La deshumanización y la simulación social que impiden a las personas conectarse con el dolor real del moribundo.' },
+      { number: 3, letter: 'C', text: 'Los altos precios del transporte en carruajes.' },
+      { number: 4, letter: 'D', text: 'La ignorancia biológica de las universidades europeas.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Análisis Crítico / Ideología',
+    component: 'Crítica Social y Recursos Discursivos',
     affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
-    evidence: 'Evalúa las ideas expresadas en un texto.',
-    standard: 'Comprendo el sentido global de cada uno de los textos que leo, la intención de quien lo produce y las características del contexto en el que se produce.',
-    justification: 'La opción A es la correcta, ya que las apreciaciones del narrador validan como civilizadas y acertadas las prácticas de la segunda edad (impuestas por los reyes incas bajo la providencia del Sol y la lengua castellana) en desmedro y condena de la "vileza y barbaridad" de la primera edad.',
+    evidence: 'Infiere la intención crítica y los recursos valorativos del autor.',
+    standard: 'Comprendo los factores sociales y culturales que determinan la producción de los textos.',
+    justification: 'Tolstói satiriza cómo la sociedad refinada elude la verdad de la muerte mediante poses teatrales, fórmulas de cortesía y mentiras piadosas que aíslan al enfermo en su agonía.',
     invalidOptionsReasoning: {
-      B: 'El texto no compara con tribus aborígenes de otros continentes.',
-      C: 'No se limita a describir neutralmente métodos administrativos.',
-      D: 'Emite juicios de valor moral sobre las costumbres, no un análisis de ciencia política pura.'
+      A: 'Es una crítica existencial y psicológica, no de infraestructura hospitalaria.',
+      C: 'No trata de precios de movilidad urbana.',
+      D: 'Cuestiona la falta de empatía ética, no el rigor técnico.'
     },
     socraticHints: {
-      recordar: '¿Qué calificativos usa el autor para la primera edad ("vileza, bajeza, crueldad") frente a los reyes incas?',
-      comprender: '¿Por qué calificar una etapa de "ferina y bárbara" y otra de "civilizada" demuestra supremacía cultural?',
-      aplicar: 'Anota en tu cuaderno: "Supremacía cultural = Jerarquizar y juzgar como superior un sistema cultural frente a otro".',
-      analizar: '¿Por qué la opción A recoge la perspectiva valorativa del Inca Garcilaso?'
-    }
+      recordar: '¿Qué adjetivos utiliza el narrador para referirse a la esposa y los doctores?',
+      comprender: '¿Por qué la mentira de "pronto te pondrás bien" resulta tan cruel para alguien que sabe que va a morir?',
+      aplicar: 'Anota en tu cuaderno una reflexión sobre la autenticidad en el acompañamiento a los enfermos.',
+      analizar: 'Evalúa la hipocresía social como mecanismo de defensa ante lo inevitable.'
+    },
+    icfesCode: 'I_1990103'
   },
   {
     id: 904,
     grade: 9,
     questionNumber: 4,
-    title: 'Comentarios Reales - Sentido de "les dieron entero crédito"',
-    contextText: TEXTO_COMENTARIOS_REALES_G9,
-    statement: `Según el texto, la expresión “les dieron entero crédito” significa`,
+    title: 'Pregunta retórica existencial del protagonista',
+    contextText: TEXTO_IVAN_ILICH_G9,
+    statement: 'La pregunta que Iván Ilich se formula a sí mismo (“¿Y si verdaderamente toda mi existencia consciente no hubiera sido lo que debió ser?”) cumple la función discursiva de:',
     options: [
-      { number: 1, letter: 'A', text: 'prestar dinero.' },
-      { number: 2, letter: 'B', text: 'creer en algo.' },
-      { number: 3, letter: 'C', text: 'escribir una historia.' },
-      { number: 4, letter: 'D', text: 'tomar una decisión.' }
+      { number: 1, letter: 'A', text: 'Pedir información meteorológica sobre el invierno ruso.' },
+      { number: 2, letter: 'B', text: 'Marcar el punto de quiebre introspectivo donde el personaje cuestiona radicalmente la validez de todo su proyecto de vida.' },
+      { number: 3, letter: 'C', text: 'Solicitar un aumento de sueldo retroactivo al Ministerio de Justicia.' },
+      { number: 4, letter: 'D', text: 'Iniciar un examen judicial para acusar a sus médicos de negligencia.' }
     ],
     correctOption: 2,
     correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Semántica y Expresiones Idiomáticas',
+    component: 'Pragmática y Estructura Argumentativo-Narrativa',
     affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
-    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados de un texto.',
-    standard: 'Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.',
-    justification: 'De acuerdo con el contexto de la narración, "dar crédito" a las palabras y promesas de los recién llegados significa otorgarles plena fe, confianza y creer firmemente en lo que decían (opción B).',
+    evidence: 'Diferencia las funciones de las partes en las que se estructura un texto.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'Esta interrogante existencial abre la crisis definitiva de conciencia: destruye la autojustificación del personaje y lo obliga a confrontar el vacío de su existencia.',
     invalidOptionsReasoning: {
-      A: 'Confunde la expresión figurada con un préstamo bancario o financiero.',
-      C: 'No alude al oficio de redactar crónicas.',
-      D: 'La fe y creencia precedieron a la obediencia, no es la definición del vocablo "crédito".'
+      A: 'No es una pregunta climática.',
+      C: 'No tiene fines laborales o salariales.',
+      D: 'Es un juicio moral interno consigo mismo, no un pleito legal.'
     },
     socraticHints: {
-      recordar: '¿Qué significa en español dar crédito a un testimonio o relato?',
-      comprender: '¿Cómo reaccionaron los pobladores ante las palabras de los enviados del Sol?',
-      aplicar: 'Anota en tu cuaderno: "Dar entero crédito = Creer totalmente en algo sin dudar".',
-      analizar: '¿Por qué la opción B es el significado exacto?'
-    }
+      recordar: 'Lee con atención la pregunta entre comillas en el segundo párrafo.',
+      comprender: '¿Qué ocurre en la mente humana cuando descubrimos que perseguimos metas equivocadas?',
+      aplicar: 'Escribe en tu cuaderno: "Crisis existencial = Descubrimiento tardío de prioridades erróneas".',
+      analizar: 'Sintetiza la fuerza dramática del monólogo interior en la novela moderna.'
+    },
+    icfesCode: 'I_1990104'
   },
   {
     id: 905,
     grade: 9,
     questionNumber: 5,
-    title: 'Comentarios Reales - Secuencia textual predominante en el párrafo 3',
-    contextText: TEXTO_COMENTARIOS_REALES_G9,
-    statement: `En el tercer párrafo del texto, predomina una secuencia`,
+    title: 'Corriente literaria y temática de la obra de Tolstói',
+    contextText: TEXTO_IVAN_ILICH_G9,
+    statement: 'Por su análisis profundo de la psicología humana, su crítica a las instituciones y su minuciosa observación de la realidad social, este fragmento es representativo de:',
     options: [
-      { number: 1, letter: 'A', text: 'narrativa, porque se relatan hechos siguiendo un orden cronológico.' },
-      { number: 2, letter: 'B', text: 'descriptiva, porque se detallan las características de personajes y lugares.' },
-      { number: 3, letter: 'C', text: 'explicativa, porque se define un concepto central para el desarrollo del texto.' },
-      { number: 4, letter: 'D', text: 'argumentativa, porque se presenta un punto de vista acerca de una problemática.' }
+      { number: 1, letter: 'A', text: 'El Realismo literario del siglo XIX.' },
+      { number: 2, letter: 'B', text: 'El Barroco del Siglo de Oro español.' },
+      { number: 3, letter: 'C', text: 'La ciencia ficción distópica cibernética.' },
+      { number: 4, letter: 'D', text: 'La épica grecolatina clásica homérica.' }
     ],
     correctOption: 1,
     correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Tipología Textual / Secuencias Discursivas',
-    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
-    evidence: 'Identifica el contenido de cada parte funcional del texto.',
-    standard: 'Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.',
-    justification: 'La opción A es la correcta porque el tercer párrafo narra cronológicamente la salida de los reyes del cerro Huanacauri, su encuentro con las gentes, el discurso que les dieron y la posterior obediencia de los pueblos.',
+    component: 'Historia Literaria y Movimientos Culturales',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Relaciona y compara diferentes textos literarios con sus movimientos estéticos.',
+    standard: 'Reconozco los principales movimientos de la literatura universal (Realismo, etc.).',
+    justification: 'León Tolstói es uno de los máximos exponentes del Realismo ruso y universal, caracterizado por la penetración psicológica, el retrato verosímil y la crítica moral y social.',
     invalidOptionsReasoning: {
-      B: 'No se detiene en describir prosopografías o topografías estáticas.',
-      C: 'No es una definición técnica ni conceptual.',
-      D: 'El relato de los hechos míticos es una narración cronológica, no una disertación argumentativa pura.'
+      B: 'El Barroco se desarrolló en los siglos XVI-XVII con culteranismo y conceptismo.',
+      C: 'La ciencia ficción cibernética surge a finales del siglo XX.',
+      D: 'La épica homérica pertenece a la Grecia antigua en hexámetros dactílicos.'
     },
     socraticHints: {
-      recordar: '¿Qué tipo de verbos predominan en el párrafo 3 (salieron, hablaban, decían, dieron crédito, adoraron)?',
-      comprender: '¿Por qué el encadenamiento de acciones en el tiempo define una secuencia narrativa?',
-      aplicar: 'Anota en tu cuaderno: "Secuencia narrativa = Relato de acciones y sucesos en el tiempo cronológico".',
-      analizar: '¿Por qué la opción A es la respuesta oficial?'
-    }
+      recordar: '¿En qué siglo escribió León Tolstói obras maestras como La guerra y la paz y Ana Karénina?',
+      comprender: '¿Cuáles son los rasgos principales del movimiento Realista en la novela?',
+      aplicar: 'Anota en tu cuaderno: "León Tolstói (1828-1910) - Realismo Psicológico y Moral".',
+      analizar: 'Verifica la correspondencia entre la estética realista y el tratamiento de la muerte.'
+    },
+    icfesCode: 'I_1990105'
   },
+
+  // ---------------------------------------------------------------------------
+  // TEXTO 2: INFOGRAFÍA BASURA ELECTRÓNICA (Preguntas 6 a 10)
+  // ---------------------------------------------------------------------------
   {
     id: 906,
     grade: 9,
     questionNumber: 6,
-    title: 'Comentarios Reales - Orden temporal de sucesos del tío inca',
-    contextText: TEXTO_COMENTARIOS_REALES_G9,
-    statement: `El esquema que representa el orden temporal de los sucesos mencionados por el tío inca es:`,
+    title: 'Destino mayoritario de los desechos electrónicos',
+    contextText: TEXTO_BASURA_ELECTRONICA_G9,
+    statement: 'De acuerdo con la infografía, ¿qué sucede con el 82.6% de la basura electrónica generada en el mundo?',
     options: [
-      { number: 1, letter: 'A', text: 'Los incas se dividen en dos edades de acuerdo a sus costumbres -> Los incas de la primera edad deciden obedecer a los hijos del sol -> Los primeros reyes convencen a los incas de que los sigan y los adoren.' },
-      { number: 2, letter: 'B', text: 'Los reyes incas surgen y hablan con los indios que habitan la tierra -> Los indios incas consideran la tierra, el viento y los ríos como sus dioses -> Los indios reverencian a los hijos del sol.' },
-      { number: 3, letter: 'C', text: 'Los indios de la primera edad adoran múltiples dioses -> Los reyes incas surgen y hablan con los indios que habitan la tierra -> Los indios obedecen y adoran a los reyes incas.' },
-      { number: 4, letter: 'D', text: 'Los reyes de la segunda edad reúnen al pueblo inca -> Los incas de la primera edad escogen a sus dioses -> Los reyes y los primeros incas se unen para adorar al sol.' }
-    ],
-    correctOption: 3,
-    correctLetter: 'C',
-    competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Secuencia Cronológica de Acciones',
-    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Ubica elementos del contenido de diferentes tipos de textos (tiempo, lugares, hechos, personajes y narrador).',
-    standard: 'Comprendo elementos constitutivos de obras literarias, tales como tiempo, espacio, función de los personajes, lenguaje, atmósferas, diálogos, escenas, entre otros.',
-    justification: 'La respuesta correcta es la C, ya que resume con perfecta coherencia temporal el testimonio del tío: primero, la adoración de múltiples dioses naturales; segundo, el surgimiento de los reyes en Huanacauri; y tercero, la obediencia y adoración del pueblo a los reyes incas.',
-    invalidOptionsReasoning: {
-      A: 'Mezcla la introducción del autor con el relato del tío y distorsiona el orden.',
-      B: 'Invierte el orden situando el surgimiento de los reyes antes de la adoración primitiva.',
-      D: 'Altera el orden cronológico de las dos edades.'
-    },
-    socraticHints: {
-      recordar: '¿Qué pasaba en la primera edad antes de que llegaran los reyes?',
-      comprender: '¿Cuál es la secuencia causal exacta que relata el tío inca?',
-      aplicar: 'Anota en tu cuaderno: "1. Dioses múltiples -> 2. Reyes surgen y hablan -> 3. Pueblo obedece y adora".',
-      analizar: '¿Por qué la opción C es el esquema temporal correcto?'
-    }
-  },
-
-  // =========================================================================
-  // TEXTO 2: EVOLUCIÓN DE LA CIENCIA / CLASIFICACIÓN DE LAS CIENCIAS (Preguntas 7 a 10)
-  // =========================================================================
-  {
-    id: 907,
-    grade: 9,
-    questionNumber: 7,
-    title: 'Evolución de la Ciencia - Relación entre imágenes y texto',
-    contextText: TEXTO_EVOLUCION_CIENCIA_G9,
-    statement: `¿Cuál es la relación entre las imágenes de la “Evolución de la Ciencia” y el texto que las acompaña?`,
-    options: [
-      { number: 1, letter: 'A', text: 'Las imágenes representan los logros que se describen en el texto.' },
-      { number: 2, letter: 'B', text: 'Las imágenes representan los científicos de los que habla el texto.' },
-      { number: 3, letter: 'C', text: 'El texto describe detalladamente las imágenes que lo acompañan.' },
-      { number: 4, letter: 'D', text: 'El texto describe físicamente a los hombres que aparecen en las imágenes.' }
+      { number: 1, letter: 'A', text: 'Es lanzado al espacio exterior en cohetes de investigación.' },
+      { number: 2, letter: 'B', text: 'Se quema a cielo abierto o se exporta ilegalmente a países en desarrollo donde es desarmada por trabajadores y niños sin protección.' },
+      { number: 3, letter: 'C', text: 'Se recicla en instalaciones de alta tecnología con robótica de punta.' },
+      { number: 4, letter: 'D', text: 'Se transforma en abono orgánico para la agricultura.' }
     ],
     correctOption: 2,
     correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Infografía / Relación Imagen-Texto',
-    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
-    evidence: 'Deduce las relaciones entre elementos lingüísticos y no lingüísticos.',
-    standard: 'Relaciono gráficas con texto escrito, ya sea completándolas o explicándolas.',
-    justification: 'La opción B es la correcta porque las imágenes presentan los rostros y retratos de cada uno de los científicos (Tales, Al Juarismi, Copérnico, Newton, Darwin, Einstein) mencionados en los hitos de la línea de tiempo.',
+    component: 'Texto Discontinuo - Infografía / Extracción de Datos e Injusticia Ambiental',
+    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Utilizo estrategias de búsqueda, selección y almacenamiento de información.',
+    justification: 'En la sección de la crisis global se afirma que el 82.6% "Se quema en basureros a cielo abierto o se envía ilegalmente a países en desarrollo (como Ghana o Nigeria), donde trabajadores informales y niños desarman placas madre sin protección".',
     invalidOptionsReasoning: {
-      A: 'Las imágenes no son dibujos de los inventos o ecuaciones, sino retratos de los autores.',
-      C: 'El texto no describe los retratos pictóricos.',
-      D: 'El texto no realiza una descripción física de su vestimenta o anatomía.'
+      A: 'No hay envíos espaciales de chatarra.',
+      C: 'Solo el 17.4% recibe reciclaje formal.',
+      D: 'Son metales pesados y plásticos no biodegradables, no compost.'
     },
     socraticHints: {
-      recordar: '¿Qué muestran los dibujos circulares en la línea de tiempo?',
-      comprender: '¿A quiénes corresponden los rostros dibujados bajo cada fecha?',
-      aplicar: 'Anota en tu cuaderno: "Imágenes de la infografía = Retratos de los científicos que lograron cada avance".',
-      analizar: '¿Por qué la opción B es la respuesta exacta?'
-    }
+      recordar: 'Revisa la viñeta del 82.6% en el texto.',
+      comprender: '¿Por qué el traslado de residuos tóxicos hacia naciones empobrecidas se considera colonialismo tóxico?',
+      aplicar: 'Haz en tu cuaderno un esquema comparativo: Reciclaje seguro (17.4%) vs Vertido informal (82.6%).',
+      analizar: 'Evalúa la dimensión geopolítica y ética de la gestión de residuos tecnológicos.'
+    },
+    icfesCode: 'I_1990201',
+    hasDiagram: true
+  },
+  {
+    id: 907,
+    grade: 9,
+    questionNumber: 7,
+    title: 'Riesgos a la salud por metales pesados',
+    contextText: TEXTO_BASURA_ELECTRONICA_G9,
+    statement: 'En la sección de impactos críticos en la salud, la relación correcta entre el elemento tóxico y su daño es:',
+    options: [
+      { number: 1, letter: 'A', text: 'Plomo -> Daño irreversible en sistema nervioso y riñones / Cadmio -> Cancerígeno y daño óseo/pulmonar.' },
+      { number: 2, letter: 'B', text: 'Mercurio -> Estimulante de la memoria y la visión nocturna.' },
+      { number: 3, letter: 'C', text: 'Plomo -> Fortalecimiento del esmalte de los dientes.' },
+      { number: 4, letter: 'D', text: 'Cadmio -> Hormona de crecimiento muscular.' }
+    ],
+    correctOption: 1,
+    correctLetter: 'A',
+    competency: 'Comprensión lectora.',
+    component: 'Texto Continuo / Discontinuo - Toxicología Ambiental',
+    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'El texto señala que el plomo daña el sistema nervioso central y los riñones, y el cadmio es cancerígeno y deteriora la densidad ósea y los pulmones.',
+    invalidOptionsReasoning: {
+      B: 'El mercurio es altamente neurotóxico y bioacumulable en peces.',
+      C: 'El plomo es un veneno celular sistémico.',
+      D: 'El cadmio no es una hormona sino un metal cancerígeno letal.'
+    },
+    socraticHints: {
+      recordar: 'Lee la lista de tres metales pesados en la infografía.',
+      comprender: '¿Cómo ingresan estos metales a los cuerpos de los niños que queman cables para extraer cobre?',
+      aplicar: 'Anota en tu cuaderno la tabla de efectos: Plomo, Mercurio y Cadmio.',
+      analizar: 'Sintetiza la amenaza biológica de la contaminación química industrial.'
+    },
+    icfesCode: 'I_1990202'
   },
   {
     id: 908,
     grade: 9,
     questionNumber: 8,
-    title: 'Evolución de la Ciencia - Función de las flechas en la línea de tiempo',
-    contextText: TEXTO_EVOLUCION_CIENCIA_G9,
-    statement: `¿Qué permite la relación entre las flechas y las imágenes de personajes reconocidos ubicados en la línea de tiempo?`,
+    title: 'Ventajas ambientales de la Minería Urbana',
+    contextText: TEXTO_BASURA_ELECTRONICA_G9,
+    statement: 'El concepto de “Minería Urbana” propuesto en el texto demuestra que reciclar teléfonos móviles es más eficiente que la minería tradicional porque:',
     options: [
-      { number: 1, letter: 'A', text: 'Señalar el momento de la historia en el que alguien realizó un avance científico.' },
-      { number: 2, letter: 'B', text: 'Resaltar una parte del proceso científico realizado por una persona en particular.' },
-      { number: 3, letter: 'C', text: 'Organizar las diferentes ciencias que existen en el mundo.' },
-      { number: 4, letter: 'D', text: 'Mostrar a todos los grandes científicos de la historia.' }
+      { number: 1, letter: 'A', text: 'Una tonelada de celulares contiene hasta 100 veces más oro y 10 veces más plata que una tonelada de roca minera, frenando la deforestación.' },
+      { number: 2, letter: 'B', text: 'Los teléfonos viejos se pueden enterrar para que crezcan árboles de oro.' },
+      { number: 3, letter: 'C', text: 'Permite que las ciudades se trasladen a vivir dentro de las montañas.' },
+      { number: 4, letter: 'D', text: 'Elimina la necesidad de utilizar teléfonos inteligentes en el mundo.' }
     ],
     correctOption: 1,
     correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Lenguaje Gráfico',
-    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
-    evidence: 'Deduce las relaciones entre elementos lingüísticos y no lingüísticos.',
-    standard: 'Relaciono gráficas con texto escrito, ya sea completándolas o explicándolas.',
-    justification: 'La opción A es la correcta, ya que las flechas conectan visualmente un año específico del eje cronológico con el hallazgo o avance científico y la figura histórica responsable.',
+    component: 'Texto Discontinuo - Economía Circular y Sostenibilidad',
+    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Utilizo estrategias de búsqueda, selección y almacenamiento de información.',
+    justification: 'En la sección final se explica que la concentración de metales preciosos en dispositivos usados es enormemente superior a la de la corteza terrestre, reduciendo la necesidad de megaminería a cielo abierto.',
     invalidOptionsReasoning: {
-      B: 'No desglosan las fases del método científico de un experimento.',
-      C: 'La organización por ramas está en el árbol inferior, no en las flechas temporales.',
-      D: 'Es una selección ilustrativa de hitos, no un catálogo exhaustivo de todos los científicos existentes.'
+      B: 'Los metales no son semillas vegetales.',
+      C: 'La minería urbana consiste en recuperar recursos dentro de las ciudades, no en mudar urbes a cavernas.',
+      D: 'Busca un circuito cerrado de reciclaje, no prohibir la tecnología.'
     },
     socraticHints: {
-      recordar: '¿Qué conecta cada flecha vertical entre la barra de años y los recuadros?',
-      comprender: '¿Cuál es la utilidad de una línea de tiempo con flechas?',
-      aplicar: 'Anota en tu cuaderno: "Función de las flechas = Ubicar en qué fecha histórica ocurrió cada avance científico".',
-      analizar: '¿Por qué la opción A es la respuesta precisa?'
-    }
+      recordar: 'Revisa las cifras de oro y plata por tonelada en el último recuadro.',
+      comprender: '¿Por qué extraer oro de circuitos reciclados contamina menos que volar cerros con dinamita?',
+      aplicar: 'Escribe en tu cuaderno: "Minería Urbana = Recuperación de metales valiosos de la chatarra tecnológica".',
+      analizar: 'Relaciona la economía circular con la reducción de la huella de carbono planetaria.'
+    },
+    icfesCode: 'I_1990203'
   },
   {
     id: 909,
     grade: 9,
     questionNumber: 9,
-    title: 'Evolución de la Ciencia - Conclusión del apartado',
-    contextText: TEXTO_EVOLUCION_CIENCIA_G9,
-    statement: `¿Qué se concluye del apartado “Evolución de la Ciencia”?`,
+    title: 'Causa originaria de la crisis de e-waste',
+    contextText: TEXTO_BASURA_ELECTRONICA_G9,
+    statement: 'A partir de la introducción, se infiere que el factor principal que acelera la crisis de la basura electrónica es:',
     options: [
-      { number: 1, letter: 'A', text: 'La teoría de la evolución es posterior a la teoría de la relatividad.' },
-      { number: 2, letter: 'B', text: 'La biología es la ciencia que menos ha progresado en la historia.' },
-      { number: 3, letter: 'C', text: 'La invención del álgebra es anterior a la formulación de las leyes de la física.' },
-      { number: 4, letter: 'D', text: 'La ciencia inició su proceso de evolución con la descripción del genoma humano.' }
+      { number: 1, letter: 'A', text: 'La obsolescencia programada y el consumo acelerado impulsado por el reemplazo constante de dispositivos.' },
+      { number: 2, letter: 'B', text: 'La caída de meteoritos de silicio sobre la Tierra.' },
+      { number: 3, letter: 'C', text: 'El aumento de barcos de pesca en los océanos.' },
+      { number: 4, letter: 'D', text: 'La falta de cables submarinos de internet.' }
     ],
-    correctOption: 3,
-    correctLetter: 'C',
+    correctOption: 1,
+    correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Inferencias Cronológicas',
-    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
-    evidence: 'Evalúa las ideas expresadas en un texto.',
-    standard: 'Elaboro hipótesis de lectura de diferentes textos, a partir de la revisión de sus características como: forma de presentación, títulos, graficación y manejo de la lengua.',
-    justification: 'A partir del orden cronológico estricto de la infografía (830 d.C. para el álgebra frente a 1687 para las leyes de la física de Newton), se deduce de forma irrefutable que la invención del álgebra es anterior a la formulación de las leyes de la física (opción C).',
+    component: 'Inferencia Causal y Sociología del Consumo Tecnológico',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados.',
+    standard: 'Elaboro hipótesis acerca del sentido global de los textos.',
+    justification: 'La primera oración apunta directamente al "vertiginoso ritmo de renovación de dispositivos electrónicos", estimulado por la publicidad y la corta vida útil programada de los aparatos.',
     invalidOptionsReasoning: {
-      A: 'La teoría de la evolución (1859) es anterior a la relatividad (1905).',
-      B: 'La infografía no emite juicios de valor sobre qué ciencia progresó menos.',
-      D: 'El genoma humano no aparece en el texto ni fue el inicio de la ciencia.'
+      A: 'Meteoritos y pesca no son factores de e-waste.',
+      D: 'Los cables de telecomunicaciones no generan el volumen masivo de celulares y computadores descartados anualmente.'
     },
     socraticHints: {
-      recordar: 'Compara el año de Al Juarismi (830) con el de Isaac Newton (1687).',
-      comprender: '¿Cuál de los dos sucesos ocurrió siglos antes?',
-      aplicar: 'Anota en tu cuaderno: "830 d.C. (Álgebra) < 1687 d.C. (Leyes de la física)".',
-      analizar: '¿Por qué la opción C es la única conclusión cronológica verdadera?'
-    }
+      recordar: 'Lee la primera frase del texto.',
+      comprender: '¿Cada cuánto tiempo la publicidad nos empuja a cambiar de celular aunque el anterior aún funcione?',
+      aplicar: 'Anota en tu cuaderno el impacto de la obsolescencia programada en el planeta.',
+      analizar: 'Sintetiza la relación entre modelo económico hiperconsumista y catástrofe ecológica.'
+    },
+    icfesCode: 'I_1990204'
   },
   {
     id: 910,
     grade: 9,
     questionNumber: 10,
-    title: 'Evolución de la Ciencia - Audiencia de la infografía',
-    contextText: TEXTO_EVOLUCION_CIENCIA_G9,
-    statement: `De acuerdo con la información del texto y las imágenes que utiliza, ¿a quién va dirigido texto?`,
+    title: 'Estrategias de visualización y comparaciones de escala',
+    contextText: TEXTO_BASURA_ELECTRONICA_G9,
+    statement: 'La comparación de las 53.6 millones de toneladas de e-waste con “350 cruceros gigantescos” es un recurso discursivo que busca:',
     options: [
-      { number: 1, letter: 'A', text: 'A los músicos.' },
-      { number: 2, letter: 'B', text: 'A los pintores.' },
-      { number: 3, letter: 'C', text: 'Al público general.' },
-      { number: 4, letter: 'D', text: 'A niños de preescolar.' }
+      { number: 1, letter: 'A', text: 'Promocionar vacaciones en cruceros marítimos de lujo.' },
+      { number: 2, letter: 'B', text: 'Hacer tangible y comprensible para el lector la magnitud colosal de una cifra abstracta en toneladas.' },
+      { number: 3, letter: 'C', text: 'Demostrar que los barcos están hechos de teléfonos celulares.' },
+      { number: 4, letter: 'D', text: 'Aconsejar a los turistas que boten sus computadores al mar.' }
     ],
-    correctOption: 3,
-    correctLetter: 'C',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Pragmática e Intención Comunicativa',
+    component: 'Estrategias Retóricas en la Comunicación Científica',
     affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
     evidence: 'Infiere estrategias discursivas del texto.',
-    standard: 'Infiero otros sentidos en cada uno de los textos que leo, relacionándolos con su sentido global y con el contexto en el cual se han producido.',
-    justification: 'La opción C es la correcta, puesto que por su lenguaje divulgativo, claridad visual y carácter panorámico, el material está diseñado para informar al público general y a la comunidad escolar.',
+    standard: 'Doy cuenta de algunas estrategias empleadas para comunicar a través del lenguaje no verbal y metafórico.',
+    justification: 'Utilizar analogías visuales de objetos de escala masiva (cruceros) permite al cerebro humano dimensionar volúmenes hiperbólicos que en números fríos pierden impacto emocional.',
     invalidOptionsReasoning: {
-      A: 'El tema científico no está restringido al gremio musical.',
-      B: 'No se dirige a artistas visuales especializados.',
-      D: 'El nivel de fechas históricas y conceptos (modelo heliocéntrico, álgebra, física cuántica/relatividad) excede a niños de preescolar.'
+      A: 'No es publicidad turística.',
+      C: 'Es una analogía volumétrica de peso y tamaño, no de materiales.',
+      D: 'El texto alerta contra la contaminación marina por mercurio.'
     },
     socraticHints: {
-      recordar: '¿Qué nivel de complejidad tienen los conceptos de la infografía?',
-      comprender: '¿Por qué una infografía web de cultura científica está orientada a toda persona interesada?',
-      aplicar: 'Anota en tu cuaderno: "Destinatario = Público general y estudiantil".',
-      analizar: '¿Por qué la opción C es la respuesta correcta?'
-    }
+      recordar: '¿Por qué es difícil imaginar mentalmente 53.600.000.000 de kilos?',
+      comprender: '¿Qué efecto causa en tu imaginación visualizar una hilera de 350 cruceros llenos de chatarra?',
+      aplicar: 'Escribe en tu cuaderno: "Estrategia de divulgación: Uso de analogías a escala para datos masivos".',
+      analizar: 'Evalúa la eficacia retórica de la divulgación estadística en el informe de la ONU.'
+    },
+    icfesCode: 'I_1990205'
   },
 
-  // =========================================================================
-  // TEXTO 3: ASÍ SE ESTUDIA EN LA SELVA AMAZÓNICA (Preguntas 11 a 15)
-  // =========================================================================
+  // ---------------------------------------------------------------------------
+  // TEXTO 3: EL ECLIPSE (Preguntas 11 a 15)
+  // ---------------------------------------------------------------------------
   {
     id: 911,
     grade: 9,
     questionNumber: 11,
-    title: 'Selva Amazónica - Orden de las acciones en la crónica',
-    contextText: TEXTO_SELVA_AMAZONICA_G9,
-    statement: `¿Cuál es el orden de las acciones en el texto?`,
+    title: 'El Eclipse - Error de juicio y condescendencia de Fray Bartolomé',
+    contextText: TEXTO_EL_ECLIPSE_G9,
+    statement: 'En el cuento de Augusto Monterroso, el error fundamental que conduce a la muerte de fray Bartolomé Arrazola es:',
     options: [
-      { number: 1, letter: 'A', text: 'El rector describe a los estudiantes. -> El periodista llega a la escuela. -> Los niños juegan.' },
-      { number: 2, letter: 'B', text: 'Los niños juegan. -> El periodista toma un avión. -> El rector describe a los estudiantes.' },
-      { number: 3, letter: 'C', text: 'El periodista llega a la escuela. -> Los niños juegan. -> El periodista toma un avión.' },
-      { number: 4, letter: 'D', text: 'El periodista toma un avión. -> Los niños juegan. -> El periodista llega a la escuela.' }
+      { number: 1, letter: 'A', text: 'Haber olvidado las oraciones en latín ante el altar.' },
+      { number: 2, letter: 'B', text: 'Subestimar el conocimiento astronómico de los mayas por considerarlos ignorantes frente a su propia cultura libresca europea.' },
+      { number: 3, letter: 'C', text: 'No haber llevado un arma de fuego para defenderse en la selva.' },
+      { number: 4, letter: 'D', text: 'Confundir un eclipse solar con una lluvia de estrellas fugaces.' }
     ],
-    correctOption: 3,
-    correctLetter: 'C',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Crónica Periodística / Orden Secuencial',
-    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Ubica elementos del contenido de diferentes tipos de textos (tiempo, lugares, hechos, personajes y narrador).',
-    standard: 'Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.',
-    justification: 'La opción C presenta el orden cronológico real de la visita periodística: primero, el periodista viaja y llega al Centro Educativo Rural Bocas del Yi; segundo, presencia la jornada festiva donde los niños juegan; y tercero, aborda el avión de despegue y regreso.',
+    component: 'Texto Continuo - Cuento Breve / Ironía y Eurocentrismo',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Infiere motivaciones, contradicciones y visiones de mundo en la literatura hispanoamericana.',
+    standard: 'Reconozco en los textos literarios la presencia de ironía y sátira.',
+    justification: 'Fray Bartolomé asume con soberbia eurocéntrica que los indígenas carecen de ciencia y pueden ser engañados con un truco elemental, ignorando que la civilización maya poseía un cálculo astronómico milenario exacto.',
     invalidOptionsReasoning: {
-      A: 'El periodista llega antes de que se desarrolle la descripción de los niños.',
-      B: 'El despegue del avión ocurre al final de la crónica, no antes.',
-      D: 'El avión de despegue marca la despedida y retorno del reportero.'
+      A: 'El fraile intentó engañarlos con la astronomía aristotélica, no con rezos litúrgicos.',
+      C: 'Aceptó su muerte con resignación al principio, pero su orgullo intelectual lo traicionó.',
+      D: 'El eclipse ocurrió puntualmente como estaba previsto por ambas fuentes.'
     },
     socraticHints: {
-      recordar: '¿Cómo empieza la visita del periodista y cómo finaliza?',
-      comprender: '¿En qué momento de la jornada ocurren los juegos organizados por la Casa Cultural?',
-      aplicar: 'Anota en tu cuaderno: "Llegada al Vaupés -> Juegos de los niños -> Avión de regreso".',
-      analizar: '¿Por qué la opción C es la única secuencia cronológica correcta?'
-    }
+      recordar: 'Revisa el tercer y último párrafo del cuento.',
+      comprender: '¿Por qué el fraile pensó que su conocimiento de Aristóteles era superior al de los nativos?',
+      aplicar: 'Anota en tu cuaderno: "Ironía central de El Eclipse: La soberbia eurocéntrica desmentida por la ciencia maya".',
+      analizar: 'Examina cómo el etnocentrismo ciega al personaje sobre la realidad del otro.'
+    },
+    icfesCode: 'I_1990301'
   },
   {
     id: 912,
     grade: 9,
     questionNumber: 12,
-    title: 'Selva Amazónica - Caracterización de los estudiantes',
-    contextText: TEXTO_SELVA_AMAZONICA_G9,
-    statement: `Según el autor, ¿cómo son los niños que estudian en el Centro Educativo Rural?`,
+    title: 'Función de la ironía final en el desenlace',
+    contextText: TEXTO_EL_ECLIPSE_G9,
+    statement: 'La frase final del cuento (“que los astrónomos de la comunidad maya habían previsto y anotado en sus códices sin la valiosa ayuda de Aristóteles”) encierra una ironía magistral porque:',
     options: [
-      { number: 1, letter: 'A', text: 'Valientes.' },
-      { number: 2, letter: 'B', text: 'Conformes.' },
-      { number: 3, letter: 'C', text: 'Arriesgados.' },
-      { number: 4, letter: 'D', text: 'Desobedientes.' }
+      { number: 1, letter: 'A', text: 'Aristóteles era un sabio maya que vivía en la selva de Guatemala.' },
+      { number: 2, letter: 'B', text: 'Ridiculiza la pretensión de superioridad cultural del fraile demostrando que los mayas dominaban la astronomía con enorme exactitud científica sin recurrir a la filosofía griega.' },
+      { number: 3, letter: 'C', text: 'Demuestra que los códices mayas estaban escritos en idioma griego clásico.' },
+      { number: 4, letter: 'D', text: 'Explica que el sacrificio fue suspendido gracias a un debate filosófico.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Caracterización de Sujetos',
-    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Ubica elementos del contenido de diferentes tipos de textos (tiempo, lugares, hechos, personajes y narrador).',
-    standard: 'Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.',
-    justification: 'La opción A es la correcta porque en el párrafo final el autor califica explícitamente a los alumnos, padres y maestros como personas "valientes" por enfrentar la lejanía familiar y las duras condiciones de la selva para educarse.',
+    component: 'Recursos Estilísticos - Ironía Trágica y Parodia Epistemológica',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Identifica la intención estética, el tono irónico y la crítica colonial del autor.',
+    standard: 'Comprendo el sentido global de cada uno de los textos que leo.',
+    justification: 'La mención irónica a la "valiosa ayuda de Aristóteles" desmonta el mito colonial de que Europa era la única portadora del saber científico, vindicando la sofisticación intelectual de las civilizaciones originarias de América.',
     invalidOptionsReasoning: {
-      B: 'El texto no los muestra pasivos ni conformistas.',
-      C: 'No actúan por imprudencia o capricho, sino por el valor y derecho a la educación.',
-      D: 'El texto describe su disciplina en el internado y su respeto a las tradiciones.'
+      A: 'Aristóteles fue un filósofo griego del siglo IV a.C.',
+      C: 'Los códices estaban en escritura jeroglífica y calendárica maya.',
+      D: 'El fraile fue sacrificado mientras se recitaban los eclipses.'
     },
     socraticHints: {
-      recordar: '¿Qué adjetivo honorífico usa el cronista en la última frase del artículo?',
-      comprender: '¿Por qué separarse de la familia a los 5 años para estudiar en hamacas demuestra valentía?',
-      aplicar: 'Anota en tu cuaderno la palabra textual: "Valientes".',
-      analizar: '¿Por qué la opción A es la respuesta literal exacta?'
-    }
+      recordar: 'Lee la última frase del relato con atención al tono de voz implícito.',
+      comprender: '¿Por qué el autor califica la ayuda de Aristóteles de "valiosa" en tono burlesco?',
+      aplicar: 'Escribe en tu cuaderno: "Ironía monterrosiana: Desmitificación del monopolio europeo del conocimiento".',
+      analizar: 'Sintetiza la inversión de roles entre el "civilizador engañador" y los "sabios indígenas".'
+    },
+    icfesCode: 'I_1990302'
   },
   {
     id: 913,
     grade: 9,
     questionNumber: 13,
-    title: 'Selva Amazónica - Motivo por el cual es difícil llegar',
-    contextText: TEXTO_SELVA_AMAZONICA_G9,
-    statement: `De acuerdo con el texto, ¿por qué el periodista afirma que es difícil llegar al Centro Educativo Rural Bocas del Yi?`,
+    title: 'Actitud de los indígenas durante el episodio',
+    contextText: TEXTO_EL_ECLIPSE_G9,
+    statement: 'A lo largo del texto, la actitud del grupo indígena se caracteriza por:',
     options: [
-      { number: 1, letter: 'A', text: 'Porque el rector de la escuela se lo dice al periodista.' },
-      { number: 2, letter: 'B', text: 'Porque es complicado para el periodista llegar hasta la selva.' },
-      { number: 3, letter: 'C', text: 'Porque el periodista irá a la escuela durante las clases.' },
-      { number: 4, letter: 'D', text: 'Porque cuando el periodista fue los estudiantes no estaban.' }
+      { number: 1, letter: 'A', text: 'El pánico descontrolado, los gritos histéricos y la huida desordenada ante la amenaza del fraile.' },
+      { number: 2, letter: 'B', text: 'La impasibilidad, la deliberación tranquila y una rigurosa certeza científica respaldada en sus registros códices.' },
+      { number: 3, letter: 'C', text: 'La súplica de rodillas para que el religioso no apague el sol.' },
+      { number: 4, letter: 'D', text: 'El entusiasmo por aprender el idioma castellano y convertirse al cristianismo.' }
     ],
     correctOption: 2,
     correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Comprensión Literal de Causas',
-    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Ubica elementos del contenido de diferentes tipos de textos (tiempo, lugares, hechos, personajes y narrador).',
-    standard: 'Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.',
-    justification: 'La opción B es la correcta, ya que en la primera línea el periodista habla en primera persona de su propia vivencia de travesía: "Así lo sentí yo", al experimentar lo complicado y aislado que resulta adentrarse en la selva del Vaupés.',
+    component: 'Texto Continuo - Caracterización de Personajes y Contraste Conductual',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'El texto los describe con "rostro impasible", mirándolo con "cierta incredulidad", deliberando serenamente y luego recitando "sin ninguna inflexión de voz, sin prisa, una por una, las infinitas fechas".',
     invalidOptionsReasoning: {
-      A: 'El rector le habló de los dormitorios y hamacas, pero la dificultad del viaje la sintió el periodista en carne propia.',
-      C: 'El horario escolar no fue el motivo del obstáculo geográfico.',
-      D: 'Los estudiantes sí estaban y celebraron la jornada de juegos.'
+      A: 'Nunca tuvieron miedo; conocían el eclipse de antemano.',
+      C: 'No hubo súplicas; el fraile fue quien creyó falsamente que los había atemorizado.',
+      D: 'Mantuvieron sus ritos astronómicos y religiosos ancestrales.'
     },
     socraticHints: {
-      recordar: '¿Quién expresa la frase "Así lo sentí yo" en el primer párrafo?',
-      comprender: '¿A qué se debe la dificultad del trayecto hasta Bocas del Yi?',
-      aplicar: 'Anota en tu cuaderno: "Dificultad = El periodista experimentó en primera persona lo complejo del viaje a la selva".',
-      analizar: '¿Por qué la opción B es la justificación correcta?'
-    }
+      recordar: '¿Cómo miraron los mayas a Bartolomé cuando él les dijo que apagaría el sol?',
+      comprender: '¿Por qué una persona no se asusta ante un truco cuando conoce la ciencia que hay detrás del fenómeno?',
+      aplicar: 'Anota en tu cuaderno las palabras del texto que describen la calma de los sacerdotes mayas.',
+      analizar: 'Contrapone la fingida astucia del fraile con la serenidad de los astrónomos indígenas.'
+    },
+    icfesCode: 'I_1990303'
   },
   {
     id: 914,
     grade: 9,
     questionNumber: 14,
-    title: 'Selva Amazónica - Diferencia entre crónica periodística y cuento',
-    contextText: TEXTO_SELVA_AMAZONICA_G9,
-    statement: `¿En qué se diferencia esta historia, tomada del periódico, de un cuento?`,
+    title: 'Sentimiento de fray Bartolomé al esperar la reunión indígena',
+    contextText: TEXTO_EL_ECLIPSE_G9,
+    statement: 'En el penúltimo párrafo, la frase “esperó confiado, no sin cierto desdén” revela que el sacerdote:',
     options: [
-      { number: 1, letter: 'A', text: 'El cuento narra hechos reales, mientras que esta historia expresa opiniones subjetivas.' },
-      { number: 2, letter: 'B', text: 'El cuento narra hechos reales, mientras esta historia explica cómo fabricar estas cosas.' },
-      { number: 3, letter: 'C', text: 'El cuento narra hechos reales, mientras que esta historia solo narra hechos ficticios.' },
-      { number: 4, letter: 'D', text: 'El cuento narra hechos ficticios, mientras esta historia narra hechos reales.' }
+      { number: 1, letter: 'A', text: 'Sentía compasión fraternal y humildad franciscana hacia sus captores.' },
+      { number: 2, letter: 'B', text: 'Se sentía intelectualmente superior y miraba a los indígenas con desprecio y altanería.' },
+      { number: 3, letter: 'C', text: 'Estaba temblando de miedo por no saber qué hora era.' },
+      { number: 4, letter: 'D', text: 'Esperaba un plato de comida caliente antes de regresar a España.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Géneros Textuales (Periodismo vs Ficción)',
-    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
-    evidence: 'Relaciona y compara diferentes textos.',
-    standard: 'Caracterizo los textos de acuerdo con la intención comunicativa de quien los produce.',
-    justification: 'La opción D es la respuesta correcta, ya que las crónicas y reportajes periodísticos informan sobre sucesos y comunidades reales verificables, mientras que los cuentos pertenecen al ámbito de la ficción e invención literaria.',
+    component: 'Vocabulario Contextual y Psicología de Personaje',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Infiere motivaciones, sentimientos y valores de los personajes.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: '"Desdén" significa menosprecio e indiferencia altiva; el fraile creía que su estratagema intelectual había doblegado fácilmente a los nativos debido a su prejuicio colonial.',
     invalidOptionsReasoning: {
-      A: 'Falso: el cuento es un relato de ficción.',
-      B: 'El cuento no se define por narrar hechos reales ni la crónica es un manual técnico.',
-      C: 'Invierte de manera disparatada la naturaleza de ambos géneros.'
+      A: 'El desdén es lo contrario de la humildad y la compasión.',
+      C: 'Esperaba confiado, seguro de haber triunfado con su ardid.',
+      D: 'No es una expectativa culinaria sino de dominación psicológica.'
     },
     socraticHints: {
-      recordar: '¿Cuál es la diferencia primordial entre el periodismo informativo y la literatura de ficción?',
-      comprender: '¿Por qué un relato de El Espectador sobre una escuela real no es un cuento inventado?',
-      aplicar: 'Anota en tu cuaderno: "Cuento = Ficción / Noticia y crónica = Hechos reales".',
-      analizar: '¿Por qué la opción D es la única distinción conceptualmente válida?'
-    }
+      recordar: 'Busca el significado de la palabra "desdén" en tu cuaderno.',
+      comprender: '¿Cómo influye la arrogancia en la pérdida del sentido de la realidad?',
+      aplicar: 'Escribe en tu cuaderno: "Desdén = Menosprecio soberbio hacia los demás".',
+      analizar: 'Relaciona la soberbia previa del protagonista con la contundencia de su caída trágica.'
+    },
+    icfesCode: 'I_1990304'
   },
   {
     id: 915,
     grade: 9,
     questionNumber: 15,
-    title: 'Selva Amazónica - Significado de "se duermen cuando se va la luz del sol"',
-    contextText: TEXTO_SELVA_AMAZONICA_G9,
-    statement: `Según el texto, ¿qué significa la frase “se duermen cuando se va la luz del sol"?`,
+    title: 'Rasgos del microrrelato en Augusto Monterroso',
+    contextText: TEXTO_EL_ECLIPSE_G9,
+    statement: 'El texto “El eclipse” es una de las piezas cumbres de la narrativa hispanoamericana contemporánea por su capacidad de:',
     options: [
-      { number: 1, letter: 'A', text: 'Los estudiantes le tienen miedo a la oscuridad.' },
-      { number: 2, letter: 'B', text: 'Los estudiantes apagan las bombillas de luz.' },
-      { number: 3, letter: 'C', text: 'Los estudiantes se duermen al anochecer.' },
-      { number: 4, letter: 'D', text: 'Los estudiantes deben estudiar con velas.' }
-    ],
-    correctOption: 3,
-    correctLetter: 'C',
-    competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Sentido Contextual de Frases Cotidianas',
-    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
-    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados de un texto.',
-    standard: 'Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.',
-    justification: 'La respuesta correcta es la C, ya que la caída de la luz solar marca el fin de la tarde y la llegada de la noche (el anochecer), momento en el cual los niños del internado van a sus hamacas al carecer de tendido eléctrico.',
-    invalidOptionsReasoning: {
-      A: 'El texto no menciona fobias infantiles.',
-      B: 'El texto aclara textualmente que no tienen luz eléctrica.',
-      D: 'El pasaje describe la rutina del sueño al ponerse el sol, no el estudio con velas.'
-    },
-    socraticHints: {
-      recordar: '¿A qué momento astronómico del día corresponde el ocultamiento del sol?',
-      comprender: '¿Por qué la ausencia de electricidad sincroniza los horarios de sueño con el ritmo natural de la luz?',
-      aplicar: 'Anota en tu cuaderno: "Cuando se va la luz del sol = Al anochecer".',
-      analizar: '¿Por qué la opción C es la equivalencia exacta?'
-    }
-  },
-
-  // =========================================================================
-  // TEXTO 4: CALVIN Y HOBBES - La televisión en Navidad (Preguntas 16 a 20)
-  // =========================================================================
-  {
-    id: 916,
-    grade: 9,
-    questionNumber: 16,
-    title: 'Calvin y Hobbes - Título correspondiente para la historieta',
-    contextText: TEXTO_CALVIN_HOBBES_G9,
-    statement: `¿Cuál de los siguientes títulos se corresponde con el texto?`,
-    options: [
-      { number: 1, letter: 'A', text: 'Las costumbres familiares.' },
-      { number: 2, letter: 'B', text: 'Lo que aprendemos en la televisión.' },
-      { number: 3, letter: 'C', text: 'La libertad de expresión.' },
-      { number: 4, letter: 'D', text: 'La alegría de los niños en Navidad.' }
+      { number: 1, letter: 'A', text: 'Extenderse durante cientos de páginas con descripciones geográficas infinitas.' },
+      { number: 2, letter: 'B', text: 'Condensar en una extrema brevedad una profunda crítica al colonialismo, una perfecta estructura narrativa y un giro final demoledor.' },
+      { number: 3, letter: 'C', text: 'Rimar todos sus párrafos en cuartetos endecasílabos.' },
+      { number: 4, letter: 'D', text: 'Enseñar fórmulas matemáticas para calcular eclipses en el telescopio.' }
     ],
     correctOption: 2,
     correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Historieta Cómica / Síntesis Global',
-    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
-    evidence: 'Diferencia las funciones de las partes en las que se estructura un texto.',
-    standard: 'Interpreto manifestaciones artísticas no verbales y las relaciono con otras producciones humanas, ya sean artísticas o no.',
-    justification: 'El título que se relaciona directamente con el remate y núcleo de la tira cómica es “Lo que aprendemos en la televisión” (opción B), ya que tanto el padre como el niño debaten humorísticamente sobre qué enseñanzas se extraen de los programas y comerciales.',
+    component: 'Teoría del Cuento Breve y Maestría Narrativa',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Evalúa la estructura y el valor estético de las obras maestras de la literatura.',
+    standard: 'Caracterizo los textos literarios y reconozco sus intenciones expresivas.',
+    justification: 'Monterroso es el maestro indiscutible de la concisión y la elipsis: en pocas líneas construye la atmósfera, el dilema moral y un remate irónico que replantea toda la historia del choque de culturas.',
     invalidOptionsReasoning: {
-      A: 'No es un tratado sobre tradiciones del hogar.',
-      C: 'No aborda el marco legal de la libertad de prensa o expresión.',
-      D: 'El enfoque es la ironía frente al consumismo publicitario, no la celebración navideña.'
+      A: 'Es célebre por su concisión y brevedad, lo opuesto a la extensión farragosa.',
+      C: 'Está escrito en prosa narrativa magistral, no en verso.',
+      D: 'Es una obra de arte literaria y filosófica, no un manual de óptica.'
     },
     socraticHints: {
-      recordar: '¿Qué palabra repiten el padre en la viñeta 3 y Calvin en la viñeta 4 ("aprendes" / "aprendo")?',
-      comprender: '¿Cómo gira el chiste en torno a la contradicción entre lo que el padre teme que aprenda y lo que Calvin realmente "aprendió"?',
-      aplicar: 'Anota en tu cuaderno: "Tema central = Lo que aprendemos en la televisión (parodia del aprendizaje infantil)".',
-      analizar: '¿Por qué la opción B es el título idóneo según la clave del ICFES?'
-    }
+      recordar: '¿Cuántos párrafos le tomó al autor contar toda esta historia completa?',
+      comprender: '¿Qué es la economía verbal y la precisión léxica en la literatura?',
+      aplicar: 'Anota en tu cuaderno las 3 claves del microrrelato de Augusto Monterroso: Brevedad, Ironía y Remate contundente.',
+      analizar: 'Sintetiza la perfección compositiva de la obra.'
+    },
+    icfesCode: 'I_1990305'
+  },
+
+  // ---------------------------------------------------------------------------
+  // TEXTO 4: CARTA AL PADRE (Preguntas 16 a 20)
+  // ---------------------------------------------------------------------------
+  {
+    id: 916,
+    grade: 9,
+    questionNumber: 16,
+    title: 'Carta al Padre - Raíz del miedo y la parálisis de Franz Kafka',
+    contextText: TEXTO_CARTA_AL_PADRE_G9,
+    statement: 'En el tercer párrafo de la carta, el autor explica que su miedo insuperable y su sensación de parálisis ante la vida fueron causados por:',
+    options: [
+      { number: 1, letter: 'A', text: 'Haber sido encerrado en un internado militar en otra ciudad.' },
+      { number: 2, letter: 'B', text: 'La figura colosal, el autoritarismo, las órdenes indiscutibles y las burlas constantes de su padre hacia sus opiniones y debilidades.' },
+      { number: 3, letter: 'C', text: 'La falta de recursos económicos para comprar libros de literatura.' },
+      { number: 4, letter: 'D', text: 'Una enfermedad física contraída durante su infancia.' }
+    ],
+    correctOption: 2,
+    correctLetter: 'B',
+    competency: 'Comprensión lectora.',
+    component: 'Texto Continuo - Género Epistolar / Conflicto Psicológico y Paternidad',
+    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'En el tercer párrafo Kafka señala explícitamente que "tu sola presencia física, tu figura colosal y tu temperamento autoritario aplastaban cualquier intento de iniciativa mía. Desde niño, tus órdenes indiscutibles, acompañadas de burlas hacia mis opiniones y desprecio [...] crearon en mí un sentimiento insoportable de culpa e inferioridad".',
+    invalidOptionsReasoning: {
+      A: 'Vivió con su familia en Praga bajo la sombra paterna.',
+      C: 'Gozaba de solvencia económica gracias al trabajo de su padre, como reconoce en el párrafo 2.',
+      D: 'El foco es el trauma psicológico y afectivo derivado del maltrato verbal y la tiranía moral.'
+    },
+    socraticHints: {
+      recordar: 'Lee con detenimiento el tercer párrafo de la carta.',
+      comprender: '¿Cómo impacta el desprecio y la burla sistemática de un padre en el desarrollo de la seguridad de un hijo?',
+      aplicar: 'Anota en tu cuaderno: "Origen del conflicto kafkiano: Autoritarismo paterno, descalificación y culpa".',
+      analizar: 'Relaciona la figura del padre tiránico con los temas de opresión en El proceso y La metamorfosis.'
+    },
+    icfesCode: 'I_1990401'
   },
   {
     id: 917,
     grade: 9,
     questionNumber: 17,
-    title: 'Calvin y Hobbes - Opinión del padre sobre tener televisor propio',
-    contextText: TEXTO_CALVIN_HOBBES_G9,
-    statement: `De acuerdo con el texto, que el niño tenga su propio televisor es`,
+    title: 'Perspectiva del padre sobre la relación',
+    contextText: TEXTO_CARTA_AL_PADRE_G9,
+    statement: 'De acuerdo con el segundo párrafo, el padre consideraba que su relación con su hijo era sencilla porque creía que:',
     options: [
-      { number: 1, letter: 'A', text: 'inapropiado, según el padre.' },
-      { number: 2, letter: 'B', text: 'inapropiado, según la televisión.' },
-      { number: 3, letter: 'C', text: 'apropiado, según el padre.' },
-      { number: 4, letter: 'D', text: 'apropiado, según el autor del texto.' }
+      { number: 1, letter: 'A', text: 'Su sacrificio y trabajo duro para darle abundancia económica y estudios bastaban para merecer afecto y gratitud, sin comprender la violencia psicológica que ejercía.' },
+      { number: 2, letter: 'B', text: 'Franz debía dedicarse exclusivamente al comercio de telas de la familia.' },
+      { number: 3, letter: 'C', text: 'Los hijos nunca deben estudiar en las universidades.' },
+      { number: 4, letter: 'D', text: 'Él había sido un padre débil que nunca dio ninguna orden en el hogar.' }
     ],
     correctOption: 1,
     correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Caricatura / Inferencia de Perspectivas',
-    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
-    evidence: 'Relaciona y evalúa el texto y el contexto.',
-    standard: 'Elaboro hipótesis de lectura de diferentes textos, a partir de la revisión de sus características.',
-    justification: 'La opción A es la correcta, ya que el disgusto del padre frente al consumismo y su crítica a la televisión evidencian que para él sería totalmente inapropiado e indeseable que su hijo tuviera un televisor individual en su habitación.',
+    component: 'Texto Epistolar - Contraste de Perspectivas Familiares',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados.',
+    standard: 'Comprendo los factores sociales y culturales que determinan la producción de los textos.',
+    justification: 'El padre reducía el vínculo al intercambio material (sustento económico a cambio de gratitud y cariño), ciego al daño emocional que su conducta autoritaria causaba en la sensibilidad del hijo.',
     invalidOptionsReasoning: {
-      B: 'Para los canales y fabricantes de televisores es muy conveniente comercialmente que cada persona compre uno.',
-      C: 'El padre desaprueba el influjo de la televisión.',
-      D: 'El autor se burla satíricamente del deseo consumista de Calvin.'
+      B: 'Le permitió estudiar lo que quiso (leyes), pero le reprochaba frialdad.',
+      C: 'Financió sus estudios superiores.',
+      D: 'Era un hombre impositivo y de temperamento dominante.'
     },
     socraticHints: {
-      recordar: '¿Qué actitud tiene el padre ante la televisión en las viñetas 2 y 3?',
-      comprender: 'Si el padre critica los programas, ¿estaría a favor o en contra de que Calvin tenga un televisor en su cuarto?',
-      aplicar: 'Anota en tu cuaderno: "Perspectiva del padre = Inapropiado y negativo".',
-      analizar: '¿Por qué la opción A refleja con certeza la posición del padre?'
-    }
+      recordar: 'Revisa el segundo párrafo sobre la visión del padre ("Para ti la cuestión siempre ha sido sumamente sencilla...").',
+      comprender: '¿Por qué el bienestar material no puede suplir la necesidad de validación emocional y respeto?',
+      aplicar: 'Escribe en tu cuaderno una comparación entre la visión del padre y la vivencia del hijo.',
+      analizar: 'Identifica la incomunicación estructural que define la tragedia familiar.'
+    },
+    icfesCode: 'I_1990402'
   },
   {
     id: 918,
     grade: 9,
     questionNumber: 18,
-    title: 'Calvin y Hobbes - Sinónimo de la palabra "derroche"',
-    contextText: TEXTO_CALVIN_HOBBES_G9,
-    statement: `De acuerdo con el texto, ¿cuál de las siguientes palabras significa lo mismo que la palabra “derroche”?`,
+    title: 'Motivo de la elección del medio epistolar (la carta)',
+    contextText: TEXTO_CARTA_AL_PADRE_G9,
+    statement: 'En el primer párrafo, Kafka explica que recurre a la escritura de una carta porque:',
     options: [
-      { number: 1, letter: 'A', text: 'Embolsar.' },
-      { number: 2, letter: 'B', text: 'Despilfarrar.' },
-      { number: 3, letter: 'C', text: 'Recuperar.' },
-      { number: 4, letter: 'D', text: 'Rechazar.' }
+      { number: 1, letter: 'A', text: 'Se encontraba de viaje en otro continente sin teléfono.' },
+      { number: 2, letter: 'B', text: 'El miedo hacia su padre lo paraliza y la complejidad de sus sentimientos le impide explicarse oralmente con coherencia ante él.' },
+      { number: 3, letter: 'C', text: 'Quería publicar la carta en un periódico para ganar fama.' },
+      { number: 4, letter: 'D', text: 'Su padre era sordo y no podía escuchar la voz humana.' }
     ],
     correctOption: 2,
     correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Léxico y Semántica',
+    component: 'Pragmática y Elección del Soporte Comunicativo',
     affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Reconoce y entiende el vocabulario y su función.',
-    standard: 'Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.',
-    justification: 'La palabra “derroche” hace referencia directa al gasto excesivo, consumo superfluo y despilfarro del dinero promovido por la publicidad en temporada decembrina (opción B).',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Utilizo estrategias de búsqueda, selección y almacenamiento de información.',
+    justification: 'Kafka declara que no supo contestar oralmente "en parte justamente por el miedo que te tengo, en parte porque en la explicación de este miedo entran demasiados detalles para que pueda exponerlos oralmente con un mínimo de coherencia".',
     invalidOptionsReasoning: {
-      A: 'Embolsar alude a guardar o cobrar dinero.',
-      C: 'Recuperar es rescatar o recobrar recursos.',
-      D: 'Rechazar significa repudiar o no admitir algo.'
+      A: 'Vivían en la misma ciudad y entorno.',
+      C: 'Era una carta íntima confesional no destinada originalmente a la prensa comercial.',
+      D: 'El obstáculo no era sensorial físico sino el terror psicológico ante la presencia paterna.'
     },
     socraticHints: {
-      recordar: '¿Qué significa la palabra derrochar en economía y gastos?',
-      comprender: '¿Por qué los anuncios comerciales invitan al consumo excesivo o despilfarro?',
-      aplicar: 'Anota en tu cuaderno: "Derroche = Despilfarro de dinero y recursos".',
-      analizar: '¿Por qué la opción B es el sinónimo exacto?'
-    }
+      recordar: 'Lee las últimas tres líneas del primer párrafo.',
+      comprender: '¿Cómo la escritura permite ordenar las emociones cuando el habla directa se bloquea por el miedo?',
+      aplicar: 'Anota en tu cuaderno el valor terapéutico y reflexivo del género epistolar.',
+      analizar: 'Sintetiza la relación entre el bloqueo verbal y la prodigiosa lucidez escrita del autor.'
+    },
+    icfesCode: 'I_1990403'
   },
   {
     id: 919,
     grade: 9,
     questionNumber: 19,
-    title: 'Calvin y Hobbes - Conclusión del recuadro 2',
-    contextText: TEXTO_CALVIN_HOBBES_G9,
-    statement: `¿Qué se concluye de lo que ocurre en el recuadro 2?`,
+    title: 'Significado de refugiarse "entre mis libros"',
+    contextText: TEXTO_CARTA_AL_PADRE_G9,
+    statement: 'La conducta de Franz de ocultarse en su cuarto “entre mis libros, rehuyendo tu trato” representa:',
     options: [
-      { number: 1, letter: 'A', text: 'Que el padre no está de acuerdo con la programación del canal, porque se hace lo contrario de lo que se dice.' },
-      { number: 2, letter: 'B', text: 'Que el padre no está de acuerdo con la programación del canal, porque presenta muchas propagandas.' },
-      { number: 3, letter: 'C', text: 'Que el padre está de acuerdo con la programación del canal, porque promueve el espíritu navideño.' },
-      { number: 4, letter: 'D', text: 'Que el padre está de acuerdo con la programación del canal, porque entretiene y educa a los niños.' }
+      { number: 1, letter: 'A', text: 'Una estrategia de defensa y aislamiento para proteger su mundo interior de las agresiones y la descalificación paterna.' },
+      { number: 2, letter: 'B', text: 'El deseo de abrir una biblioteca pública en su casa.' },
+      { number: 3, letter: 'C', text: 'Una orden impuesta por la policía de la ciudad.' },
+      { number: 4, letter: 'D', text: 'El rechazo absoluto hacia todo tipo de aprendizaje.' }
     ],
     correctOption: 1,
     correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Análisis de Paradojas e Ironía',
-    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
-    evidence: 'Evalúa las ideas expresadas en un texto.',
-    standard: 'Elaboro hipótesis de lectura de diferentes textos, a partir de la revisión de sus características.',
-    justification: 'La opción A es la correcta porque el padre denuncia la hipocresía e incoherencia de los canales de televisión: mientras el contenido del programa predica amor y paz, los comerciales promueven antivalores opuestos (codicia y derroche consumista).',
+    component: 'Inferencia Psicológica y Simbolismo del Aislamiento',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados.',
+    standard: 'Elaboro hipótesis acerca del sentido global de los textos.',
+    justification: 'La literatura y la soledad de su habitación constituían el único santuario donde Franz podía preservar su sensibilidad e identidad frente al poder demoledor de su padre.',
     invalidOptionsReasoning: {
-      B: 'Su queja principal no es solo la frecuencia cuantitativa de los cortes, sino la contradicción ética de su contenido.',
-      C: 'El padre no apoya la programación; la censura con ironía.',
-      D: 'El padre afirma justamente que la televisión maleduca a su hijo.'
+      B: 'No tenía fines bibliotecarios comerciales.',
+      C: 'No intervenían autoridades estatales.',
+      D: 'Al contrario, la lectura era su mayor pasión y tabla de salvación.'
     },
     socraticHints: {
-      recordar: '¿Qué contradicción señala el padre entre los programas y los avisos comerciales?',
-      comprender: '¿Por qué decir "amor y paz" y luego inducir a la "codicia y derroche" es hacer lo contrario de lo que se predica?',
-      aplicar: 'Anota en tu cuaderno: "Conclusión de la viñeta 2 = Crítica a la contradicción entre el mensaje de paz y la incitación al consumo".',
-      analizar: '¿Por qué la opción A recoge con profundidad la ironía del autor?'
-    }
+      recordar: '¿Dónde se refugiaba Franz según el segundo párrafo?',
+      comprender: '¿Cómo se convierte la literatura en un espacio de resistencia íntima ante un entorno hostil?',
+      aplicar: 'Escribe en tu cuaderno una reflexión sobre la lectura como refugio del alma.',
+      analizar: 'Conecta la reclusión del joven Kafka con la génesis de su universo creador.'
+    },
+    icfesCode: 'I_1990404'
   },
   {
     id: 920,
     grade: 9,
     questionNumber: 20,
-    title: 'Calvin y Hobbes - Refutación de un análisis erróneo',
-    contextText: TEXTO_CALVIN_HOBBES_G9,
-    statement: `¿Por qué este análisis es erróneo?`,
+    title: 'Trascendencia universal de la obra de Franz Kafka',
+    contextText: TEXTO_CARTA_AL_PADRE_G9,
+    statement: 'La “Carta al padre” de Franz Kafka es considerada un testimonio universal porque expone con una lucidez desgarradora:',
     options: [
-      { number: 1, letter: 'A', text: 'Porque la crítica del padre es sobre las costumbres navideñas.' },
-      { number: 2, letter: 'B', text: 'Porque la crítica del padre no es sobre los contenidos de la televisión.' },
-      { number: 3, letter: 'C', text: 'Porque la crítica del padre es sobre los contenidos que son solo para niños.' },
-      { number: 4, letter: 'D', text: 'Porque la crítica del padre no es sobre contenidos aptos solamente para adultos.' }
+      { number: 1, letter: 'A', text: 'Las leyes comerciales para la exportación de granos en Europa central.' },
+      { number: 2, letter: 'B', text: 'Los mecanismos de dominación psicológica, el peso de la culpa y la angustia del individuo frente al poder patriarcal y la autoridad arbitraria.' },
+      { number: 3, letter: 'C', text: 'Un manual de instrucciones para reparar fonógrafos antiguos.' },
+      { number: 4, letter: 'D', text: 'Una lista de compras para almacenes de abarrotes.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Meta-análisis Crítico',
+    component: 'Valor Universal y Filosofía Existencial de la Literatura',
     affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
-    evidence: 'Relaciona y evalúa el texto y el contexto.',
-    standard: 'Elaboro hipótesis de lectura de diferentes textos, a partir de la revisión de sus características.',
-    justification: 'La opción D es la correcta, ya que el texto de la historieta muestra que el padre critica la televisión comercial en su totalidad (su incoherencia ética y consumismo), no porque se trate de material con censura de clasificación para adultos.',
+    evidence: 'Evalúa las ideas expresadas en un texto y su trascendencia cultural.',
+    standard: 'Reconozco el valor universal de las grandes obras de la literatura del siglo XX.',
+    justification: 'Kafka trasciende la anécdota biográfica para convertir su relación filial en el arquetipo moderno de la fragilidad del individuo aplastado por estructuras de poder inaccesibles e implacables (lo "kafkiano").',
     invalidOptionsReasoning: {
-      A: 'La crítica apunta al medio televisivo, no a las festividades de Navidad per se.',
-      B: 'La crítica sí es sobre la televisión.',
-      C: 'El programa era un "especial navideño" familiar interrumpido por avisos comerciales, no un debate de calificación por edades.'
+      A: 'No es un documento de comercio.',
+      C: 'No es un manual técnico.',
+      D: 'Es una de las confesiones existenciales más profundas de la historia literaria.'
     },
     socraticHints: {
-      recordar: '¿Mencionó el padre alguna vez que el especial de Navidad fuera para adultos?',
-      comprender: '¿Cuál era el reproche real del padre en la viñeta 2?',
-      aplicar: 'Anota en tu cuaderno: "Error del análisis = Inventar que la discusión era sobre contenidos exclusivos para adultos".',
-      analizar: '¿Por qué la opción D refuta con precisión el error del análisis propuesto?'
-    }
+      recordar: '¿Qué significa el adjetivo "kafkiano" en el lenguaje cultural contemporáneo?',
+      comprender: '¿Cómo se conecta el miedo al padre con el miedo a las burocracias opresivas?',
+      aplicar: 'Anota en tu cuaderno: "Lo kafkiano = Sensación de absurdo, culpa involuntaria y desamparo ante el poder".',
+      analizar: 'Sintetiza la resonancia psicológica y filosófica universal del texto.'
+    },
+    icfesCode: 'I_1990405'
   }
 ];

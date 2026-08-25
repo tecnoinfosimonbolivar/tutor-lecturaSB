@@ -8,6 +8,8 @@ export interface Question {
   id: number;
   grade: number; // 3 to 11
   questionNumber: number; // 1 to 20
+  icfesCode?: string;
+  hasDiagram?: boolean;
   title: string;
   statement: string;
   contextText?: string;

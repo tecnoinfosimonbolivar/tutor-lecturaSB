@@ -23,12 +23,17 @@ import {
   ChevronUp,
   Layers,
   GraduationCap,
-  Clock
+  Clock,
+  AlertCircle,
+  Trash2,
+  Radio
 } from 'lucide-react';
 import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
 import { CuadernoModal } from './components/CuadernoModal';
 import { EvidenceModal } from './components/EvidenceModal';
+import { AcademicResourcesModal } from './components/AcademicResourcesModal';
+import { VoiceAccessibilityBar } from './components/VoiceAccessibilityBar';
 import { QuestionDiagram } from './components/QuestionDiagram';
 import { EscudoInstitucional, LogoTecnoInfo } from './components/Branding';
 import { 
@@ -124,18 +129,60 @@ Para iniciar tu entrenamiento y cargar el cuadernillo correspondiente:
   const [inputMessage, setInputMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [speechEnabled, setSpeechEnabled] = useState(false);
+  const [speechState, setSpeechState] = useState<'idle' | 'playing' | 'paused'>('idle');
+  const [speechRate, setSpeechRate] = useState<number>(1.0);
+  const [currentReadingTitle, setCurrentReadingTitle] = useState<string>('');
+  const [showVoiceBar, setShowVoiceBar] = useState<boolean>(false);
+  const [speechHighlight, setSpeechHighlight] = useState<{
+    messageId: string | null;
+    charIndex: number;
+    charLength: number;
+    currentWord: string;
+    cleanText: string;
+  }>({
+    messageId: null,
+    charIndex: -1,
+    charLength: 0,
+    currentWord: '',
+    cleanText: ''
+  });
   const [isRecording, setIsRecording] = useState(false);
+  const [recordingDuration, setRecordingDuration] = useState(0);
+  const [interimTranscript, setInterimTranscript] = useState('');
+  const [voiceInputError, setVoiceInputError] = useState<string | null>(null);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [showQuestionDetails, setShowQuestionDetails] = useState(false);
   const [showDiagramPanel, setShowDiagramPanel] = useState(false);
   const [showCuadernoModal, setShowCuadernoModal] = useState(false);
   const [showEvidenceModal, setShowEvidenceModal] = useState(false);
+  const [showResourcesModal, setShowResourcesModal] = useState(false);
   const [showWelcomeModal, setShowWelcomeModal] = useState(!studentProfile.name);
   const [tempName, setTempName] = useState(studentProfile.name || '');
   const [tempGrade, setTempGrade] = useState<number>(studentProfile.grade || 11);
 
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
   const chatContainerRef = useRef<HTMLDivElement | null>(null);
+  const recognitionRef = useRef<any>(null);
+  const silenceTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const recordingIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const accumulatedSpeechRef = useRef<string>('');
+  const isHoldModeRef = useRef<boolean>(false);
+  const recordingStartTimestampRef = useRef<number>(0);
+  const speechRateRef = useRef<number>(1.0);
+  const lastSpeechParamsRef = useRef<{ text: string; title?: string; messageId?: string }>({ text: '' });
+
+  // Cleanup speech recognition and timers on unmount
+  useEffect(() => {
+    return () => {
+      if (silenceTimerRef.current) clearTimeout(silenceTimerRef.current);
+      if (recordingIntervalRef.current) clearInterval(recordingIntervalRef.current);
+      if (recognitionRef.current) {
+        try {
+          recognitionRef.current.abort();
+        } catch (e) {}
+      }
+    };
+  }, []);
 
   // Save profile changes
   useEffect(() => {
@@ -233,58 +280,390 @@ ${sName ? sName + ', ' : ''}¿cuál de las 4 opciones (**A**, **B**, **C** o **D
     setMessages(prev => [...prev, newMsg]);
 
     if (speechEnabled) {
-      speakText(`Pregunta número ${q.questionNumber}. ${q.statement}. Revisa las opciones A, B, C y D y completa tus 15 minutos de estudio en el cuaderno.`);
+      speakText(
+        `Pregunta número ${q.questionNumber}. ${q.statement}. Revisa las opciones A, B, C y D y completa tus 15 minutos de estudio en el cuaderno.`,
+        `Pregunta #${q.questionNumber}`,
+        newMsg.id
+      );
     }
   };
 
-  // Speech TTS Function
-  const speakText = (text: string) => {
-    if (!('speechSynthesis' in window)) return;
+  // Speech TTS Function & Full Accessibility Player with Kindle-style Real-time Highlight
+  const speakText = (text: string, title?: string, messageId?: string, overrideRate?: number) => {
+    if (!('speechSynthesis' in window)) {
+      alert('Tu navegador no soporta síntesis de voz nativa.');
+      return;
+    }
     window.speechSynthesis.cancel();
-    // Clean markdown characters
+    
+    // Clean markdown characters and emojis for crystal clear Colombian Spanish pronunciation
     const cleanText = text
       .replace(/[*_~`#]/g, '')
-      .replace(/1️⃣|2️⃣|3️⃣|4️⃣|📝|📌|✍️|🏛️|👋|💡|📌/g, '');
+      .replace(/1️⃣|2️⃣|3️⃣|4️⃣|5️⃣|6️⃣|7️⃣|📝|📌|✍️|🏛️|👋|💡|🔘|📋|📜|📖|💬|🦉|🇨🇴|📚|🎯|⚠️|👤|🏆|⏱️/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    if (!cleanText) return;
+
+    lastSpeechParamsRef.current = { text: cleanText, title, messageId };
+    const activeRate = overrideRate !== undefined ? overrideRate : speechRateRef.current;
+
     const utterance = new SpeechSynthesisUtterance(cleanText);
     utterance.lang = 'es-CO';
-    utterance.rate = 1.0;
+    utterance.rate = activeRate;
     utterance.pitch = 1.0;
+
+    const targetMsgId = messageId || 'speech-active';
+
+    utterance.onstart = () => {
+      setSpeechState('playing');
+      setShowVoiceBar(true);
+      setCurrentReadingTitle(title || 'Leyendo intervención del Tutor Socrático');
+      setSpeechHighlight({
+        messageId: targetMsgId,
+        charIndex: 0,
+        charLength: 6,
+        currentWord: '',
+        cleanText
+      });
+    };
+
+    // Kindle-style word boundary listener
+    utterance.onboundary = (event: any) => {
+      const charIdx = event.charIndex;
+      let wordLen = event.charLength || 0;
+      if (!wordLen) {
+        const slice = cleanText.slice(charIdx);
+        const nextSpace = slice.search(/\s/);
+        wordLen = nextSpace > 0 ? nextSpace : slice.length;
+      }
+      const currentWord = cleanText.substring(charIdx, charIdx + wordLen).trim();
+      
+      setSpeechHighlight({
+        messageId: targetMsgId,
+        charIndex: charIdx,
+        charLength: wordLen,
+        currentWord,
+        cleanText
+      });
+    };
+
+    utterance.onpause = () => {
+      setSpeechState('paused');
+    };
+
+    utterance.onresume = () => {
+      setSpeechState('playing');
+    };
+
+    utterance.onend = () => {
+      setSpeechState('idle');
+      setSpeechHighlight({
+        messageId: null,
+        charIndex: -1,
+        charLength: 0,
+        currentWord: '',
+        cleanText: ''
+      });
+    };
+
+    utterance.onerror = () => {
+      setSpeechState('idle');
+      setSpeechHighlight({
+        messageId: null,
+        charIndex: -1,
+        charLength: 0,
+        currentWord: '',
+        cleanText: ''
+      });
+    };
+
     window.speechSynthesis.speak(utterance);
   };
 
-  // Handle Speech Recognition
-  const handleToggleVoiceInput = () => {
+  const handlePauseSpeech = () => {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.pause();
+      setSpeechState('paused');
+    }
+  };
+
+  const handleResumeSpeech = () => {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.resume();
+      setSpeechState('playing');
+    }
+  };
+
+  const handleStopSpeech = () => {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      setSpeechState('idle');
+      setSpeechHighlight({
+        messageId: null,
+        charIndex: -1,
+        charLength: 0,
+        currentWord: '',
+        cleanText: ''
+      });
+    }
+  };
+
+  const handleChangeSpeechRate = (newRate: number) => {
+    setSpeechRate(newRate);
+    speechRateRef.current = newRate;
+    // If speaking or paused, immediately re-speak with new speed so user feels the change instantly
+    if ((speechState === 'playing' || speechState === 'paused') && lastSpeechParamsRef.current.text) {
+      const { text, title, messageId } = lastSpeechParamsRef.current;
+      speakText(text, title, messageId, newRate);
+    }
+  };
+
+  const handlePlayCurrentQuestion = () => {
+    if (!currentQuestion) return;
+    const textToRead = `Pregunta número ${currentQuestion.questionNumber}. ${currentQuestion.title}. Enunciado: ${currentQuestion.statement}. Opciones de respuesta: Opción A: ${currentQuestion.options[0]?.text || ''}. Opción B: ${currentQuestion.options[1]?.text || ''}. Opción C: ${currentQuestion.options[2]?.text || ''}. Opción D: ${currentQuestion.options[3]?.text || ''}. Recuerda completar tus 15 minutos en el cuaderno.`;
+    speakText(textToRead, `Pregunta #${currentQuestion.questionNumber}: ${currentQuestion.title}`, `question-${currentQuestion.id}`);
+  };
+
+  const handleToggleVoicePanel = () => {
+    const nextEnabled = !speechEnabled;
+    setSpeechEnabled(nextEnabled);
+    setShowVoiceBar(nextEnabled);
+    if (!nextEnabled) {
+      handleStopSpeech();
+    }
+  };
+
+  // Subtle audio confirmation tone (Pop/Chime)
+  const playAudioFeedback = (type: 'start' | 'send') => {
+    try {
+      const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
+      if (!AudioContextClass) return;
+      const ctx = new AudioContextClass();
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+
+      if (type === 'start') {
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(440, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(880, ctx.currentTime + 0.08);
+        gain.gain.setValueAtTime(0.08, ctx.currentTime);
+        gain.gain.linearRampToValueAtTime(0.001, ctx.currentTime + 0.08);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.08);
+      } else if (type === 'send') {
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(523.25, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(659.25, ctx.currentTime + 0.1);
+        gain.gain.setValueAtTime(0.08, ctx.currentTime);
+        gain.gain.linearRampToValueAtTime(0.001, ctx.currentTime + 0.1);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.1);
+      }
+    } catch (e) {}
+  };
+
+  // Clean stop for recording without sending
+  const stopVoiceRecordingCleanly = () => {
+    if (silenceTimerRef.current) {
+      clearTimeout(silenceTimerRef.current);
+      silenceTimerRef.current = null;
+    }
+    if (recordingIntervalRef.current) {
+      clearInterval(recordingIntervalRef.current);
+      recordingIntervalRef.current = null;
+    }
+    if (recognitionRef.current) {
+      try {
+        recognitionRef.current.stop();
+      } catch (e) {
+        try { recognitionRef.current.abort(); } catch (err) {}
+      }
+    }
+    setIsRecording(false);
+    setInterimTranscript('');
+    setRecordingDuration(0);
+    isHoldModeRef.current = false;
+  };
+
+  // Discard recording
+  const handleCancelVoiceRecording = () => {
+    accumulatedSpeechRef.current = '';
+    setInputMessage('');
+    stopVoiceRecordingCleanly();
+  };
+
+  // Stop recording and send message immediately
+  const stopAndSendVoiceMessage = (textToSend?: string) => {
+    const finalText = (textToSend || accumulatedSpeechRef.current || inputMessage).trim();
+    stopVoiceRecordingCleanly();
+    if (finalText) {
+      playAudioFeedback('send');
+      handleSendMessage(finalText);
+      accumulatedSpeechRef.current = '';
+      setInputMessage('');
+    }
+  };
+
+  // Start WhatsApp-style speech recognition
+  const startVoiceRecognition = (isHold = false) => {
+    setVoiceInputError(null);
+    setInterimTranscript('');
+    accumulatedSpeechRef.current = '';
+    isHoldModeRef.current = isHold;
+    recordingStartTimestampRef.current = Date.now();
+    setRecordingDuration(0);
+
     const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
     if (!SpeechRecognition) {
-      alert('Tu navegador no soporta entrada de voz directa. Puedes escribir en el chat o activar la voz socrática.');
+      setVoiceInputError('Tu navegador no soporta dictado por voz. Recomendamos Google Chrome o Microsoft Edge.');
       return;
     }
 
-    if (isRecording) {
-      setIsRecording(false);
-      return;
-    }
+    // Stop tutor speech synthesis so mic doesn't pick up tutor audio
+    handleStopSpeech();
 
     try {
+      if (recognitionRef.current) {
+        try { recognitionRef.current.abort(); } catch (e) {}
+      }
+
       const recognition = new SpeechRecognition();
       recognition.lang = 'es-CO';
-      recognition.continuous = false;
-      recognition.interimResults = false;
+      recognition.continuous = true;
+      recognition.interimResults = true;
+      recognition.maxAlternatives = 1;
 
-      recognition.onstart = () => setIsRecording(true);
-      recognition.onend = () => setIsRecording(false);
-      recognition.onerror = () => setIsRecording(false);
+      // Start elapsed timer
+      if (recordingIntervalRef.current) clearInterval(recordingIntervalRef.current);
+      recordingIntervalRef.current = setInterval(() => {
+        setRecordingDuration(prev => prev + 1);
+      }, 1000);
+
+      recognition.onstart = () => {
+        setIsRecording(true);
+        setVoiceInputError(null);
+        playAudioFeedback('start');
+      };
 
       recognition.onresult = (event: any) => {
-        const transcript = event.results[0][0].transcript;
-        if (transcript) {
-          setInputMessage(prev => prev ? `${prev} ${transcript}` : transcript);
+        let finalChunk = '';
+        let interimChunk = '';
+
+        for (let i = event.resultIndex; i < event.results.length; ++i) {
+          const trans = event.results[i][0]?.transcript || '';
+          if (event.results[i].isFinal) {
+            finalChunk += trans;
+          } else {
+            interimChunk += trans;
+          }
+        }
+
+        if (finalChunk) {
+          const updated = accumulatedSpeechRef.current 
+            ? `${accumulatedSpeechRef.current} ${finalChunk.trim()}`
+            : finalChunk.trim();
+          accumulatedSpeechRef.current = updated;
+          setInputMessage(updated);
+          setInterimTranscript('');
+        } else if (interimChunk) {
+          setInterimTranscript(interimChunk);
+        }
+
+        // 10-Second rule: Do not auto-send early while the student is in their first 10 seconds of talking/thinking.
+        if (!isHoldModeRef.current) {
+          if (silenceTimerRef.current) clearTimeout(silenceTimerRef.current);
+          const elapsedMs = Date.now() - recordingStartTimestampRef.current;
+          // Guarantee at least 10 seconds of recording time plus 3.5s silence buffer
+          const delayUntilAutoSend = elapsedMs < 10000
+            ? (10000 - elapsedMs) + 3500
+            : 3500;
+
+          silenceTimerRef.current = setTimeout(() => {
+            const textToSubmit = (accumulatedSpeechRef.current || interimChunk).trim();
+            if (textToSubmit) {
+              stopAndSendVoiceMessage(textToSubmit);
+            }
+          }, delayUntilAutoSend);
         }
       };
 
+      recognition.onerror = (event: any) => {
+        console.warn('Speech recognition error event:', event.error);
+        if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
+          setVoiceInputError('Permiso de micrófono no habilitado. Por favor permite el acceso al micrófono en tu navegador.');
+        } else if (event.error === 'network') {
+          setVoiceInputError('Error de red al procesar el audio. Verifica tu conexión a internet.');
+        } else if (event.error === 'no-speech') {
+          // Normal silence, handled by silence timer
+        } else if (event.error !== 'aborted') {
+          setVoiceInputError(`Dictado finalizado (${event.error}).`);
+        }
+        stopVoiceRecordingCleanly();
+      };
+
+      recognition.onend = () => {
+        if (isRecording) {
+          const elapsedMs = Date.now() - recordingStartTimestampRef.current;
+          const textToSubmit = accumulatedSpeechRef.current.trim();
+          
+          // If under 10 seconds, try to keep listening so student has their full 10s speaking window
+          if (elapsedMs < 9500 && !isHoldModeRef.current) {
+            try {
+              recognition.start();
+              return;
+            } catch (e) {}
+          }
+
+          if (textToSubmit && !isHoldModeRef.current && elapsedMs >= 9500) {
+            stopAndSendVoiceMessage(textToSubmit);
+          } else {
+            stopVoiceRecordingCleanly();
+          }
+        }
+      };
+
+      recognitionRef.current = recognition;
       recognition.start();
-    } catch (e) {
-      setIsRecording(false);
+    } catch (e: any) {
+      console.error('Error starting speech recognition:', e);
+      setVoiceInputError('No se pudo activar el micrófono. Verifica los permisos de tu dispositivo.');
+      stopVoiceRecordingCleanly();
+    }
+  };
+
+  // Toggle Voice Input (Tap Mode)
+  const handleToggleVoiceInput = () => {
+    if (isRecording) {
+      stopAndSendVoiceMessage();
+    } else {
+      startVoiceRecognition(false);
+    }
+  };
+
+  // Push-to-Talk Handlers (Hold Mode)
+  const handleMicMouseDown = (e: React.MouseEvent | React.TouchEvent) => {
+    if (isRecording) {
+      stopAndSendVoiceMessage();
+      return;
+    }
+    startVoiceRecognition(true);
+  };
+
+  const handleMicMouseUp = () => {
+    if (isRecording && isHoldModeRef.current) {
+      const elapsed = Date.now() - recordingStartTimestampRef.current;
+      if (elapsed > 500) {
+        // Held and spoken -> submit immediately after brief delay for final chunk
+        setTimeout(() => {
+          stopAndSendVoiceMessage();
+        }, 300);
+      } else {
+        // Quick tap -> switch to tap mode with auto-send on silence
+        isHoldModeRef.current = false;
+      }
     }
   };
 
@@ -352,7 +731,11 @@ Por favor, indícanos un grado oficial válido entre **3° y 11°** para cargar 
       setMessages(prev => [...prev, studentMsg, tutorMsg]);
       setInputMessage('');
       if (speechEnabled) {
-        speakText(`Aviso: En Lectura solamente contamos con cuadernillos oficiales desde grado tercero hasta undécimo. Por favor indica un grado entre tercero y undécimo.`);
+        speakText(
+          `Aviso: En Lectura solamente contamos con cuadernillos oficiales desde grado tercero hasta undécimo. Por favor indica un grado entre tercero y undécimo.`,
+          'Aviso de Grado',
+          tutorMsg.id
+        );
       }
       return;
     }
@@ -450,7 +833,7 @@ Por favor, indícanos un grado oficial válido entre **3° y 11°** para cargar 
 
       // If speech enabled
       if (speechEnabled) {
-        speakText(tutorReply);
+        speakText(tutorReply, 'Intervención del Tutor Socrático', tutorMsg.id);
       }
 
       // Check if 4-question block milestone completed
@@ -569,18 +952,95 @@ Por favor, indícanos un grado oficial válido entre **3° y 11°** para cargar 
     }
   };
 
-  // Format markdown helper (bold, lists, options A-D, dividers, emojis)
-  const renderMessageContent = (text: string) => {
+  // Helper to parse bold markdown and highlight the currently spoken word (Kindle-style) with ZERO layout shift
+  const renderTextWithKindleHighlight = (
+    rawText: string,
+    isMsgSpeaking: boolean,
+    targetWord: string
+  ) => {
+    if (!isMsgSpeaking || !targetWord) {
+      return parseBoldMarkdown(rawText);
+    }
+
+    const cleanTarget = targetWord
+      .replace(/[.,;:!?()¿¡"'\-_/]/g, '')
+      .trim()
+      .toLowerCase();
+
+    if (!cleanTarget) {
+      return parseBoldMarkdown(rawText);
+    }
+
+    // Split text keeping bold markers **bold**
+    const parts = rawText.split(/(\*\*?[^*]+?\*\*?|\s+)/g);
+    let matchedWordFound = false;
+
+    return parts.map((part, pIdx) => {
+      if (!part) return null;
+
+      const isBold = (part.startsWith('**') && part.endsWith('**')) || (part.startsWith('*') && part.endsWith('*'));
+      const cleanContent = isBold ? part.replace(/^\*+|\*+$/g, '') : part;
+
+      // Check words in this part
+      const subWords = cleanContent.split(/([^\wáéíóúÁÉÍÓÚñÑ]+)/);
+      const hasMatch = !matchedWordFound && subWords.some(w => w.toLowerCase().trim() === cleanTarget);
+
+      if (hasMatch) {
+        matchedWordFound = true;
+        return (
+          <span key={pIdx}>
+            {subWords.map((sw, swIdx) => {
+              const cleanSW = sw.toLowerCase().trim();
+              if (cleanSW === cleanTarget) {
+                return (
+                  <mark
+                    key={swIdx}
+                    className="bg-amber-300 text-slate-950 font-bold px-0.5 py-0 rounded-xs inline transition-none"
+                  >
+                    {sw}
+                  </mark>
+                );
+              }
+              if (isBold) {
+                return <strong key={swIdx} className="font-extrabold text-[#1a365d]">{sw}</strong>;
+              }
+              return <span key={swIdx}>{sw}</span>;
+            })}
+          </span>
+        );
+      }
+
+      if (isBold) {
+        return (
+          <strong key={pIdx} className="font-extrabold text-[#1a365d]">
+            {cleanContent}
+          </strong>
+        );
+      }
+
+      return <span key={pIdx}>{part}</span>;
+    });
+  };
+
+  // Format markdown helper (bold, lists, options A-D, dividers, emojis) with Kindle highlighting support and strict overflow control
+  const renderMessageContent = (text: string, messageId?: string) => {
     const lines = text.split('\n');
+    const isMsgSpeaking = Boolean(
+      messageId && 
+      (speechHighlight.messageId === messageId || (speechHighlight.messageId === 'speech-active' && speechState !== 'idle')) && 
+      speechState !== 'idle'
+    );
+    const targetWord = speechHighlight.currentWord;
+
     return (
-      <div className="space-y-2 text-[14px] sm:text-[15px] leading-relaxed text-gray-900 break-words">
+      <div className="space-y-2 text-[14px] sm:text-[15px] leading-relaxed text-gray-900 break-words max-w-full overflow-hidden">
         {lines.map((line, idx) => {
           const trimmed = line.trim();
-          if (!trimmed) return <div key={idx} className="h-1.5" />;
+          if (!trimmed) return <div key={idx} className="h-1" />;
 
           // Line separator ━━━━━━━━━
           if (/^[━─—_=*-]{4,}$/.test(trimmed)) {
-            return <hr key={idx} className="border-t border-gray-200 my-2 opacity-80" />;
+            return <hr key={idx} className="border-t border-gray-200 my-2 max-w-full" />;
           }
 
           // Option lines: **A.** or **B.** or A. or B.
@@ -591,13 +1051,13 @@ Por favor, indícanos un grado oficial válido entre **3° y 11°** para cargar 
             return (
               <div 
                 key={idx}
-                className="flex items-start gap-2.5 p-2 rounded-xl bg-blue-50/70 border border-blue-100 my-1 hover:bg-blue-50 transition-colors"
+                className="flex items-start gap-2.5 p-2 rounded-xl bg-blue-50/70 border border-blue-100 my-1 hover:bg-blue-50 transition-colors max-w-full break-words"
               >
                 <span className="w-6 h-6 rounded-lg bg-[#1a365d] text-white font-extrabold text-xs flex items-center justify-center shrink-0 shadow-xs mt-0.5">
                   {letter}
                 </span>
-                <div className="text-gray-900 font-medium leading-snug flex-1">
-                  {parseBoldMarkdown(content)}
+                <div className="text-gray-900 font-medium leading-snug flex-1 min-w-0 break-words">
+                  {renderTextWithKindleHighlight(content, isMsgSpeaking, targetWord)}
                 </div>
               </div>
             );
@@ -606,9 +1066,11 @@ Por favor, indícanos un grado oficial válido entre **3° y 11°** para cargar 
           // Question header: 📌 **PREGUNTA...
           if (trimmed.startsWith('📌')) {
             return (
-              <div key={idx} className="p-2.5 rounded-xl bg-blue-900 text-white font-extrabold text-xs sm:text-sm shadow-xs flex items-center gap-2 my-1.5">
-                <span>📌</span>
-                <span className="tracking-wide uppercase">{trimmed.replace(/^📌\s*/, '').replace(/\*\*/g, '')}</span>
+              <div key={idx} className="p-2.5 rounded-xl bg-[#1a365d] text-white font-extrabold text-xs sm:text-sm shadow-xs flex items-start gap-2 my-1.5 break-words max-w-full">
+                <span className="shrink-0">📌</span>
+                <span className="tracking-wide uppercase break-words min-w-0 flex-1 leading-snug">
+                  {trimmed.replace(/^📌\s*/, '').replace(/\*\*/g, '')}
+                </span>
               </div>
             );
           }
@@ -619,13 +1081,13 @@ Por favor, indícanos un grado oficial válido entre **3° y 11°** para cargar 
             return (
               <div 
                 key={idx} 
-                className={`text-xs sm:text-sm font-black pt-1.5 pb-1 flex items-center gap-1.5 border-b ${
+                className={`text-xs sm:text-sm font-black pt-1.5 pb-1 border-b break-words max-w-full leading-snug ${
                   isReadingHeader 
-                    ? 'text-amber-900 border-amber-200 bg-amber-50/80 px-2.5 py-1 rounded-lg my-1.5' 
+                    ? 'text-amber-900 border-amber-200 bg-amber-50/90 px-2.5 py-1.5 rounded-lg my-1.5 shadow-2xs' 
                     : 'text-[#1a365d] border-blue-100/80'
                 }`}
               >
-                {parseBoldMarkdown(trimmed)}
+                {renderTextWithKindleHighlight(trimmed, isMsgSpeaking, targetWord)}
               </div>
             );
           }
@@ -633,12 +1095,12 @@ Por favor, indícanos un grado oficial válido entre **3° y 11°** para cargar 
           // Numbered bullet items like 1️⃣, 2️⃣, 1., 2.
           if (/^([1-7]️⃣|\d+\.)\s+/.test(trimmed)) {
             return (
-              <div key={idx} className="flex items-start gap-2 pl-1 my-0.5 leading-snug text-gray-800">
+              <div key={idx} className="flex items-start gap-2 pl-1 my-0.5 leading-snug text-gray-800 break-words max-w-full">
                 <span className="font-bold text-blue-900 shrink-0">
                   {trimmed.split(' ')[0]}
                 </span>
-                <div className="flex-1">
-                  {parseBoldMarkdown(trimmed.substring(trimmed.indexOf(' ') + 1))}
+                <div className="flex-1 min-w-0 break-words">
+                  {renderTextWithKindleHighlight(trimmed.substring(trimmed.indexOf(' ') + 1), isMsgSpeaking, targetWord)}
                 </div>
               </div>
             );
@@ -646,8 +1108,8 @@ Por favor, indícanos un grado oficial válido entre **3° y 11°** para cargar 
 
           // Standard paragraph line
           return (
-            <p key={idx} className="leading-relaxed">
-              {parseBoldMarkdown(line)}
+            <p key={idx} className="my-0.5 leading-relaxed break-words max-w-full">
+              {renderTextWithKindleHighlight(line, isMsgSpeaking, targetWord)}
             </p>
           );
         })}
@@ -680,8 +1142,9 @@ Por favor, indícanos un grado oficial válido entre **3° y 11°** para cargar 
         studentName={studentProfile.name}
         onOpenCuaderno={() => setShowCuadernoModal(true)}
         onOpenEvidence={() => setShowEvidenceModal(true)}
+        onOpenResources={() => setShowResourcesModal(true)}
         speechEnabled={speechEnabled}
-        onToggleSpeech={() => setSpeechEnabled(!speechEnabled)}
+        onToggleSpeech={handleToggleVoicePanel}
         onToggleMobileSidebar={() => setMobileSidebarOpen(!mobileSidebarOpen)}
         solvedCount={studentProfile.solvedQuestionsCount}
         onResetProfile={handleResetProfile}
@@ -795,6 +1258,31 @@ Por favor, indícanos un grado oficial válido entre **3° y 11°** para cargar 
                   </button>
                 )}
 
+                {currentQuestion && (
+                  <button
+                    onClick={() => setShowResourcesModal(true)}
+                    className="flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg bg-amber-50 border border-amber-300 text-amber-900 hover:bg-amber-100 shadow-xs transition-colors"
+                    title="Ver cápsulas conceptuales y fuentes académicas confiables"
+                  >
+                    <GraduationCap className="w-3.5 h-3.5 text-amber-700" />
+                    <span className="hidden sm:inline">Recursos</span>
+                  </button>
+                )}
+
+                {/* Voice / Audio trigger in subheader */}
+                <button
+                  onClick={handleToggleVoicePanel}
+                  className={`flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg border shadow-xs transition-colors ${
+                    showVoiceBar || speechEnabled
+                      ? 'bg-amber-500 text-slate-950 border-amber-400'
+                      : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50'
+                  }`}
+                  title="Abrir controles de audio, síntesis de voz y lectura guiada"
+                >
+                  <Volume2 className="w-3.5 h-3.5 text-blue-700" />
+                  <span className="hidden sm:inline">Voz</span>
+                </button>
+
                 <button
                   onClick={() => setShowCuadernoModal(true)}
                   className="flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-lg bg-[#1a365d] text-white hover:bg-blue-900 shadow-xs transition-colors"
@@ -837,23 +1325,24 @@ Por favor, indícanos un grado oficial válido entre **3° y 11°** para cargar 
             )}
           </div>
 
-          {/* Top Interactive Diagram Reference Banner */}
-          {showDiagramPanel && currentQuestion && (
-            <div className="bg-slate-50 border-b border-blue-200/90 p-3 z-10 shrink-0 animate-in slide-in-from-top-2 duration-200 shadow-inner">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-xs font-bold text-[#1a365d] flex items-center gap-1.5">
-                  <Layers className="w-4 h-4 text-blue-700" />
-                  Figura / Gráfico Oficial - Pregunta #{currentQuestion.questionNumber}
-                </span>
-                <button
-                  onClick={() => setShowDiagramPanel(false)}
-                  className="text-xs text-gray-500 hover:text-gray-800 px-2 py-0.5 rounded border bg-white"
-                >
-                  Ocultar
-                </button>
-              </div>
-              <QuestionDiagram question={currentQuestion} onOpenCuaderno={() => setShowCuadernoModal(true)} />
-            </div>
+          {/* Voice & Speech Accessibility Control Bar (Matches Tutor Socrático de Matemáticas) */}
+          {showVoiceBar && (
+            <VoiceAccessibilityBar
+              speechEnabled={speechEnabled}
+              onToggleSpeech={handleToggleVoicePanel}
+              speechState={speechState}
+              onPlay={handlePlayCurrentQuestion}
+              onPause={handlePauseSpeech}
+              onResume={handleResumeSpeech}
+              onStop={handleStopSpeech}
+              speechRate={speechRate}
+              onChangeRate={handleChangeSpeechRate}
+              currentReadingTitle={currentReadingTitle}
+              onClose={() => {
+                setShowVoiceBar(false);
+                handleStopSpeech();
+              }}
+            />
           )}
 
           {/* Optional Collapsible Technical Badge for Active Question */}
@@ -912,6 +1401,10 @@ Por favor, indícanos un grado oficial válido entre **3° y 11°** para cargar 
                       isStudent
                         ? 'bg-[#d9fdd3] rounded-br-xs border border-green-300/80 shadow-xs'
                         : 'bg-white rounded-bl-xs border border-gray-200/90 shadow-xs'
+                    } ${
+                      speechHighlight.messageId === msg.id && speechState !== 'idle'
+                        ? 'ring-2 ring-amber-400 shadow-md bg-amber-50/20'
+                        : ''
                     }`}
                   >
                     {/* Tutor Header Badge */}
@@ -921,16 +1414,6 @@ Por favor, indícanos un grado oficial válido entre **3° y 11°** para cargar 
                           🏛️ Tutor Socrático
                         </span>
                         <span className="text-gray-400 font-medium">I.E. Simón Bolívar</span>
-                      </div>
-                    )}
-
-                    {/* Interactive Vector Diagram for Questions in Chat Stream */}
-                    {isTutor && currentQuestion && (msg.text.includes('PREGUNTA #') || msg.text.includes('ENUNCIADO:') || msg.text.includes('FICHA PEDAGÓGICA')) && (
-                      <div className="mb-3">
-                        <QuestionDiagram 
-                          question={currentQuestion} 
-                          onOpenCuaderno={() => setShowCuadernoModal(true)} 
-                        />
                       </div>
                     )}
 
@@ -948,15 +1431,117 @@ Por favor, indícanos un grado oficial válido entre **3° y 11°** para cargar 
                       </div>
                     )}
 
-                    {/* Message Text */}
-                    {renderMessageContent(msg.text)}
+                    {/* Message Text with Kindle-style highlight (Question Statement, Options, Ficha Pedagógica) */}
+                    {renderMessageContent(msg.text, msg.id)}
 
-                    {/* Message Footer (Timestamp & Status) */}
-                    <div className="flex items-center justify-end gap-1 mt-1 text-[10px] text-gray-500">
-                      <span>{msg.timestamp}</span>
-                      {isStudent && (
-                        <CheckCheck className="w-3.5 h-3.5 text-blue-500 inline ml-0.5" />
-                      )}
+                    {/* Módulo Integrado de Ayudas del Tutor Socrático (Esquema Visual, Recursos, Guía Cuaderno y Pistas) */}
+                    {isTutor && currentQuestion && (msg.text.includes('PREGUNTA #') || msg.text.includes('ENUNCIADO:') || msg.text.includes('FICHA PEDAGÓGICA')) && (
+                      <div className="mt-3 pt-3 border-t-2 border-blue-200/90 bg-slate-50/95 rounded-xl p-2.5 sm:p-3 space-y-2.5 shadow-2xs border border-blue-100 max-w-full overflow-hidden">
+                        <div className="flex items-center justify-between gap-1 flex-wrap">
+                          <div className="flex items-center gap-1.5 min-w-0">
+                            <span className="text-sm">🦉</span>
+                            <h4 className="text-xs font-black text-[#1a365d] uppercase tracking-wide truncate">
+                              Módulo de Ayudas del Tutor Socrático
+                            </h4>
+                          </div>
+                          <span className="text-[10px] font-bold text-blue-900 bg-blue-100/90 px-2 py-0.5 rounded-full border border-blue-200">
+                            Paso a Paso
+                          </span>
+                        </div>
+
+                        {/* Botones de Acción de Ayuda Rápida */}
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-1.5 pt-0.5">
+                          <button
+                            onClick={() => setShowDiagramPanel(prev => !prev)}
+                            className={`flex items-center justify-center gap-1.5 px-2.5 py-1.5 rounded-lg border text-xs font-bold shadow-2xs transition-all active:scale-95 ${
+                              showDiagramPanel
+                                ? 'bg-amber-100 border-amber-300 text-amber-900'
+                                : 'bg-white border-blue-300 hover:bg-blue-50 text-blue-900'
+                            }`}
+                          >
+                            <Layers className="w-3.5 h-3.5 text-blue-700 shrink-0" />
+                            <span>{showDiagramPanel ? 'Ocultar Esquema' : 'Ver Esquema Visual'}</span>
+                          </button>
+
+                          <button
+                            onClick={() => setShowResourcesModal(true)}
+                            className="flex items-center justify-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-amber-50 border border-amber-300 hover:bg-amber-100 text-amber-900 text-xs font-bold shadow-2xs transition-all active:scale-95"
+                          >
+                            <GraduationCap className="w-3.5 h-3.5 text-amber-700 shrink-0" />
+                            <span>Recursos y Cápsula</span>
+                          </button>
+
+                          <button
+                            onClick={() => setShowCuadernoModal(true)}
+                            className="flex items-center justify-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-[#1a365d] hover:bg-blue-900 text-white text-xs font-bold shadow-2xs transition-all active:scale-95"
+                          >
+                            <BookOpen className="w-3.5 h-3.5 text-blue-200 shrink-0" />
+                            <span>Pasar al Cuaderno</span>
+                          </button>
+                        </div>
+
+                        {/* Esquema Visual / Figura Integrado (Visible cuando está activo o cuando la pregunta tiene esquema) */}
+                        {showDiagramPanel && (
+                          <div className="animate-in fade-in duration-200">
+                            <QuestionDiagram 
+                              question={currentQuestion} 
+                              onOpenCuaderno={() => setShowCuadernoModal(true)} 
+                            />
+                          </div>
+                        )}
+
+                        {/* Explicaciones y Pistas Socráticas Paso a Paso (Ruta Cognitiva Bloom) */}
+                        <div className="bg-white rounded-lg p-2 border border-gray-200/90">
+                          <div className="text-[10px] font-extrabold text-gray-700 uppercase tracking-wider mb-1.5 flex items-center justify-between">
+                            <span>💡 Pistas y Explicaciones Socráticas:</span>
+                            <span className="text-[9px] text-blue-700 font-semibold">15 min en Cuaderno</span>
+                          </div>
+                          <div className="grid grid-cols-2 sm:grid-cols-3 gap-1">
+                            {[
+                              { level: 1, label: '1. Recordar', action: 'recordar' as const, emoji: '📝' },
+                              { level: 2, label: '2. Comprender', action: 'comprender' as const, emoji: '🗺️' },
+                              { level: 3, label: '3. Aplicar', action: 'aplicar' as const, emoji: '🔍' },
+                              { level: 4, label: '4. Analizar', action: 'analizar' as const, emoji: '⚖️' },
+                              { level: 5, label: '5. Evaluar', action: 'evaluar' as const, emoji: '🎯' },
+                              { level: 6, label: '6. Crear', action: 'crear' as const, emoji: '✍️' },
+                            ].map((step) => (
+                              <button
+                                key={step.level}
+                                onClick={() => handleRequestPedagogicalAction(step.action)}
+                                className="flex items-center gap-1 px-1.5 py-1 rounded bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 text-[10px] font-bold text-slate-800 transition-colors text-left truncate"
+                                title={`Pedir orientación socrática para el nivel ${step.level}`}
+                              >
+                                <span>{step.emoji}</span>
+                                <span className="truncate">{step.label}</span>
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Message Footer (Timestamp & Status & Audio TTS button) */}
+                    <div className="flex items-center justify-between gap-1 mt-1.5 pt-1 border-t border-gray-100/80 text-[10px] text-gray-500">
+                      {isTutor ? (
+                        <button
+                          onClick={() => speakText(msg.text, 'Mensaje del Tutor Socrático', msg.id)}
+                          className={`flex items-center gap-1 text-[10px] font-semibold px-1.5 py-0.5 rounded transition-colors ${
+                            speechHighlight.messageId === msg.id && speechState !== 'idle'
+                              ? 'bg-amber-200 text-amber-950 font-bold'
+                              : 'text-blue-700 hover:text-blue-900 hover:bg-blue-50'
+                          }`}
+                          title="Escuchar este mensaje en voz alta con resaltado de lectura"
+                        >
+                          <Volume2 className="w-3 h-3 text-blue-600" />
+                          <span>{speechHighlight.messageId === msg.id && speechState === 'playing' ? 'Leyendo...' : 'Escuchar'}</span>
+                        </button>
+                      ) : <span />}
+                      <div className="flex items-center gap-1">
+                        <span>{msg.timestamp}</span>
+                        {isStudent && (
+                          <CheckCheck className="w-3.5 h-3.5 text-blue-500 inline ml-0.5" />
+                        )}
+                      </div>
                     </div>
                   </div>
 
@@ -1095,63 +1680,157 @@ Por favor, indícanos un grado oficial válido entre **3° y 11°** para cargar 
           )}
 
           {/* Bottom Chat Input Bar */}
-          <footer className="bg-[#f0f2f5] p-2.5 md:p-3 border-t border-gray-300 z-10 shrink-0">
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                handleSendMessage();
-              }}
-              className="flex items-center gap-2 max-w-5xl mx-auto"
-            >
-              {/* Cuaderno Drawing shortcut */}
-              <button
-                type="button"
-                onClick={() => setShowCuadernoModal(true)}
-                className="p-2 text-gray-600 hover:text-[#1a365d] hover:bg-gray-200 rounded-full transition-colors shrink-0"
-                title="Abrir cuaderno digital de esquemas y apuntes"
-              >
-                <BookOpen className="w-5 h-5" />
-              </button>
-
-              {/* Text Input */}
-              <div className="flex-1 relative">
-                <input
-                  type="text"
-                  value={inputMessage}
-                  onChange={(e) => setInputMessage(e.target.value)}
-                  placeholder="Escribe tu argumento, respuesta o pregunta socrática..."
-                  className="w-full bg-white text-gray-900 placeholder-gray-500 text-xs md:text-sm rounded-2xl px-4 py-2.5 outline-none border border-gray-300 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 shadow-xs"
-                />
+          <footer className="bg-[#f0f2f5] p-2 md:p-3 border-t border-gray-300 z-10 shrink-0">
+            {/* Voice Input Error Notification */}
+            {voiceInputError && (
+              <div className="flex items-center justify-between gap-2 px-3 py-1.5 mb-2 bg-amber-50 border border-amber-300 rounded-xl text-amber-900 text-xs shadow-xs animate-in fade-in max-w-5xl mx-auto">
+                <div className="flex items-center gap-1.5 min-w-0">
+                  <AlertCircle className="w-4 h-4 text-amber-700 shrink-0" />
+                  <span className="truncate">{voiceInputError}</span>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setVoiceInputError(null)}
+                  className="text-amber-800 hover:text-amber-950 font-black text-xs px-1.5 py-0.5 rounded hover:bg-amber-100 transition-colors"
+                  title="Cerrar aviso"
+                >
+                  ✕
+                </button>
               </div>
+            )}
 
-              {/* Voice Input (Dictation) */}
-              <button
-                type="button"
-                onClick={handleToggleVoiceInput}
-                className={`p-2.5 rounded-full transition-colors shrink-0 ${
-                  isRecording 
-                    ? 'bg-red-500 text-white animate-pulse' 
-                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-200'
-                }`}
-                title={isRecording ? 'Detener dictado' : 'Dictar por voz'}
-              >
-                {isRecording ? <MicOff className="w-5 h-5" /> : <Mic className="w-5 h-5" />}
-              </button>
+            {isRecording ? (
+              /* WhatsApp-Style Active Audio Recording Dock */
+              <div className="max-w-5xl mx-auto bg-gradient-to-r from-emerald-50 via-white to-emerald-50 border-2 border-emerald-500 rounded-2xl p-2 sm:p-2.5 shadow-md flex items-center justify-between gap-2 animate-in fade-in zoom-in-95">
+                {/* Left: Recording Red Dot & Live Timer */}
+                <div className="flex items-center gap-2 shrink-0 bg-red-100 text-red-800 px-2.5 py-1.5 rounded-xl border border-red-300 font-mono font-black text-xs shadow-xs">
+                  <span className="relative flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
+                  </span>
+                  <span>
+                    {Math.floor(recordingDuration / 60)}:{(recordingDuration % 60).toString().padStart(2, '0')}
+                  </span>
+                </div>
 
-              {/* Send Button */}
-              <button
-                type="submit"
-                disabled={!inputMessage.trim() || isLoading}
-                className={`p-2.5 rounded-full shadow-sm transition-all shrink-0 ${
-                  inputMessage.trim() && !isLoading
-                    ? 'bg-[#1a365d] text-white hover:bg-blue-900 hover:scale-105 active:scale-95'
-                    : 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                }`}
-                title="Enviar mensaje"
-              >
-                <Send className="w-4 h-4 md:w-5 md:h-5" />
-              </button>
-            </form>
+                {/* Center: Live Wave Bars & Real-time Transcript */}
+                <div className="flex-1 min-w-0 px-2 flex flex-col justify-center">
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    <div className="flex items-center gap-0.5 h-3 shrink-0">
+                      <span className="w-0.5 h-3 bg-emerald-600 rounded-full animate-pulse"></span>
+                      <span className="w-0.5 h-2 bg-emerald-500 rounded-full animate-pulse delay-75"></span>
+                      <span className="w-0.5 h-3.5 bg-emerald-600 rounded-full animate-pulse delay-150"></span>
+                      <span className="w-0.5 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                    </div>
+                    <span className="text-[11px] font-black text-emerald-800 shrink-0">
+                      Grabando tu voz...
+                    </span>
+                    {recordingDuration < 10 ? (
+                      <span className="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-bold">
+                        Habla con calma (mínimo 10s para responder)
+                      </span>
+                    ) : (
+                      <span className="text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full font-bold">
+                        ✓ Listo para auto-envío al hacer silencio
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-xs sm:text-sm text-gray-900 font-bold truncate italic mt-0.5">
+                    {interimTranscript || accumulatedSpeechRef.current || inputMessage || 'Habla ahora con tranquilidad...'}
+                  </p>
+                </div>
+
+                {/* Right: Discard (Trash) & Send Instant Button */}
+                <div className="flex items-center gap-1.5 shrink-0">
+                  <button
+                    type="button"
+                    onClick={handleCancelVoiceRecording}
+                    className="p-2 text-red-600 hover:text-red-800 hover:bg-red-100 rounded-xl transition-colors flex items-center gap-1 text-xs font-bold"
+                    title="Cancelar y descartar nota de voz"
+                  >
+                    <Trash2 className="w-4 h-4" />
+                    <span className="hidden sm:inline">Descartar</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => stopAndSendVoiceMessage()}
+                    className="flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-xl font-black text-xs shadow-md transition-transform active:scale-95 border border-emerald-500"
+                    title="Enviar nota de voz inmediatamente"
+                  >
+                    <Send className="w-3.5 h-3.5 fill-current" />
+                    <span>Enviar</span>
+                  </button>
+                </div>
+              </div>
+            ) : (
+              /* Standard WhatsApp-Style Form with Big Friendly Mic */
+              <div>
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    handleSendMessage();
+                  }}
+                  className="flex items-center gap-1.5 sm:gap-2 max-w-5xl mx-auto"
+                >
+                  {/* Cuaderno Drawing shortcut */}
+                  <button
+                    type="button"
+                    onClick={() => setShowCuadernoModal(true)}
+                    className="p-2 text-gray-600 hover:text-[#1a365d] hover:bg-gray-200 rounded-full transition-colors shrink-0"
+                    title="Abrir cuaderno digital de esquemas y apuntes"
+                  >
+                    <BookOpen className="w-5 h-5" />
+                  </button>
+
+                  {/* Text Input */}
+                  <div className="flex-1 relative">
+                    <input
+                      type="text"
+                      value={inputMessage}
+                      onChange={(e) => setInputMessage(e.target.value)}
+                      placeholder="Escribe un mensaje o usa el micrófono verde..."
+                      className="w-full bg-white text-gray-900 placeholder-gray-500 text-xs sm:text-sm rounded-2xl px-4 py-2.5 outline-none border border-gray-300 focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 shadow-xs"
+                    />
+                  </div>
+
+                  {/* WhatsApp-Style Push-to-Talk & Auto-Send Mic */}
+                  <button
+                    type="button"
+                    onClick={handleToggleVoiceInput}
+                    onMouseDown={handleMicMouseDown}
+                    onMouseUp={handleMicMouseUp}
+                    onTouchStart={handleMicMouseDown}
+                    onTouchEnd={handleMicMouseUp}
+                    className="p-2.5 sm:px-3 sm:py-2.5 rounded-full sm:rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition-all shrink-0 flex items-center gap-1.5 active:scale-95 select-none touch-none border border-emerald-500"
+                    title="Toca para hablar o mantén presionado como en WhatsApp (se envía solo al terminar)"
+                  >
+                    <Mic className="w-5 h-5" />
+                    <span className="hidden lg:inline text-xs font-bold">Hablar</span>
+                  </button>
+
+                  {/* Send Button (for typed text) */}
+                  {inputMessage.trim() && (
+                    <button
+                      type="submit"
+                      disabled={isLoading}
+                      className="p-2.5 rounded-full bg-[#1a365d] text-white hover:bg-blue-900 hover:scale-105 active:scale-95 shadow-sm transition-all shrink-0"
+                      title="Enviar mensaje escrito"
+                    >
+                      <Send className="w-4 h-4 sm:w-5 sm:h-5" />
+                    </button>
+                  )}
+                </form>
+
+                {/* Friendly Accessibility Hint for 3rd Graders and Parents */}
+                <div className="flex items-center justify-center gap-1.5 mt-1.5 text-[10px] text-gray-500 max-w-5xl mx-auto text-center">
+                  <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+                  <span>
+                    Toca el micrófono 🎤 verde o mantenlo presionado para hablar. Al guardar silencio, tu mensaje se enviará solo.
+                  </span>
+                </div>
+              </div>
+            )}
           </footer>
         </main>
       </div>
@@ -1177,7 +1856,17 @@ Por favor, indícanos un grado oficial válido entre **3° y 11°** para cargar 
         completedIds={studentProfile.completedQuestionIds}
       />
 
-      {/* 5. Welcome & Profile Setup Modal (First Launch) */}
+      {/* 5. Academic Resources & Conceptual Capsule Modal */}
+      {currentQuestion && (
+        <AcademicResourcesModal
+          isOpen={showResourcesModal}
+          onClose={() => setShowResourcesModal(false)}
+          question={currentQuestion}
+          studentName={studentProfile.name}
+        />
+      )}
+
+      {/* 6. Welcome & Profile Setup Modal (First Launch) */}
       {showWelcomeModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-xs p-4 animate-in fade-in duration-200">
           <div className="flex flex-col w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden border border-blue-200">

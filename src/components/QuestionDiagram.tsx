@@ -758,10 +758,10 @@ export const QuestionDiagram: React.FC<QuestionDiagramProps> = ({
       </div>
 
       {/* Pedagogical Note / Action Bar */}
-      <div className="bg-blue-50/90 border-t border-blue-200/80 px-3 py-1.5 flex items-center justify-between text-[11px] gap-2">
-        <span className="text-blue-950 font-semibold flex items-center gap-1 truncate">
+      <div className="bg-blue-50/90 border-t border-blue-200/80 px-2.5 py-1.5 flex items-center justify-between text-[11px] gap-2 max-w-full overflow-hidden">
+        <span className="text-blue-950 font-semibold flex items-center gap-1 min-w-0 truncate">
           <BookOpen className="w-3.5 h-3.5 text-blue-700 shrink-0" />
-          <span>Registra este esquema o mapa conceptual en tu cuaderno para la Fase 2 (Comprender).</span>
+          <span className="truncate">Registra este esquema en tu cuaderno para la Fase 2 (Comprender).</span>
         </span>
 
         {onOpenCuaderno && (

@@ -1,744 +1,781 @@
 // Banco Oficial ICFES Evaluar para Avanzar - Grado 6° (Lectura Cuadernillo 1 Oficial 2021)
 // Institución Educativa Técnica Simón Bolívar - Ibagué, Tolima
-// Área: LENGUAJE: LECTURA / COMPRENSIÓN LECTORA
+// Área: COMPETENCIAS COMUNICATIVAS EN LENGUAJE: LECTURA
 import { Question } from '../types';
 
 // =============================================================================
 // TEXTOS COMPLETOS VERBATIM OFICIALES ICFES EVALUAR PARA AVANZAR - GRADO 6°
 // =============================================================================
 
-export const TEXTO_COMETA_G6 = `RESPONDE LAS PREGUNTAS 1 A 6 DE ACUERDO CON EL SIGUIENTE TEXTO
+export const TEXTO_DANOS_ENOJO_G6 = `RESPONDE LAS PREGUNTAS 1 A 6 A PARTIR DE LA LECTURA DEL SIGUIENTE TEXTO:
 
-LA HISTORIA DE LA COMETA
+INFOGRAFÍA: DAÑOS DEL ENOJO
 
-La cometa, también conocida como barrilete, papalote o volantín en distintos países hispanohablantes, tiene una historia milenaria que se remonta a más de 2.500 años atrás en la antigua China. En sus inicios, las primeras cometas eran elaboradas con cañas de bambú y finas telas de seda.
+El enojo es una emoción natural que prepara al cuerpo para la defensa. Sin embargo, cuando los episodios de ira se vuelven frecuentes e intensos, provocan serios daños en múltiples órganos y sistemas del cuerpo humano.
 
-Lejos de ser un simple juguete infantil, en la antigüedad las cometas cumplían funciones militares estratégicas. Los generales del ejército chino las utilizaban para enviar mensajes codificados a larga distancia, realizar mediciones topográficas del terreno enemigo e incluso para calcular la distancia necesaria para excavar túneles por debajo de las murallas de las fortalezas sitiadas.
+Efectos fisiológicos en el organismo:
+• Cerebro: Libera descargas masivas de adrenalina y cortisol. Se nubla la capacidad de razonamiento lógico y aumenta el riesgo de derrames o accidentes cerebrovasculares.
+• Sistema Cardiovascular: El corazón late con violencia y los vasos sanguíneos se contraen bruscamente, elevando la presión arterial y multiplicando el riesgo de infarto al miocardio.
+• Sistema Digestivo: Disminuye el flujo sanguíneo hacia el estómago, aumentando la producción de ácidos gástricos, lo que genera gastritis, úlceras y colitis.
+• Músculos y Articulaciones: Se genera una tensión muscular involuntaria sostenida en cuello, hombros y espalda, provocando cefaleas tensionales y contracturas crónicas.
+• Sistema Inmunológico: La sobreproducción de cortisol deprime las defensas del organismo hasta por seis horas posteriores a un ataque de furia, volviendo al cuerpo vulnerable a infecciones.
 
-Con el paso de los siglos, las cometas cruzaron fronteras y mares gracias a las rutas comerciales de la seda, extendiéndose por toda Asia, el Medio Oriente y posteriormente hacia Europa en el siglo XIII a través de los relatos de Marco Polo. En Occidente, las cometas adquirieron una gran relevancia no solo como pasatiempo recreativo sino como instrumento para la investigación científica. En 1752, el inventor y científico Benjamín Franklin llevó a cabo su famoso experimento con una cometa provista de una llave metálica durante una tormenta eléctrica, demostrando de manera concluyente que los rayos son una forma de electricidad y sentando las bases para la invención del pararrayos.
+Cambiar hábitos para proteger tu salud:
+1. Practicar técnicas de respiración diafragmática profunda y contar lentamente hasta diez.
+2. Identificar los detonantes del enojo y alejarse temporalmente del conflicto para calmarse.
+3. Comunicar los desacuerdos mediante la asertividad y la empatía, sin recurrir a gritos ni agresiones.
+4. Realizar actividad física regular para canalizar el exceso de energía y liberar endorfinas.
 
-Hoy en día, elevar cometa sigue siendo una de las tradiciones culturales más representativas del mes de agosto en Colombia y en muchas partes del mundo, uniendo a familias enteras alrededor del viento y el cielo.
+Nota importante: Aprender a gestionar las emociones no significa reprimir lo que sentimos, sino expresarlo de manera constructiva para cuidar nuestro bienestar y el de quienes nos rodean.
 
-Tomado y adaptado de: Enciclopedia de Historia y Ciencia Infantil`;
+Tomado y adaptado de: Invdes (Investigación y Desarrollo).`;
 
-export const TEXTO_CHOCOLATE_G6 = `RESPONDE LAS PREGUNTAS 7 A 10 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN
+export const TEXTO_EFECTOS_GASEOSA_G6 = `RESPONDE LAS PREGUNTAS 7 A 12 A PARTIR DE LA LECTURA DEL SIGUIENTE TEXTO:
 
-INFOGRAFÍA: DEL CACAO AL CHOCOLATE
+INFOGRAFÍA: LOS EFECTOS DE LA GASEOSA EN EL CUERPO
 
-1. Cosecha y recolección: Se recogen las mazorcas maduras del árbol de cacao en los cultivos tropicales.
-2. Fermentación: Se extraen los granos cubiertos de pulpa blanca y se dejan fermentar en cajas de madera durante 5 a 7 días para desarrollar el aroma.
-3. Secado al sol: Los granos fermentados se extienden al sol sobre esteras de madera para eliminar la humedad.
-4. Tostado y descascarillado: En la fábrica, los granos secos se tuestan a altas temperaturas y se retira la cáscara externa.
-5. Molienda y refinado: Las semillas tostadas se muelen hasta obtener una pasta líquida y oscura llamada licor de cacao.
-6. Mezclado y moldeado: Se añade azúcar, leche y manteca de cacao, se tempera y se vierte en moldes para obtener las deliciosas barras de chocolate.
+¿Qué le ocurre a tu organismo después de consumir una lata de gaseosa azucarada?
 
-Historia: Los antiguos mayas y aztecas consideraban el cacao un regalo divino del dios Quetzalcóatl y preparaban una bebida amarga y espumosa llamada 'xocoatl'.`;
+Línea de tiempo de absorción:
+• A los 10 minutos: 10 cucharadas de azúcar golpean tu sistema (el 100% de la dosis diaria recomendada). No vomitas de inmediato por el dulzor extremo gracias al ácido fosfórico que corta el sabor.
+• A los 20 minutos: El nivel de azúcar en la sangre explota, provocando una descarga masiva de insulina. El hígado responde transformando todo el exceso de azúcar disponible en grasa corporal.
+• A los 40 minutos: Se completa la absorción de la cafeína. Las pupilas se dilatan, la presión arterial se eleva y el hígado vierte más glucosa al torrente sanguíneo.
+• A los 45 minutos: El cuerpo incrementa la producción de dopamina, estimulando los centros de placer y recompensa del cerebro de forma similar a ciertas sustancias adictivas.
+• A los 60 minutos: Las propiedades diuréticas de la cafeína provocan la evacuación de agua junto con valiosos minerales (calcio, magnesio y zinc) fijados en los huesos. Finalmente sobreviene un bajón drástico de energía y deshidratación.
 
-export const TEXTO_VIAJE_CHIRO_G6 = `RESPONDE LAS PREGUNTAS 11 A 15 DE ACUERDO CON EL SIGUIENTE TEXTO
+Órganos afectados a mediano y largo plazo:
+- Dientes: El ácido y el azúcar destruyen el esmalte dental provocando caries severas.
+- Huesos: El ácido fosfórico descalcifica la masa ósea aumentando el riesgo de osteoporosis.
+- Riñones: Mayor predisposición a cálculos renales e insuficiencia.
+- Hígado: Desarrollo de hígado graso por acumulación de triglicéridos.
+- Peso corporal: Incremento acelerado de obesidad y diabetes tipo 2.
 
-EL VIAJE DE CHIRO
+Tomado y adaptado de: Un día más culto (Campaña de hábitos saludables).`;
 
-Chiro era un perrito de orejas largas y pelaje dorado que vivía felizmente en una granja rodeada de verdes colinas. A pesar de tener un hogar cálido y un tazón lleno de comida todos los días, Chiro sentía una inmensa curiosidad por conocer el espeso bosque que se extendía más allá de la cerca de madera.
+export const TEXTO_EL_AMOR_G6 = `RESPONDE LAS PREGUNTAS 13 A 16 A PARTIR DE LA LECTURA DEL SIGUIENTE TEXTO:
 
-Una mañana soleada de primavera, aprovechando que el granjero dejó la puerta del corral abierta, Chiro decidió salir de la granja para explorar los senderos misteriosos del bosque y hacer nuevos amigos entre los animales silvestres. Durante las primeras horas, todo fue diversión: persiguió mariposas de colores, bebió agua cristalina de un arroyo y saltó sobre montones de hojas secas.
+EL AMOR
 
-Sin embargo, al caer la tarde, las sombras de los árboles se hicieron largas y tenebrosas. El bosque se llenó de ruidos extraños, crujidos de ramas y aullidos lejanos. Chiro sintió miedo por primera vez y se dio cuenta de que no recordaba el camino de regreso. Desesperado, se sentó al pie de un viejo roble a llorar.
+Un hombre y una mujer se amaban con tanta intensidad que, para no separarse jamás ni sufrir por la distancia, decidieron fundirse el uno en el otro. Se abrazaron con tanta fuerza, con tanta ternura y desesperación, que sus cuerpos poco a poco se fueron entremezclando hasta convertirse en un solo ser.
 
-En ese momento, un búho sabio de grandes ojos brillantes se asomó desde una rama alta y le dijo: «¿Por qué lloras, pequeño viajero?». Chiro le contó su aventura y su temor a quedarse solo en la noche. El búho, con voz pausada, le aconsejó: «Sigue el curso del arroyo hacia donde baja el agua; el río te llevará directamente a la cerca de tu hogar antes de que anochezca». Al escuchar al búho, a Chiro se le iluminó la mirada, agradeció el consejo y corrió con todas sus fuerzas siguiendo la corriente hasta divisar las luces de su granja, donde su familia lo esperaba con los brazos abiertos.
+Al principio todo era dicha: tenían cuatro brazos para abrazar el mundo, cuatro ojos para contemplar los paisajes y dos corazones latiendo en perfecta sincronía. Pero al cabo de un tiempo, cuando quisieron caminar, una pierna quería ir hacia el bosque y la otra hacia la colina; cuando quisieron contemplar el atardecer, dos ojos querían mirar el horizonte marino y los otros dos preferían cerrar los párpados para soñar; cuando quisieron hablar, las palabras se atropellaban en una sola boca produciendo sonidos incomprensibles.
 
-Cuento infantil tradicional`;
+Comprendieron entonces que para amarse de verdad no necesitaban anular su individualidad ni disolverse en el otro, sino conservar cada uno su propia libertad y caminar juntos uno al lado del otro.
 
-export const TEXTO_FESTIVAL_TEATRO_G6 = `RESPONDE LAS PREGUNTAS 16 A 20 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN
+Tomado y adaptado de: Zavattini, Cesare. Dos veces cuento.`;
 
-AFICHE: ¡GRAN FESTIVAL ESCOLAR DE TEATRO Y TÍTERES!
+export const TEXTO_IASA_ARCOIRIS_G6 = `RESPONDE LAS PREGUNTAS 17 A 20 A PARTIR DE LA LECTURA DEL SIGUIENTE TEXTO:
 
-Institución Educativa Técnica Simón Bolívar
+IASÁ Y EL CAMINO DEL ARCOÍRIS
 
-- Fecha: Viernes, 25 de octubre
-- Hora: 3:00 p.m.
-- Lugar: Auditorio Central del Colegio
-- Obras destacadas: "La leyenda del Mohan", "El principito en los Andes" y "Títeres en el reino de las palabras".
-- Entrada: ¡Completamente libre y gratuita para estudiantes, docentes y padres de familia!
-- Símbolo: Máscaras de teatro de comedia y tragedia.
+En las profundas selvas del Amazonas, los miembros de la tribu vivían atemorizados por Anhangá, el espíritu de las sombras y las tempestades, quien desataba tormentas torrenciales y cubría los cielos de nubes negras que marchitaban las flores y ahuyentaban a las aves.
 
-¿Quieres participar con tu propio grupo de teatro o títeres? Inscríbete con el profesor de Educación Artística antes del 18 de octubre.
+Iasá, una joven valiente y bondadosa, hija del jefe de la aldea, no podía soportar ver la tristeza de su gente ni la desolación de los campos. Decidió entonces subir a la montaña más alta para hablar directamente con Tupá, el dios del trueno y creador de la luz. Con humildad y firmeza, Iasá ofreció su propio canto y su alegría para devolver la esperanza a su pueblo.
 
-¡Ven y vive la magia de las artes escénicas!`;
+Tupá, conmovido por el valor y la nobleza de la doncella, tejió en el cielo un puente de siete colores luminosos —el arcoíris— que dispersó para siempre las sombras de Anhangá. Desde aquel día, cada vez que la lluvia cesa, el arcoíris cruza el firmamento amazónico como recordatorio del pacto de luz entre Tupá e Iasá.
+
+Leyenda tradicional indígena del Brasil.`;
+
+// =============================================================================
+// BANCO DE 20 PREGUNTAS OFICIALES ICFES EVALUAR PARA AVANZAR - GRADO 6°
+// =============================================================================
 
 export const OFFICIAL_GRADE_6: Question[] = [
-  // =========================================================================
-  // TEXTO 1: LA HISTORIA DE LA COMETA (Preguntas 1 a 6)
-  // =========================================================================
+  // ---------------------------------------------------------------------------
+  // TEXTO 1: DAÑOS DEL ENOJO (Preguntas 1 a 6)
+  // ---------------------------------------------------------------------------
   {
     id: 601,
     grade: 6,
     questionNumber: 1,
-    title: 'La historia de la cometa - Tema del texto',
-    contextText: TEXTO_COMETA_G6,
-    statement: `El tema del texto es`,
+    title: 'Daños del enojo - Efecto sobre el sistema inmunológico',
+    contextText: TEXTO_DANOS_ENOJO_G6,
+    statement: 'De acuerdo con la infografía, ¿durante cuánto tiempo se debilitan las defensas del cuerpo humano después de un episodio de furia?',
     options: [
-      { number: 1, letter: 'A', text: 'las diferentes clases de vientos que existen en el mes de agosto.' },
-      { number: 2, letter: 'B', text: 'la biografía y los inventos del científico Benjamín Franklin.' },
-      { number: 3, letter: 'C', text: 'el origen y la evolución de las cometas a lo largo de la historia.' },
-      { number: 4, letter: 'D', text: 'los materiales de construcción de las murallas en la antigua China.' }
+      { number: 1, letter: 'A', text: 'Durante un lapso de hasta seis horas por la sobreproducción de cortisol.' },
+      { number: 2, letter: 'B', text: 'Únicamente durante los primeros diez segundos de la discusión.' },
+      { number: 3, letter: 'C', text: 'Durante una semana completa sin importar la intensidad de la ira.' },
+      { number: 4, letter: 'D', text: 'El sistema inmunológico no sufre ningún tipo de alteración.' }
     ],
-    correctOption: 3,
-    correctLetter: 'C',
+    correctOption: 1,
+    correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Expositivo - Idea Global y Macroestructura',
-    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
-    evidence: 'Identifica el contenido de cada parte funcional del texto.',
-    standard: 'Comprendo el sentido global de cada uno de los textos que leo, la intención de quien lo produce y las características del contexto en el que se produce.',
-    justification: 'La opción C es la respuesta correcta porque el texto relata de forma global desde el nacimiento de las cometas en la China clásica, sus aplicaciones bélicas y científicas, hasta su conversión en una tradición popular contemporánea.',
+    component: 'Texto Discontinuo - Infografía / Datos Explícitos',
+    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'En la sección del sistema inmunológico se especifica que el exceso de cortisol deprime las defensas del organismo "hasta por seis horas posteriores a un ataque de furia".',
     invalidOptionsReasoning: {
-      A: 'El viento de agosto es solo una mención cultural de cierre.',
-      B: 'Franklin es citado como un ejemplo histórico específico en el párrafo 3.',
-      D: 'Las murallas eran solo el objetivo táctico de las mediciones militares chinas.'
+      B: 'Diez segundos es el tiempo recomendado para contar y respirar, no la duración del efecto inmune.',
+      C: 'El texto no menciona semanas completas.',
+      D: 'La infografía demuestra un daño inmunológico directo y comprobado.'
     },
     socraticHints: {
-      recordar: '¿De qué artefacto habla el texto desde el primer párrafo hasta el último?',
-      comprender: '¿Cómo progresa la información a través de los siglos?',
-      aplicar: 'Anota en tu cuaderno: "Tema global = El origen, la historia y la evolución de la cometa".',
-      analizar: '¿Por qué la opción C sintetiza la totalidad del artículo?'
-    }
+      recordar: 'Busca el ícono del sistema inmunológico en la infografía.',
+      comprender: '¿Cómo afecta la hormona del estrés (cortisol) la capacidad del cuerpo para combatir infecciones?',
+      aplicar: 'Anota en tu cuaderno: "Efecto inmunológico del enojo: Defensas bajas hasta por 6 horas".',
+      analizar: 'Relaciona la respuesta hormonal con la vulnerabilidad biológica.'
+    },
+    icfesCode: 'I_1660101',
+    hasDiagram: true
   },
   {
     id: 602,
     grade: 6,
     questionNumber: 2,
-    title: 'La historia de la cometa - Uso militar inicial en China',
-    contextText: TEXTO_COMETA_G6,
-    statement: `Según el texto, en la antigua China las cometas se utilizaban inicialmente para`,
+    title: 'Consecuencias cardiovasculares de la ira',
+    contextText: TEXTO_DANOS_ENOJO_G6,
+    statement: 'Según el texto, el impacto del enojo sobre el corazón y los vasos sanguíneos provoca:',
     options: [
-      { number: 1, letter: 'A', text: 'pescar peces grandes en los ríos profundos.' },
-      { number: 2, letter: 'B', text: 'enviar señales militares y medir distancias en las batallas.' },
-      { number: 3, letter: 'C', text: 'transportar soldados por el aire por encima de las montañas.' },
-      { number: 4, letter: 'D', text: 'decorar las casas durante las celebraciones de año nuevo.' }
+      { number: 1, letter: 'A', text: 'Una disminución del ritmo cardíaco que induce sueño profundo.' },
+      { number: 2, letter: 'B', text: 'Un aumento violento de la frecuencia cardíaca, contracción arterial y elevación de la presión sanguínea.' },
+      { number: 3, letter: 'C', text: 'Una regeneración acelerada de las paredes de las arterias.' },
+      { number: 4, letter: 'D', text: 'La detención inmediata y permanente del flujo sanguíneo.' }
     ],
     correctOption: 2,
     correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Expositivo - Información Literal',
+    component: 'Texto Discontinuo - Relaciones Causa-Efecto Fisiológicas',
     affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Ubica elementos del contenido de diferentes tipos de textos (tiempo, lugares, hechos, personajes y narrador).',
-    standard: 'Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.',
-    justification: 'La opción B es la correcta porque el segundo párrafo afirma textualmente que las cometas eran herramientas militares para transmitir mensajes cifrados y medir distancias de túneles y terrenos.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Utilizo estrategias de búsqueda, selección y almacenamiento de información.',
+    justification: 'En el apartado de Sistema Cardiovascular se indica que el corazón late con violencia y los vasos se contraen bruscamente elevando la presión arterial y el riesgo de infarto.',
     invalidOptionsReasoning: {
-      A: 'No se menciona la pesca en el texto.',
-      C: 'No eran planeadores para transportar personas.',
-      D: 'El texto enfatiza su rol estratégico bélico antes que su uso decorativo.'
+      A: 'El enojo activa el estado de alerta máxima y taquicardia, no sueño.',
+      C: 'La contracción súbita daña las arterias, no las regenera.',
+      D: 'Provoca vasoconstricción e hipertensión, no un paro circulatorio instantáneo.'
     },
     socraticHints: {
-      recordar: '¿Qué hacían los generales chinos con las cometas de seda y bambú?',
-      comprender: '¿Cuál era el objetivo táctico de elevarlas sobre los ejércitos rivales?',
-      aplicar: 'Anota en tu cuaderno: "Uso militar = Mensajes en código y cálculo de distancias bélicas".',
-      analizar: '¿Por qué la opción B es la respuesta literal del texto?'
-    }
+      recordar: 'Revisa la viñeta del corazón en la infografía.',
+      comprender: '¿Por qué la hipertensión arterial súbita representa un peligro para la salud?',
+      aplicar: 'Copia en tu cuaderno la descripción del efecto cardiovascular de la ira.',
+      analizar: 'Conecta las reacciones de lucha o huida con el sobreesfuerzo del músculo cardíaco.'
+    },
+    icfesCode: 'I_1660102'
   },
   {
     id: 603,
     grade: 6,
     questionNumber: 3,
-    title: 'La historia de la cometa - Experimento de Benjamín Franklin',
-    contextText: TEXTO_COMETA_G6,
-    statement: `Benjamín Franklin utilizó una cometa para`,
+    title: 'Diferencia entre reprimir y gestionar emociones',
+    contextText: TEXTO_DANOS_ENOJO_G6,
+    statement: 'En la “Nota importante” del texto, la distinción entre “reprimir” y “gestionar” las emociones busca que el lector comprenda que:',
     options: [
-      { number: 1, letter: 'A', text: 'demostrar que los rayos son una forma de electricidad.' },
-      { number: 2, letter: 'B', text: 'enviar cartas secretas a los gobernantes de Europa.' },
-      { number: 3, letter: 'C', text: 'atrapar pájaros exóticos durante las tormentas.' },
-      { number: 4, letter: 'D', text: 'medir la velocidad del sonido en el aire.' }
+      { number: 1, letter: 'A', text: 'Se debe guardar silencio absoluto y fingir que nada molesta.' },
+      { number: 2, letter: 'B', text: 'El enojo debe ser reprimido a la fuerza mediante el aislamiento total.' },
+      { number: 3, letter: 'C', text: 'Es sano reconocer lo que sentimos y comunicarlo de forma asertiva y respetuosa sin agredir.' },
+      { number: 4, letter: 'D', text: 'Las emociones negativas deben eliminarse químicamente con medicamentos.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
+    correctOption: 3,
+    correctLetter: 'C',
     competency: 'Comprensión lectora.',
-    component: 'Texto Expositivo - Comprensión Literal de Hechos Científicos',
-    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Ubica elementos del contenido de diferentes tipos de textos (tiempo, lugares, hechos, personajes y narrador).',
-    standard: 'Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.',
-    justification: 'La respuesta correcta es la opción A porque el texto detalla explícitamente que el experimento de Franklin con la cometa y la llave en 1752 sirvió para comprobar la naturaleza eléctrica de los rayos.',
+    component: 'Inferencia Pragmática y Educación Socioemocional',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Evalúa las ideas expresadas en un texto.',
+    standard: 'Identifico el propósito comunicativo y la idea global de un texto.',
+    justification: 'La nota final enfatiza que la gestión emocional consiste en expresar los sentimientos de manera constructiva y asertiva para cuidar la salud y la convivencia, sin recurrir a la represión destructiva ni a la violencia.',
     invalidOptionsReasoning: {
-      B: 'Franklin no usó la cometa para correo postal diplomático.',
-      C: 'No era una trampa de cacería de aves.',
-      D: 'El experimento midió la carga electrostática atmosférica, no la acústica.'
+      A: 'Fingir y callar es reprimir, lo cual produce somatización y estrés.',
+      B: 'El texto rechaza explícitamente la represión como método saludable.',
+      D: 'El enfoque propuesto es conductual y de comunicación asertiva.'
     },
     socraticHints: {
-      recordar: '¿Qué elemento metálico ató Franklin a la cuerda de su cometa?',
-      comprender: '¿Qué fenómeno de la naturaleza logró explicar con ese experimento?',
-      aplicar: 'Anota en tu cuaderno: "Experimento de Franklin = Demostrar que los rayos son electricidad".',
-      analizar: '¿Por qué la opción A es la única respuesta correcta?'
-    }
+      recordar: 'Lee el recuadro inferior titulado "Nota importante".',
+      comprender: '¿Cuál es la diferencia entre tragarse la rabia y explicar con respeto por qué algo te incomoda?',
+      aplicar: 'Escribe en tu cuaderno: "Gestión emocional = Expresión asertiva y constructiva".',
+      analizar: 'Distingue entre la emoción primaria natural y la conducta de respuesta.'
+    },
+    icfesCode: 'I_1660103'
   },
   {
     id: 604,
     grade: 6,
     questionNumber: 4,
-    title: 'La historia de la cometa - Significado de la palabra "fronteras"',
-    contextText: TEXTO_COMETA_G6,
-    statement: `En el enunciado "Las cometas cruzaron fronteras y mares...", la palabra "fronteras" se refiere a`,
+    title: 'Recomendaciones conductuales para canalizar la ira',
+    contextText: TEXTO_DANOS_ENOJO_G6,
+    statement: '¿Cuál de las siguientes acciones NO es propuesta en la infografía como una pauta saludable para controlar el enojo?',
     options: [
-      { number: 1, letter: 'A', text: 'los ríos más caudalosos del planeta.' },
-      { number: 2, letter: 'B', text: 'las cuerdas con las que se atan los papalotes.' },
-      { number: 3, letter: 'C', text: 'los límites territoriales entre países o regiones.' },
-      { number: 4, letter: 'D', text: 'las tormentas con truenos y relámpagos.' }
+      { number: 1, letter: 'A', text: 'Practicar respiración diafragmática profunda y contar hasta diez.' },
+      { number: 2, letter: 'B', text: 'Gritar e insultar a las demás personas para desahogar la furia rápidamente.' },
+      { number: 3, letter: 'C', text: 'Alejarse temporalmente de la situación de conflicto para recuperar la calma.' },
+      { number: 4, letter: 'D', text: 'Hacer ejercicio físico con regularidad para liberar endorfinas.' }
     ],
-    correctOption: 3,
-    correctLetter: 'C',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Expositivo - Léxico y Semántica en Contexto',
+    component: 'Texto Instructivo - Discriminación de Pautas',
     affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Reconoce y entiende el vocabulario y su función.',
-    standard: 'Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.',
-    justification: 'La opción C es la correcta porque en geografía e historia la palabra "frontera" designa la línea divisoria o límite geopolítico que separa un país, reino o territorio de otro.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Utilizo estrategias de búsqueda, selección y almacenamiento de información.',
+    justification: 'El texto prohíbe explícitamente los gritos y agresiones, recomendando la asertividad y el diálogo respetuoso.',
     invalidOptionsReasoning: {
-      A: 'Confunde fronteras con accidentes fluviales.',
-      B: 'Confunde el término con las líneas de vuelo del juguete.',
-      D: 'No tiene relación con fenómenos meteorológicos.'
+      A: 'Es la pauta número 1 explícita.',
+      C: 'Es la pauta número 2 explícita.',
+      D: 'Es la pauta número 4 explícita.'
     },
     socraticHints: {
-      recordar: '¿Qué separa a un país de su nación vecina?',
-      comprender: '¿Qué significa que un invento "cruce fronteras"?',
-      aplicar: 'Anota en tu cuaderno: "Fronteras = Límites divisorios territoriales entre naciones".',
-      analizar: '¿Por qué la opción C es el significado exacto de la palabra?'
-    }
+      recordar: 'Revisa la lista numerada de 4 hábitos recomendados.',
+      comprender: '¿Qué tipo de conductas dañan la convivencia según la pauta 3?',
+      aplicar: 'Registra en tu cuaderno las 4 alternativas saludables propuestas.',
+      analizar: 'Identifica la opción contraria al mensaje de no violencia y salud del texto.'
+    },
+    icfesCode: 'I_1660104'
   },
   {
     id: 605,
     grade: 6,
     questionNumber: 5,
-    title: 'La historia de la cometa - Orden cronológico de los hechos',
-    contextText: TEXTO_COMETA_G6,
-    statement: `¿Cuál es el orden cronológico de los hechos en el texto?`,
+    title: 'Efecto del enojo en el aparato digestivo',
+    contextText: TEXTO_DANOS_ENOJO_G6,
+    statement: 'En el aparato digestivo, el enojo frecuente desencadena gastritis y úlceras principalmente porque:',
     options: [
-      { number: 1, letter: 'A', text: 'Experimento de Franklin con la electricidad -> Invención en China -> Uso militar y de señales.' },
-      { number: 2, letter: 'B', text: 'Invención en China -> Uso militar y de señales -> Experimento de Franklin con la electricidad.' },
-      { number: 3, letter: 'C', text: 'Uso militar y de señales -> Experimento de Franklin con la electricidad -> Invención en China.' },
-      { number: 4, letter: 'D', text: 'Experimento de Franklin con la electricidad -> Uso militar y de señales -> Invención en China.' }
+      { number: 1, letter: 'A', text: 'Reduce la circulación en el estómago y dispara la secreción de ácidos gástricos.' },
+      { number: 2, letter: 'B', text: 'Obliga a la persona a comer alimentos picantes de manera involuntaria.' },
+      { number: 3, letter: 'C', text: 'Destruye instantáneamente todas las enzimas de la saliva.' },
+      { number: 4, letter: 'D', text: 'Aumenta el consumo de agua helada en el organismo.' }
     ],
-    correctOption: 2,
-    correctLetter: 'B',
+    correctOption: 1,
+    correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Expositivo - Estructura Temporal Cronológica',
+    component: 'Texto Continuo / Discontinuo - Fisiología y Salud',
     affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Ubica elementos del contenido de diferentes tipos de textos (tiempo, lugares, hechos, personajes y narrador).',
-    standard: 'Comprendo elementos constitutivos de obras y textos expositivos, tales como tiempo, hechos y progresión.',
-    justification: 'La respuesta correcta es la opción B porque refleja la progresión temporal de la historia: primero la creación en la China antigua, luego su empleo por generales para estrategias bélicas y siglos después el experimento científico de Franklin en el siglo XVIII.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'En la sección del Sistema Digestivo se señala que "disminuye el flujo sanguíneo hacia el estómago, aumentando la producción de ácidos gástricos, lo que genera gastritis, úlceras y colitis".',
     invalidOptionsReasoning: {
-      A: 'Sitúa el año 1752 antes de la antigua China.',
-      C: 'Omite que la invención de la cometa precedió a su uso bélico.',
-      D: 'Invierte totalmente la línea del tiempo histórica.'
+      B: 'No tiene relación con la ingesta forzada de picante.',
+      C: 'El texto no menciona la saliva sino los jugos gástricos estomacales.',
+      D: 'La deshidratación no es la causa biológica descrita para las úlceras.'
     },
     socraticHints: {
-      recordar: '¿Dónde y cuándo nació la cometa según el texto?',
-      comprender: '¿Cómo evolucionaron sus usos a lo largo del tiempo?',
-      aplicar: 'Anota en tu cuaderno: "1. Nace en China -> 2. Señales de guerra -> 3. Experimento eléctrico de Franklin".',
-      analizar: '¿Por qué la opción B es la secuencia cronológica correcta?'
-    }
+      recordar: 'Localiza la viñeta del estómago en el texto.',
+      comprender: '¿Cómo afecta el exceso de ácido clorhídrico las paredes estomacales cuando hay poco riego sanguíneo?',
+      aplicar: 'Anota en tu cuaderno la relación entre estrés, acidez gástrica y gastritis.',
+      analizar: 'Rastrea el mecanismo fisiológico directo mencionado en la infografía.'
+    },
+    icfesCode: 'I_1660105'
   },
   {
     id: 606,
     grade: 6,
     questionNumber: 6,
-    title: 'La historia de la cometa - Estructura discursiva',
-    contextText: TEXTO_COMETA_G6,
-    statement: `El texto está estructurado principalmente de forma`,
+    title: 'Propósito comunicativo de la infografía sobre el enojo',
+    contextText: TEXTO_DANOS_ENOJO_G6,
+    statement: '¿Cuál es la intención comunicativa principal de los autores al publicar esta infografía?',
     options: [
-      { number: 1, letter: 'A', text: 'cronológica e informativa.' },
-      { number: 2, letter: 'B', text: 'dramática y teatral.' },
-      { number: 3, letter: 'C', text: 'poética con rimas consonantes.' },
-      { number: 4, letter: 'D', text: 'humorística con chistes y caricaturas.' }
+      { number: 1, letter: 'A', text: 'Vender calmantes y fármacos para personas de mal genio.' },
+      { number: 2, letter: 'B', text: 'Concientizar sobre las graves repercusiones del enojo descontrolado y brindar herramientas para su manejo saludable.' },
+      { number: 3, letter: 'C', text: 'Prohibir que los seres humanos sientan emociones en su vida cotidiana.' },
+      { number: 4, letter: 'D', text: 'Criticar a los médicos que estudian las hormonas como el cortisol.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Expositivo - Organización Textual',
+    component: 'Pragmática y Propósito Global',
     affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
-    evidence: 'Infiere estrategias discursivas del texto.',
-    standard: 'Caracterizo los textos de acuerdo con la intención comunicativa de quien los produce.',
-    justification: 'La opción A es la correcta porque el texto sigue una línea de tiempo ordenada desde la antigüedad hasta la actualidad (cronológica) con el fin de aportar datos reales y verificables al lector (informativa).',
+    evidence: 'Identifica la intención comunicativa del autor y el tipo de texto.',
+    standard: 'Identifico la intención comunicativa de cada uno de los textos leídos.',
+    justification: 'El texto persigue un fin formativo y de salud pública: advertir con base científica sobre los daños orgánicos de la ira y enseñar hábitos prácticos para prevenirla.',
     invalidOptionsReasoning: {
-      B: 'No contiene acotaciones ni parlamentos para ser representados en un escenario.',
-      C: 'Está escrito en prosa expositiva continua, no en verso rimado.',
-      D: 'No busca la risa mediante recursos cómicos.'
+      A: 'No es una publicidad farmacéutica.',
+      C: 'Reconoce que el enojo es una emoción natural inevitable que debe canalizarse bien.',
+      D: 'Se apoya en la investigación médica de Invdes, no la critica.'
     },
     socraticHints: {
-      recordar: '¿Qué tipo de conectores y marcas temporales vertebran los párrafos?',
-      comprender: '¿Por qué el encadenamiento de épocas pasadas y presentes define un orden cronológico informativo?',
-      aplicar: 'Anota en tu cuaderno: "Estructura = Expositiva cronológica (línea temporal histórica)".',
-      analizar: '¿Por qué la opción A es la respuesta rigurosa?'
-    }
+      recordar: '¿Qué dos grandes bloques componen la infografía (daños y soluciones)?',
+      comprender: '¿Por qué la divulgación científica busca transformar las conductas de las personas?',
+      aplicar: 'Redacta en tu cuaderno el propósito global del texto en dos oraciones.',
+      analizar: 'Sintetiza la dimensión preventiva y pedagógica del material visual.'
+    },
+    icfesCode: 'I_1660106'
   },
 
-  // =========================================================================
-  // TEXTO 2: EL ORIGEN DEL CHOCOLATE (Preguntas 7 a 10)
-  // =========================================================================
+  // ---------------------------------------------------------------------------
+  // TEXTO 2: LOS EFECTOS DE LA GASEOSA EN EL CUERPO (Preguntas 7 a 12)
+  // ---------------------------------------------------------------------------
   {
     id: 607,
     grade: 6,
     questionNumber: 7,
-    title: 'El origen del chocolate - Primer paso de elaboración',
-    contextText: TEXTO_CHOCOLATE_G6,
-    statement: `¿Cuál es el primer paso en la elaboración del chocolate según la infografía?`,
+    title: 'Efectos a los 10 minutos del consumo de gaseosa',
+    contextText: TEXTO_EFECTOS_GASEOSA_G6,
+    statement: 'A los diez minutos de beber una lata de gaseosa, el organismo no vomita de inmediato a pesar de recibir diez cucharadas de azúcar debido a que:',
     options: [
-      { number: 1, letter: 'A', text: 'Moler los granos con azúcar y leche.' },
-      { number: 2, letter: 'B', text: 'Tostar los granos a altas temperaturas en la fábrica.' },
-      { number: 3, letter: 'C', text: 'Secar los granos de cacao sobre esteras de madera al sol.' },
-      { number: 4, letter: 'D', text: 'La recolección de las mazorcas maduras del árbol de cacao.' }
+      { number: 1, letter: 'A', text: 'El ácido fosfórico neutraliza el sabor empalagoso del dulzor extremo.' },
+      { number: 2, letter: 'B', text: 'El gas carbónico congela el estómago al instante.' },
+      { number: 3, letter: 'C', text: 'La cafeína elimina todas las papilas gustativas de la lengua.' },
+      { number: 4, letter: 'D', text: 'El cuerpo humano tiene una necesidad natural de consumir diez cucharadas diarias de azúcar pura.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
+    correctOption: 1,
+    correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Infografía / Secuencia de Procesos',
+    component: 'Texto Discontinuo - Infografía / Comprensión de Procesos',
     affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Ubica elementos del contenido de diferentes tipos de textos (tiempo, lugares, hechos, personajes y narrador).',
-    standard: 'Relaciono gráficas con texto escrito, ya sea completándolas o explicándolas.',
-    justification: 'La opción D es la respuesta correcta porque en la numeración secuencial del diagrama, el proceso se inicia necesariamente en el campo con la cosecha y recolección de las mazorcas del árbol.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'En la línea de tiempo (minuto 10) se explica que "No vomitas de inmediato por el dulzor extremo gracias al ácido fosfórico que corta el sabor".',
     invalidOptionsReasoning: {
-      A: 'La molienda con leche y azúcar corresponde al paso 5 y 6.',
-      B: 'El tostado es el paso 4 en la fábrica.',
-      C: 'El secado es el paso 3 posterior a la fermentación.'
+      B: 'El gas carbónico produce burbujas, no congela el tejido.',
+      C: 'La cafeína se absorbe en el minuto 40 y dilata pupilas, no daña la lengua.',
+      D: 'Diez cucharadas representan el 100% del límite máximo recomendado para todo un día.'
     },
     socraticHints: {
-      recordar: 'Observa el número 1 de la infografía.',
-      comprender: '¿De dónde proviene la materia prima antes de llegar a los hornos y molinos?',
-      aplicar: 'Anota en tu cuaderno: "Paso 1 = Cosecha y recolección de las mazorcas de cacao".',
-      analizar: '¿Por qué la opción D es el inicio indiscutible de la cadena productiva?'
-    }
+      recordar: 'Revisa el primer punto de la línea temporal (10 minutos).',
+      comprender: '¿Cómo actúa el ácido fosfórico como aditivo químico en las bebidas oscuras?',
+      aplicar: 'Anota en tu cuaderno la función enmascaradora del ácido fosfórico.',
+      analizar: 'Relaciona la cantidad excesiva de azúcar con la reacción fisiológica del estómago.'
+    },
+    icfesCode: 'I_1660201',
+    hasDiagram: true
   },
   {
     id: 608,
     grade: 6,
     questionNumber: 8,
-    title: 'El origen del chocolate - Importancia religiosa en mayas y aztecas',
-    contextText: TEXTO_CHOCOLATE_G6,
-    statement: `De acuerdo con la infografía, ¿por qué los mayas y aztecas consideraban el cacao sagrado?`,
+    title: 'Transformación del exceso de glucosa en grasa en el hígado',
+    contextText: TEXTO_EFECTOS_GASEOSA_G6,
+    statement: 'Según el minuto 20 de la infografía, ¿cómo reacciona el hígado ante la masiva descarga de insulina provocada por el azúcar?',
     options: [
-      { number: 1, letter: 'A', text: 'Porque era considerado un regalo de los dioses a la humanidad.' },
-      { number: 2, letter: 'B', text: 'Porque servía como medicina para curar la miopía.' },
-      { number: 3, letter: 'C', text: 'Porque era el único alimento que podían comer en la selva.' },
-      { number: 4, letter: 'D', text: 'Porque lo utilizaban para construir templos y pirámides.' }
+      { number: 1, letter: 'A', text: 'Expulsa todo el azúcar hacia los pulmones para ser exhalado.' },
+      { number: 2, letter: 'B', text: 'Convierte todo el exceso de azúcar disponible en grasa corporal.' },
+      { number: 3, letter: 'C', text: 'Produce hueso nuevo para fortalecer el esqueleto.' },
+      { number: 4, letter: 'D', text: 'Se desactiva por completo y deja de funcionar durante horas.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Comprensión Literal de Datos Culturales',
+    component: 'Texto Continuo / Discontinuo - Procesos Metabólicos',
     affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Ubica elementos del contenido de diferentes tipos de textos (tiempo, lugares, hechos, personajes y narrador).',
-    standard: 'Relaciono gráficas con texto escrito, ya sea completándolas o explicándolas.',
-    justification: 'La respuesta correcta es la opción A porque el texto histórico adjunto a la infografía aclara que las civilizaciones prehispánicas creían que el árbol de cacao era una dádiva sagrada entregada por la divinidad Quetzalcóatl.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Utilizo estrategias de búsqueda, selección y almacenamiento de información.',
+    justification: 'A los 20 minutos el texto señala textualmente: "El hígado responde transformando todo el exceso de azúcar disponible en grasa corporal".',
     invalidOptionsReasoning: {
-      B: 'No se le atribuían propiedades oftalmológicas en el texto.',
-      C: 'Comían maíz, frijol, calabaza y carnes variadas.',
-      D: 'El cacao es un fruto botánico, no un material de albañilería pétrea.'
+      A: 'Los pulmones intercambian gases (oxígeno y CO2), no metabolizan azúcar.',
+      C: 'El ácido fosfórico descalcifica los huesos en el minuto 60, no los fortalece.',
+      D: 'El hígado trabaja a marcha forzada creando triglicéridos y tejido adiposo.'
     },
     socraticHints: {
-      recordar: '¿Qué dios se menciona en la sección histórica de la infografía?',
-      comprender: '¿Cuál era el origen mítico atribuido a la planta del cacao?',
-      aplicar: 'Anota en tu cuaderno: "Motivo sagrado = Creían que era un regalo divino de los dioses".',
-      analizar: '¿Por qué la opción A es la respuesta textual correcta?'
-    }
+      recordar: 'Lee lo que ocurre a los 20 minutos de la ingesta.',
+      comprender: '¿Por qué el consumo frecuente de refrescos azucarados causa sobrepeso e hígado graso?',
+      aplicar: 'Escribe en tu cuaderno: "Minuto 20: Pico de insulina -> El hígado convierte azúcar en grasa".',
+      analizar: 'Sigue el encadenamiento metabólico entre azúcar, insulina y acumulación lipídica.'
+    },
+    icfesCode: 'I_1660202'
   },
   {
     id: 609,
     grade: 6,
     questionNumber: 9,
-    title: 'El origen del chocolate - Función de las flechas entre etapas',
-    contextText: TEXTO_CHOCOLATE_G6,
-    statement: `En la infografía, la flecha que une el proceso de tostado con el de molienda indica`,
+    title: 'Efecto adictivo y producción de dopamina',
+    contextText: TEXTO_EFECTOS_GASEOSA_G6,
+    statement: 'En el minuto 45, el aumento en la producción de dopamina en el cerebro explica por qué:',
     options: [
-      { number: 1, letter: 'A', text: 'que se debe detener la fabricación de inmediato.' },
-      { number: 2, letter: 'B', text: 'la secuencia de pasos que se debe seguir en la fábrica.' },
-      { number: 3, letter: 'C', text: 'que el chocolate se echa a perder si se muele.' },
-      { number: 4, letter: 'D', text: 'que los dos procesos ocurren en países diferentes.' }
+      { number: 1, letter: 'A', text: 'La persona siente un dolor de cabeza insoportable al instante.' },
+      { number: 2, letter: 'B', text: 'Se estimulan los centros de placer, generando una sensación gratificante que puede inducir adicción.' },
+      { number: 3, letter: 'C', text: 'El cerebro pierde la memoria de lo ocurrido en el día.' },
+      { number: 4, letter: 'D', text: 'Los músculos se paralizan impidiendo el movimiento de las extremidades.' }
     ],
     correctOption: 2,
     correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Diagrama de Flujo / Vectores Gráficos',
+    component: 'Texto Explicativo - Neurotransmisores y Conducta',
     affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
-    evidence: 'Deduce las relaciones entre elementos lingüísticos y no lingüísticos.',
-    standard: 'Relaciono gráficas con texto escrito, ya sea completándolas o explicándolas.',
-    justification: 'La opción B es la respuesta correcta porque en un diagrama de procesos industriales las flechas indican la dirección obligatoria y el orden secuencial de transformación que sigue la materia prima.',
+    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'A los 45 minutos el incremento de dopamina estimula las vías de recompensa del cerebro, provocando placer temporal y dependencia psicológica.',
     invalidOptionsReasoning: {
-      A: 'La flecha señala continuidad operativa, no interrupción.',
-      C: 'La molienda es un paso técnico indispensable para hacer la pasta líquida.',
-      D: 'Ambas etapas se llevan a cabo dentro de la misma planta de procesamiento.'
+      A: 'El bajón de energía ocurre a los 60 minutos.',
+      C: 'No genera amnesia repentina.',
+      D: 'No provoca parálisis muscular.'
     },
     socraticHints: {
-      recordar: '¿Cuál es el significado de una flecha en una infografía de pasos numerados?',
-      comprender: '¿Cómo comunica el gráfico qué etapa viene después de la otra?',
-      aplicar: 'Anota en tu cuaderno: "Función de las flechas = Indicar el orden y la secuencia del proceso industrial".',
-      analizar: '¿Por qué la opción B es la explicación visual precisa?'
-    }
+      recordar: 'Ubica el minuto 45 en la cronología de absorción.',
+      comprender: '¿Qué papel cumple la dopamina en los mecanismos de recompensa y adicción?',
+      aplicar: 'Anota en tu cuaderno cómo la industria de bebidas utiliza la estimulación cerebral para enganchar consumidores.',
+      analizar: 'Relaciona la bioquímica del placer con el hábito repetitivo de consumo.'
+    },
+    icfesCode: 'I_1660203'
   },
   {
     id: 610,
     grade: 6,
     questionNumber: 10,
-    title: 'El origen del chocolate - Propósito principal de la infografía',
-    contextText: TEXTO_CHOCOLATE_G6,
-    statement: `La infografía tiene como propósito principal`,
+    title: 'Descalcificación ósea por ácido fosfórico',
+    contextText: TEXTO_EFECTOS_GASEOSA_G6,
+    statement: 'A los 60 minutos, la combinación de las propiedades diuréticas de la cafeína y el ácido fosfórico perjudica a los huesos porque:',
     options: [
-      { number: 1, letter: 'A', text: 'criticar a las personas que comen dulces.' },
-      { number: 2, letter: 'B', text: 'enseñar a cultivar árboles gigantes en el jardín de la casa.' },
-      { number: 3, letter: 'C', text: 'explicar de forma gráfica el origen histórico y el proceso de fabricación del chocolate.' },
-      { number: 4, letter: 'D', text: 'vender boletas para una película sobre Quetzalcóatl.' }
+      { number: 1, letter: 'A', text: 'Provoca la expulsión acelerada en la orina de minerales esenciales como calcio, magnesio y zinc.' },
+      { number: 2, letter: 'B', text: 'Convierte el calcio de los huesos en burbujas de gas.' },
+      { number: 3, letter: 'C', text: 'Hace que los huesos crezcan el doble de su tamaño en una hora.' },
+      { number: 4, letter: 'D', text: 'Bloquea la entrada de oxígeno a través de la médula espinal.' }
     ],
-    correctOption: 3,
-    correctLetter: 'C',
+    correctOption: 1,
+    correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Intención Comunicativa Global',
-    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
-    evidence: 'Infiere la intención comunicativa de infografías y textos explicativos.',
-    standard: 'Caracterizo los textos de acuerdo con la intención comunicativa de quien los produce.',
-    justification: 'La opción C es la respuesta correcta porque resume integralmente la finalidad didáctica del material: dar a conocer los antecedentes culturales del cacao y su transformación técnica en golosina.',
+    component: 'Texto Discontinuo - Nutrición y Daño Óseo',
+    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Utilizo estrategias de búsqueda, selección y almacenamiento de información.',
+    justification: 'En el minuto 60 se afirma que las propiedades diuréticas provocan la evacuación de agua junto con calcio, magnesio y zinc, fijados previamente en los huesos, favoreciendo la osteoporosis.',
     invalidOptionsReasoning: {
-      A: 'No condena el consumo del chocolate.',
-      B: 'No es un instructivo de agronomía doméstica.',
-      D: 'No es una cartelera de cine.'
+      B: 'El calcio se disuelve iónicamente y se excreta en la orina, no en burbujas.',
+      C: 'Debilita la densidad mineral ósea, no agranda los huesos.',
+      D: 'No interrumpe el transporte respiratorio de oxígeno.'
     },
     socraticHints: {
-      recordar: '¿Qué información entrega la infografía de principio a fin?',
-      comprender: '¿Por qué integra historia indígena con las etapas industriales modernas?',
-      aplicar: 'Anota en tu cuaderno: "Propósito = Explicar visualmente la historia y el proceso productivo del chocolate".',
-      analizar: '¿Por qué la opción C es la síntesis de la intención comunicativa?'
-    }
+      recordar: 'Revisa qué minerales se pierden a los 60 minutos según el texto.',
+      comprender: '¿Qué consecuencia a largo plazo tiene para un niño o joven la pérdida continua de calcio en los huesos?',
+      aplicar: 'Haz en tu cuaderno un esquema de los 3 minerales que se pierden con la gaseosa.',
+      analizar: 'Conecta el efecto diurético con el riesgo crónico de osteoporosis temprana.'
+    },
+    icfesCode: 'I_1660204'
   },
-
-  // =========================================================================
-  // TEXTO 3: EL VIAJE DE CHIRO (Preguntas 11 a 15)
-  // =========================================================================
   {
     id: 611,
     grade: 6,
     questionNumber: 11,
-    title: 'El viaje de Chiro - Motivo de la salida de la granja',
-    contextText: TEXTO_VIAJE_CHIRO_G6,
-    statement: `En el texto, ¿por qué Chiro decidió salir de la granja?`,
+    title: 'Impacto dental de los ácidos y azúcares',
+    contextText: TEXTO_EFECTOS_GASEOSA_G6,
+    statement: 'En la sección de daños a largo plazo, el efecto directo sobre la dentadura es:',
     options: [
-      { number: 1, letter: 'A', text: 'Porque el granjero lo había castigado sin comida.' },
-      { number: 2, letter: 'B', text: 'Porque sentía curiosidad por explorar el bosque y hacer nuevos amigos.' },
-      { number: 3, letter: 'C', text: 'Porque los animales del bosque lo estaban persiguiendo.' },
-      { number: 4, letter: 'D', text: 'Porque se cayó accidentalmente en un pozo profundo.' }
+      { number: 1, letter: 'A', text: 'El blanqueamiento natural del esmalte dental.' },
+      { number: 2, letter: 'B', text: 'La destrucción progresiva del esmalte protector y la aparición de caries severas.' },
+      { number: 3, letter: 'C', text: 'La fijación de flúor en las encías.' },
+      { number: 4, letter: 'D', text: 'El alineamiento automático de los dientes torcidos.' }
     ],
     correctOption: 2,
     correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Cuento / Motivaciones del Protagonista',
+    component: 'Texto Continuo - Consecuencias Odontológicas',
     affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Ubica elementos del contenido de diferentes tipos de textos (tiempo, lugares, hechos, personajes y narrador).',
-    standard: 'Comprendo elementos constitutivos de obras literarias, tales como tiempo, espacio, función de los personajes, lenguaje, atmósferas, diálogos, escenas, entre otros.',
-    justification: 'La opción B es la respuesta correcta porque en los primeros párrafos se describe que Chiro estaba bien alimentado y cuidado, pero su profunda curiosidad lo impulsó a aventurarse fuera de la cerca.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'En el apartado de Dientes se lee textualmente: "El ácido y el azúcar destruyen el esmalte dental provocando caries severas".',
     invalidOptionsReasoning: {
-      A: 'El granjero lo trataba bien y su tazón siempre estaba lleno.',
-      C: 'Salió por propia voluntad y alegría, no huyendo de depredadores.',
-      D: 'Salió caminando por la puerta abierta del corral.'
+      A: 'El ácido corroe y mancha el esmalte, nunca lo blanquea sanamente.',
+      C: 'Los refrescos erosionan el calcio dental en lugar de aportar flúor.',
+      D: 'No tiene propiedades ortodóncicas.'
     },
     socraticHints: {
-      recordar: '¿Qué sentía Chiro cada vez que miraba hacia el bosque?',
-      comprender: '¿Cuál fue la oportunidad que aprovechó en la mañana primaveral?',
-      aplicar: 'Anota en tu cuaderno: "Motivación = Curiosidad por explorar y buscar nuevos amigos".',
-      analizar: '¿Por qué la opción B es la respuesta textual indiscutible?'
-    }
+      recordar: 'Busca el ícono del diente en la infografía.',
+      comprender: '¿Por qué la mezcla de bacterias de la boca, azúcar y ácidos erosiona las piezas dentales?',
+      aplicar: 'Anota en tu cuaderno de salud: "Efecto bucal: Corrosión de esmalte y caries".',
+      analizar: 'Evalúa la vulnerabilidad del tejido dental ante el pH ácido de los refrescos.'
+    },
+    icfesCode: 'I_1660205'
   },
   {
     id: 612,
     grade: 6,
     questionNumber: 12,
-    title: 'El viaje de Chiro - Reacción ante los ruidos nocturnos',
-    contextText: TEXTO_VIAJE_CHIRO_G6,
-    statement: `Cuando Chiro escuchó los ruidos extraños en el bosque, su reacción fue`,
+    title: 'Estructura temporal y gráfica de la infografía',
+    contextText: TEXTO_EFECTOS_GASEOSA_G6,
+    statement: 'La estructura de esta infografía resulta eficaz para el lector porque:',
     options: [
-      { number: 1, letter: 'A', text: 'sentir miedo y darse cuenta de que estaba perdido.' },
-      { number: 2, letter: 'B', text: 'ponerse a cantar canciones alegres con los pájaros.' },
-      { number: 3, letter: 'C', text: 'dormirse profundamente hasta el día siguiente.' },
-      { number: 4, letter: 'D', text: 'construir una casa de madera en la copa de un árbol.' }
+      { number: 1, letter: 'A', text: 'Narra un cuento fantástico con personajes de leyenda.' },
+      { number: 2, letter: 'B', text: 'Organiza los efectos en una secuencia cronológica clara de 10 a 60 minutos, complementada con un mapa de órganos afectados.' },
+      { number: 3, letter: 'C', text: 'Esconde los nombres de los ingredientes químicos para no asustar al público.' },
+      { number: 4, letter: 'D', text: 'Presenta únicamente números matemáticos sin dar ninguna explicación verbal.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Comprensión Literal de Estados Emocionales',
-    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Ubica elementos del contenido de diferentes tipos de textos (tiempo, lugares, hechos, personajes y narrador).',
-    standard: 'Comprendo elementos constitutivos de obras literarias, tales como tiempo, espacio, función de los personajes, lenguaje, atmósferas, diálogos, escenas, entre otros.',
-    justification: 'La respuesta correcta es la opción A porque el relato afirma claramente que la oscuridad y los aullidos le causaron temor y desesperación al no saber cómo regresar a su hogar.',
+    component: 'Estructura Textual y Lectura de Diagramas',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Deduce las relaciones entre elementos lingüísticos y no lingüísticos.',
+    standard: 'Doy cuenta de algunas estrategias empleadas para comunicar a través del lenguaje no verbal.',
+    justification: 'La organización temporal minuto a minuto permite al lector visualizar el avance progresivo de la intoxicación digestiva y metabólica, vinculándola con los órganos del cuerpo humano.',
     invalidOptionsReasoning: {
-      B: 'No sintió alegría sino angustia.',
-      C: 'No durmió plácidamente; lloró al pie del árbol.',
-      D: 'Los perros no construyen viviendas en los árboles.'
+      A: 'Es un texto informativo de salud, no ficción literaria.',
+      C: 'Detalla con rigor nombres técnicos como ácido fosfórico, insulina, dopamina y cafeína.',
+      D: 'Combina explicaciones biológicas completas con elementos visuales.'
     },
     socraticHints: {
-      recordar: '¿Cómo cambió el estado de ánimo de Chiro cuando llegó el atardecer?',
-      comprender: '¿Por qué se sentó a llorar junto al roble?',
-      aplicar: 'Anota en tu cuaderno: "Reacción = Sintió miedo y comprendió que estaba perdido".',
-      analizar: '¿Por qué la opción A es la descripción exacta de los hechos?'
-    }
+      recordar: '¿Cómo está dividida visualmente la información en la lámina?',
+      comprender: '¿Por qué la línea temporal facilita entender la velocidad de absorción?',
+      aplicar: 'Dibuja en tu cuaderno la línea de tiempo con los 5 hitos minutados.',
+      analizar: 'Sintetiza la sinergia entre diseño gráfico secuencial y divulgación médica.'
+    },
+    icfesCode: 'I_1660206'
   },
+
+  // ---------------------------------------------------------------------------
+  // TEXTO 3: EL AMOR (Preguntas 13 a 16)
+  // ---------------------------------------------------------------------------
   {
     id: 613,
     grade: 6,
     questionNumber: 13,
-    title: 'El viaje de Chiro - La ayuda del búho sabio',
-    contextText: TEXTO_VIAJE_CHIRO_G6,
-    statement: `El búho sabio ayudó a Chiro al`,
+    title: 'El Amor - Motivo de la fusión inicial de los amantes',
+    contextText: TEXTO_EL_AMOR_G6,
+    statement: 'Al inicio del relato, ¿cuál fue la razón que llevó al hombre y a la mujer a fundirse en un solo cuerpo?',
     options: [
-      { number: 1, letter: 'A', text: 'regalarle una linterna mágica.' },
-      { number: 2, letter: 'B', text: 'llevarlo cargado en sus alas volando por el cielo.' },
-      { number: 3, letter: 'C', text: 'indicarle la ruta del arroyo para orientarse y regresar a casa.' },
-      { number: 4, letter: 'D', text: 'llamar por teléfono al dueño de la granja.' }
+      { number: 1, letter: 'A', text: 'El temor a ser capturados por un ejército enemigo.' },
+      { number: 2, letter: 'B', text: 'El deseo de no separarse jamás y no sufrir por la distancia debido a la intensidad de su amor.' },
+      { number: 3, letter: 'C', text: 'Un hechizo lanzado por un mago del bosque.' },
+      { number: 4, letter: 'D', text: 'Una competencia atlética de carreras en parejas.' }
     ],
-    correctOption: 3,
-    correctLetter: 'C',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Comprensión Literal de Acciones',
+    component: 'Texto Continuo - Narrativo / Motivación de Personajes',
     affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Ubica elementos del contenido de diferentes tipos de textos (tiempo, lugares, hechos, personajes y narrador).',
-    standard: 'Comprendo elementos constitutivos de obras literarias, tales como tiempo, espacio, función de los personajes, lenguaje, atmósferas, diálogos, escenas, entre otros.',
-    justification: 'La opción C es la correcta porque la guía brindada por el ave consistió en una instrucción de orientación geográfica fluvial: seguir la corriente del arroyo para alcanzar la cerca de la granja.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Reconozco en los textos literarios elementos como personajes y motivos de acción.',
+    justification: 'En el primer párrafo se especifica con claridad: "para no separarse jamás ni sufrir por la distancia, decidieron fundirse el uno en el otro".',
     invalidOptionsReasoning: {
-      A: 'No aparecen objetos fantásticos como linternas mágicas.',
-      B: 'El perrito regresó corriendo con sus propias patas.',
-      D: 'No hay elementos de tecnología telefónica en la fábula.'
+      A: 'No hay amenazas militares en la historia.',
+      C: 'Fue una decisión voluntaria nacida de su pasión, no un encantamiento mágico.',
+      D: 'Es una parábola lírica sobre las relaciones humanas, no deporte.'
     },
     socraticHints: {
-      recordar: '¿Qué le indicó el búho que debía seguir en el bosque?',
-      comprender: '¿Por qué seguir el río hacia abajo permitía encontrar la granja?',
-      aplicar: 'Anota en tu cuaderno: "Ayuda del búho = Indicar la corriente del agua para orientar su regreso".',
-      analizar: '¿Por qué la opción C es la acción descrita en el cuento?'
-    }
+      recordar: 'Revisa la primera oración del cuento.',
+      comprender: '¿Por qué el miedo a la distancia o a la separación impulsa a veces a querer unirse sin límites?',
+      aplicar: 'Anota en tu cuaderno: "Motivación inicial: Deseo de unión absoluta y temor a la separación".',
+      analizar: 'Rastrea el origen emocional de la decisión fantástica de los protagonistas.'
+    },
+    icfesCode: 'I_1660301'
   },
   {
     id: 614,
     grade: 6,
     questionNumber: 14,
-    title: 'El viaje de Chiro - Sentido figurado de "se le iluminó la mirada"',
-    contextText: TEXTO_VIAJE_CHIRO_G6,
-    statement: `La expresión “se le iluminó la mirada” significa que Chiro`,
+    title: 'Problemas surgidos tras la pérdida de individualidad',
+    contextText: TEXTO_EL_AMOR_G6,
+    statement: 'En el segundo párrafo, ¿qué conflictos empezaron a experimentar cuando intentaron caminar, mirar y hablar?',
     options: [
-      { number: 1, letter: 'A', text: 'se llenó de alegría, esperanza y alivio al saber qué hacer.' },
-      { number: 2, letter: 'B', text: 'encendió dos bombillos de luz dentro de sus pupilas.' },
-      { number: 3, letter: 'C', text: 'se quemó los ojos por mirar directamente una fogata.' },
-      { number: 4, letter: 'D', text: 'se quedó completamente ciego por la oscuridad de la noche.' }
+      { number: 1, letter: 'A', text: 'Perdieron la fuerza física y no podían levantarse de la hierba.' },
+      { number: 2, letter: 'B', text: 'Sus voluntades y deseos individuales chocaron, pues cada uno quería ir a lugares distintos, mirar cosas diferentes y hablar a la vez.' },
+      { number: 3, letter: 'C', text: 'Olvidaron el idioma materno y no pudieron regresar a su pueblo.' },
+      { number: 4, letter: 'D', text: 'Los animales del bosque se burlaron de su apariencia.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Figuras Retóricas y Lenguaje Connotativo',
+    component: 'Texto Continuo - Conflicto Narrativo e Interpretación Simbólica',
     affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
-    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados de un texto.',
-    standard: 'Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.',
-    justification: 'La opción A es la respuesta correcta porque la metáfora de "iluminarse la mirada" describe el cambio anímico de la desesperación al gozo y la esperanza tras encontrar una solución a su problema.',
+    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'El texto describe cómo una pierna quería ir al bosque y la otra a la colina, dos ojos querían ver el mar y dos cerrar los párpados, y las palabras se atropellaban en una sola boca al intentar comunicarse.',
     invalidOptionsReasoning: {
-      B: 'Es una lectura literal absurda de la metáfora.',
-      C: 'No hubo ningún accidente con fuego.',
-      D: 'Contradice el significado positivo de la expresión.'
+      A: 'Físicamente tenían cuatro extremidades y vigor.',
+      C: 'El problema no era el idioma sino la imposibilidad de articular dos pensamientos distintos en una sola voz.',
+      D: 'No intervienen animales en el relato.'
     },
     socraticHints: {
-      recordar: '¿Cómo cambia el rostro de una persona cuando encuentra una salida a una gran angustia?',
-      comprender: '¿Qué transmite el brillo en los ojos en la literatura narrativa?',
-      aplicar: 'Anota en tu cuaderno: "Se le iluminó la mirada = Sentir alivio, esperanza y alegría".',
-      analizar: '¿Por qué la opción A es la interpretación connotativa acertada?'
-    }
+      recordar: 'Lee detalladamente el segundo párrafo.',
+      comprender: '¿Por qué dos personas, por más que se amen, siempre tendrán gustos, ritmos y deseos propios?',
+      aplicar: 'Haz en tu cuaderno una lista de los 3 choques de deseos (caminar, mirar, hablar).',
+      analizar: 'Identifica la metáfora de la anulación personal frente a la autonomía.'
+    },
+    icfesCode: 'I_1660302'
   },
   {
     id: 615,
     grade: 6,
     questionNumber: 15,
-    title: 'El viaje de Chiro - Moraleja y enseñanza del cuento',
-    contextText: TEXTO_VIAJE_CHIRO_G6,
-    statement: `La enseñanza principal del cuento es que`,
+    title: 'Enseñanza o reflexión final del relato',
+    contextText: TEXTO_EL_AMOR_G6,
+    statement: '¿Cuál es la lección o moraleja fundamental que transmite el desenlace del cuento?',
     options: [
-      { number: 1, letter: 'A', text: 'nunca se debe hablar con los búhos en el bosque.' },
-      { number: 2, letter: 'B', text: 'los perros no deben beber agua de los ríos.' },
-      { number: 3, letter: 'C', text: 'es peligroso salir a pasear en los días de primavera.' },
-      { number: 4, letter: 'D', text: 'la curiosidad es natural, pero debemos actuar con prudencia y valorar la seguridad del hogar.' }
-    ],
-    correctOption: 4,
-    correctLetter: 'D',
-    competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Moraleja y Formación de Valores',
-    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
-    evidence: 'Deduce el sentido alegórico o la enseñanza moral de un texto.',
-    standard: 'Formulo hipótesis de comprensión acerca de las obras literarias que leo.',
-    justification: 'La opción D es la respuesta correcta porque encierra el mensaje formativo esencial de los cuentos infantiles sobre extravíos: la prudencia ante los riesgos desconocidos y la gratitud por la protección familiar.',
-    invalidOptionsReasoning: {
-      A: 'El búho fue precisamente quien lo salvó con su sabiduría.',
-      B: 'El agua del arroyo era limpia y sació su sed.',
-      C: 'El peligro no era la estación del año, sino internarse sin precaución en un entorno desconocido.'
-    },
-    socraticHints: {
-      recordar: '¿Qué lección aprendió Chiro tras casi quedarse atrapado en la noche?',
-      comprender: '¿Cómo conjuga la historia el deseo de explorar con la importancia de la prudencia?',
-      aplicar: 'Anota en tu cuaderno: "Enseñanza = Valorar el hogar y la prudencia frente al peligro".',
-      analizar: '¿Por qué la opción D es la moraleja representativa?'
-    }
-  },
-
-  // =========================================================================
-  // TEXTO 4: FESTIVAL ESCOLAR DE TEATRO Y TÍTERES (Preguntas 16 a 20)
-  // =========================================================================
-  {
-    id: 616,
-    grade: 6,
-    questionNumber: 16,
-    title: 'Festival escolar de teatro - Propósito de la convocatoria',
-    contextText: TEXTO_FESTIVAL_TEATRO_G6,
-    statement: `El afiche invita principalmente a`,
-    options: [
-      { number: 1, letter: 'A', text: 'comprar uniformes deportivos para el campeonato de fútbol.' },
-      { number: 2, letter: 'B', text: 'asistir y participar en el festival escolar de teatro y títeres.' },
-      { number: 3, letter: 'C', text: 'cerrar el auditorio central por arreglos y mantenimiento.' },
-      { number: 4, letter: 'D', text: 'elegir al personero estudiantil del año lectivo.' }
+      { number: 1, letter: 'A', text: 'Que el amor verdadero exige sacrificarse y someter los gustos propios a los de la otra persona.' },
+      { number: 2, letter: 'B', text: 'Que para amarse de verdad no se debe anular la individualidad ni la libertad, sino respetarse y caminar juntos uno al lado del otro.' },
+      { number: 3, letter: 'C', text: 'Que es mejor vivir en soledad absoluta para no tener desacuerdos con nadie.' },
+      { number: 4, letter: 'D', text: 'Que los abrazos prolongados son físicamente perjudiciales para la salud.' }
     ],
     correctOption: 2,
     correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Afiche Escolar / Intención Comunicativa',
-    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
-    evidence: 'Infiere la intención comunicativa de afiches y carteleras escolares.',
-    standard: 'Caracterizo los textos de acuerdo con la intención comunicativa de quien los produce.',
-    justification: 'La opción B es la respuesta correcta porque toda la estructura informativa del cartel tiene como finalidad convocar a la comunidad educativa al festival de artes escénicas.',
+    component: 'Sentido Global y Reflexión Ético-Filosófica',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Evalúa las ideas expresadas en un texto.',
+    standard: 'Elaboro hipótesis acerca del sentido global de los textos.',
+    justification: 'El párrafo final formula explícitamente la conclusión ética: el amor auténtico no anula la propia identidad ni disuelve la libertad, sino que consiste en compartir la vida como dos seres libres y complementarios.',
     invalidOptionsReasoning: {
-      A: 'No es un evento deportivo mercantil.',
-      C: 'El auditorio será utilizado como sede de la celebración cultural.',
-      D: 'No es una jornada electoral estudiantil.'
+      A: 'Es la idea errónea que los personajes superan en el desenlace.',
+      C: 'El texto elogia el caminar juntos en pareja con respeto mutuo.',
+      D: 'Es una interpretación literal absurda de una alegoría poética.'
     },
     socraticHints: {
-      recordar: '¿Cuál es el título principal destacado en letras grandes en el afiche?',
-      comprender: '¿A qué evento cultural convoca la Institución Educativa Simón Bolívar?',
-      aplicar: 'Anota en tu cuaderno: "Propósito = Invitar a presenciar y participar en el festival de teatro".',
-      analizar: '¿Por qué la opción B es la opción correcta?'
-    }
+      recordar: 'Relee la última oración del cuento.',
+      comprender: '¿Por qué la libertad y el respeto mutuo son la base indispensable de una relación sana?',
+      aplicar: 'Escribe en tu cuaderno una reflexión sobre el valor de la identidad propia en la amistad.',
+      analizar: 'Sintetiza la sabiduría moral de la microficción de Cesare Zavattini.'
+    },
+    icfesCode: 'I_1660303'
   },
+  {
+    id: 616,
+    grade: 6,
+    questionNumber: 16,
+    title: 'Género literario y tono de "El Amor"',
+    contextText: TEXTO_EL_AMOR_G6,
+    statement: 'Por sus características, el texto “El Amor” corresponde a:',
+    options: [
+      { number: 1, letter: 'A', text: 'Una noticia periodística sobre un récord Guinness de abrazos.' },
+      { number: 2, letter: 'B', text: 'Un microcuento o parábola alegórica de carácter reflexivo y poético.' },
+      { number: 3, letter: 'C', text: 'Un manual de anatomía médica sobre la unión de órganos.' },
+      { number: 4, letter: 'D', text: 'Un reglamento escolar de convivencia en el aula.' }
+    ],
+    correctOption: 2,
+    correctLetter: 'B',
+    competency: 'Comprensión lectora.',
+    component: 'Tipología Textual y Géneros Literarios',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Diferencia las funciones de las partes en las que se estructura un texto.',
+    standard: 'Caracterizo los textos literarios y reconozco sus intenciones expresivas.',
+    justification: 'Es una narración ficcional breve (microficción) de Cesare Zavattini que utiliza recursos poéticos y una situación fantástica para reflexionar sobre la naturaleza del amor.',
+    invalidOptionsReasoning: {
+      A: 'No es un reporte de prensa real.',
+      C: 'No es un tratado biológico o quirúrgico.',
+      D: 'No es un documento normativo institucional.'
+    },
+    socraticHints: {
+      recordar: 'Observa la extensión del texto y su lenguaje metafórico.',
+      comprender: '¿Qué es una alegoría poética?',
+      aplicar: 'Anota en tu cuaderno: "Género: Microcuento / Parábola literaria de Cesare Zavattini".',
+      analizar: 'Identifica la intención estética y filosófica del autor.'
+    },
+    icfesCode: 'I_1660304'
+  },
+
+  // ---------------------------------------------------------------------------
+  // TEXTO 4: IASÁ Y EL CAMINO DEL ARCOÍRIS (Preguntas 17 a 20)
+  // ---------------------------------------------------------------------------
   {
     id: 617,
     grade: 6,
     questionNumber: 17,
-    title: 'Festival escolar de teatro - Fecha, hora y lugar',
-    contextText: TEXTO_FESTIVAL_TEATRO_G6,
-    statement: `Según el afiche, ¿dónde y cuándo se realizará el evento?`,
+    title: 'Conflicto inicial provocado por Anhangá',
+    contextText: TEXTO_IASA_ARCOIRIS_G6,
+    statement: 'En la leyenda amazónica, ¿cuál era la causa del sufrimiento y la tristeza de la aldea?',
     options: [
-      { number: 1, letter: 'A', text: 'En la cancha de fútbol, el sábado 18 de octubre a las 8:00 a.m.' },
-      { number: 2, letter: 'B', text: 'En el parque de la ciudad, el domingo 30 de octubre al mediodía.' },
-      { number: 3, letter: 'C', text: 'En el auditorio central del colegio, el viernes 25 de octubre a las 3:00 p.m.' },
-      { number: 4, letter: 'D', text: 'En la biblioteca municipal, el lunes 21 de octubre por la noche.' }
+      { number: 1, letter: 'A', text: 'Una prolongada sequía provocada por la falta de ríos.' },
+      { number: 2, letter: 'B', text: 'Los ataques de Anhangá, el espíritu de las sombras que desataba tempestades y nubes negras que marchitaban los campos.' },
+      { number: 3, letter: 'C', text: 'La invasión de exploradores extranjeros en busca de oro.' },
+      { number: 4, letter: 'D', text: 'La pérdida del fuego sagrado en el campamento.' }
     ],
-    correctOption: 3,
-    correctLetter: 'C',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Información Literal de Coordenadas',
+    component: 'Texto Continuo - Mito y Leyenda / Conflicto Inicial',
     affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Ubica elementos del contenido de diferentes tipos de textos (tiempo, lugares, hechos, personajes y narrador).',
-    standard: 'Relaciono gráficas con texto escrito, ya sea completándolas o explicándolas.',
-    justification: 'La respuesta correcta es la opción C porque coincide de manera exacta con los datos literales consignados en la ficha técnica del evento cultural.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Reconozco en los textos literarios la presencia de rasgos míticos y leyendas.',
+    justification: 'En el primer párrafo se especifica que la tribu vivía atemorizada por Anhangá, quien desataba tormentas torrenciales y cubría los cielos con nubes oscuras que marchitaban la naturaleza.',
     invalidOptionsReasoning: {
-      A: 'El 18 de octubre es el plazo límite de inscripciones, no el día de las funciones.',
-      B: 'El evento es en las instalaciones del colegio Simón Bolívar.',
-      D: 'El horario es a las 3:00 p.m. en el auditorio central.'
+      A: 'El problema eran las tormentas destructivas, no la sequía.',
+      C: 'No aparecen invasores extranjeros en el relato mitológico.',
+      D: 'El fuego sagrado no es el eje del conflicto.'
     },
     socraticHints: {
-      recordar: 'Busca los renglones de Fecha, Hora y Lugar en el cartel.',
-      comprender: '¿Cuál opción coincide punto por punto con los tres datos oficiales?',
-      aplicar: 'Anota en tu cuaderno: "25 de octubre, 3:00 p.m., Auditorio Central".',
-      analizar: '¿Por qué la opción C es la única correcta?'
-    }
+      recordar: 'Lee el primer párrafo sobre el espíritu Anhangá.',
+      comprender: '¿Cómo personificaban las culturas indígenas a las fuerzas destructivas de la naturaleza?',
+      aplicar: 'Anota en tu cuaderno el nombre del antagonista mítico y sus poderes oscuros.',
+      analizar: 'Identifica la ruptura de la armonía natural en la aldea.'
+    },
+    icfesCode: 'I_1660401'
   },
   {
     id: 618,
     grade: 6,
     questionNumber: 18,
-    title: 'Festival escolar de teatro - Significado de "entrada libre"',
-    contextText: TEXTO_FESTIVAL_TEATRO_G6,
-    statement: `La frase “¡Entrada libre!” significa que`,
+    title: 'Acción heroica y ofrenda de Iasá',
+    contextText: TEXTO_IASA_ARCOIRIS_G6,
+    statement: 'Para rescatar a su comunidad de la oscuridad, Iasá decide subir a la montaña más alta para:',
     options: [
-      { number: 1, letter: 'A', text: 'no se necesita pagar dinero por la boleta para poder ingresar.' },
-      { number: 2, letter: 'B', text: 'las personas pueden romper las sillas del auditorio.' },
-      { number: 3, letter: 'C', text: 'los asistentes deben llevar sus propios instrumentos de cocina.' },
-      { number: 4, letter: 'D', text: 'solo se permite el ingreso a quienes vayan disfrazados.' }
+      { number: 1, letter: 'A', text: 'Lanzar flechas envenenadas contra las nubes de tormenta.' },
+      { number: 2, letter: 'B', text: 'Hablar con Tupá y ofrecerle con humildad su canto y su alegría a cambio de esperanza para su pueblo.' },
+      { number: 3, letter: 'C', text: 'Esconderse en una cueva profunda para salvarse a sí misma.' },
+      { number: 4, letter: 'D', text: 'Pedirle a los ancianos que abandonen la selva amazónica.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Expresiones Sociales y Términos Públicos',
-    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
-    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados de un texto.',
-    standard: 'Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.',
-    justification: 'La opción A es la respuesta correcta porque la expresión "entrada libre y gratuita" es una fórmula estándar que indica que el acceso al espectáculo no requiere pago ni compra de boletería.',
+    component: 'Texto Continuo - Motivaciones Heroicas y Valores',
+    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'En el segundo párrafo se indica que Iasá subió a la montaña más alta ante Tupá, ofreciendo su propio canto y alegría para devolver la esperanza a su gente.',
     invalidOptionsReasoning: {
-      B: 'No significa licencia para causar desmanes materiales.',
-      C: 'No tiene relación con utensilios culinarios.',
-      D: 'No impone obligatoriedad de disfraces al público asistente.'
+      A: 'No usa la violencia ni armas físicas.',
+      C: 'Actúa con valentía y altruismo, no por cobardía.',
+      D: 'Busca restaurar su tierra ancestral, no huir.'
     },
     socraticHints: {
-      recordar: '¿Qué significa cuando un evento cultural es de entrada libre?',
-      comprender: '¿Por qué aclara que es "gratuita para toda la familia"?',
-      aplicar: 'Anota en tu cuaderno: "Entrada libre = Ingreso gratuito sin cobro de dinero".',
-      analizar: '¿Por qué la opción A es la definición adecuada?'
-    }
+      recordar: 'Revisa el segundo párrafo y la conversación con el dios Tupá.',
+      comprender: '¿Por qué la ofrenda del canto y la alegría simboliza la pureza de intención?',
+      aplicar: 'Escribe en tu cuaderno las cualidades heroicas de la joven Iasá.',
+      analizar: 'Distingue entre el heroísmo de fuerza bruta y el heroísmo de generosidad espiritual.'
+    },
+    icfesCode: 'I_1660402'
   },
   {
     id: 619,
     grade: 6,
     questionNumber: 19,
-    title: 'Festival escolar de teatro - Simbolismo de las máscaras',
-    contextText: TEXTO_FESTIVAL_TEATRO_G6,
-    statement: `El dibujo de las máscaras de teatro (tragedia y comedia) cumple la función de`,
+    title: 'Creación del arcoíris como pacto de luz',
+    contextText: TEXTO_IASA_ARCOIRIS_G6,
+    statement: 'En la leyenda, el arcoíris surge en el cielo como:',
     options: [
-      { number: 1, letter: 'A', text: 'anunciar una fiesta de disfraces en la noche de brujas.' },
-      { number: 2, letter: 'B', text: 'indicar que los asistentes deben taparse la cara por razones de salud.' },
-      { number: 3, letter: 'C', text: 'promover la venta de antifaces de plástico en la tienda.' },
-      { number: 4, letter: 'D', text: 'simbolizar la temática artística y teatral del evento.' }
+      { number: 1, letter: 'A', text: 'Un puente de siete colores tejido por Tupá que venció a las sombras y sella el pacto de luz y esperanza.' },
+      { number: 2, letter: 'B', text: 'Una trampa construida por Anhangá para atrapar a las aves.' },
+      { number: 3, letter: 'C', text: 'Un río de piedras preciosas que cayó de la luna.' },
+      { number: 4, letter: 'D', text: 'El humo producido por una fogata en la montaña.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
+    correctOption: 1,
+    correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Lenguaje Simbólico / Semiótica Visual',
-    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
-    evidence: 'Deduce las relaciones entre elementos lingüísticos y no lingüísticos.',
-    standard: 'Relaciono gráficas con texto escrito, ya sea completándolas o explicándolas.',
-    justification: 'La opción D es la correcta porque las máscaras de la risa y el llanto (comedia y tragedia) constituyen el emblema universal y representativo del arte dramático y el teatro.',
+    component: 'Mito de Origen / Fenómenos Naturales',
+    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Reconozco en los textos literarios la presencia de rasgos míticos y leyendas.',
+    justification: 'El tercer párrafo relata que Tupá "tejió en el cielo un puente de siete colores luminosos —el arcoíris— que dispersó para siempre las sombras de Anhangá [...] como recordatorio del pacto de luz".',
     invalidOptionsReasoning: {
-      A: 'No es una fiesta de Halloween o disfraces de terror.',
-      B: 'No son mascarillas de bioseguridad sanitaria.',
-      C: 'No es un anuncio comercial de cotillón o juguetería.'
+      B: 'Es una creación bienhechora de Tupá, no de las sombras.',
+      C: 'Es un arco de luz solar en el cielo tras la lluvia, no piedras lunares.',
+      D: 'No es humo de fogata.'
     },
     socraticHints: {
-      recordar: '¿Cuál es el símbolo universal que representa al teatro en todo el mundo?',
-      comprender: '¿Por qué las dos caretas identifican de inmediato las artes escénicas?',
-      aplicar: 'Anota en tu cuaderno: "Máscaras = Símbolo universal de la comedia, la tragedia y el teatro".',
-      analizar: '¿Por qué la opción D es la función comunicativa de la imagen?'
-    }
+      recordar: 'Lee el desenlace del mito en el tercer párrafo.',
+      comprender: '¿Cómo explican los mitos etiológicos el origen de los fenómenos celestes?',
+      aplicar: 'Dibuja en tu cuaderno el arcoíris amazónico de siete colores.',
+      analizar: 'Relaciona la superación de la lluvia con la aparición de la luz protectora.'
+    },
+    icfesCode: 'I_1660403'
   },
   {
     id: 620,
     grade: 6,
     questionNumber: 20,
-    title: 'Festival escolar de teatro - Requisito para participar como actor o titiritero',
-    contextText: TEXTO_FESTIVAL_TEATRO_G6,
-    statement: `Si un estudiante desea participar con su obra de títeres, el afiche indica que debe`,
+    title: 'Función cultural de los mitos indígenas',
+    contextText: TEXTO_IASA_ARCOIRIS_G6,
+    statement: 'El relato de “Iasá y el camino del arcoíris” cumple la función cultural de:',
     options: [
-      { number: 1, letter: 'A', text: 'pagar una multa en la secretaría académica.' },
-      { number: 2, letter: 'B', text: 'inscribirse con el profesor de Educación Artística antes del 18 de octubre.' },
-      { number: 3, letter: 'C', text: 'construir el escenario de madera él solo el día del evento.' },
-      { number: 4, letter: 'D', text: 'enviar una carta al alcalde de la ciudad.' }
+      { number: 1, letter: 'A', text: 'Explicar poéticamente el origen de un fenómeno natural (el arcoíris) y transmitir valores de valentía y solidaridad comunitaria.' },
+      { number: 2, letter: 'B', text: 'Dar instrucciones para construir puentes de madera en la selva.' },
+      { number: 3, letter: 'C', text: 'Criticar las creencias religiosas de los pueblos nativos.' },
+      { number: 4, letter: 'D', text: 'Pronosticar el clima meteorológico de la semana en el Brasil.' }
     ],
-    correctOption: 2,
-    correctLetter: 'B',
+    correctOption: 1,
+    correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Instrucciones e Información Literal',
-    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
-    evidence: 'Ubica elementos del contenido de diferentes tipos de textos (tiempo, lugares, hechos, personajes y narrador).',
-    standard: 'Identifico las principales características formales del texto.',
-    justification: 'La respuesta correcta es la opción B porque el afiche establece claramente el procedimiento de inscripción formal con el docente de Artes y estipula la fecha límite del 18 de octubre.',
+    component: 'Función Social y Cosmovisión de la Tradición Oral',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Evalúa las ideas expresadas en un texto.',
+    standard: 'Reconozco la importancia de la tradición oral en la preservación de la memoria cultural.',
+    justification: 'Los mitos de las comunidades indígenas combinan la explicación cosmogónica de la naturaleza con la enseñanza de modelos éticos ejemplares (solidaridad, devoción por el bien colectivo).',
     invalidOptionsReasoning: {
-      A: 'La participación no conlleva costos ni multas.',
-      C: 'La logística del auditorio la organiza la institución escolar.',
-      D: 'El trámite es estrictamente interno dentro del colegio Simón Bolívar.'
+      B: 'Es una leyenda sagrada, no un manual de ingeniería civil.',
+      C: 'Es una muestra de respeto y valoración del patrimonio indígena amazónico.',
+      D: 'No es un parte meteorológico técnico moderno.'
     },
     socraticHints: {
-      recordar: 'Lee la sección de preguntas e inscripciones al pie del afiche.',
-      comprender: '¿Con qué profesor y antes de qué fecha se debe registrar el grupo?',
-      aplicar: 'Anota en tu cuaderno: "Inscripción = Con el profesor de Artística antes del 18 de octubre".',
-      analizar: '¿Por qué la opción B es la respuesta literal exacta?'
-    }
+      recordar: '¿Por qué todas las culturas antiguas crearon historias sobre el arcoíris y las tormentas?',
+      comprender: '¿Cómo educaban los pueblos originarios a sus jóvenes a través de los relatos de los abuelos?',
+      aplicar: 'Escribe en tu cuaderno una reflexión sobre la riqueza de los mitos amazónicos.',
+      analizar: 'Sintetiza la doble función explicativa y formativa de la leyenda tradicional.'
+    },
+    icfesCode: 'I_1660404'
   }
 ];

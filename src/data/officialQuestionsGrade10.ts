@@ -1,752 +1,768 @@
-// Banco Oficial ICFES Evaluar para Avanzar - Grado 10° (Lectura Crítica Cuadernillo 1 Oficial 2021)
+// Banco Oficial ICFES Evaluar para Avanzar - Grado 10° (Lectura Cuadernillo 1 Oficial 2021)
 // Institución Educativa Técnica Simón Bolívar - Ibagué, Tolima
-// Área: LECTURA CRÍTICA / COMPRENSIÓN LECTORA
+// Área: COMPETENCIAS COMUNICATIVAS EN LENGUAJE: LECTURA
 import { Question } from '../types';
 
 // =============================================================================
 // TEXTOS COMPLETOS VERBATIM OFICIALES ICFES EVALUAR PARA AVANZAR - GRADO 10°
 // =============================================================================
 
-export const TEXTO_WENDY_G10 = `RESPONDA LAS PREGUNTAS 1 A 6 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN
+export const TEXTO_METAMORFOSIS_G10 = `RESPONDE LAS PREGUNTAS 1 A 6 A PARTIR DE LA LECTURA DEL SIGUIENTE TEXTO:
 
-WENDY, VALÉRIE Y TODAS LAS DEMÁS
+LA METAMORFOSIS (Fragmento)
 
-A finales de 2000, Wendy, una adolescente hondureña, fue violada en grupo por pandilleros de la Mara Salvatrucha. Tras el ritual conocido como “el trencito”, los mareros decidieron hacer negocio y corrieron la voz de que cobraban cincuenta lempiras a quien quisiera tener relaciones con la muchacha.
+Al despertar Gregorio Samsa una mañana, tras un sueño intranquilo, se encontró en su cama transformado en un monstruoso insecto. Estaba echado sobre el quitinoso caparazón de su espalda, y al levantar un poco la cabeza, vio su vientre oscuro y abombado, dividido por callosidades arqueadas, en cuya cumbre apenas podía sostenerse el cobertor, a punto ya de escurrirse al suelo. Sus numerosas patas, penosamente delgadas en comparación con el grosor ordinario de sus piernas, se agitaban sin concierto ante sus ojos.
 
-El pasado diciembre la policía detuvo en Málaga a una rumana que había firmado un contrato para vender sus dos hijas a unos proxenetas. Por 5.000 euros aceptó que fueran llevadas a España a prostituirse.
+'¿Qué me ha ocurrido?', pensó. No era un sueño. Su habitación, una auténtica habitación humana, aunque un poco pequeña, permanecía tranquila entre las cuatro paredes harto conocidas. Por encima de la mesa, sobre la que se hallaba extendido un muestrario de paños desempaquetado —Samsa era viajante de comercio—, colgaba la estampa que poco antes había recortado de una revista ilustrada y puesto en un lindo marco dorado. Representaba a una dama tocada con un gorro de piel, envuelta en una boa también de piel, y que, muy erguida, esgrimía contra el espectador un amplio manguito de piel en el que se escondía todo su antebrazo.
 
-Luisa, universitaria bogotana, empezó en un videochat. Le pagaban por desnudarse ante la cámara. De allí pasó a concertar citas vía celular y ya con clientes se enroló en un lujoso burdel: “Si estoy con un man que me gusta porque sí, ¿por qué no voy a estar con otro por plata? ...”.
+Gregorio miró luego hacia la ventana, y el tiempo lluvioso —se oían caer las gotas sobre el cinc del alféizar— le infundió una profunda melancolía. '¿Qué pasaría —pensó— si durmiese un poco más y olvidase todas estas chifladuras?'. Pero esto era totalmente inviable, pues estaba acostumbrado a dormir sobre el lado derecho, y en su estado actual no podía adoptar semejante postura. Por más que se esforzase para girar sobre el flanco derecho, volvía a balancearse indefectiblemente sobre la espalda.
 
-La Valeska vive en función de la plata. Ejerce la prostitución desde los 17 años, cuando aburrida del maltrato de su padre dejó la comodidad del barrio Laureles para ofrecerse en Bogotá...
+Kafka, Franz. La metamorfosis.`;
 
-Poca gente pasa el umbral, pero son varias las vías para llegar al sexo pago. A pesar de esta verdad de a puño, muchos se resisten a la evidencia disponible y enfatizan una doctrina cada vez más terca e improcedente para la prevención: la prostitución siempre es forzada. Sin embargo, ¿cuántas personas venden su cuerpo empujadas por la miseria, cuántas obligadas por proxenetas, cuántas seducidas y abandonadas, cuántas huyendo del abuso, cuántas por morbo o curiosidad, cuántas por arribistas, cuántas por la adrenalina, cuántas por hipersexuales? ¿Cuántas Wendys por cada Valeska o cada Luisa? Nadie sabe, las respuestas no son obvias e incluso la disponibilidad de testimonios puede estar sesgada. Además de los antecedentes familiares o las experiencias individuales, el entorno y la época influyen.
+export const TEXTO_INTELIGENCIA_ARTIFICIAL_G10 = `RESPONDE LAS PREGUNTAS 7 A 11 A PARTIR DE LA LECTURA DEL SIGUIENTE TEXTO:
 
-En Colombia, aunque tenemos indicios de que el negocio de las prepagos está en franca expansión, no conocemos el tamaño de la actividad ni su composición. Nadie comprende bien por qué se inician, por qué se mantienen o por qué dejan la actividad, y cada vez es mayor la influencia de quienes no están interesados en que se sepa.
+INFOGRAFÍA: LA INTELIGENCIA ARTIFICIAL Y EL FUTURO DEL TRABAJO
 
-La industria del rescate es ya una poderosa alianza multinacional de burócratas, periodistas y oenegés (ONG) que logró simplificar hasta el absurdo el diagnóstico, demostrando de paso que no solo tiene más prejuicios que la Iglesia, los viejos criminólogos o los médicos higienistas sino que carece de cualquier vocación para entender lo que ocurre, lo que piensan o lo que quieren las víctimas. Esa alianza pretende intervenir un mercado sobre el que se sabe no solo poco, sino cada vez menos...
+La cuarta revolución industrial impulsada por la inteligencia artificial generativa y la robótica avanzada está reconfigurando a gran velocidad el mercado laboral global.
 
-“No me arrepiento absolutamente de nada”, dice una prostituta. Los momentos en el burdel “fueron unos de los mejores de mi vida, por el simple hecho de haber conocido a Giovanni y haber encontrado esa mujer nueva que soy ahora… Utilizar el sexo como medio para encontrar lo que todo el mundo busca: reconocimiento, placer, autoestima y, en definitiva, amor y cariño... ¿Qué hay de patológico en eso?”.
+Proyecciones globales al 2030 (Foro Económico Mundial):
+• Puestos transformados o desplazados: 85 millones de empleos tradicionales (tareas rutinarias de manufactura, administración básica y procesamiento contable).
+• Nuevos empleos creados: 97 millones de roles emergentes (especialistas en IA, ingeniería de datos, ciberseguridad, energías renovables y economía del cuidado).
 
-Rubio, M. (2012, junio). Wendy, Valérie y todas las demás. El malpensante, vol. 131.
-Tomado y adaptado de: http://www.elmalpensante.com/index.php?doc=display_contenido&id=2573`;
+Habilidades humanas de mayor demanda (inmunes a la automatización):
+1. Pensamiento crítico y resolución de problemas complejos.
+2. Creatividad, diseño innovador y pensamiento lateral.
+3. Inteligencia emocional, empatía y negociación interpersonal.
+4. Liderazgo ético y adaptabilidad al cambio continuo.
 
-export const TEXTO_BARRAS_BRAVAS_G10 = `RESPONDA LAS PREGUNTAS 7 A 12 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN
+Desafíos éticos y regulatorios:
+- Sesgos algorítmicos y discriminación en procesos de selección laboral.
+- Concentración oligopólica de la infraestructura tecnológica en pocas corporaciones.
+- Necesidad urgente de políticas públicas de formación continua (reskilling) para evitar el aumento de la brecha de desigualdad social.
 
-LAS BARRAS BRAVAS: CONSECUENCIAS DE UN DIAGNÓSTICO EQUIVOCADO
-Por Jorge Tovar
+Tomado y adaptado de: Foro Económico Mundial (WEF) / OCDE.`;
 
-En las últimas semanas la opinión pública colombiana, acostumbrada a movilizarse por la coyuntura, ha reaccionado con estupor a la muerte de unos jóvenes cuyo delito fue portar camisetas de un color diferente a las de su agresor. En Bogotá, fieles a la política del avestruz, la consecuencia puntual fue aplazar un partido de fútbol. ‘Analistas’, ignorantes del problema estructural que esconde la muerte de estos jóvenes, simplemente culpan al fútbol. Han llegado a proponer la prohibición de portar camisetas de fútbol en público. Seguramente, alguno, está por plantear un ‘pico y placa’: camiseta azul, lunes; roja, martes; verde, miércoles. Esas son las soluciones de nuestros dirigentes.
+export const TEXTO_LABERINTO_SOLEDAD_G10 = `RESPONDE LAS PREGUNTAS 12 A 16 A PARTIR DE LA LECTURA DEL SIGUIENTE TEXTO:
 
-El problema no es el fútbol. Históricamente el deporte, el fútbol, promueve más actos de paz que de guerra. Famoso es el episodio de 1969 en el que los dirigentes del Santos brasilero decidieron suspender un amistoso en el antiguo Congo Belga debido a la guerra civil que se libraba en aquellas tierras. Ante la eventualidad de no ver a Pelé, la estrella del Santos, las partes implicadas en la guerra firmaron un armisticio ‘de emergencia’. El Santos disputó no uno, sino dos partidos. En lugar de balas se escucharon durante varios días los gritos de admiración ante los actos de magia del rey del fútbol.
+EL LABERINTO DE LA SOLEDAD (Fragmento)
 
-El fútbol, eso sí, genera pasiones y es lo que lo hace especial. Son estas pasiones, las que fuera de control, explotan hampones disfrazados de hinchas para cometer infamias en nombre de unos colores.
+El mexicano se me aparece como un ser que se encierra y se preserva: máscara el rostro y máscara la sonrisa. Plantado en su arisca soledad, espinoso y cortés a un tiempo, todo le sirve para defenderse: el silencio y la palabra, la cortesía y el desprecio, la ironía y la resignación. Entre la realidad y su persona se establece una muralla, no por invisible menos infranqueable, de impasibilidad y lejanía. El mexicano siempre está lejos, lejos del mundo y de los demás. Lejos, también, de sí mismo.
 
-En Inglaterra lo peor de lo que allí se denominó hooliganismo sucedió el 29 de mayo de 1985. Una hora antes de iniciar el partido un grupo de hinchas del Liverpool, tras una batalla de piedras de lado y lado, decidió saltar la malla en dirección a los hinchas de la Juventus. Los italianos corrieron en dirección contraria, encontrando muros y mallas que les impidieron escapar. El miedo y el desorden hizo el resto: 39 muertos aplastados en un estadio de fútbol. Dos tragedias adicionales sucedieron antes de que Inglaterra lograra frenar la barbarie, al menos de forma relativamente satisfactoria. A raíz de aquello, en Inglaterra, según diferentes normas dictadas en 1989, 1991, 1999 y 2000, es un acto criminal entrar al campo de juego y tirar piedras o similares, así como corear cantos racistas. Muy relevante para el caso colombiano, desde 1989 por ley se niega el acceso a los estadios hasta por 10 años a individuos condenados por ofensas relacionadas con el fútbol. Incluso, la policía tiene la opción de demostrar ante el juez que prohibir la entrada de un individuo va a disminuir los riesgos de violencia asociados al fútbol. Es decir, no hay que esperar que tire la piedra en el estadio si hay suficiente evidencia que sugiera que la va a tirar (por ejemplo, si ha cometido actos de vandalismo no relacionados con el deporte).
+El lenguaje está lleno de reticencias, de figuras y alusiones, de puntos suspensivos; en su silencio hay repliegues, matices, nubarrones, amenazas súbitas, suavidades de luz. Toda esa coraza protectora revela que el mexicano teme a la mirada ajena porque abrirse, mostrarse íntimamente, es considerarse vulnerable ante el peligro de una rajada o una traición. Por eso la hombría se mide por la capacidad de 'no rajarse', es decir, de no doblarse ante el dolor, de no mostrar jamás la herida ante los otros.
 
-La violencia no se extingue, pero sí ha disminuido como sugiere la gráfica donde se utilizan datos del Home Office que hace seguimiento anual de las cifras. Los arrestos disminuyen, y prohibir el acceso sigue siendo una medida complementaria adecuada. Esta prohibición, por cierto, obliga al sancionado a presentarse ante la justicia o la policía durante las horas del partido.
+Paz, Octavio. El laberinto de la soledad.`;
 
-[Gráfica estadística: “Arrestos y órdenes de prohibición de acceso al estadio en el Reino Unido (2001/02 - 2011/12)”. Eje izquierdo: % de arrestos respecto a asistencia (disminuye de 0.013% a 0.005%). Eje derecho: # de órdenes de prohibición (sube de 1.000 a ~3.200 y se estabiliza)].
+export const TEXTO_HAMLET_G10 = `RESPONDE LAS PREGUNTAS 17 A 20 A PARTIR DE LA LECTURA DEL SIGUIENTE TEXTO:
 
-Actualmente uno de los argumentos de las barras bravas y sus defensores en Colombia es que el problema acá es diferente al de Inglaterra. En Colombia, el debate se ha planteado como un problema juvenil, de exclusión social. No he escuchado que se plantee lo que me parece evidente: la necesidad de acabar con las barras bravas antes de que sean un problema enquistado en la sociedad. No es imposible. La solución no es suspender partidos. La solución pasa por entender que es un problema estructural. El caso inglés, nos demuestra que hay instrumentos para actuar. Las directivas deben contar con apoyo oficial para cerrarles el paso de manera radical a las barras bravas. Pero los dirigentes deben querer, y el Estado debe poder.
+HAMLET (Acto III, Escena 1 - Fragmento)
 
-Tomado y adaptado de: http://lasillavacia.com/users/juan-pablo-pino-0`;
+HAMLET: Ser o no ser, esa es la cuestión: si es más noble para el alma soportar las flechas y pedradas de una áspera fortuna, o armarse contra un mar de adversidades y, enfrentándolas, ponerles fin. Morir... dormir... nada más; y pensar que con un sueño damos fin a los pesares del corazón y a los mil dolores naturales que son herencia de la carne. ¡Esa es una consumación devotamente deseable!
 
-export const TEXTO_HEROE_G10 = `RESPONDA LAS PREGUNTAS 13 A 16 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN
+Morir... dormir; dormir, tal vez soñar. ¡Ah, ahí está el tropiezo! Porque en ese sueño de la muerte, ¿qué sueños podrán sobrevenir cuando nos hayamos despojado de este torbellino mortal? Eso es lo que nos hace dudar; esa es la consideración que hace tan larga la vida a la desdicha. Pues, ¿quién soportaría los azotes y escarnios del tiempo, la opresión del tirano, la afrenta del soberbio, las angustias del amor despreciado, la tardanza de la ley, la insolencia de los magistrados y los desprecios que el paciente mérito recibe del indigno, si uno mismo pudiera liquidar su cuenta con una simple daga?
 
-EL HÉROE
+¿Quién llevaría tales cargas, gimiendo y sudando bajo el peso de una vida fatigosa, si no fuera por el temor a algo después de la muerte, esa región desconocida de cuyos confines ningún viajero retorna, y que desconcierta la voluntad, haciéndonos preferir soportar los males que tenemos antes que volar hacia otros que desconocemos? Así la conciencia nos vuelve cobardes a todos.
 
-Todo se adultera hoy. A mí me ha tocado personificar un heroísmo falso. Maté al pobre dragón de modo alevoso que no debe ni recordarse. El inofensivo monstruo vivía pacíficamente y no hizo mal a nadie. Hasta pagaba sus contribuciones, y llegó en inocente simplicidad a depositar su voto en las ánforas, durante las últimas elecciones generales. Me vio llegar como a un huésped, y cuando hacía ademán de recibirme y brindarme hospedaje, le hendí la cabeza de un tajo. Horrorizado por mi villanía, hui de los fotógrafos que pretendían retratarme con los despojos del pobre bicho y con el malhadado alfanje desenvainado y sangriento. Otro se aprovechó de mi fea hazaña e intentó obtener la mano de la princesa. Por desdicha mis abogados lo impidieron y aun obligaron al impostor a pagar las costas del juicio. No hubo más remedio que apechugar con la hija del rey y tomar parte en ceremonias que asquearían aun a Mr. Cecil B. de Mille.
+Shakespeare, William. Hamlet.`;
 
-La princesa no es la joven adorable que estás desde hace varios años acostumbrado a ver por las tarjetas postales. Se trata de una venerable matrona que, como tantas mujeres que han prolongado su doncellez, se ha chupado interiormente. (Perdonadme lo bajo de la expresión). Resulta su compañía tan enfadosa que a su lado se explica uno los horrores de todas las revoluciones. Sus aficiones son groseras: nada la complace más que exhibirse en público conmigo, haciendo gala de un amor conyugal que felizmente no existe. Tiene alma vulgar de actriz de cine. Siempre está en escena, y aun lo que dice dormida va destinado a la galería. Sus actitudes favoritas, la de infanta demócrata, de esposa sacrificada, de mujer superior que tolera menesteres humildes. A su lado siento náuseas incontenibles.
-
-En los momentos de mayor intimidad mi egregia compañera inventa frases altisonantes que me colman de infortunio: “la sangre del dragón nos une”; “tu heroicidad me ha hecho tuya para siempre”; o bien “la lengua del dragón fue el ábrete sésamo”; etcétera.
-
-Y luego las conmemoraciones, los discursos, la retórica huera…, toda la triste máquina de la gloria. ¡Qué asco de mí mismo por haber comprado con una villanía bienestar y honores!
-
-¡Cuánto envidio la sepultura olvidada de los héroes sin nombre!
-
-Tomado de: Torri, J. (1964). De fusilamientos y otras narraciones. México: Fondo de Cultura Económica.`;
-
-export const TEXTO_ARTWORLD_G10 = `RESPONDA LAS PREGUNTAS 17 A 20 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN
-
-Hamlet y Sócrates, aunque en alabanza o desaprobación respectivamente, hablaron del arte como un espejo que refleja la naturaleza. Con muchos desacuerdos en la actitud, esta concepción tiene una base fáctica. Sócrates concebía así los espejos, pero reflejando aquello que ya podemos ver; de manera que el arte, en tanto que se asemeja a un espejo, proporciona réplicas exactas, pero inútiles, de las apariencias de las cosas y, en esa medida, sin ningún beneficio cognitivo. Hamlet, más agudamente, reconoce una notable característica de las superficies reflectivas, esto es que éstas muestran aquello que no podríamos ver de otra manera –nuestra propia faz y forma–; en esa medida, el arte, en tanto que es como un espejo, nos revela a nosotros mismos y esto, incluso siguiendo el criterio de Sócrates, es de alguna manera útil cognitivamente, después de todo.
-
-Tomado de: Danto, A. (1964). The Artworld. Journal of Philosophy, 21(61), pp. 571-584.`;
+// =============================================================================
+// BANCO DE 20 PREGUNTAS OFICIALES ICFES EVALUAR PARA AVANZAR - GRADO 10°
+// =============================================================================
 
 export const OFFICIAL_GRADE_10: Question[] = [
-  // =========================================================================
-  // TEXTO 1: WENDY, VALÉRIE Y TODAS LAS DEMÁS (Preguntas 1 a 6)
-  // =========================================================================
+  // ---------------------------------------------------------------------------
+  // TEXTO 1: LA METAMORFOSIS (Preguntas 1 a 6)
+  // ---------------------------------------------------------------------------
   {
     id: 1001,
     grade: 10,
     questionNumber: 1,
-    title: 'Wendy, Valérie y todas las demás - Propósito de los casos',
-    contextText: TEXTO_WENDY_G10,
-    statement: `El autor usa los casos de Wendy, la rumana, la Valeska y Luisa para`,
+    title: 'La Metamorfosis - Naturalidad desconcertante del inicio kafkiano',
+    contextText: TEXTO_METAMORFOSIS_G10,
+    statement: 'El célebre inicio de “La metamorfosis” produce un poderoso efecto de extrañamiento en el lector principalmente porque:',
     options: [
-      { number: 1, letter: 'A', text: 'describir que todas las prostitutas son víctimas.' },
-      { number: 2, letter: 'B', text: 'justificar la prohibición de la prostitución.' },
-      { number: 3, letter: 'C', text: 'explicar que la prostitución es forzada.' },
-      { number: 4, letter: 'D', text: 'demostrar que no todas las prostitutas son víctimas.' }
+      { number: 1, letter: 'A', text: 'Presenta un suceso fantástico e imposible (la transformación humana en insecto) tratado con una absoluta frialdad, minuciosidad descriptiva y naturalidad cotidiana.' },
+      { number: 2, letter: 'B', text: 'Demuestra que Gregorio Samsa era un entomólogo profesional que coleccionaba mariposas.' },
+      { number: 3, letter: 'C', text: 'Narra un sueño del que el personaje despierta alegremente en el segundo párrafo.' },
+      { number: 4, letter: 'D', text: 'Explica con fórmulas científicas la mutación biológica del ADN del personaje.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
+    correctOption: 1,
+    correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Artículo de Opinión / Ensayo',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Reconoce las estrategias discursivas en un texto.',
-    standard: 'Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.',
-    justification: 'Al hacer un contraste entre las historias de las mujeres por las que se pregunta, es evidente que son relatos muy distintos entre sí, y que esa diferencia está mediada por la razón por la que ingresaron al mundo de la prostitución. Algunas de ellas lo hicieron por voluntad propia, lo que permite concluir que no todas las prostitutas son víctimas, como indica la opción de respuesta D.',
+    component: 'Texto Continuo - Novela / Vanguardias y Realismo Mágico-Existencial',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Infiere estrategias narrativas, atmósferas y recursos de extrañamiento vanguardista.',
+    standard: 'Caracterizo los textos literarios pertenecientes a las vanguardias del siglo XX.',
+    justification: 'Kafka revoluciona la narrativa moderna al insertar lo monstruoso y absurdo en el marco de la rutina burguesa más trivial (el muestrario de telas, la lluvia, el marco dorado) sin recurrir a explicaciones mágicas ni justificaciones míticas.',
     invalidOptionsReasoning: {
-      A: 'No coincide con el contenido del texto, ya que se enfatiza en que no todas son víctimas forzadas.',
-      B: 'El texto no pretende justificar la prohibición de la prostitución.',
-      C: 'El texto no sostiene que la prostitución sea exclusivamente forzada; presenta casos de ingreso voluntario.'
+      A: 'El texto afirma taxativamente en el segundo párrafo: "No era un sueño".',
+      C: 'Samsa no despierta; la metamorfosis física es definitiva y real en el plano novelesco.',
+      D: 'No hay jerga genética ni científica.'
     },
     socraticHints: {
-      recordar: 'Compara las motivaciones de Wendy frente a las de Luisa o la Valeska.',
-      comprender: '¿Por qué el autor presenta casos de violencia extrema junto a casos de decisión personal y monetaria?',
-      aplicar: 'Anota en tu cuaderno: "Propósito del autor = Desmentir la idea de que la prostitución es siempre forzada".',
-      analizar: '¿Por qué la opción D sintetiza la tesis central ilustrada con los ejemplos?'
-    }
+      recordar: 'Revisa cómo reacciona Gregorio ante su nuevo cuerpo en el segundo y tercer párrafo.',
+      comprender: '¿Por qué Gregorio se preocupa más por llegar tarde al trabajo que por haberse convertido en un bicho gigante?',
+      aplicar: 'Anota en tu cuaderno: "Técnica kafkiana: Lo absurdo e insólito narrado con tono burocrático y cotidiano".',
+      analizar: 'Examina cómo la alineación laboral anula el asombro existencial del individuo.'
+    },
+    icfesCode: 'I_1100101'
   },
   {
     id: 1002,
     grade: 10,
     questionNumber: 2,
-    title: 'Wendy, Valérie y todas las demás - Implicación de la afirmación de Luisa',
-    contextText: TEXTO_WENDY_G10,
-    statement: `La afirmación de Luisa, “Si estoy con un man que me gusta porque sí, ¿por qué no voy a estar con otro por plata?”, implica que ella`,
+    title: 'Simbolismo de la alienación laboral de Samsa',
+    contextText: TEXTO_METAMORFOSIS_G10,
+    statement: 'En el contexto del fragmento, la profesión de Gregorio como “viajante de comercio” y su apego al muestrario de paños y a la rutina simbolizan:',
     options: [
-      { number: 1, letter: 'A', text: 'toma decisiones dentro de las normas de una comunidad.' },
-      { number: 2, letter: 'B', text: 'no le da más importancia a los sentimientos que al dinero.' },
-      { number: 3, letter: 'C', text: 'es dueña de su cuerpo y puede hacer con él lo que quiera.' },
-      { number: 4, letter: 'D', text: 'no cree que la opinión de los demás sea importante.' }
+      { number: 1, letter: 'A', text: 'La opresión, la deshumanización y el sometimiento del trabajador en el sistema capitalista moderno.' },
+      { number: 2, letter: 'B', text: 'El éxito financiero y la plena realización espiritual del personaje.' },
+      { number: 3, letter: 'C', text: 'Una vocación artística frustrada por pintar cuadros al óleo.' },
+      { number: 4, letter: 'D', text: 'El deseo de fundar una fábrica textil en el campo.' }
     ],
-    correctOption: 2,
-    correctLetter: 'B',
+    correctOption: 1,
+    correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Argumentativo / Análisis de Enunciados',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Establece la validez e implicaciones de un enunciado de un texto (argumentativo o expositivo).',
-    standard: 'Relaciono el significado de los textos que leo con los contextos sociales, culturales y políticos en los cuales se han producido.',
-    justification: 'La expresión por la que se pregunta implica que para Luisa es muy importante el dinero, pues cuestiona por qué no estar con un hombre por plata si puede estar con otros hombres solo porque le gustan. Esto indica que para ella el dinero está por encima de los sentimientos, como expresa la opción B.',
+    component: 'Lectura Crítica - Crítica a la Deshumanización y el Trabajo',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Evalúa las ideas expresadas en un texto en relación con su dimensión sociopolítica.',
+    standard: 'Comprendo los factores sociales y culturales que determinan la producción de los textos.',
+    justification: 'La transformación en insecto ("alimaña") es la materialización física de la cosificación del sujeto: un engranaje laboral explotado que, al perder su utilidad productiva, se vuelve una carga repugnante para su familia y la sociedad.',
     invalidOptionsReasoning: {
-      A: 'Sus declaraciones transgreden las normas y reglas convencionales de la sociedad.',
-      C: 'La frase no enfatiza en el poder ontológico sobre el cuerpo, sino en la primacía del beneficio monetario.',
-      D: 'No se enfoca directamente en la opinión pública de terceros.'
+      B: 'Samsa vivía exhausto, endeudado por su padre y sin vida propia.',
+      C: 'La estampa recortada era una baratija de revista enmarcada, no su propia pintura.',
+      D: 'Era un simple empleado subordinado a las órdenes del jefe.'
     },
     socraticHints: {
-      recordar: '¿Qué dos razones contrapone Luisa en su razonamiento?',
-      comprender: '¿Cómo equipara o supedita el gusto personal al beneficio económico?',
-      aplicar: 'Anota en tu cuaderno: "Implicación de Luisa = El dinero tiene tanta o mayor relevancia que el afecto".',
-      analizar: '¿Por qué la opción B interpreta con exactitud la lógica del enunciado?'
-    }
+      recordar: '¿Cuál era el único propósito de la vida de Gregorio antes de transformarse?',
+      comprender: '¿Cómo reduce el trabajo desmedido al ser humano a un animal utilitario?',
+      aplicar: 'Escribe en tu cuaderno: "Alienación en Kafka: El ser humano reducido a mera herramienta productiva".',
+      analizar: 'Relaciona la pérdida de la forma humana con la previa pérdida de la autonomía personal.'
+    },
+    icfesCode: 'I_1100102'
   },
   {
     id: 1003,
     grade: 10,
     questionNumber: 3,
-    title: 'Wendy, Valérie y todas las demás - Audiencia del texto',
-    contextText: TEXTO_WENDY_G10,
-    statement: `El texto está escrito para una audiencia`,
+    title: 'Imposibilidad de girar sobre el lado derecho',
+    contextText: TEXTO_METAMORFOSIS_G10,
+    statement: 'En el tercer párrafo, la imposibilidad física de Gregorio para colocarse sobre su lado derecho y volver a dormirse representa:',
     options: [
-      { number: 1, letter: 'A', text: 'general.' },
-      { number: 2, letter: 'B', text: 'académica.' },
-      { number: 3, letter: 'C', text: 'científica.' },
-      { number: 4, letter: 'D', text: 'especializada.' }
+      { number: 1, letter: 'A', text: 'Una molestia muscular pasajera que se cura con masajes.' },
+      { number: 2, letter: 'B', text: 'La imposibilidad irreversible de evadir su nueva condición monstruosa y el fracaso del intento de refugiarse en el autoengaño.' },
+      { number: 3, letter: 'C', text: 'El mal diseño del colchón y las sábanas de su cama.' },
+      { number: 4, letter: 'D', text: 'Una orden del médico de la familia Samsa.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Ensayo Divulgativo / Pragmática',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Contextualiza adecuadamente un texto o la información contenida en él.',
-    standard: 'Relaciono el significado de los textos que leo con los contextos sociales, culturales y políticos en los cuales se han producido.',
-    justification: 'Por el contenido del texto, es decir el tema y el tipo de lenguaje que emplea, se puede afirmar que está dirigido a un público general (opción A), cercano y sin tecnicismos científicos ni jergas académicas cerradas.',
+    component: 'Texto Continuo - Interpretación Simbólica y Motricidad Narrativa',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'El balanceo inútil sobre el caparazón abombado subraya la irreversibilidad de su tragedia: ya no es posible cerrar los ojos, evadir la verdad ni retornar a la antigua normalidad humana.',
     invalidOptionsReasoning: {
-      B: 'No utiliza el formato de paper ni aparato crítico académico especializado.',
-      C: 'No presenta formulaciones de laboratorio ni lenguaje médico-científico experimental.',
-      D: 'Está concebido para la lectura reflexiva de la ciudadanía en general.'
+      A: 'No es una contractura muscular sino una transformación biológica total en insecto.',
+      C: 'El obstáculo es su nueva anatomía quitinosa dorsal.',
+      D: 'Es un impedimento anatómico involuntario.'
     },
     socraticHints: {
-      recordar: '¿Qué tipo de vocabulario y ejemplos utiliza el autor en el ensayo?',
-      comprender: '¿Por qué un ensayo en una revista cultural va destinado al público amplio y no solo a científicos?',
-      aplicar: 'Anota en tu cuaderno: "Audiencia = Público general interesado en temas sociales y de actualidad".',
-      analizar: '¿Por qué la opción A es la caracterización correcta?'
-    }
+      recordar: 'Revisa las últimas dos líneas del fragmento.',
+      comprender: '¿Qué simboliza querer darse la vuelta para seguir durmiendo cuando ocurre una catástrofe?',
+      aplicar: 'Anota en tu cuaderno cómo el caparazón impide el escape mental del personaje.',
+      analizar: 'Sintetiza la dialéctica entre la voluntad de escape y la fatalidad biológica.'
+    },
+    icfesCode: 'I_1100103'
   },
   {
     id: 1004,
     grade: 10,
     questionNumber: 4,
-    title: 'Wendy, Valérie y todas las demás - Función del caso de Luisa',
-    contextText: TEXTO_WENDY_G10,
-    statement: `El caso de Luisa permite`,
+    title: 'Función de la descripción del cuadro de la dama de pieles',
+    contextText: TEXTO_METAMORFOSIS_G10,
+    statement: 'En el segundo párrafo, la presencia de la estampa de la dama envuelta en pieles dentro de un marco dorado cumple en el relato la función de:',
     options: [
-      { number: 1, letter: 'A', text: 'ilustrar que hay mujeres que se vuelven prostitutas porque quieren.' },
-      { number: 2, letter: 'B', text: 'criticar a una mujer que se vuelve prostituta porque quiere.' },
-      { number: 3, letter: 'C', text: 'ilustrar que hay mujeres que se vuelven prostitutas porque las obligan.' },
-      { number: 4, letter: 'D', text: 'criticar a una mujer que se vuelve prostituta porque la obligan.' }
+      { number: 1, letter: 'A', text: 'Demostrar que la madre de Gregorio era modista de alta costura.' },
+      { number: 2, letter: 'B', text: 'Evidenciar el único vestigio de deseo estético, afectivo y erótico que Gregorio conservaba en su precaria y solitaria vida humana.' },
+      { number: 3, letter: 'C', text: 'Servir como mapa secreto para escapar de Praga.' },
+      { number: 4, letter: 'D', text: 'Promocionar abrigos de invierno en el almacén.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Estructura y Ejemplificación',
-    affirmation: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    evidence: 'Comprende la estructura formal de un texto y la función de sus partes.',
-    standard: 'Relaciono el significado de los textos que leo con los contextos sociales, culturales y políticos en los cuales se han producido.',
-    justification: 'A partir del análisis de la información que el texto ofrece sobre Luisa se puede deducir que la exposición de su caso ilustra “que hay mujeres que se vuelven prostitutas porque quieren” como afirma la opción de respuesta A.',
+    component: 'Detalles Significativos y Arqueología Psicológica del Personaje',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Diferencia las funciones de las partes en las que se estructura un texto.',
+    standard: 'Elaboro hipótesis acerca del sentido global de los textos.',
+    justification: 'El recorte enmarcado con esmero por sus propias manos representa su anhelo reprimido de belleza, estatus y contacto femenino en medio de una existencia árida de viajante solitario.',
     invalidOptionsReasoning: {
-      B: 'El autor no tiene la intención de juzgar o censurar moralmente a Luisa, sino de presentar la realidad de su decisión.',
-      C: 'Luisa no fue coaccionada ni obligada por proxenetas; ingresó voluntariamente.',
-      D: 'El caso de Luisa contradice la hipótesis del ingreso por obligación.'
+      A: 'No es un retrato familiar; es un recorte de revista comercial.',
+      C: 'No es un mapa cartográfico.',
+      D: 'Es un objeto íntimo personal colgado en su alcoba.'
     },
     socraticHints: {
-      recordar: '¿Cómo empezó Luisa su actividad y qué declara en su testimonio?',
-      comprender: '¿Cuál es la función retórica del ejemplo de Luisa en el desarrollo del texto?',
-      aplicar: 'Anota en tu cuaderno: "Caso de Luisa = Ejemplo de decisión autónoma y no forzada".',
-      analizar: '¿Por qué la opción A define la función ilustrativa del caso?'
-    }
+      recordar: '¿Quién recortó y enmarcó la ilustración según el segundo párrafo?',
+      comprender: '¿Por qué las personas solitarias suelen atesorar imágenes idealizadas en sus cuartos?',
+      aplicar: 'Escribe en tu cuaderno: "El cuadro de la dama de pieles = Anhelo de belleza y contacto humano".',
+      analizar: 'Relaciona este objeto con escenas posteriores donde Gregorio defiende el cuadro con su cuerpo.'
+    },
+    icfesCode: 'I_1100104'
   },
   {
     id: 1005,
     grade: 10,
     questionNumber: 5,
-    title: 'Wendy, Valérie y todas las demás - Cuestionamiento a prejuicios sociales',
-    contextText: TEXTO_WENDY_G10,
-    statement: `La afirmación “no me arrepiento absolutamente de nada” citada en el último párrafo del texto, cuestiona la creencia de algunos sectores sociales según la cual la prostitución`,
+    title: 'La lluvia y la melancolía existencial',
+    contextText: TEXTO_METAMORFOSIS_G10,
+    statement: 'El sonido de las gotas de lluvia cayendo sobre el alféizar de cinc y la “profunda melancolía” que suscita en Gregorio intensifican:',
     options: [
-      { number: 1, letter: 'A', text: 'es una actividad arriesgada pero divertida.' },
-      { number: 2, letter: 'B', text: 'no representa un problema importante.' },
-      { number: 3, letter: 'C', text: 'representa una opción de supervivencia.' },
-      { number: 4, letter: 'D', text: 'es una opción censurable e indeseable.' }
+      { number: 1, letter: 'A', text: 'La atmósfera de encierro, grisura, soledad y desamparo existencial del protagonista.' },
+      { number: 2, letter: 'B', text: 'La alegría de las vacaciones de verano en la playa.' },
+      { number: 3, letter: 'C', text: 'El inicio de una gran fiesta de cumpleaños en la casa.' },
+      { number: 4, letter: 'D', text: 'La necesidad de salir a regar los árboles del jardín.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
+    correctOption: 1,
+    correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Valores y Prejuicios Socioculturales',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Reconoce contenidos valorativos presentes en un texto.',
-    standard: 'Relaciono el significado de los textos que leo con los contextos sociales, culturales y políticos en los cuales se han producido.',
-    justification: 'La expresión “no me arrepiento absolutamente de nada” hace referencia a la opinión de una mujer que recuerda con plenitud sus vivencias. Esta apreciación cuestiona de frente la creencia social dogmática que considera la prostitución como una actividad intrínsecamente censurable e indeseable (opción D).',
+    component: 'Construcción de Atmósfera y Correlato Objetivo',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Infiere atmósferas y recursos estilísticos del texto.',
+    standard: 'Reconozco los elementos formales y estilísticos en los textos literarios.',
+    justification: 'El clima plomizo y monótono funciona como un correlato objetivo del estado anímico del personaje: un mundo exterior hostil, desabrido y claustrofóbico.',
     invalidOptionsReasoning: {
-      A: 'No cuestiona la idea de diversión; al contrario, afirma haber encontrado placer y afecto.',
-      B: 'Al no arrepentirse no está defendiendo que no sea un problema social, sino desafiando la culpa impuesta.',
-      C: 'La mujer presenta su experiencia como autorrealización y no únicamente como drama de supervivencia.'
+      A: 'No hay festividades ni alegría estival.',
+      C: 'La atmósfera es opresiva y fúnebre.',
+      D: 'Está atrapado e inmóvil sobre su cama.'
     },
     socraticHints: {
-      recordar: '¿Qué visión tradicional de culpa y arrepentimiento impone la sociedad sobre el sexo pago?',
-      comprender: '¿Por qué afirmar "no me arrepiento de nada y encontré autoestima" desafía el estigma social?',
-      aplicar: 'Anota en tu cuaderno: "Prejuicio cuestionado = Que la prostitución siempre es una deshonra repudiable".',
-      analizar: '¿Por qué la opción D identifica el prejuicio que la frase derriba?'
-    }
+      recordar: 'Lee la primera frase del tercer párrafo.',
+      comprender: '¿Cómo utiliza la literatura el clima exterior para reflejar el estado del alma (correlato emotivo)?',
+      aplicar: 'Anota en tu cuaderno cómo la lluvia acentúa el aislamiento de Samsa.',
+      analizar: 'Sintetiza la coherencia tonal del inicio de la novela.'
+    },
+    icfesCode: 'I_1100105'
   },
   {
     id: 1006,
     grade: 10,
     questionNumber: 6,
-    title: 'Wendy, Valérie y todas las demás - Realización personal en algunos casos',
-    contextText: TEXTO_WENDY_G10,
-    statement: `Los testimonios presentados en el texto, permiten sostener que el ejercicio de la prostitución`,
+    title: 'Movimiento literario del Expresionismo y el Absurdo',
+    contextText: TEXTO_METAMORFOSIS_G10,
+    statement: 'Por su indagación en la angustia, la deformación de la realidad exterior como reflejo de la crisis interior y el sentimiento de absurdo, “La metamorfosis” se inscribe fundamentalmente en:',
     options: [
-      { number: 1, letter: 'A', text: 'es un medio de realización personal para algunas mujeres.' },
-      { number: 2, letter: 'B', text: 'hace que las mujeres pierdan su independencia.' },
-      { number: 3, letter: 'C', text: 'es un medio para que las mujeres tengan conciencia de su sexualidad.' },
-      { number: 4, letter: 'D', text: 'hace que las mujeres pierdan el control sobre su cuerpo.' }
+      { number: 1, letter: 'A', text: 'El Expresionismo y la literatura del absurdo de principios del siglo XX.' },
+      { number: 2, letter: 'B', text: 'El Neoclasicismo de la Ilustración francesa.' },
+      { number: 3, letter: 'C', text: 'El Romanticismo medieval de las leyendas artúricas.' },
+      { number: 4, letter: 'D', text: 'El Costumbrismo folclórico del siglo XIX.' }
     ],
     correctOption: 1,
     correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Ensayo / Implicaciones Textuales',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Establece la validez e implicaciones de un enunciado de un texto (argumentativo o expositivo).',
-    standard: 'Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.',
-    justification: 'A través de los testimonios que se presentan en el texto se observa que algunas mujeres ingresan a la prostitución por voluntad propia y en busca de autonomía o afecto. Esta consideración se corresponde con la idea de que, para algunas mujeres, el ejercicio de la prostitución es un medio de realización personal (opción A).',
+    component: 'Historia Literaria - Expresionismo y Vanguardias del Siglo XX',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Relaciona y clasifica obras dentro de las corrientes del pensamiento estético universal.',
+    standard: 'Reconozco los principales movimientos literarios del siglo XX (Expresionismo, Existencialismo).',
+    justification: 'Franz Kafka es el precursor capital del Expresionismo y el Existencialismo, donde la distorsión grotesca exterioriza el trauma psíquico y la alienación del sujeto en la modernidad.',
     invalidOptionsReasoning: {
-      B: 'El texto muestra testimonios donde algunas mujeres ganan independencia económica frente a su entorno familiar opresivo.',
-      C: 'No se puede generalizar como un método pedagógico de toma de conciencia sexual.',
-      D: 'En los testimonios citados, algunas mujeres afirman ejercer control sobre sus decisiones.'
+      B: 'El Neoclasicismo rendía culto a la razón y las reglas armónicas.',
+      C: 'No pertenece a la caballería medieval.',
+      D: 'No retrata cuadros de costumbres folclóricas locales.'
     },
     socraticHints: {
-      recordar: '¿Qué beneficios personales afirma haber obtenido la mujer citada en el último párrafo?',
-      comprender: '¿Por qué la palabra "algunas" es clave para evitar generalizaciones indebidas?',
-      aplicar: 'Anota en tu cuaderno: "Conclusión de los testimonios = Para algunas mujeres representa una vía de realización y autonomía".',
-      analizar: '¿Por qué la opción A es la única afirmación matizada y respaldada por el texto?'
-    }
+      recordar: '¿En qué corriente artística de entreguerras se deformaba la realidad para expresar la angustia?',
+      comprender: '¿Cuáles son las características del Expresionismo literario europeo?',
+      aplicar: 'Escribe en tu cuaderno: "Franz Kafka (1883-1924) - Expresionismo, Existencialismo y Literatura del Absurdo".',
+      analizar: 'Relaciona el monstruoso insecto con la metáfora expresionista del ser desamparado.'
+    },
+    icfesCode: 'I_1100106'
   },
 
-  // =========================================================================
-  // TEXTO 2: LAS BARRAS BRAVAS: CONSECUENCIAS DE UN DIAGNÓSTICO EQUIVOCADO (Preguntas 7 a 12)
-  // =========================================================================
+  // ---------------------------------------------------------------------------
+  // TEXTO 2: INFOGRAFÍA IA Y TRABAJO (Preguntas 7 a 11)
+  // ---------------------------------------------------------------------------
   {
     id: 1007,
     grade: 10,
     questionNumber: 7,
-    title: 'Barras bravas - Sentido de "medida complementaria adecuada"',
-    contextText: TEXTO_BARRAS_BRAVAS_G10,
-    statement: `Cuando el autor escribe, en el quinto párrafo, “una medida complementaria adecuada”, hace referencia a que en Inglaterra`,
+    title: 'Balanza de empleos al 2030 según el Foro Económico Mundial',
+    contextText: TEXTO_INTELIGENCIA_ARTIFICIAL_G10,
+    statement: 'Según las proyecciones del Foro Económico Mundial al 2030 presentadas en la infografía, el saldo neto entre empleos desplazados y nuevos puestos creados será de:',
     options: [
-      { number: 1, letter: 'A', text: 'con el fin de reducir la violencia en los estadios no hubo otra alternativa que restringir la entrada a los estadios.' },
-      { number: 2, letter: 'B', text: 'la restricción en la entrada a los estadios ha sido la principal medida para reducir la violencia en los estadios.' },
-      { number: 3, letter: 'C', text: 'prohibir el acceso al estadio era una medida que se tomaba cuando los arrestos no disminuían.' },
-      { number: 4, letter: 'D', text: 'la prohibición a la entrada de los estadios fue una medida secundaria que se tomó para reducir la violencia.' }
+      { number: 1, letter: 'A', text: 'La destrucción total de todos los trabajos humanos sin reemplazo.' },
+      { number: 2, letter: 'B', text: 'Un incremento neto positivo de 12 millones de puestos de trabajo (97 millones creados frente a 85 millones desplazados).' },
+      { number: 3, letter: 'C', text: 'Una pérdida neta de 50 millones de empleos globales.' },
+      { number: 4, letter: 'D', text: 'La eliminación exclusiva de las carreras universitarias de ingeniería.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Mixto (Continuo + Gráfica) - Significado Local',
-    affirmation: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    evidence: 'Entiende el significado de los elementos locales que constituyen un texto.',
-    standard: 'Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.',
-    justification: 'El fragmento de la pregunta se refiere a la prohibición del acceso a los estadios, y el término “medida complementaria” indica conceptualmente que es una medida de apoyo o secundaria junto al régimen judicial principal. Por ello, la opción que recoge este sentido es la D.',
+    component: 'Texto Discontinuo - Infografía / Balance Estadístico y Prospectiva',
+    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Utilizo estrategias de búsqueda, selección y almacenamiento de información.',
+    justification: 'Al restar los 85 millones de empleos rutinarios desplazados de los 97 millones de nuevos roles tecnológicos y del cuidado que emergen, se obtiene un saldo positivo neto de 12 millones de puestos.',
     invalidOptionsReasoning: {
-      A: 'Afirmar que no hubo otra alternativa descarta la idea de complementariedad.',
-      B: 'Al ser complementaria no puede ser calificada como la principal.',
-      C: 'El texto no condiciona la prohibición a que los arrestos fallaran previamente.'
+      A: 'No es una catástrofe total sino una reconversión estructural.',
+      C: 'Las cifras muestran que la creación (97M) supera al desplazamiento (85M).',
+      D: 'Los ingenieros de datos y especialistas en IA son justamente los perfiles más demandados.'
     },
     socraticHints: {
-      recordar: '¿Qué significa la palabra "complementario" en el diseño de políticas públicas?',
-      comprender: '¿Cómo acompaña la prohibición de entrada a las sanciones penales y judiciales?',
-      aplicar: 'Anota en tu cuaderno: "Complementaria = Medida secundaria o de apoyo añadida al marco penal principal".',
-      analizar: '¿Por qué la opción D traduce con rigor el término?'
-    }
+      recordar: 'Compara las dos cifras en la sección "Proyecciones globales al 2030": 85M y 97M.',
+      comprender: '¿Por qué la automatización destruye tareas rutinarias pero genera nuevas industrias?',
+      aplicar: 'Anota en tu cuaderno la operación matemática: 97 millones - 85 millones = +12 millones netos.',
+      analizar: 'Sintetiza la naturaleza de la transición laboral hacia sectores de alto valor agregado.'
+    },
+    icfesCode: 'I_1100201',
+    hasDiagram: true
   },
   {
     id: 1008,
     grade: 10,
     questionNumber: 8,
-    title: 'Barras bravas - Propósito de citar el hooliganismo',
-    contextText: TEXTO_BARRAS_BRAVAS_G10,
-    statement: `El autor hace referencia al caso del hooliganismo con el propósito de`,
+    title: 'Habilidades inmunes a la automatización',
+    contextText: TEXTO_INTELIGENCIA_ARTIFICIAL_G10,
+    statement: 'En la lista de habilidades humanas de mayor demanda, aquellas que resultan inmunes al reemplazo por algoritmos se centran en:',
     options: [
-      { number: 1, letter: 'A', text: 'ilustrar acciones en los estadios que han motivado políticas eficientes para reducir la violencia.' },
-      { number: 2, letter: 'B', text: 'describir políticas eficientes para reducir la violencia en los estadios.' },
-      { number: 3, letter: 'C', text: 'apoyar la idea de que el fútbol es un deporte que genera actos de violencia en todas partes del mundo.' },
-      { number: 4, letter: 'D', text: 'demostrar que Inglaterra ha tenido problemas especialmente serios con el fútbol.' }
+      { number: 1, letter: 'A', text: 'La repetición mecánica de operaciones de cálculo aritmético básico.' },
+      { number: 2, letter: 'B', text: 'El pensamiento crítico, la creatividad, la empatía interpersonal, el liderazgo ético y la resolución compleja.' },
+      { number: 3, letter: 'C', text: 'El tipeo veloz de textos sin comprender su significado.' },
+      { number: 4, letter: 'D', text: 'El archivo físico manual de expedientes en papel.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Estrategias Argumentativas',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Reconoce las estrategias discursivas en un texto.',
-    standard: 'Asumo una actitud crítica frente a los textos que leo y elaboro, y frente a otros tipos de texto: explicativos, descriptivos y narrativos.',
-    justification: 'Al mencionar el caso del hooliganismo de 1985 en Heysel y las tragedias posteriores, el autor pretende mostrar el ejemplo de sucesos críticos que impulsaron la adopción de leyes firmes y eficaces que lograron reducir la violencia (opción A).',
+    component: 'Texto Discontinuo - Competencias del Siglo XXI',
+    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'Las máquinas sobresalen en cálculo y repetición, pero carecen de juicio crítico, intuición creadora, empatía socioafectiva y deliberación moral (habilidades exclusivamente humanas).',
     invalidOptionsReasoning: {
-      B: 'La mención del hooliganismo es el detonante histórico, no la descripción detallada de cada artículo de ley.',
-      C: 'El autor defiende que el fútbol no es intrínsecamente violento (cita el armisticio de Pelé en el Congo).',
-      D: 'El objetivo no es estigmatizar a Inglaterra, sino extraer una lección de política pública aplicable a Colombia.'
+      A: 'El cálculo repetitivo es lo primero que automatiza una computadora.',
+      C: 'El procesamiento de texto mecánico es automatizable mediante OCR y procesamiento de lenguaje.',
+      D: 'El archivo manual es reemplazado por bases de datos digitales.'
     },
     socraticHints: {
-      recordar: '¿Por qué introduce el autor la tragedia de 1985 antes de mencionar las leyes de 1989-2000?',
-      comprender: '¿Cómo sirve el ejemplo británico de modelo para el debate colombiano sobre barras bravas?',
-      aplicar: 'Anota en tu cuaderno: "Caso inglés = Ejemplo de cómo tragedias extremas motivaron soluciones legislativas eficaces".',
-      analizar: '¿Por qué la opción A describe con exactitud el recurso argumentativo?'
-    }
+      recordar: 'Lee las 4 habilidades enumeradas en la infografía.',
+      comprender: '¿Qué capacidades humanas jamás podrá replicar una máquina sin conciencia ni emociones?',
+      aplicar: 'Haz en tu cuaderno una lista de tus 4 habilidades humanas más fuertes.',
+      analizar: 'Distingue entre tareas computables algorítmicas y juicio ético-emocional humano.'
+    },
+    icfesCode: 'I_1100202'
   },
   {
     id: 1009,
     grade: 10,
     questionNumber: 9,
-    title: 'Barras bravas - Sentido de la expresión "a raíz de aquello"',
-    contextText: TEXTO_BARRAS_BRAVAS_G10,
-    statement: `En el cuarto párrafo, el autor usa la expresión “a raíz de aquello” con el fin de señalar una relación de`,
+    title: 'Desafío del "reskilling" y la desigualdad social',
+    contextText: TEXTO_INTELIGENCIA_ARTIFICIAL_G10,
+    statement: 'En los desafíos éticos, la advertencia sobre la necesidad de “políticas públicas de formación continua (reskilling)” apunta a evitar que:',
     options: [
-      { number: 1, letter: 'A', text: 'consecuencia entre las tragedias que sucedieron en Inglaterra y su impacto en el caso colombiano.' },
-      { number: 2, letter: 'B', text: 'anticipación entre lo peor de lo que se llamó hooliganismo y las normas que se dictaron en Inglaterra.' },
-      { number: 3, letter: 'C', text: 'consecuencia entre las tragedias que padecieron los ingleses y las normas que se dictaron posteriormente.' },
-      { number: 4, letter: 'D', text: 'anticipación entre las normas dictadas en 1989, 1991, 1999 y 2000, y los actos de criminalidad en el campo de fútbol.' }
+      { number: 1, letter: 'A', text: 'Los estudiantes utilicen computadores en las bibliotecas escolares.' },
+      { number: 2, letter: 'B', text: 'Los trabajadores de sectores desplazados queden excluidos del mercado laboral por falta de competencias, profundizando la brecha de desigualdad.' },
+      { number: 3, letter: 'C', text: 'Las empresas de energía renovable contraten ingenieros.' },
+      { number: 4, letter: 'D', text: 'Se publiquen libros sobre robótica en las editoriales.' }
     ],
-    correctOption: 3,
-    correctLetter: 'C',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Conectores y Relaciones Causales',
-    affirmation: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    evidence: 'Entiende el significado de los elementos locales que constituyen un texto.',
-    standard: 'Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.',
-    justification: 'La locución "a raíz de aquello" equivale a "como consecuencia de". En el texto conecta directamente los sucesos trágicos de 1985 con la expedición de las normas dictadas en 1989, 1991, 1999 y 2000 en Inglaterra (opción C).',
+    component: 'Lectura Crítica - Desafíos Sociolaborales y Equidad',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados.',
+    standard: 'Utilizo el diálogo y la argumentación para superar enfrentamientos de posturas.',
+    justification: 'Si los gobiernos no capacitan y reconvierten activamente a los trabajadores vulnerables cuyas tareas son automatizadas, se producirá un masivo desempleo estructural y mayor concentración de riqueza.',
     invalidOptionsReasoning: {
-      A: 'La consecuencia inmediata de las normas de 1989 se dio en el marco legal de Inglaterra, no directamente en Colombia.',
-      B: 'No denota anticipación, sino efecto a posteriori.',
-      D: 'Las normas fueron una respuesta a los actos criminales, no una anticipación previa.'
+      A: 'La educación digital es indispensable y deseable.',
+      C: 'El sector verde es un polo clave de generación de empleo.',
+      D: 'No trata de censura bibliográfica.'
     },
     socraticHints: {
-      recordar: '¿A qué hecho antecedente se refiere el deíctico "aquello"?',
-      comprender: '¿Qué relación lógica de causa-efecto establece "a raíz de aquello"?',
-      aplicar: 'Anota en tu cuaderno: "A raíz de aquello = Consecuencia directa de las tragedias en las leyes británicas".',
-      analizar: '¿Por qué la opción C es la única relación causal correcta?'
-    }
+      recordar: 'Busca la palabra "reskilling" (recualificación laboral) en el último bloque.',
+      comprender: '¿Qué ocurre con un operario de fábrica si la planta se robotiza y él no tiene acceso a capacitarse?',
+      aplicar: 'Anota en tu cuaderno: "Reskilling = Recualificación profesional continua para la era digital".',
+      analizar: 'Sintetiza la responsabilidad del Estado en garantizar una transición tecnológica justa.'
+    },
+    icfesCode: 'I_1100203'
   },
   {
     id: 1010,
     grade: 10,
     questionNumber: 10,
-    title: 'Barras bravas - Argumento que apoya la tesis del autor',
-    contextText: TEXTO_BARRAS_BRAVAS_G10,
-    statement: `¿Cuál de las siguientes opciones es un argumento que el autor usa para apoyar su tesis?`,
+    title: 'Sesgos algorítmicos y discriminación en selección de personal',
+    contextText: TEXTO_INTELIGENCIA_ARTIFICIAL_G10,
+    statement: 'Uno de los riesgos éticos señalados en el documento son los “sesgos algorítmicos”, los cuales ocurren cuando:',
     options: [
-      { number: 1, letter: 'A', text: 'El fútbol es el responsable de los actos de violencia; más aún, desde una perspectiva histórica se puede ver que el fútbol promueve más actos de guerra que de paz.' },
-      { number: 2, letter: 'B', text: 'Es un hecho que el fútbol genera pasiones; y son estas pasiones, sobre todo las que se salen de control, las que hacen que el fútbol sea un deporte tan especial.' },
-      { number: 3, letter: 'C', text: 'El fútbol no es responsable de los actos de violencia; lo que hay que solucionar con más urgencia en Colombia es el problema juvenil y de exclusión social.' },
-      { number: 4, letter: 'D', text: 'Las barras bravas pueden convertirse en un problema grave de la sociedad; pero, como lo muestra el caso inglés, hay instrumentos para actuar.' }
+      { number: 1, letter: 'A', text: 'Los sistemas de IA reproducen y amplifican prejuicios históricos humanos (de género, raza o clase social) presentes en los datos de entrenamiento.' },
+      { number: 2, letter: 'B', text: 'Las computadoras se apagan por sobrecalentamiento en verano.' },
+      { number: 3, letter: 'C', text: 'Los cables de fibra óptica se rompen bajo el mar.' },
+      { number: 4, letter: 'D', text: 'Los teléfonos celulares cambian de contraseña solos.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
+    correctOption: 1,
+    correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Estructura Argumentativa',
-    affirmation: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    evidence: 'Identifica y caracteriza las ideas o afirmaciones presentes en un texto informativo.',
-    standard: 'Diseño un esquema de interpretación, teniendo en cuenta al tipo de texto, tema, interlocutor e intención comunicativa.',
-    justification: 'La opción D es la correcta. El autor argumenta que las barras bravas amenazan con enquistarse como problema estructural en Colombia, pero que existen herramientas jurídicas e institucionales viables como lo demostró el Reino Unido.',
+    component: 'Ética de la Tecnología y Filosofía de la Información',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Infiere conceptos técnicos aplicados y sus implicaciones éticas.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'Los algoritmos no son neutrales: si se entrenan con datos históricos discriminatorios, descartarán automáticamente perfiles de mujeres, minorías o sectores marginados sin supervisión humana.',
     invalidOptionsReasoning: {
-      A: 'Contradice la tesis del autor, quien sostiene que el fútbol promueve históricamente la paz y no la guerra.',
-      B: 'El autor condena tajantemente la violencia y no justifica las pasiones desbordadas que usan los hampones.',
-      C: 'El autor rechaza la excusa de reducir el vandalismo a un mero "problema juvenil de exclusión".'
+      B: 'Fallas de hardware térmicas no son sesgos éticos.',
+      C: 'Daños de infraestructura física son problemas de telecomunicaciones.',
+      D: 'Es un problema de software/seguridad menor no relacionado con la discriminación algorítmica.'
     },
     socraticHints: {
-      recordar: '¿Cuál es la propuesta final del autor respecto a las barras bravas en Colombia?',
-      comprender: '¿Cómo utiliza la experiencia de Inglaterra para demostrar que sí es posible erradicar la violencia?',
-      aplicar: 'Anota en tu cuaderno: "Tesis del autor = Las barras bravas deben combatirse con instrumentos legales y apoyo estatal firme".',
-      analizar: '¿Por qué la opción D recoge fielmente el argumento central del artículo?'
-    }
+      recordar: '¿De dónde aprenden los modelos de Inteligencia Artificial?',
+      comprender: '¿Qué sucede si los datos del pasado tenían prejuicios contra ciertos grupos sociales?',
+      aplicar: 'Escribe en tu cuaderno: "Sesgo algorítmico = Discriminación automatizada basada en datos sesgados".',
+      analizar: 'Evalúa la necesidad indispensable de auditoría ética y supervisión humana en la IA.'
+    },
+    icfesCode: 'I_1100204'
   },
   {
     id: 1011,
     grade: 10,
     questionNumber: 11,
-    title: 'Barras bravas - Interpretación de la gráfica de arrestos y prohibiciones',
-    contextText: TEXTO_BARRAS_BRAVAS_G10,
-    statement: `El autor del texto usa la gráfica titulada “Arrestos y órdenes de prohibición de acceso al estadio en el Reino Unido”, con el fin de`,
+    title: 'Propósito global del informe de la OCDE y el WEF',
+    contextText: TEXTO_INTELIGENCIA_ARTIFICIAL_G10,
+    statement: 'El propósito principal de esta infografía de divulgación económica es:',
     options: [
-      { number: 1, letter: 'A', text: 'sugerir que las leyes que restringen el acceso a los estadios de fútbol ayudan a reducir la violencia en los estadios.' },
-      { number: 2, letter: 'B', text: 'señalar que los arrestos y órdenes de prohibición de acceso han sido políticas exitosas en disminuir el número de hooligans.' },
-      { number: 3, letter: 'C', text: 'negar que las leyes que se han promulgado respecto a la restricción al acceso a los estadios han reducido la violencia en el país.' },
-      { number: 4, letter: 'D', text: 'ejemplificar la manera como las leyes que se han tomado en Inglaterra son una medida complementaria a la restricción del acceso a los estadios.' }
+      { number: 1, letter: 'A', text: 'Prohibir la venta de computadores y robots en el mundo.' },
+      { number: 2, letter: 'B', text: 'Ofrecer un panorama equilibrado sobre el impacto de la IA en el empleo, destacando tanto las oportunidades laborales emergentes como los retos éticos y de formación.' },
+      { number: 3, letter: 'C', text: 'Recomendar a las personas que abandonen los estudios universitarios.' },
+      { number: 4, letter: 'D', text: 'Promocionar una marca específica de servidores de inteligencia artificial.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Discontinuo - Análisis Estadístico e Infográfico',
-    affirmation: 'Comprende cómo se articulan las partes de un texto para darle un sentido global.',
-    evidence: 'Identifica el tipo de relación existente entre diferentes elementos de un texto (discontinuo).',
-    standard: 'Explico cómo los códigos verbales y no verbales se articulan para generar sentido en obras cinematográficas, canciones y caligramas, entre otras.',
-    justification: 'La información que presenta la gráfica muestra que a medida que crecieron y se aplicaron las órdenes de prohibición de acceso a los estadios, el porcentaje de arrestos por violencia cayó a menos de la mitad, demostrando que restringir la entrada a violentos reduce la delincuencia en los estadios (opción A).',
+    component: 'Pragmática y Evaluación Global del Texto',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Identifica la intención comunicativa del autor y el tipo de texto.',
+    standard: 'Identifico la intención comunicativa de cada uno de los textos leídos.',
+    justification: 'El texto evita tanto el pánico tecnofóbico como el optimismo ciego: presenta con rigor cifras de creación/destrucción, define las habilidades del futuro y plantea los dilemas regulatorios urgentes.',
     invalidOptionsReasoning: {
-      B: 'La gráfica mide porcentaje de arrestos y número de órdenes judiciales, no un censo demográfico de hooligans.',
-      C: 'La gráfica prueba precisamente la efectividad de las medidas, no lo contrario.',
-      D: 'La gráfica muestra la correlación estadística entre prohibiciones y arrestos, no una descripción cualitativa complementaria.'
+      A: 'No propone prohibicionismo tecnológico.',
+      C: 'Subraya la educación superior y el pensamiento crítico como el mayor escudo laboral.',
+      D: 'Es un informe institucional de organismos multilaterales (OCDE/WEF), no un comercial corporativo.'
     },
     socraticHints: {
-      recordar: 'Observa la tendencia de la curva de arrestos a lo largo de los años 2001 a 2011.',
-      comprender: '¿Qué relación se establece entre el aumento de órdenes de prohibición y la caída de arrestos?',
-      aplicar: 'Anota en tu cuaderno: "Conclusión de la gráfica = Restringir el acceso a infractores reduce la violencia en los estadios".',
-      analizar: '¿Por qué la opción A sintetiza el propósito evidencial del gráfico?'
-    }
+      recordar: '¿Qué tres secciones componen la infografía (Proyecciones, Habilidades, Desafíos)?',
+      comprender: '¿Por qué un análisis riguroso debe sopesar ventajas y riesgos a la vez?',
+      aplicar: 'Redacta en tu cuaderno una conclusión de 3 líneas sobre el futuro laboral de tu generación.',
+      analizar: 'Sintetiza la postura prospectiva y propositiva del documento.'
+    },
+    icfesCode: 'I_1100205'
   },
+
+  // ---------------------------------------------------------------------------
+  // TEXTO 3: EL LABERINTO DE LA SOLEDAD (Preguntas 12 a 16)
+  // ---------------------------------------------------------------------------
   {
     id: 1012,
     grade: 10,
     questionNumber: 12,
-    title: 'Barras bravas - Postura ética del autor',
-    contextText: TEXTO_BARRAS_BRAVAS_G10,
-    statement: `De las ideas del texto se puede inferir que el autor`,
+    title: 'El Laberinto de la Soledad - La metáfora de la máscara y la muralla',
+    contextText: TEXTO_LABERINTO_SOLEDAD_G10,
+    statement: 'En el ensayo de Octavio Paz, las imágenes de la “máscara” y la “muralla de impasibilidad” representan:',
     options: [
-      { number: 1, letter: 'A', text: 'sanciona las acciones violentas que llevan a cabo las barras bravas.' },
-      { number: 2, letter: 'B', text: 'legitima la pasión y agresividad que el fútbol produce en algunos grupos de personas.' },
-      { number: 3, letter: 'C', text: 'defiende las medidas que se toman en Colombia para controlar las barras bravas.' },
-      { number: 4, letter: 'D', text: 'sostiene que Colombia es el único país que no ha logrado controlar el problema de las barras bravas.' }
+      { number: 1, letter: 'A', text: 'Un disfraz de carnaval utilizado en las fiestas populares de octubre.' },
+      { number: 2, letter: 'B', text: 'Un mecanismo defensivo de repliegue psicológico y cultural para proteger la intimidad frente a la mirada y agresión ajenas.' },
+      { number: 3, letter: 'C', text: 'Una técnica de construcción arquitectónica prehispánica.' },
+      { number: 4, letter: 'D', text: 'Una ley penal de la constitución política mexicana.' }
     ],
-    correctOption: 1,
-    correctLetter: 'A',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Postura Crítica del Autor',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Reconoce contenidos valorativos presentes en un texto.',
-    standard: 'Asumo una actitud crítica frente a los textos que leo y elaboro, y frente a otros tipos de texto: explicativos, descriptivos y narrativos.',
-    justification: 'A lo largo de todo el artículo, el autor desaprueba, condena y sanciona éticamente los actos violentos y crímenes cometidos por las barras bravas, calificando a sus integrantes violentos de "hampones disfrazados de hinchas" (opción A).',
+    component: 'Texto Continuo - Ensayo Filosófico / Identidad Cultural e Idiosincrasia',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Infiere conceptos teóricos, metáforas identitarias y argumentos ensayísticos.',
+    standard: 'Caracterizo el ensayo y comprendo sus estrategias argumentativas y poéticas.',
+    justification: 'Octavio Paz postula que el sujeto mexicano, marcado por heridas históricas (la Conquista, el mestizaje), adopta una coraza de hermetismo, fingimiento y cortesía distante para evitar ser vulnerado o traicionado.',
     invalidOptionsReasoning: {
-      B: 'El autor rechaza tajantemente la agresividad y el vandalismo en el deporte.',
-      C: 'Critica severamente las medidas tibias e ineficaces adoptadas en Colombia (como suspender partidos o prohibir camisetas).',
-      D: 'El autor menciona la experiencia histórica de Inglaterra para ilustrar que otros países también sufrieron este flagelo.'
+      A: 'No es un antifaz festivo de utilería; es una categoría ontológica y psicológica.',
+      C: 'Es una muralla invisible psicosocial, no de albañilería.',
+      D: 'Es una indagación antropológica sobre la mentalidad, no un código jurídico.'
     },
     socraticHints: {
-      recordar: '¿Cómo califica el autor las medidas de aplazar partidos o proponer "pico y placa de camisetas"?',
-      comprender: '¿Cuál es el juicio moral del autor frente a los agresores en los estadios?',
-      aplicar: 'Anota en tu cuaderno: "Postura del autor = Condena radical (sanción) de la violencia de las barras bravas".',
-      analizar: '¿Por qué la opción A es la inferencia indiscutible?'
-    }
+      recordar: 'Lee con atención las primeras cuatro líneas del ensayo.',
+      comprender: '¿Por qué una persona que ha sufrido traumas colectivos aprende a ocultar lo que verdaderamente siente?',
+      aplicar: 'Anota en tu cuaderno: "Tesis de Paz: La máscara como defensa y coraza ante el mundo".',
+      analizar: 'Examina cómo la cortesía excesiva puede ser una forma elegante de mantener distancia.'
+    },
+    icfesCode: 'I_1100301'
   },
-
-  // =========================================================================
-  // TEXTO 3: EL HÉROE - Julio Torri (Preguntas 13 a 16)
-  // =========================================================================
   {
     id: 1013,
     grade: 10,
     questionNumber: 13,
-    title: 'El héroe - Tradición literaria aludida',
-    contextText: TEXTO_HEROE_G10,
-    statement: `¿A cuál de las siguientes tradiciones literarias alude el cuento?`,
+    title: 'El mandato cultural de "no rajarse"',
+    contextText: TEXTO_LABERINTO_SOLEDAD_G10,
+    statement: 'En el segundo párrafo, el análisis del ideal de hombría medido por la capacidad de “no rajarse” revela que en esa cultura:',
     options: [
-      { number: 1, letter: 'A', text: 'La novela latinoamericana del siglo XX.' },
-      { number: 2, letter: 'B', text: 'Los relatos del Antiguo Testamento.' },
-      { number: 3, letter: 'C', text: 'Los relatos heroicos de la mitología china.' },
-      { number: 4, letter: 'D', text: 'Los relatos medievales de caballería.' }
+      { number: 1, letter: 'A', text: 'Mostrar vulnerabilidad, llorar o abrirse íntimamente ante los demás es interpretado como signo de debilidad y riesgo de traición.' },
+      { number: 2, letter: 'B', text: 'Los hombres deben dedicarse exclusivamente a la costura de prendas.' },
+      { number: 3, letter: 'C', text: 'Se prohíbe el uso de pantalones de mezclilla.' },
+      { number: 4, letter: 'D', text: 'El dolor físico desaparece por completo mediante la fuerza de voluntad.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
+    correctOption: 1,
+    correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Cuento Satírico / Tradición Literaria',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Establece relaciones entre un texto y otros textos o enunciados.',
-    standard: 'Identifico en obras de la literatura universal el lenguaje, las características formales, las épocas y escuelas, estilos, tendencias, temáticas, géneros y autores, entre otros aspectos.',
-    justification: 'Por el contenido del texto, en especial los personajes (caballero, dragón, rey, princesa) y los tópicos de dar muerte al monstruo para ganar la mano de la princesa y honores de la corte, el relato parodia directamente los romances y libros de caballería medievales (opción D).',
+    component: 'Lectura Crítica - Deconstrucción del Machismo y Roles de Género',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Evalúa las ideas expresadas en un texto y sus implicaciones socioculturales.',
+    standard: 'Comprendo los factores sociales y culturales que determinan la producción de los textos.',
+    justification: 'Paz desnuda la estructura del machismo tradicional: "no rajarse" significa aguantar el sufrimiento en soledad y no dejar que nadie penetre en el interior, convirtiendo la invulnerabilidad fingida en el valor supremo.',
     invalidOptionsReasoning: {
-      A: 'No alude a la novela realista o del boom latinoamericano del siglo XX en su arquetipo argumental.',
-      B: 'No guarda relación con los relatos bíblicos del Antiguo Testamento.',
-      C: 'La figura del dragón custodiando una princesa y el caballero con alfanje corresponden al imaginario caballeresco medieval occidental.'
+      B: 'Es una categoría moral y conductual sobre la resistencia al dolor, no de oficios textiles.',
+      C: 'No tiene relación con vestimenta.',
+      D: 'El dolor no desaparece; se reprime y oculta tras el estoicismo.'
     },
     socraticHints: {
-      recordar: '¿Qué tópicos clásicos aparecen: el dragón, la princesa, el héroe que reclama la mano real?',
-      comprender: '¿A qué género clásico de la literatura medieval se le está haciendo una parodia irónica?',
-      aplicar: 'Anota en tu cuaderno: "Tradición literaria = Libros de caballería medievales parodiados con humor negro".',
-      analizar: '¿Por qué la opción D es la filiación literaria correcta?'
-    }
+      recordar: 'Revisa la última oración del fragmento.',
+      comprender: '¿Qué consecuencias emocionales tiene para una persona la prohibición de expresar su tristeza o dolor?',
+      aplicar: 'Escribe en tu cuaderno una reflexión sobre la masculinidad tóxica y la libertad emocional.',
+      analizar: 'Sintetiza la relación entre el hermetismo ("no rajarse") y la soledad existencial.'
+    },
+    icfesCode: 'I_1100302'
   },
   {
     id: 1014,
     grade: 10,
     questionNumber: 14,
-    title: 'El héroe - Personajes principales del relato',
-    contextText: TEXTO_HEROE_G10,
-    statement: `Los principales personajes de los eventos narrados en el cuento son`,
+    title: 'El lenguaje de reticencias y puntos suspensivos',
+    contextText: TEXTO_LABERINTO_SOLEDAD_G10,
+    statement: 'Cuando el autor afirma que “El lenguaje está lleno de reticencias, de figuras y alusiones, de puntos suspensivos”, quiere decir que:',
     options: [
-      { number: 1, letter: 'A', text: 'la princesa, el narrador y Cecil B. de Mille.' },
-      { number: 2, letter: 'B', text: 'la princesa, el rey y el héroe.' },
-      { number: 3, letter: 'C', text: 'la princesa, el dragón y los héroes anónimos.' },
-      { number: 4, letter: 'D', text: 'la princesa, el dragón y el narrador.' }
+      { number: 1, letter: 'A', text: 'Los hablantes sufren de problemas de pronunciación fonética.' },
+      { number: 2, letter: 'B', text: 'La comunicación cotidiana prefiere la sugerencia indirecta, el rodeo verbal y los sobreentendidos antes que la confrontación frontal o la franqueza descarnada.' },
+      { number: 3, letter: 'C', text: 'En México está prohibido utilizar los signos de interrogación.' },
+      { number: 4, letter: 'D', text: 'Todos los libros deben escribirse en código morse.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Cuento / Identificación de Personajes',
-    affirmation: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    evidence: 'Identifica los eventos narrados de manera explícita en un texto y los personajes involucrados.',
-    standard: 'Identifico en obras de la literatura universal el lenguaje, las características formales, las épocas y escuelas, estilos, tendencias, temáticas, géneros y autores, entre otros aspectos.',
-    justification: 'Los tres personajes que protagonizan y vertebran las acciones decisivas de la trama son: el narrador (el falso héroe), el dragón (la víctima asesinada) y la princesa (la esposa insoportable con quien quedó casado) (opción D).',
+    component: 'Pragmática Lingüística y Filosofía del Lenguaje',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'Paz describe la riqueza barroca de la cortesía y el rodeo verbal como un arte diplomático de amortiguar el conflicto y proteger el fuero interno sin comprometerse de manera directa.',
     invalidOptionsReasoning: {
-      A: 'Cecil B. de Mille es solo una comparación cinematográfica externa.',
-      B: 'El rey no interviene en la acción dramática directa.',
-      C: 'Los héroes anónimos son solo una evocación lírica final del narrador.'
+      A: 'No es una patología del aparato fonador.',
+      C: 'Es una caracterización estilística y pragmática del discurso, no una prohibición gramatical.',
+      D: 'Es una metáfora de la sutileza comunicativa.'
     },
     socraticHints: {
-      recordar: '¿Quiénes participan activamente en el conflicto central del relato?',
-      comprender: '¿Por qué el rey y Cecil B. de Mille son meras menciones secundarias o alusiones?',
-      aplicar: 'Anota en tu cuaderno: "Personajes principales = El narrador (falso héroe), el dragón y la princesa".',
-      analizar: '¿Por qué la opción D es la única terna de personajes principales correcta?'
-    }
+      recordar: 'Lee la primera línea del segundo párrafo.',
+      comprender: '¿Por qué en muchas culturas latinoamericanas se evita decir un "no" rotundo y se prefieren frases indirectas?',
+      aplicar: 'Anota en tu cuaderno ejemplos de frases indirectas usadas en Colombia (ej. "vamos a ver", "de pronto").',
+      analizar: 'Relaciona las estrategias de cortesía verbal con la preservación de la máscara social.'
+    },
+    icfesCode: 'I_1100303'
   },
   {
     id: 1015,
     grade: 10,
     questionNumber: 15,
-    title: 'El héroe - Significado contextual de "Todo se adultera hoy"',
-    contextText: TEXTO_HEROE_G10,
-    statement: `¿Cuál de las siguientes expresiones podría reemplazar la frase “Todo se adultera hoy”, sin alterar el significado que tiene en el texto?`,
+    title: 'La triple lejanía: del mundo, de los demás y de sí mismo',
+    contextText: TEXTO_LABERINTO_SOLEDAD_G10,
+    statement: 'La gradación que cierra el primer párrafo (“El mexicano siempre está lejos, lejos del mundo y de los demás. Lejos, también, de sí mismo”) culmina en una dimensión trágica porque:',
     options: [
-      { number: 1, letter: 'A', text: 'Hoy todo tiende a repetirse.' },
-      { number: 2, letter: 'B', text: 'Actualmente todo tiende a destruirse.' },
-      { number: 3, letter: 'C', text: 'En nuestros tiempos, todo se corrompe.' },
-      { number: 4, letter: 'D', text: 'En estos tiempos, todo se exagera.' }
+      { number: 1, letter: 'A', text: 'Indica que todos los ciudadanos viven en ciudades situadas a miles de kilómetros del mar.' },
+      { number: 2, letter: 'B', text: 'Muestra que el exceso de máscaras y barreras defensivas termina por alienar al individuo de su propia verdad y autenticidad interior.' },
+      { number: 3, letter: 'C', text: 'Explica por qué los viajes en avión son tan costosos.' },
+      { number: 4, letter: 'D', text: 'Demuestra que no existen espejos en las casas.' }
     ],
-    correctOption: 3,
-    correctLetter: 'C',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Semántica y Sinonimia Contextual',
-    affirmation: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    evidence: 'Entiende el significado de los elementos locales que constituyen un texto.',
-    standard: 'Relaciono el significado de los textos que leo con los contextos sociales, culturales y políticos en los cuales se han producido.',
-    justification: 'El verbo "adulterar" significa alterar, falsificar o corromper la naturaleza de algo genuino. En el contexto de un "falso heroísmo" y valores degradados, la equivalencia semántica exacta es “En nuestros tiempos, todo se corrompe” (opción C).',
+    component: 'Estructura Argumentativa y Clímax Filosófico',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Diferencia las funciones de las partes en las que se estructura un texto ensayístico.',
+    standard: 'Elaboro hipótesis acerca del sentido global de los textos.',
+    justification: 'Quien vive permanentemente detrás de un personaje fingido termina por desconocer su propia esencia humana, atrapado en el laberinto de su propia soledad e incomunicación.',
     invalidOptionsReasoning: {
-      A: 'Adulterar no equivale a repetir o reproducir.',
-      B: 'Adulterar no significa destruir físicamente, sino falsificar o desvirtuar.',
-      D: 'Exagerar no es sinónimo de adulteración moral y engaño.'
+      A: 'Es lejanía existencial y psicológica, no distancia kilométrica geográfica.',
+      C: 'No trata de transporte aéreo.',
+      D: 'Es una metáfora ontológica del extrañamiento del yo.'
     },
     socraticHints: {
-      recordar: '¿Qué significa adulterar un producto o un valor moral?',
-      comprender: '¿Cómo se relaciona la adulteración con la farsa y la degradación ética del falso héroe?',
-      aplicar: 'Anota en tu cuaderno: "Adulterar = Falsificar, desvirtuar, corromper".',
-      analizar: '¿Por qué la opción C conserva con exactitud el sentido original?'
-    }
+      recordar: 'Observa la repetición de la palabra "lejos" al final del párrafo 1.',
+      comprender: '¿Qué le pasa a alguien que finge todo el tiempo cuando se queda a solas frente a su propia conciencia?',
+      aplicar: 'Escribe en tu cuaderno: "La alienación suprema: Desconectarse de la propia verdad interior".',
+      analizar: 'Sintetiza la dialéctica existencial de la soledad en Octavio Paz.'
+    },
+    icfesCode: 'I_1100304'
   },
   {
     id: 1016,
     grade: 10,
     questionNumber: 16,
-    title: 'El héroe - Modo en que el protagonista asesinó al dragón',
-    contextText: TEXTO_HEROE_G10,
-    statement: `El protagonista asesinó al dragón de manera`,
+    title: 'Género ensayístico y estilo lírico de Octavio Paz',
+    contextText: TEXTO_LABERINTO_SOLEDAD_G10,
+    statement: 'Por su estilo reflexivo, su prosa de alta densidad poética y su vocación de diagnóstico antropológico y cultural, este texto es un modelo de:',
     options: [
-      { number: 1, letter: 'A', text: 'obligada, pues era evidente que estaba sujeto a las decisiones de sus abogados.' },
-      { number: 2, letter: 'B', text: 'accidental, pues era claro que lo llevó a cabo contra su voluntad.' },
-      { number: 3, letter: 'C', text: 'intencional, pues lo hizo voluntariamente a pesar de arrepentirse después.' },
-      { number: 4, letter: 'D', text: 'premeditada, pues era indiscutible que quería casarse con la hija del rey.' }
-    ],
-    correctOption: 3,
-    correctLetter: 'C',
-    competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Comprensión Literal / Eventos Narrativos',
-    affirmation: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    evidence: 'Identifica los eventos narrados de manera explícita en un texto y los personajes involucrados.',
-    standard: 'Identifico en obras de la literatura universal el lenguaje, las características formales, las épocas y escuelas, estilos, tendencias, temáticas, géneros y autores, entre otros aspectos.',
-    justification: 'La narración indica que el protagonista llegó ante el dragón con la intención de matarlo y le hendí la cabeza alevosamente por iniciativa propia, sintiendo de inmediato horror y arrepentimiento por su villanía (opción C).',
-    invalidOptionsReasoning: {
-      A: 'Los abogados intervinieron después para pelear judicialmente la recompensa, no antes del crimen.',
-      B: 'No fue un accidente involuntario; fue un ataque traicionero planificado por él.',
-      D: 'Al protagonista le repugnaba casarse con la princesa ("no hubo más remedio que apechugar con la hija del rey").'
-    },
-    socraticHints: {
-      recordar: '¿Cómo atacó el protagonista al dragón cuando este lo recibía amablemente?',
-      comprender: '¿Cómo reaccionó el narrador tras cometer el acto ("horrorizado por mi villanía")?',
-      aplicar: 'Anota en tu cuaderno: "Naturaleza del asesinato = Intencional/alevosía seguida de arrepentimiento y asco de sí mismo".',
-      analizar: '¿Por qué la opción C describe con rigor el hecho narrativo?'
-    }
-  },
-
-  // =========================================================================
-  // TEXTO 4: THE ARTWORLD - Arthur Danto (Preguntas 17 a 20)
-  // =========================================================================
-  {
-    id: 1017,
-    grade: 10,
-    questionNumber: 17,
-    title: 'The Artworld - La fotografía frente a la tesis de Sócrates',
-    contextText: TEXTO_ARTWORLD_G10,
-    statement: `Considerar algunas fotografías como obras de arte es`,
-    options: [
-      { number: 1, letter: 'A', text: 'una realidad irrelevante frente a la tesis de Sócrates.' },
-      { number: 2, letter: 'B', text: 'una constatación de la tesis de Sócrates.' },
-      { number: 3, letter: 'C', text: 'un hecho insuficiente para apoyar la tesis de Sócrates.' },
-      { number: 4, letter: 'D', text: 'un ejemplo que refuta la tesis de Sócrates.' }
+      { number: 1, letter: 'A', text: 'Ensayo literario y filosófico hispanoamericano.' },
+      { number: 2, letter: 'B', text: 'Acta notarial de compraventa de tierras.' },
+      { number: 3, letter: 'C', text: 'Crónica deportiva de un partido de béisbol.' },
+      { number: 4, letter: 'D', text: 'Libreto cómico de televisión para niños.' }
     ],
     correctOption: 1,
     correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Filosófico / Filosofía del Arte',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Establece la validez e implicaciones de un enunciado de un texto (argumentativo o expositivo).',
-    standard: 'Asumo una actitud crítica frente a los textos que leo y elaboro, y frente a otros tipos de texto: explicativos, descriptivos y narrativos.',
-    justification: 'Según el texto, para Sócrates las réplicas exactas de la realidad física superficial (como la imagen reflejada en un espejo o una fotografía) carecen de beneficio cognitivo porque solo muestran lo que ya vemos, por lo que constituirían una realidad irrelevante o inútil frente al valor del conocimiento (opción A).',
+    component: 'Tipología del Ensayo y Recursos Estilísticos',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Identifica la intención comunicativa del autor y el tipo de texto.',
+    standard: 'Caracterizo el ensayo y reconozco sus dimensiones éticas, poéticas e investigativas.',
+    justification: 'Octavio Paz (Premio Nobel de Literatura 1990) fundó con El laberinto de la soledad (1950) el pináculo del ensayo identitario moderno, combinando rigor conceptual, agudeza psicoanalítica y vuelo poético.',
     invalidOptionsReasoning: {
-      B: 'Llamar "arte" a una foto no confirma la tesis socrática de que el arte es un mero engaño sin valor cognitivo.',
-      C: 'No es una prueba insuficiente para apoyarlo, sino que Sócrates desestimaría la foto por duplicar lo ya visible.',
-      D: 'Para refutar a Sócrates se requeriría demostrar valor cognitivo profundo en el reflejo, como hace Hamlet con el autorreconocimiento.'
+      B: 'No es un documento legal de escribanía.',
+      C: 'No es periodismo de deportes.',
+      D: 'Es una obra cumbre del pensamiento humanista mundial.'
     },
     socraticHints: {
-      recordar: '¿Por qué para Sócrates el reflejo mecánico del espejo es "inútil y sin beneficio cognitivo"?',
-      comprender: '¿Cómo clasificaría Sócrates una fotografía que solo hace una réplica visual de apariencias?',
-      aplicar: 'Anota en tu cuaderno: "Perspectiva de Sócrates = Las réplicas miméticas exactas son cognitivamente irrelevantes".',
-      analizar: '¿Por qué la opción A corresponde a la deducción oficial de la guía del ICFES?'
-    }
+      recordar: '¿Quién escribió El laberinto de la soledad y qué premio Nobel recibió?',
+      comprender: '¿Qué diferencia a un ensayo de un simple informe de datos?',
+      aplicar: 'Anota en tu cuaderno: "Octavio Paz - El laberinto de la soledad (1950) / Ensayo literario y antropológico".',
+      analizar: 'Evalúa la armonía entre rigor argumentativo y belleza metafórica en la prosa de Paz.'
+    },
+    icfesCode: 'I_1100305'
+  },
+
+  // ---------------------------------------------------------------------------
+  // TEXTO 4: HAMLET (Preguntas 17 a 20)
+  // ---------------------------------------------------------------------------
+  {
+    id: 1017,
+    grade: 10,
+    questionNumber: 17,
+    title: 'Hamlet - El dilema existencial del "Ser o no ser"',
+    contextText: TEXTO_HAMLET_G10,
+    statement: 'En el célebre soliloquio, el dilema planteado por Hamlet en la frase “Ser o no ser, esa es la cuestión” se refiere a:',
+    options: [
+      { number: 1, letter: 'A', text: 'Elegir entre ser coronado rey de Dinamarca o estudiar botánica en Inglaterra.' },
+      { number: 2, letter: 'B', text: 'La disyuntiva existencial y moral entre continuar viviendo y soportando los dolores y ultrajes del mundo, o poner fin a la propia existencia mediante la muerte.' },
+      { number: 3, letter: 'C', text: 'Comprar una nueva espada de hierro o mandar a fabricar una armadura de bronce.' },
+      { number: 4, letter: 'D', text: 'Decidir si perdonar a su tío o nombrarlo primer ministro.' }
+    ],
+    correctOption: 2,
+    correctLetter: 'B',
+    competency: 'Comprensión lectora.',
+    component: 'Texto Dramático - Tragedia Isabelina / Monólogo Filosófico',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Infiere dilemas existenciales, ontológicos y éticos en la dramaturgia universal.',
+    standard: 'Reconozco los grandes temas de la literatura universal (la vida, la muerte, el destino).',
+    justification: 'Hamlet debate si es más noble soportar pasivamente la desdicha o rebelarse contra ella terminando con la vida ("Morir... dormir... nada más"), confrontando la finitud y el sufrimiento humano.',
+    invalidOptionsReasoning: {
+      A: 'No es una elección de carrera profesional.',
+      C: 'No es una compra de pertrechos bélicos.',
+      D: 'Es una meditación metafísica sobre la existencia y el suicidio, no una negociación política.'
+    },
+    socraticHints: {
+      recordar: 'Lee el primer párrafo del monólogo de Hamlet.',
+      comprender: '¿Por qué el "ser" representa la vida en acción y el "no ser" representa la muerte y el vacío?',
+      aplicar: 'Anota en tu cuaderno: "Dilema de Hamlet: El peso insoportable de la existencia frente al enigma del más allá".',
+      analizar: 'Sintetiza la profundidad filosófica del soliloquio shakespeariano.'
+    },
+    icfesCode: 'I_1100401'
   },
   {
     id: 1018,
     grade: 10,
     questionNumber: 18,
-    title: 'The Artworld - Analogía del arte como espejo',
-    contextText: TEXTO_ARTWORLD_G10,
-    statement: `En el texto se utiliza la analogía del arte como espejo de la naturaleza, con el fin de caracterizar dos concepciones`,
+    title: 'El obstáculo ("el tropiezo") ante la muerte: el enigma del más allá',
+    contextText: TEXTO_HAMLET_G10,
+    statement: 'En el segundo párrafo, ¿cuál es “el tropiezo” o razón fundamental que impide al ser humano liberarse de las miserias de la vida quitándose la existencia?',
     options: [
-      { number: 1, letter: 'A', text: 'opuestas sobre la base fáctica del arte.' },
-      { number: 2, letter: 'B', text: 'semejantes a la forma en que conocemos el mundo.' },
-      { number: 3, letter: 'C', text: 'opuestas sobre la forma en que el arte imita la naturaleza.' },
-      { number: 4, letter: 'D', text: 'semejantes a la utilidad del arte respecto al conocimiento.' }
+      { number: 1, letter: 'A', text: 'La falta de cuchillos afilados en el palacio.' },
+      { number: 2, letter: 'B', text: 'La incertidumbre y el temor sobre qué sueños y tormentos desconocidos puedan sobrevenir en el sueño eterno de la muerte.' },
+      { number: 3, letter: 'C', text: 'El costo económico del entierro y los sepultureros.' },
+      { number: 4, letter: 'D', text: 'La orden del Papa de asistir a misa todos los domingos.' }
     ],
-    correctOption: 3,
-    correctLetter: 'C',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Filosófico / Teoría Estética',
-    affirmation: 'Identifica y entiende los contenidos locales que conforman un texto.',
-    evidence: 'Entiende el significado de los elementos locales que constituyen un texto.',
-    standard: 'Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.',
-    justification: 'En el texto se emplea la metáfora del espejo para contrastar dos posturas antagónicas sobre la mímesis: para Sócrates el espejo es una copia superficial redundante, mientras que para Hamlet es una revelación reflexiva del yo y de la condición humana (opción C).',
+    component: 'Texto Dramático - Meditación Metafísica y Psicología del Terror Trágico',
+    affirmation: 'Recupera información literal expresada en fragmentos del texto.',
+    evidence: 'Ubica elementos del contenido de diferentes tipos de textos.',
+    standard: 'Comprendo los aspectos formales y conceptuales al interior de cada texto leído.',
+    justification: 'Hamlet razona que si la muerte fuera solo un sueño apacible todos se suicidarían; pero el pavor a "esa región desconocida de cuyos confines ningún viajero retorna" paraliza la voluntad.',
     invalidOptionsReasoning: {
-      A: 'Ambas posturas comparten la base fáctica del espejo, difieren en su interpretación mimética y valorativa.',
-      B: 'No son posturas semejantes, sino contrapuestas.',
-      D: 'Sócrates niega la utilidad cognitiva del arte, mientras Hamlet la afirma; sus posturas no son semejantes.'
+      A: 'Él mismo dice que bastaría "una simple daga".',
+      C: 'No son consideraciones monetarias.',
+      D: 'Es una angustia ontológica universal sobre el misterio del más allá.'
     },
     socraticHints: {
-      recordar: '¿Cómo juzga Sócrates la imitación del espejo y cómo la juzga Hamlet?',
-      comprender: '¿Por qué ambas visiones representan dos formas opuestas de entender la imitación del arte?',
-      aplicar: 'Anota en tu cuaderno: "Sócrates (mímesis redundante) vs. Hamlet (mímesis reveladora de lo invisible)".',
-      analizar: '¿Por qué la opción C es la respuesta correcta en la guía del ICFES?'
-    }
+      recordar: 'Revisa el inicio del segundo párrafo: "Morir... dormir; dormir, tal vez soñar. ¡Ah, ahí está el tropiezo!".',
+      comprender: '¿Por qué la mente humana teme más a lo desconocido que a los sufrimientos que ya conoce?',
+      aplicar: 'Escribe en tu cuaderno: "El tropiezo: El miedo a lo que nos aguarda tras la muerte".',
+      analizar: 'Examina cómo la imaginación y la incertidumbre frenan el impulso suicida.'
+    },
+    icfesCode: 'I_1100402'
   },
   {
     id: 1019,
     grade: 10,
     questionNumber: 19,
-    title: 'The Artworld - Alusión a Hamlet',
-    contextText: TEXTO_ARTWORLD_G10,
-    statement: `Al mencionar a Hamlet, el autor hace alusión a:`,
+    title: 'Los males del mundo enumerados por el príncipe',
+    contextText: TEXTO_HAMLET_G10,
+    statement: 'En la lista de agravios que hacen la vida insoportable (“la opresión del tirano, la afrenta del soberbio, las angustias del amor despreciado, la tardanza de la ley...”), Shakespeare está denunciando:',
     options: [
-      { number: 1, letter: 'A', text: 'El autor de un texto canónico sobre filosofía del arte.' },
-      { number: 2, letter: 'B', text: 'Un reconocido crítico de arte contemporáneo.' },
-      { number: 3, letter: 'C', text: 'Un personaje ficticio creado por el autor para defender su punto.' },
-      { number: 4, letter: 'D', text: 'El protagonista de una reconocida obra de teatro.' }
+      { number: 1, letter: 'A', text: 'Las injusticias sociales, políticas y afectivas inherentes a la condición humana en todas las épocas.' },
+      { number: 2, letter: 'B', text: 'Las reglas de tránsito en las calles de Londres.' },
+      { number: 3, letter: 'C', text: 'El mal funcionamiento del reloj del campanario de Elsinor.' },
+      { number: 4, letter: 'D', text: 'La pérdida de una batalla naval contra Noruega.' }
     ],
-    correctOption: 4,
-    correctLetter: 'D',
+    correctOption: 1,
+    correctLetter: 'A',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Referentes Culturales e Intertextualidad',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Establece relaciones entre un texto y otros textos o enunciados.',
-    standard: 'Comparo textos de diversos autores, temas, épocas y culturas, y utilizo recursos de la teoría literaria para enriquecer su interpretación.',
-    justification: 'Hamlet es el príncipe protagonista del célebre drama teatral de William Shakespeare (quien en la obra pronuncia su famosa instrucción a los actores sobre el fin del teatro: "poner un espejo ante la naturaleza") (opción D).',
+    component: 'Lectura Crítica - Crítica a la Corrupción Institucional y Social',
+    affirmation: 'Comprende el sentido local y global del texto mediante inferencias de información implícita.',
+    evidence: 'Reconoce significados, resúmenes, análisis y paráfrasis apropiados.',
+    standard: 'Comprendo los factores sociales y culturales que determinan la producción de los textos.',
+    justification: 'La enumeración magistral abarca todas las formas de dolor social: el abuso del poder (tiranía, soberbia), el desengaño amoroso, la ineficacia de la justicia ("la tardanza de la ley") y la humillación del mérito por los mediocres.',
     invalidOptionsReasoning: {
-      A: 'Hamlet no es un filósofo real ni autor de un tratado teórico.',
-      B: 'No es un crítico de arte moderno.',
-      C: 'No fue inventado por Arthur Danto, sino tomado de Shakespeare.'
+      B: 'No trata de normas de tráfico.',
+      C: 'No es una falla de relojería.',
+      D: 'Es una radiografía moral universal de la sociedad humana.'
     },
     socraticHints: {
-      recordar: '¿Quién escribió la tragedia teatral de Hamlet?',
-      comprender: '¿Por qué el autor de un ensayo filosófico cita las palabras de un personaje dramático universal?',
-      aplicar: 'Anota en tu cuaderno: "Hamlet = Protagonista de la célebre obra teatral de William Shakespeare".',
-      analizar: '¿Por qué la opción D es la referencia cultural correcta?'
-    }
+      recordar: 'Enumera los 7 ultrajes de la vida citados en el párrafo 2.',
+      comprender: '¿Por qué estos problemas siguen estando plenamente vigentes en la sociedad actual?',
+      aplicar: 'Anota en tu cuaderno los males denunciados por Hamlet y compáralos con el presente.',
+      analizar: 'Sintetiza la atemporalidad de la crítica moral de William Shakespeare.'
+    },
+    icfesCode: 'I_1100403'
   },
   {
     id: 1020,
     grade: 10,
     questionNumber: 20,
-    title: 'The Artworld - Estrategia argumentativa global del autor',
-    contextText: TEXTO_ARTWORLD_G10,
-    statement: `En el texto, el autor`,
+    title: 'Sentido de la conclusión: "Así la conciencia nos vuelve cobardes a todos"',
+    contextText: TEXTO_HAMLET_G10,
+    statement: 'La sentencia final de Hamlet (“Así la conciencia nos vuelve cobardes a todos”) significa que:',
     options: [
-      { number: 1, letter: 'A', text: 'expone dos ideas sobre un mismo tema que se complementan, y concluye con la síntesis de esas dos posiciones.' },
-      { number: 2, letter: 'B', text: 'señala las tesis de dos expertos sobre un tema, advierte sus problemas y desarrolla una nueva tesis más precisa que las anteriores.' },
-      { number: 3, letter: 'C', text: 'presenta dos interpretaciones opuestas de una misma idea, resalta una posible falencia en una de ellas y concluye a favor de la otra.' },
-      { number: 4, letter: 'D', text: 'resalta la interpretación de dos autores sobre una misma tesis y presenta una forma de hacerlas compatibles entre sí.' }
+      { number: 1, letter: 'A', text: 'Los soldados no deben usar cascos en la guerra.' },
+      { number: 2, letter: 'B', text: 'La reflexión profunda y la lucidez mental frenan la acción impulsiva debido al peso del pensamiento y la incertidumbre ética.' },
+      { number: 3, letter: 'C', text: 'El teatro debe cerrarse porque los actores tienen miedo escénico.' },
+      { number: 4, letter: 'D', text: 'La cobardía es un delito penal que se castiga con prisión.' }
     ],
-    correctOption: 3,
-    correctLetter: 'C',
+    correctOption: 2,
+    correctLetter: 'B',
     competency: 'Comprensión lectora.',
-    component: 'Texto Continuo - Estructura Dialéctica Global',
-    affirmation: 'Reflexiona a partir de un texto y evalúa su contenido.',
-    evidence: 'Reconoce las estrategias discursivas en un texto.',
-    standard: 'Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.',
-    justification: 'La opción de respuesta correcta es la C. El texto presenta dos interpretaciones opuestas de la metáfora del espejo (Sócrates vs. Hamlet), destaca la limitación de la visión reduccionista de Sócrates (“Hamlet, más agudamente”), y concluye validando la postura de Hamlet al demostrar que el arte sí ofrece utilidad cognitiva al revelarnos a nosotros mismos.',
+    component: 'Interpretación Filosófica y Epistemología Trágica',
+    affirmation: 'Asume una posición crítica sobre el texto mediante la evaluación de su forma y contenido.',
+    evidence: 'Evalúa la idea central y la resolución conceptual de un texto dramático cumbre.',
+    standard: 'Reconozco el valor estético y universal de las obras de William Shakespeare.',
+    justification: 'Shakespeare formula una de las cumbres del pensamiento moderno: el exceso de conciencia y pensamiento crítico diluye la resolución inmediata, provocando la vacilación trágica que caracteriza al héroe intelectual moderno.',
     invalidOptionsReasoning: {
-      A: 'Las posiciones no se complementan armónicamente; son visiones contrarias sobre la utilidad del arte.',
-      B: 'El autor no descarta a ambos para inventar una tercera tesis, sino que respalda el argumento de Hamlet.',
-      D: 'No busca hacer compatibles ambas posturas, sino demostrar la superioridad analítica de la perspectiva de Hamlet.'
+      A: 'No es una directriz de equipamiento militar.',
+      C: 'No es miedo escénico.',
+      D: 'No es una falta jurídica; es una ley psicológica del alma humana.'
     },
     socraticHints: {
-      recordar: '¿Cómo estructura el autor la comparación entre Sócrates y Hamlet?',
-      comprender: '¿Por qué utiliza la frase "Hamlet, más agudamente" para decantar su argumento?',
-      aplicar: 'Anota en tu cuaderno: "Estructura = Tesis A (Sócrates) vs Tesis B (Hamlet) -> Crítica a Tesis A -> Conclusión a favor de Tesis B".',
-      analizar: '¿Por qué la opción C es la síntesis discursiva exacta según la clave oficial del ICFES?'
-    }
+      recordar: 'Lee la última frase del fragmento.',
+      comprender: '¿Por qué quien piensa mucho las consecuencias de sus actos vacila más que quien actúa ciegamente?',
+      aplicar: 'Escribe en tu cuaderno: "Conciencia y parálisis en Hamlet: El pensamiento como freno de la acción".',
+      analizar: 'Sintetiza por qué Hamlet es el arquetipo del ser humano moderno dividido entre el deber y la duda.'
+    },
+    icfesCode: 'I_1100404'
   }
 ];

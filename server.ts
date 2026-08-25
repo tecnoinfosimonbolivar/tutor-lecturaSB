@@ -771,9 +771,10 @@ ${studentName}, ¿cuál de las opciones (**A**, **B**, **C** o **D**) consideras
 }
 
 const CANDIDATE_MODELS = [
-  'gemini-3.7-flash',
-  'gemini-3.1-flash-lite',
-  'gemini-flash-latest'
+  'gemini-2.5-flash',
+  'gemini-2.0-flash',
+  'gemini-2.5-flash-lite',
+  'gemini-1.5-flash'
 ];
 
 async function callGeminiWithResilience(

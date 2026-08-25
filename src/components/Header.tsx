@@ -9,6 +9,7 @@ interface HeaderProps {
   studentName: string;
   onOpenCuaderno: () => void;
   onOpenEvidence: () => void;
+  onOpenResources?: () => void;
   speechEnabled: boolean;
   onToggleSpeech: () => void;
   onToggleMobileSidebar: () => void;
@@ -22,6 +23,7 @@ export const Header: React.FC<HeaderProps> = ({
   studentName,
   onOpenCuaderno,
   onOpenEvidence,
+  onOpenResources,
   speechEnabled,
   onToggleSpeech,
   onToggleMobileSidebar,
@@ -105,11 +107,23 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             onClick={onOpenCuaderno}
             className="flex items-center gap-1 px-2.5 sm:px-3 py-1.5 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-xs font-bold transition-all active:scale-95 border border-blue-400/40 shadow-xs"
-            title="Abrir cuaderno digital de dibujo y operaciones"
+            title="Abrir cuaderno digital de dibujo y apuntes"
           >
             <BookOpen className="w-3.5 h-3.5 text-blue-100" />
             <span className="hidden sm:inline">Cuaderno</span>
           </button>
+
+          {/* Academic Resources button */}
+          {onOpenResources && (
+            <button
+              onClick={onOpenResources}
+              className="flex items-center gap-1 px-2.5 sm:px-3 py-1.5 bg-amber-600 hover:bg-amber-500 text-white rounded-lg text-xs font-bold transition-all active:scale-95 border border-amber-400/40 shadow-xs"
+              title="Abrir Centro de Recursos Académicos y Cápsulas Conceptuales"
+            >
+              <GraduationCap className="w-3.5 h-3.5 text-amber-100" />
+              <span className="hidden sm:inline">Recursos</span>
+            </button>
+          )}
 
           {/* Evidence report button */}
           <button
